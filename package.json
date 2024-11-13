@@ -1,50 +1,23 @@
 {
   "name": "rsdmu-website",
-  "description": "Rashid Mushkani's website built with Gatsby and Netlify CMS for showcasing research and projects.",
+  "description": "Rashid Mushkani's portfolio website built with Gatsby and Netlify CMS.",
   "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "gatsby": "^4.25.9",
-    "gatsby-plugin-google-analytics": "^4.0.0",
-    "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-netlify": "^4.0.0",
-    "gatsby-plugin-netlify-cms": "^6.0.0",
-    "gatsby-plugin-sass": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.0.0",
-    "gatsby-remark-emojis": "^0.4.2",
-    "gatsby-remark-prismjs": "^5.0.0",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
-    "netlify-cms-app": "^2.11.13",
-    "sass": "^1.56.0",
+    "gatsby-plugin-google-analytics": "^4.0.0",
+    "gatsby-plugin-manifest": "^4.0.0",
+    "netlify-cms-app": "^2.15.72",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "prismjs": "^1.29.0"
-  },
-  "devDependencies": {
-    "prettier": "^2.7.1"
+    "react-dom": "^18.0.0"
   },
   "scripts": {
-    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.{js,jsx,json,md}'",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
     "clean": "gatsby clean"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rsdmu/rsdmu-website.git"
-  },
-  "bugs": {
-    "url": "https://github.com/rsdmu/rsdmu-website/issues"
-  },
-  "homepage": "https://rsdmu.com",
-  "keywords": [
-    "gatsby",
-    "netlify cms",
-    "Rashid Mushkani",
-    "urban planning",
-    "research"
-  ]
+  }
 }

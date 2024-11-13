@@ -3,10 +3,9 @@ module.exports = {
     title: "Rashid Mushkani Portfolio",
     description: "Portfolio of Rashid Ahmad Mushkani, specializing in urban planning, AI, and architecture.",
     author: "Rashid Ahmad Mushkani",
-    siteUrl: "https://rsdmu.com", // Ensure this matches your actual site URL for sitemap generation
+    siteUrl: "https://rsdmu.com", 
   },
   plugins: [
-    `gatsby-plugin-sass`, // Enables SCSS support
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -17,19 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              classPrefix: "language-",
-              inlineCodeMarker: null,
-              aliases: {},
-              showLineNumbers: false,
-              noInlineHighlight: false,
-            },
-          },
-          `gatsby-remark-emojis`, // Enables emojis in markdown
-        ],
+        plugins: [],
       },
     },
     {
@@ -48,11 +35,10 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#381696`,
         display: `standalone`,
-        icon: `static/favicon.ico`, // Ensure this path matches your favicon location
+        icon: `static/favicon.ico`,
       },
     },
-    `gatsby-plugin-netlify-cms`, // For CMS integration
-    `gatsby-plugin-sitemap`, // Requires siteUrl in siteMetadata for sitemap generation
-    `gatsby-plugin-netlify`, // Recommended for Netlify deployment optimization
+    `gatsby-plugin-netlify`, // for Netlify-specific optimizations
+    `gatsby-plugin-sitemap`, 
   ],
 }
