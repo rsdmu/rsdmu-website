@@ -10,7 +10,7 @@
     "gatsby-plugin-netlify": "^4.0.0",
     "gatsby-plugin-netlify-cms": "^6.0.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
-    "gatsby-plugin-sass": "^4.0.0",
+    "@gatsby-contrib/gatsby-plugin-sass": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.0.0",
     "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^5.0.0",
@@ -20,7 +20,8 @@
     "sass": "^1.56.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "prismjs": "^1.29.0" // Added missing dependency
   },
   "devDependencies": {
     "prettier": "^2.7.1"
