@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-delog",
-  "description": "A simplified blog for developers and designers built with Gatsby and Netlify CMS",
-  "version": "1.6.0",
+  "name": "rsdmu-website",
+  "description": "Rashid Mushkani's website built with Gatsby and Netlify CMS for showcasing research and projects.",
+  "version": "1.0.0",
   "license": "MIT",
   "dependencies": {
     "gatsby": "^4.0.0",
@@ -28,24 +28,24 @@
   "scripts": {
     "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write '**/*.{js,jsx,json,md}'",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/W3Layouts/gatsby-starter-delog.git"
+    "url": "https://github.com/rsdmu/rsdmu-website.git"
   },
   "bugs": {
-    "url": "https://github.com/W3Layouts/gatsby-starter-delog/issues"
+    "url": "https://github.com/rsdmu/rsdmu-website/issues"
   },
-  "homepage": "https://github.com/W3Layouts/gatsby-starter-delog#readme",
+  "homepage": "https://rsdmu.com",
   "keywords": [
     "gatsby",
     "netlify cms",
-    "blog",
-    "developers"
+    "Rashid Mushkani",
+    "urban planning",
+    "research"
   ]
 }
