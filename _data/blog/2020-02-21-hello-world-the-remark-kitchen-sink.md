@@ -1,43 +1,454 @@
 ---
 template: BlogPost
-path: /genderedspaces
-date: 2021-12-21T12:12:00.000Z
-title: >-
-  The role of land use and vitality in fostering gender equality in urban public
-  parks: The case of Kabul city, Afghanistan
-metaDescription: ''
-thumbnail: /assets/img_40siton.jpeg
+path: /remark-kitchen-sink
+date: 2020-02-21T12:12:25.364Z
+title: 'Hello World: The remark Kitchen Sink'
+thumbnail: /assets/image-6.jpg
 ---
-*Photograph of a public space in Kabul, taken in 2020.*
+# h1 Heading 8-)
 
-*.*﻿
+## h2 Heading
 
-# Abstract
+### h3 Heading
 
-This qualitative study employs observation, one-on-one semi-structured interviews, and questionnaire data collection methods to focus on land use and its correlation with vitality and gender equality in the public park domain. The study addresses the human–environment dichotomy and seeks to provide findings that can serve as a basis for city planning and foster gender pervasiveness in our recreational milieu. The study is framed in an expanding city and the Muslim context of Afghanistan, which has been at the intersection of fundamentalism and modernity since the mid-20th century. In the capital city of Kabul, 15 out of 65 active public parks were selected based on the criteria of having essential park amenities and variety in surrounding land uses. Vitality measures such as the presence of people in a park, the diversity of activities and available amenities, and the parks' build quality and management attributes were examined and contextualized according to the various land-use zones: residential, commercial, and mixed use. Parks surrounded by residential zones were found to be more vital, foster a higher female presence compared to parks surrounded by other land-use functions, and benefit from the influence of socio-spatial bonds induced by the neighborhood unit due to the presence of people and the park's perceived safety and security. Finally, a thematic proposal that can contribute to future urban planning is presented.ographer option to see result.
+#### h4 Heading
 
-## Keywords
+##### h5 Heading
 
-Land use; Public park; Vitality; Gender equality; Kabul
+###### h6 Heading
 
-#### **[F﻿ull Paper](https://doi.org/10.1016/j.habitatint.2021.102462): [https://doi.org/10.1016/j.habitatint.2021.102462](https://doi.org/10.1016/j.habitatint.2021.102462 "Persistent link using digital object identifier")**
+## Horizontal Rules
 
-P﻿ublished by the [Habitat International](https://www.sciencedirect.com/journal/habitat-international "Go to Habitat International on ScienceDirect")
+- - -
 
-.﻿
+- - -
 
-# Some visuals from the study
+- - -
 
-![Kabul City land-use zoning plan prepared by Japan International Cooperation Agency in 2012. The updated official plan is overlayed by data on the existing situation. Green-colored spots represent the study sites. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)](/assets/1-s2.0-S019739752100151X-gr1_lrg.jpg)
+## Typographic replacements
 
-Kabul City land-use zoning plan prepared by Japan International Cooperation Agency in 2012. The updated official plan is overlayed by data on the existing situation. Green-colored spots represent the study sites.
+Enable typographer option to see result.
 
-![](/assets/1-s2.0-S019739752100151X-gr3a_lrg.jpg "Public parks and their surrounding area land use versus gender-based user distribution.")
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
-![Public parks and their surrounding area land use versus gender-based user distribution.](/assets/1-s2.0-S019739752100151X-gr3b_lrg.jpg)
+test.. test... test..... test?..... test!....
 
-Public parks and their surrounding area land use versus gender-based user distribution.
+!!!!!! ???? ,,  -- ---
 
-![A map of two public spaces in Kabul City illustrating the existence of diverse activities and amenities.](/assets/1-s2.0-S019739752100151X-gr5_lrg.jpg)
+"Smartypants, double quotes" and 'single quotes'
 
-A map of two public spaces in Kabul City illustrating the existence of diverse activities and amenities.
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+*This is italic text*
+
+*This is italic text*
+
+~~Strikethrough~~
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+## Lists
+
+Unordered
+
+* Create a list by starting a line with `+`, `-`, or `*`
+* Sub-lists are made by indenting 2 spaces:
+
+  * Marker character change forces new list start:
+
+    * Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    * Nulla volutpat aliquam velit
+* Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+58. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+```
+// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+```
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png) ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text](https://octodex.github.com/images/dojocat.jpg "The Dojocat")
+
+With a reference later in the document defining the URL location:
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+* 19^th^
+* H\~2\~O
+
+### [<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+### [<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+\==Marked text==
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link\[^first].
+
+Footnote 2 link\[^second].
+
+Inline footnote^\[Text of inline footnote] definition.
+
+Duplicated footnote reference\[^second].
+
+\[^first]: Footnote **can have markup**
+
+```
+and multiple paragraphs.
+```
+
+\[^second]: Footnote text.
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1 with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+```
+    { some code, part of Definition 2 }
+
+Third paragraph of definition 2.
+```
+
+*Compact style:*
+
+Term 1   ~ Definition 1
+
+Term 2   \~ Definition 2a
+  \~ Definition 2b
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+\*\[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning *here be dragons* :::---
+**Advertisement :)**
+
+* **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image resize in browser.
+* **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly i18n with plurals support and easy syntax.
+
+You will like those projects!
+
+- - -
+
+# h1 Heading 8-)
+
+## h2 Heading
+
+### h3 Heading
+
+#### h4 Heading
+
+##### h5 Heading
+
+###### h6 Heading
+
+## Horizontal Rules
+
+- - -
+
+- - -
+
+- - -
+
+## Typographic replacements
+
+Enable typographer option to see result.
+
+(c) (C) (r) (R) (tm) (TM) (p) (P) +-
+
+test.. test... test..... test?..... test!....
+
+!!!!!! ???? ,,  -- ---
+
+"Smartypants, double quotes" and 'single quotes'
+
+## Emphasis
+
+**This is bold text**
+
+**This is bold text**
+
+*This is italic text*
+
+*This is italic text*
+
+~~Strikethrough~~
+
+## Blockquotes
+
+> Blockquotes can also be nested...
+>
+> > ...by using additional greater-than signs right next to each other...
+> >
+> > > ...or with spaces between arrows.
+
+## Lists
+
+Unordered
+
+* Create a list by starting a line with `+`, `-`, or `*`
+* Sub-lists are made by indenting 2 spaces:
+
+  * Marker character change forces new list start:
+
+    * Ac tristique libero volutpat at
+    * Facilisis in pretium nisl aliquet
+    * Nulla volutpat aliquam velit
+* Very easy!
+
+Ordered
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. You can use sequential numbers...
+5. ...or keep all the numbers as `1.`
+
+Start numbering with offset:
+
+57. foo
+58. bar
+
+## Code
+
+Inline `code`
+
+Indented code
+
+```
+// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+```
+
+Block code "fences"
+
+```
+Sample text here...
+```
+
+Syntax highlighting
+
+```js
+var foo = function (bar) {
+  return bar++;
+};
+
+console.log(foo(5));
+```
+
+## Tables
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+Right aligned columns
+
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
+
+## Links
+
+[link text](http://dev.nodeca.com)
+
+[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+
+Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+
+## Images
+
+![Minion](https://octodex.github.com/images/minion.png) ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+![Alt text](https://octodex.github.com/images/dojocat.jpg "The Dojocat")
+
+With a reference later in the document defining the URL location:
+
+## Plugins
+
+The killer feature of `markdown-it` is very effective support of [syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+
+### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+
+> Classic markup: :wink: :crush: :cry: :tear: :laughing: :yum:
+>
+> Shortcuts (emoticons): :-) :-( 8-) ;)
+
+see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+
+### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+
+* 19^th^
+* H\~2\~O
+
+### [<ins>](https://github.com/markdown-it/markdown-it-ins)
+
+++Inserted text++
+
+### [<mark>](https://github.com/markdown-it/markdown-it-mark)
+
+\==Marked text==
+
+### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+
+Footnote 1 link\[^first].
+
+Footnote 2 link\[^second].
+
+Inline footnote^\[Text of inline footnote] definition.
+
+Duplicated footnote reference\[^second].
+
+\[^first]: Footnote **can have markup**
+
+```
+and multiple paragraphs.
+```
+
+\[^second]: Footnote text.
+
+### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+
+Term 1
+
+:   Definition 1 with lazy continuation.
+
+Term 2 with *inline markup*
+
+:   Definition 2
+
+```
+    { some code, part of Definition 2 }
+
+Third paragraph of definition 2.
+```
+
+*Compact style:*
+
+Term 1   ~ Definition 1
+
+Term 2   \~ Definition 2a
+  \~ Definition 2b
+
+### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+
+This is HTML abbreviation example.
+
+It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+
+\*\[HTML]: Hyper Text Markup Language
+
+### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+
+::: warning *here be dragons* :::
