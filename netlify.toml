@@ -3,7 +3,7 @@ command = "npm install --legacy-peer-deps && npm run build"
 publish = "public"
 
 [build.environment]
-NODE_VERSION = "10"
+NODE_VERSION = "16"
 
 [build.processing]
 skip_processing = true
