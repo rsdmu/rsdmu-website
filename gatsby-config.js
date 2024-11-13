@@ -3,7 +3,7 @@ module.exports = {
     title: "Rashid Mushkani Portfolio",
     description: "Portfolio of Rashid Ahmad Mushkani, specializing in urban planning, AI, and architecture.",
     author: "Rashid Ahmad Mushkani",
-    siteUrl: "https://rsdmu.com", 
+    siteUrl: "https://rsdmu.com",
   },
   plugins: [
     {
@@ -38,7 +38,7 @@ module.exports = {
         icon: `static/favicon.ico`,
       },
     },
-    `gatsby-plugin-netlify`, // for Netlify-specific optimizations
-    `gatsby-plugin-sitemap`, 
+    `gatsby-plugin-netlify`, // For Netlify-specific optimizations
+    `gatsby-plugin-sitemap`,
   ],
-}
+};
