@@ -4,10 +4,7 @@ publish = "public"
 
 [build.environment]
 NODE_VERSION = "16"
+NPM_FLAGS = "--legacy-peer-deps"
 
 [build.processing]
-  skip_processing = true
-
-# Install dependencies with legacy-peer-deps flag to resolve React conflict
-[build.lifecycle]
-  onInstall = "npm install --legacy-peer-deps"
+skip_processing = true
