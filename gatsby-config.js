@@ -35,7 +35,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#381696`,
         display: `standalone`,
-        icon: `static/favicon.ico`,
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-netlify`, // For Netlify-specific optimizations
