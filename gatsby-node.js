@@ -37,3 +37,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+// Define the custom schema for nested siteMetadata fields
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  createTypes(`
+    type SiteSiteMetadata {
+      title: String
+      siteUrl: String
+      description: String
+      home: SiteSiteMetadataHome
+    }
+
+    type SiteSiteMetadataHome {
+      title: String
+      description: String
+    }
+  `)
+}
