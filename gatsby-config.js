@@ -28,9 +28,7 @@ module.exports = {
               noInlineHighlight: false,
             },
           },
-          {
-            resolve: `gatsby-remark-emojis`,
-          },
+          `gatsby-remark-emojis`, // Enables emojis in markdown
         ],
       },
     },
@@ -53,8 +51,8 @@ module.exports = {
         icon: `static/favicon.ico`, // Ensure this path matches your favicon location
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify-cms`, // For CMS integration
     `gatsby-plugin-sitemap`, // Requires siteUrl in siteMetadata for sitemap generation
+    `gatsby-plugin-netlify`, // Recommended for Netlify deployment optimization
   ],
 }
