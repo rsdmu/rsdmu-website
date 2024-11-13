@@ -1,8 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
-import Helmet from 'react-helmet';
-import Layout from "../components/layout"
-import "../styles/global.scss" // Ensure global styles are imported
+import React from "react";
+import { Link, graphql } from "gatsby"; // Import graphql from gatsby
+import Helmet from "react-helmet";
+import Layout from "../components/layout";
+import "../styles/global.scss"; // Ensure global styles are imported
 
 const IndexPage = ({ data: { site } }) => (
   <Layout>
@@ -37,9 +37,9 @@ const IndexPage = ({ data: { site } }) => (
       </div>
     </div>
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
 
 export const pageQuery = graphql`
   query indexPageQuery {
@@ -50,4 +50,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

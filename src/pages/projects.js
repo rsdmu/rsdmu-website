@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link, graphql } from "gatsby"; 
 const ProjectsPage = () => (
   <div>
     <h1>Projects</h1>
