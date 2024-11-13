@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-sass": "^4.0.0",
     "gatsby-plugin-sitemap": "^5.0.0",
-    "gatsby-remark-emojis": "^0.5.0",
+    "gatsby-remark-emojis": "^0.4.2",
     "gatsby-remark-prismjs": "^5.0.0",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
@@ -25,17 +25,15 @@
   "devDependencies": {
     "prettier": "^2.7.1"
   },
-  
-"scripts": {
-  "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-  "develop": "gatsby develop",
-  "format": "prettier --write '**/*.{js,jsx,json,md}'",
-  "start": "npm run develop",
-  "serve": "gatsby serve",
-  "clean": "gatsby clean",
-  "install": "npm install --legacy-peer-deps"
-},
-
+  "scripts": {
+    "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.{js,jsx,json,md}'",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "install": "npm install --legacy-peer-deps"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rsdmu/rsdmu-website.git"
