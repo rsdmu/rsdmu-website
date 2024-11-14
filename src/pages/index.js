@@ -1,33 +1,27 @@
 // src/pages/index.js
 import React from 'react';
 import Layout from '../components/Layout';
-import Header from '../components/Header';
 import './index.scss';
 
 const IndexPage = () => (
-  <>
-    <Header />
-    <div className="overlay"></div>
+  <Layout>
     <main className="main-content">
-      <h1 className="name">YOUR NAME</h1>
+      <h1 className="name">Rashid Ahmad Mushkani</h1>
       <div className="affiliations">
-        <p>YOUR AFFILIATION 1</p>
-        <p>YOUR AFFILIATION 2</p>
-        <p>YOUR AFFILIATION 3</p>
+        <p>University of Montreal</p>
+        <p>Doctoral Candidate</p>
+        {/* Add more affiliations if needed */}
       </div>
       <div className="roles">
-        <p>YOUR ROLE 1</p>
-        <p>YOUR ROLE 2</p>
+        <p>Urban Planner</p>
+        <p>AI Specialist</p>
+        {/* Add more roles if needed */}
       </div>
     </main>
     <footer className="icon-bar">
       <a href="/books/">
         <img src="/icons/books.svg" alt="Books" />
         <span>Books</span>
-      </a>
-      <a href="/papers/">
-        <img src="/icons/papers.svg" alt="Papers" />
-        <span>Papers</span>
       </a>
       <a href="/projects/">
         <img src="/icons/projects.svg" alt="Projects" />
@@ -42,7 +36,7 @@ const IndexPage = () => (
         <span>Contact</span>
       </a>
     </footer>
-  </>
+  </Layout>
 );
 
 export default IndexPage;

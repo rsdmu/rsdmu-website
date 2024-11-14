@@ -1,12 +1,15 @@
-import React from "react"
-import { Link, graphql } from "gatsby"; 
+// src/pages/books.js
+import React from 'react';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const BooksPage = () => (
-  <div>
+  <Layout>
+    <SEO title="Books" />
     <h1>Books</h1>
     <p>Here are some publications and books by Rashid Ahmad Mushkani.</p>
     {/* Add book listings or descriptions here */}
-  </div>
-)
+  </Layout>
+);
 
-export default BooksPage
+export default BooksPage;
