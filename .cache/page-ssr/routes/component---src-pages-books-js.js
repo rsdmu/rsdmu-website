@@ -1,5 +1,5 @@
-exports.id = "component---src-pages-books-js";
-exports.ids = ["component---src-pages-books-js"];
+exports.id = "component---src-pages-papers-js";
+exports.ids = ["component---src-pages-papers-js"];
 exports.modules = {
 
 /***/ "./src/components/Layout.js":
@@ -86,8 +86,8 @@ var Navigation = function Navigation() {
   }, "Bio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/projects"
   }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "/books"
-  }, "Books"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "/papers"
+  }, "Papers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
     to: "/contact"
   }, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ThemeChanger__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 };
@@ -210,9 +210,9 @@ var ThemeChanger = function ThemeChanger() {
 
 /***/ }),
 
-/***/ "./src/pages/books.js?export=default":
+/***/ "./src/pages/papers.js?export=default":
 /*!*******************************************!*\
-  !*** ./src/pages/books.js?export=default ***!
+  !*** ./src/pages/papers.js?export=default ***!
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -225,16 +225,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
 /* harmony import */ var _components_SEO__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/SEO */ "./src/components/SEO.js");
-// src/pages/books.js
+// src/pages/papers.js
 
 
 
-var BooksPage = function BooksPage() {
+var PapersPage = function PapersPage() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_SEO__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: "Books"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Books"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Here are some publications and books by Rashid Ahmad Mushkani."));
+    title: "Papers"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Papers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Here are some publications and papers by Rashid Ahmad Mushkani."));
 };
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BooksPage);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PapersPage);
 
 /***/ }),
 
@@ -282,4 +282,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"data":{"site":{"siteMetadata":{"titl
 
 };
 ;
-//# sourceMappingURL=component---src-pages-books-js.js.map
+//# sourceMappingURL=component---src-pages-papers-js.js.map

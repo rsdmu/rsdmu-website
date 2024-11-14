@@ -378,8 +378,8 @@ exports.components = {
   "component---src-pages-bio-js": function componentSrcPagesBioJs() {
     return __webpack_require__.e(/*! import() | component---src-pages-bio-js */ "component---src-pages-bio-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/bio.js?export=default */ "./src/pages/bio.js?export=default"));
   },
-  "component---src-pages-books-js": function componentSrcPagesBooksJs() {
-    return __webpack_require__.e(/*! import() | component---src-pages-books-js */ "component---src-pages-books-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/books.js?export=default */ "./src/pages/books.js?export=default"));
+  "component---src-pages-papers-js": function componentSrcPagesPapersJs() {
+    return __webpack_require__.e(/*! import() | component---src-pages-papers-js */ "component---src-pages-papers-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/papers.js?export=default */ "./src/pages/papers.js?export=default"));
   },
   "component---src-pages-contact-js": function componentSrcPagesContactJs() {
     return __webpack_require__.e(/*! import() | component---src-pages-contact-js */ "component---src-pages-contact-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/contact.js?export=default */ "./src/pages/contact.js?export=default"));

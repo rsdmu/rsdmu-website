@@ -8,7 +8,7 @@ const Navigation = () => (
     <Link to="/">Home</Link>
     <Link to="/bio">Bio</Link>
     <Link to="/projects">Projects</Link>
-    <Link to="/books">Books</Link>
+    <Link to="/papers">Papers</Link>
     <Link to="/contact">Contact</Link>
     <ThemeChanger />
   </nav>

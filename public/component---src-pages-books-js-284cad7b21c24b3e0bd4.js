@@ -1,2 +1,2 @@
-"use strict";(self.webpackChunkrsdmu_website=self.webpackChunkrsdmu_website||[]).push([[155],{3193:function(e,t,n){n.r(t);var s=n(6540),l=n(8421),u=n(2471);t.default=function(){return s.createElement(l.A,null,s.createElement(u.A,{title:"Books"}),s.createElement("h1",null,"Books"),s.createElement("p",null,"Here are some publications and books by Rashid Ahmad Mushkani."))}}}]);
-//# sourceMappingURL=component---src-pages-books-js-284cad7b21c24b3e0bd4.js.map
+"use strict";(self.webpackChunkrsdmu_website=self.webpackChunkrsdmu_website||[]).push([[155],{3193:function(e,t,n){n.r(t);var s=n(6540),l=n(8421),u=n(2471);t.default=function(){return s.createElement(l.A,null,s.createElement(u.A,{title:"Papers"}),s.createElement("h1",null,"Papers"),s.createElement("p",null,"Here are some publications and papers by Rashid Ahmad Mushkani."))}}}]);
+//# sourceMappingURL=component---src-pages-papers-js-284cad7b21c24b3e0bd4.js.map
