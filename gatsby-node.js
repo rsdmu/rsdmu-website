@@ -39,7 +39,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `); // Added missing closing backtick and parenthesis here
+  `); // <-- Added closing backtick and parenthesis here
 
   if (result.errors) {
     reporter.panicOnBuild('Error while running GraphQL query.');
