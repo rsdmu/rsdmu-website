@@ -9,9 +9,9 @@ module.exports = {
     siteUrl: "https://rsdmu.com",
   },
 
-
-
   plugins: [
+    
+    `gatsby-plugin-netlify`,
     // Source content from the 'content' directory
     {
       resolve: `gatsby-source-filesystem`,
