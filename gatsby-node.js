@@ -3,6 +3,21 @@
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
 
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+  createTypes(`
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+    }
+    type Frontmatter {
+      title: String
+      date: Date @dateformat
+      path: String
+      thumbnail: File @fileByRelativePath
+    }
+  `);
+};
+
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   if (node.internal.type === 'MarkdownRemark') {
@@ -39,7 +54,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         }
       }
     }
-  `); // <-- Added closing backtick and parenthesis here
+  `);
 
   if (result.errors) {
     reporter.panicOnBuild('Error while running GraphQL query.');
