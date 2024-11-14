@@ -23,6 +23,7 @@
     "sass": "^1.63.6",
     "typeface-roboto": "^1.1.13",
     "gatsby-plugin-image": "^2.25.0",
+    "gatsby-remark-images": "^6.25.0",
     "gatsby-plugin-sharp": "^4.25.0",
     "gatsby-transformer-sharp": "^4.25.0"
   },
