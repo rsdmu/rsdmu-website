@@ -10,14 +10,14 @@ module.exports = {
   },
 
 
-  
+
   plugins: [
     // Source content from the 'content' directory
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
-        path: `${__dirname}/content`,
+        path: `${__dirname}/_data/blog`,
       },
     },
     // Source images from the 'assets' directory (now outside 'static/')
