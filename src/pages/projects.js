@@ -1,7 +1,7 @@
 // src/pages/projects.js
 import React from 'react';
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const ProjectsPage = () => (
   <Layout>
