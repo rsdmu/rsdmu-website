@@ -32,6 +32,7 @@ module.exports = {
       options: {
         trackingId: "G-X3HZGWVSDS",
         head: true,
+        anonymize: true, // Anonymize IPs
       },
     },
     // Manifest for PWA

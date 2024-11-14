@@ -1,6 +1,9 @@
+
 // gatsby-browser.js
 import "prismjs/themes/prism-okaidia.css";
 import "./src/styles/global.scss";
+import "typeface-roboto"; // Or any font you choose
+
 
 export const onInitialClientRender = () => {
   const isBrowser = typeof window !== 'undefined';

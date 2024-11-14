@@ -1,53 +1,48 @@
-import React from "react";
-import { Link, graphql } from "gatsby"; // Import graphql from gatsby
-import Helmet from "react-helmet";
-import Layout from "../components/layout";
-import "../styles/global.scss"; // Ensure global styles are imported
+// src/pages/index.js
+import React from 'react';
+import Layout from '../components/Layout';
+import Header from '../components/Header';
+import './index.scss';
 
-const IndexPage = ({ data: { site } }) => (
-  <Layout>
-    <Helmet>
-      <title>{site.siteMetadata.title}</title>
-      <meta name="description" content={site.siteMetadata.description} />
-    </Helmet>
-    <div className="background-image">
-      <div className="centered-content">
-        <h1 className="site-title">Rashid Ahmad Mushkani</h1>
-        <p className="subtitle">Specialist in urban planning, AI, and architecture</p>
-        <nav className="main-menu">
-          <Link to="/bio">Bio</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/books">Books</Link>
-          <Link to="/contact">Contact</Link>
-        </nav>
+const IndexPage = () => (
+  <>
+    <Header />
+    <div className="overlay"></div>
+    <main className="main-content">
+      <h1 className="name">YOUR NAME</h1>
+      <div className="affiliations">
+        <p>YOUR AFFILIATION 1</p>
+        <p>YOUR AFFILIATION 2</p>
+        <p>YOUR AFFILIATION 3</p>
       </div>
-      <div className="icon-links">
-        <Link to="/bio">
-          <img src="/icons/bio-icon.svg" alt="Bio Icon" />
-        </Link>
-        <Link to="/projects">
-          <img src="/icons/projects-icon.svg" alt="Projects Icon" />
-        </Link>
-        <Link to="/books">
-          <img src="/icons/books-icon.svg" alt="Books Icon" />
-        </Link>
-        <Link to="/contact">
-          <img src="/icons/contact-icon.svg" alt="Contact Icon" />
-        </Link>
+      <div className="roles">
+        <p>YOUR ROLE 1</p>
+        <p>YOUR ROLE 2</p>
       </div>
-    </div>
-  </Layout>
+    </main>
+    <footer className="icon-bar">
+      <a href="/books/">
+        <img src="/icons/books.svg" alt="Books" />
+        <span>Books</span>
+      </a>
+      <a href="/papers/">
+        <img src="/icons/papers.svg" alt="Papers" />
+        <span>Papers</span>
+      </a>
+      <a href="/projects/">
+        <img src="/icons/projects.svg" alt="Projects" />
+        <span>Projects</span>
+      </a>
+      <a href="/bio/">
+        <img src="/icons/bio.svg" alt="Bio" />
+        <span>Bio</span>
+      </a>
+      <a href="/contact/">
+        <img src="/icons/contact.svg" alt="Contact" />
+        <span>Contact</span>
+      </a>
+    </footer>
+  </>
 );
 
 export default IndexPage;
-
-export const pageQuery = graphql`
-  query indexPageQuery {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-  }
-`;

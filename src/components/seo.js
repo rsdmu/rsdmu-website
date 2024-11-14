@@ -18,3 +18,4 @@ const SEO = ({ title, description, metaTag }) => (
 )
 
 export default SEO
+
