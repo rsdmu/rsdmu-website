@@ -1,7 +1,7 @@
 // src/components/Navigation.js
 import React from "react"
 import { Link } from "gatsby"
-import ThemeChanger from "./ThemeChanger"
+import ThemeChanger from "./themeChanger"
 
 const Navigation = () => (
   <nav className="main-menu">

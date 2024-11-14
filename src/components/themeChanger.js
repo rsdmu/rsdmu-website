@@ -1,4 +1,4 @@
-// src/components/ThemeChanger.js
+// src/components/themeChanger.js
 import React, { useState, useEffect } from 'react';
 
 const ThemeChanger = () => {
