@@ -2,24 +2,23 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
-import SEO from "./seo" // Adjusted import path for consistency
+import SEO from "./seo"
 import 'prismjs/themes/prism-okaidia.css'
 import "../styles/global.scss"
 
-const MainLayout = ({ children }) => { // Renamed to avoid conflict
+const MainLayout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
           description
-          home
+          home // No { } here, as home is a string
         }
       }
     }
   `)
 
-  // Default to root if home is not defined in siteMetadata
   const homeLink = data.site.siteMetadata.home || "/"
 
   return (
@@ -46,4 +45,4 @@ const MainLayout = ({ children }) => { // Renamed to avoid conflict
   )
 }
 
-export default MainLayout // Adjusted export name
+export default MainLayout
