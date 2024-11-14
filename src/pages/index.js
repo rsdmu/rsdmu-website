@@ -1,10 +1,13 @@
 // src/pages/index.js
 import React from 'react';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 import './index.scss';
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <main className="main-content">
       <h1 className="name">Rashid Ahmad Mushkani</h1>
       <div className="affiliations">
@@ -19,22 +22,22 @@ const IndexPage = () => (
       </div>
     </main>
     <footer className="icon-bar">
-      <a href="/books/">
+      <Link to="/books/">
         <img src="/icons/books.svg" alt="Books" />
         <span>Books</span>
-      </a>
-      <a href="/projects/">
+      </Link>
+      <Link to="/projects/">
         <img src="/icons/projects.svg" alt="Projects" />
         <span>Projects</span>
-      </a>
-      <a href="/bio/">
+      </Link>
+      <Link to="/bio/">
         <img src="/icons/bio.svg" alt="Bio" />
         <span>Bio</span>
-      </a>
-      <a href="/contact/">
+      </Link>
+      <Link to="/contact/">
         <img src="/icons/contact.svg" alt="Contact" />
         <span>Contact</span>
-      </a>
+      </Link>
     </footer>
   </Layout>
 );

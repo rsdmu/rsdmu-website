@@ -1,55 +1,42 @@
-import React from "react";
-import { Helmet } from 'react-helmet';
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
+// src/templates/blogTemplate.js
 
-export default function Template({
-  data,
-}) {
-  const { site, markdownRemark } = data;
-  const { siteMetadata } = site;
-  const { frontmatter, html } = markdownRemark;
+import React from "react";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
+
+const BlogTemplate = ({ data }) => {
+  const post = data.markdownRemark;
+  const image = getImage(post.frontmatter.thumbnail);
 
   return (
     <Layout>
-      <Helmet>
-        <title>{frontmatter.title} | {siteMetadata.title}</title>
-        <meta name="description" content={frontmatter.metaDescription || siteMetadata.description} />
-      </Helmet>
-      <div className="blog-post-container">
-        <article className="post">
-          <div
-            className="post-thumbnail"
-            style={frontmatter.thumbnail ? { backgroundImage: `url(${frontmatter.thumbnail})` } : {}}
-          >
-            <h1 className="post-title">{frontmatter.title}</h1>
-            <div className="post-meta">{frontmatter.date}</div>
-          </div>
-          <div
-            className="blog-post-content"
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
-        </article>
-      </div>
+      <SEO title={post.frontmatter.title} />
+      <article>
+        <h1>{post.frontmatter.title}</h1>
+        {image && (
+          <GatsbyImage image={image} alt={post.frontmatter.title} />
+        )}
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </article>
     </Layout>
   );
-}
+};
 
-export const query = graphql`
-  query($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
+export default BlogTemplate;
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
-        metaDescription
-        thumbnail
+        thumbnail {
+          childImageSharp {
+            gatsbyImageData(width: 800)
+          }
+        }
       }
     }
   }

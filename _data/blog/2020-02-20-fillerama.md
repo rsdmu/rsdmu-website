@@ -2,9 +2,8 @@
 title: "My First Post"
 date: "2023-11-13"
 path: "/my-first-post"
-thumbnail: "/assets/image-5.jpg"
+thumbnail: "../../assets/image-5.jpg"
 ---
-
 
 # No, I'll fix it. I'm good at fixing rot. Call me the Rotmeister. No, I'm the Doctor. Don't call me the Rotmeister.
 

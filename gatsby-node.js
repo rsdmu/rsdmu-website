@@ -1,10 +1,12 @@
+// gatsby-node.js
+
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `_data` });
+    const slug = node.frontmatter.path || createFilePath({ node, getNode });
     createNodeField({
       node,
       name: `slug`,
@@ -19,26 +21,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
-            frontmatter {
-              title
-              date(formatString: "MMMM DD, YYYY")
-              thumbnail {
-                childImageSharp {
-                  gatsbyImageData(width: 600, placeholder: BLURRED)
-                }
-              }
-            }
             fields {
               slug
+            }
+            frontmatter {
+              title
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(width: 800)
+                }
+              }
             }
           }
         }
       }
     }
-  `); 
+  `);
 
   if (result.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);

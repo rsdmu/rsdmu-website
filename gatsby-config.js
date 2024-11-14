@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `assets`,
+        path: `${__dirname}/assets`,
       },
     },
     // Source filesystem for markdown files
@@ -43,6 +43,7 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
+              linkImagesToOriginal: false,
             },
           },
         ],
@@ -75,6 +76,8 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-netlify`, // For Netlify-specific optimizations
     `gatsby-plugin-sitemap`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`, // For offline support
   ],
 };
