@@ -1,5 +1,3 @@
-// gatsby-config.js
-
 module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
@@ -10,9 +8,6 @@ module.exports = {
   },
 
   plugins: [
-    // Netlify plugin
-    "gatsby-plugin-netlify",
-    
     // Source content from the '_data/blog' directory
     {
       resolve: "gatsby-source-filesystem",
@@ -56,7 +51,7 @@ module.exports = {
 
     // Other plugins
     "gatsby-plugin-sass",
-    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-react-helmet", // You may remove this and use built-in Gatsby Head API
     "gatsby-plugin-sitemap",
 
     // Manifest for PWA support
@@ -72,8 +67,16 @@ module.exports = {
         icon: "src/images/icon.png", // Ensure icon path matches your file structure
       },
     },
-    
+
     // Offline plugin
     "gatsby-plugin-offline",
+
+    // Netlify adapter
+    {
+      resolve: "gatsby-adapter-netlify",
+      options: {
+        // Configure options if needed
+      },
+    },
   ],
 };
