@@ -1,4 +1,4 @@
-const siteMetadata = require('./site-meta-data.json');
+// gatsby-config.js
 
 module.exports = {
   siteMetadata: {
@@ -7,38 +7,30 @@ module.exports = {
       "Portfolio of Rashid Ahmad Mushkani, specializing in urban planning, AI, and architecture.",
     author: "Rashid Ahmad Mushkani",
     siteUrl: "https://rsdmu.com",
-    googleVerification: "google39150de1d9b66663",
-
   },
-
   plugins: [
-    // Image processing plugins
-    `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    // Source filesystem for images
+    // Source content from the 'content' directory
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/content`,
+      },
+    },
+    // Source images from the 'assets' directory (now outside 'static/')
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/static/assets`,
+        path: `${__dirname}/static/assets`, // Adjusted path
       },
     },
-    // Source filesystem for markdown files
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/_data`,
-      },
-    },
-    // Transformer for markdown files
+    // Transformer for Markdown files
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
-          `gatsby-remark-prismjs`,
-          `gatsby-remark-emojis`,
+          // Add support for processing images in Markdown
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -46,39 +38,30 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
+          // Other remark plugins
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-emojis`,
         ],
       },
     },
-    // Google Analytics
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: "G-X3HZGWVSDS",
-        head: true,
-        anonymize: true, // Anonymize IPs
-      },
-    },
-    // Manifest for PWA
+    // Plugins for image processing
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    // Other plugins
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Rashid Mushkani Portfolio`,
-        short_name: `Portfolio`,
+        short_name: `RashidMushkani`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#381696`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // Ensure this path is correct
-      },
+        icon: `src/images/icon.png`,
     },
-    // Other plugins
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-netlify`, // For Netlify-specific optimizations
-    `gatsby-plugin-sitemap`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`, // For offline support
+    `gatsby-plugin-offline`,
   ],
 };
-

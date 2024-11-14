@@ -1,4 +1,4 @@
-// src/components/Navigation.js
+// src/components/navigation.js
 import React from "react"
 import { Link } from "gatsby"
 import ThemeChanger from "./ThemeChanger"

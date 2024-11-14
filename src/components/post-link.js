@@ -1,4 +1,4 @@
-// src/components/PostLink.js
+// src/components/postlink.js
 
 import React from "react";
 import { Link } from "gatsby";
@@ -30,3 +30,5 @@ const PostLink = ({ post }) => {
 };
 
 export default PostLink;
+
+

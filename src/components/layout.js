@@ -1,7 +1,7 @@
 // src/components/Layout.js
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import Navigation from "./Navigation"
+import Navigation from "./navigation"
 import SEO from "./SEO"
 import 'prismjs/themes/prism-okaidia.css'
 import "../styles/global.scss"

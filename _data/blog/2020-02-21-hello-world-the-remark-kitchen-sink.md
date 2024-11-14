@@ -2,7 +2,7 @@
 title: "The Role of Land Use and Vitality in Fostering Gender Equality in Urban Public Parks: The Case of Kabul City, Afghanistan"
 date: "2023-11-13"
 path: "/genderedspaces"
-thumbnail: "/static/assets/img_40siton.jpeg"
+thumbnail: "static/assets/img_40siton.jpeg"
 ---
 
 *Photograph of a public space in Kabul, taken in 2020.*
