@@ -33,6 +33,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
           // Add support for processing images in Markdown
           {
             resolve: `gatsby-remark-images`,

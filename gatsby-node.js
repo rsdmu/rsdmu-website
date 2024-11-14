@@ -21,12 +21,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      allMarkdownRemark {
         edges {
           node {
-            fields {
-              slug
-            }
             frontmatter {
               title
               thumbnail {
@@ -35,12 +32,14 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 }
               }
             }
+            fields {
+              slug
+            }
           }
         }
       }
     }
-  `);
-
+      
   if (result.errors) {
     reporter.panicOnBuild('Error while running GraphQL query.');
     return;

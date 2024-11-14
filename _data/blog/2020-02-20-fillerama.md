@@ -1,7 +1,7 @@
 ---
 title: "My First Post"
 date: "2023-11-13"
-path: "/my-first-post"
+path: "2020-02-20-fillerama"
 thumbnail: "static/assets/image-3.jpg"
 ---
 
