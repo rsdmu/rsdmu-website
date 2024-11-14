@@ -1,5 +1,4 @@
-
-    // gatsby-config.js
+// gatsby-config.js
 
 module.exports = {
   siteMetadata: {
@@ -14,21 +13,21 @@ module.exports = {
     // Netlify plugin
     "gatsby-plugin-netlify",
     
-    // Source content from the 'data' directory
+    // Source content from the '_data/blog' directory
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "content",
-        path: `${__dirname}/_data/blog`,
+        path: `${__dirname}/_data/blog`, // Ensure the exact folder name here
       },
     },
 
-    // Source images from the 'static/assets' directory
+    // Source images from the 'static/admin/assets' directory
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "assets",
-        path: `${__dirname}/static/assets`,
+        path: `${__dirname}/static/admin/assets`,
       },
     },
 
@@ -70,7 +69,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#381696",
         display: "standalone",
-        icon: "src/images/icon.png",
+        icon: "src/images/icon.png", // Ensure icon path matches your file structure
       },
     },
     
