@@ -1,8 +1,7 @@
 // src/pages/bio.js
 import React from 'react';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
-
+import Layout from 'src/components/layout'
+import SEO from 'src/components/seo'
 const BioPage = () => (
   <Layout>
     <SEO title="About Rashid Mushkani" />

@@ -2,7 +2,8 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
-import SEO from "./SEO"
+import Layout from 'src/components/layout'
+import SEO from 'src/components/seo'
 import 'prismjs/themes/prism-okaidia.css'
 import "../styles/global.scss"
 

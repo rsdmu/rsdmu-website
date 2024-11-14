@@ -1,8 +1,8 @@
 // src/pages/contact.js
 import React from 'react';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Layout from 'src/components/layout'
+import SEO from 'src/components/seo'
 
 const ContactPage = ({ data }) => {
   const { site } = data;
