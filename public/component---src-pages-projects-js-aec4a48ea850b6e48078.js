@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkrsdmu_website=self.webpackChunkrsdmu_website||[]).push([[429],{3049:function(e,t,n){n.r(t);var r=n(6540),l=n(8421),u=n(2471);t.default=function(){return r.createElement(l.A,null,r.createElement(u.A,{title:"Projects"}),r.createElement("h1",null,"Projects"),r.createElement("p",null,"Explore the various projects in urban planning, AI, and architecture led by Rashid Ahmad Mushkani."))}}}]);
+//# sourceMappingURL=component---src-pages-projects-js-aec4a48ea850b6e48078.js.map

@@ -1,8 +1,5 @@
 // src/components/ThemeChanger.js
 import React, { useState, useEffect } from 'react';
-// Correct import statement
-import ThemeChanger from './ThemeChanger';
-
 
 const ThemeChanger = () => {
   const [theme, setTheme] = useState('light');
