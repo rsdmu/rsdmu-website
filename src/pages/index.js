@@ -1,8 +1,8 @@
 // src/pages/index.js
 import React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 import './index.scss';
 
