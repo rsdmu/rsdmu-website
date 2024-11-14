@@ -8,6 +8,9 @@ module.exports = {
     author: "Rashid Ahmad Mushkani",
     siteUrl: "https://rsdmu.com",
   },
+
+
+  
   plugins: [
     // Source content from the 'content' directory
     {
@@ -61,7 +64,8 @@ module.exports = {
         theme_color: `#381696`,
         display: `standalone`,
         icon: `src/images/icon.png`,
+      },
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline', // Use single or double quotes here
   ],
 };
