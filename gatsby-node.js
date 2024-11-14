@@ -1,57 +1,57 @@
-const path = require(`path`)
+const path = require(`path`);
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode, basePath: `_data` });
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    });
+  }
+};
 
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
+  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`);
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        limit: 1000
-      ) {
+      allMarkdownRemark {
         edges {
           node {
-            id
             frontmatter {
-              path
+              title
+              date(formatString: "MMMM DD, YYYY")
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(width: 600, placeholder: BLURRED)
+                }
+              }
+            }
+            fields {
+              slug
             }
           }
         }
       }
     }
-  `)
+  `); 
 
-  // Handle errors
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.frontmatter.path,
+      path: node.fields.slug,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
-    })
-  })
-}
-
-// Define the custom schema for nested siteMetadata fields
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
-  createTypes(`
-    type SiteSiteMetadata {
-      title: String
-      siteUrl: String
-      description: String
-      home: SiteSiteMetadataHome
-    }
-
-    type SiteSiteMetadataHome {
-      title: String
-      description: String
-    }
-  `)
-}
+      context: {
+        slug: node.fields.slug,
+      },
+    });
+  });
+};

@@ -4,8 +4,3 @@
 
 [build.environment]
   NODE_VERSION = "18"
-
-[[redirects]]
-  from = "/old-url"
-  to = "/new-url"
-  status = 301

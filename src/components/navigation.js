@@ -1,11 +1,17 @@
+// src/components/Navigation.js
 import React from "react"
-import {Link} from "gatsby"
-import ThemeChanger from "../components/themeChanger"
+import { Link } from "gatsby"
+import ThemeChanger from "./ThemeChanger"
 
-export default (props) => (
-  <nav className="navigation"> 
+const Navigation = () => (
+  <nav className="main-menu">
+    <Link to="/">Home</Link>
+    <Link to="/bio">Bio</Link>
+    <Link to="/projects">Projects</Link>
+    <Link to="/books">Books</Link>
     <Link to="/contact">Contact</Link>
-    <ThemeChanger/>
+    <ThemeChanger />
   </nav>
-  
 )
+
+export default Navigation
