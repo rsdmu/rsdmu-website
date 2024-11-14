@@ -7,7 +7,6 @@ module.exports = {
     author: "Rashid Ahmad Mushkani",
     siteUrl: "https://rsdmu.com",
     googleVerification: "google39150de1d9b66663",
-    home: "/" // Defines the homepage path
   },
 
   plugins: [
