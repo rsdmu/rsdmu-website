@@ -1,12 +1,12 @@
-// src/components/Layout.js
+// src/components/layout.js
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Navigation from "./navigation"
 import SEO from "./seo"
 import 'prismjs/themes/prism-okaidia.css'
 import "../styles/global.scss"
 
-const MainLayout = ({ children }) => {
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -42,4 +42,4 @@ const MainLayout = ({ children }) => {
   )
 }
 
-export default MainLayout
+export default Layout
