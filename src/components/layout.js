@@ -13,13 +13,10 @@ const MainLayout = ({ children }) => {
         siteMetadata {
           title
           description
-          home // No { } here, as home is a string
         }
       }
     }
   `)
-
-  const homeLink = data.site.siteMetadata.home || "/"
 
   return (
     <div className="site-wrapper">
@@ -31,7 +28,7 @@ const MainLayout = ({ children }) => {
         <div className="background-image">
           <div className="centered-content">
             <h1 className="site-title">
-              <Link to={homeLink}>{data.site.siteMetadata.title}</Link>
+              <Link to="/">{data.site.siteMetadata.title}</Link>
             </h1>
             <Navigation />
           </div>
