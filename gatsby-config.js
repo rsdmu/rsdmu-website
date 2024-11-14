@@ -6,7 +6,8 @@ module.exports = {
     description: "Portfolio of Rashid Ahmad Mushkani, specializing in urban planning, AI, and architecture.",
     author: "Rashid Ahmad Mushkani",
     siteUrl: "https://rsdmu.com",
-    googleVerification: "google39150de1d9b66663"
+    googleVerification: "google39150de1d9b66663",
+    home: "/" // Defines the homepage path
   },
 
   plugins: [

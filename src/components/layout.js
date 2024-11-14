@@ -2,22 +2,25 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Navigation from "./navigation"
-import Layout from 'src/components/layout'
-import SEO from 'src/components/seo'
+import SEO from "./seo" // Adjusted import path for consistency
 import 'prismjs/themes/prism-okaidia.css'
 import "../styles/global.scss"
 
-const Layout = ({ children }) => {
+const MainLayout = ({ children }) => { // Renamed to avoid conflict
   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
           title
           description
+          home
         }
       }
     }
   `)
+
+  // Default to root if home is not defined in siteMetadata
+  const homeLink = data.site.siteMetadata.home || "/"
 
   return (
     <div className="site-wrapper">
@@ -29,7 +32,7 @@ const Layout = ({ children }) => {
         <div className="background-image">
           <div className="centered-content">
             <h1 className="site-title">
-              <Link to="/">{data.site.siteMetadata.title}</Link>
+              <Link to={homeLink}>{data.site.siteMetadata.title}</Link>
             </h1>
             <Navigation />
           </div>
@@ -43,4 +46,4 @@ const Layout = ({ children }) => {
   )
 }
 
-export default Layout
+export default MainLayout // Adjusted export name
