@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `assets`,
-        path: `${__dirname}/assets`,
+        path: `${__dirname}/static/assets`,
       },
     },
     // Source filesystem for markdown files
