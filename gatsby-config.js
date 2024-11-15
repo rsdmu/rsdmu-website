@@ -1,3 +1,4 @@
+// gatsby-config.js
 module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
@@ -8,21 +9,21 @@ module.exports = {
   },
 
   plugins: [
-    // Source content from the '_data/blog' directory
+    // Source content from the 'content/blog' directory
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "content",
-        path: `${__dirname}/_data/blog`, // Ensure the exact folder name here
+        name: "blog",
+        path: `${__dirname}/_data/blog`,
       },
     },
 
-    // Source images from the 'static/admin/assets' directory
+    // Source images from the 'src/images' directory for better processing
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
-        path: `${__dirname}/static/assets`,
+        name: "images",
+        path: `${__dirname}/src/images`,
       },
     },
 
@@ -37,6 +38,8 @@ module.exports = {
             options: {
               maxWidth: 800,
               linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 80,
             },
           },
           "gatsby-remark-prismjs",
@@ -48,10 +51,10 @@ module.exports = {
     // Image processing plugins
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
 
     // Other plugins
     "gatsby-plugin-sass",
-    "gatsby-plugin-react-helmet", // You may remove this and use built-in Gatsby Head API
     "gatsby-plugin-sitemap",
 
     // Manifest for PWA support
@@ -64,14 +67,14 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#381696",
         display: "standalone",
-        icon: "src/images/icon.png", // Ensure icon path matches your file structure
+        icon: "src/images/icon.png",
       },
     },
 
     // Offline plugin
     "gatsby-plugin-offline",
 
-    // Netlify adapter
+    // Netlify adapter (ensure it's necessary)
     {
       resolve: "gatsby-adapter-netlify",
       options: {

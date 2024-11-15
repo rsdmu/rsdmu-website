@@ -1,0 +1,35 @@
+/* src/components/themeChanger.scss */
+
+.theme-changer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: lighten(var(--primary-color), 10%);
+  }
+
+  /* Adjust color based on the theme */
+  body.light & {
+    background-color: #333; /* Darker color in light mode */
+    color: #ffffff;
+  }
+
+  body.dark & {
+    background-color: #ffffff; /* Lighter color in dark mode */
+    color: #333333;
+  }
+}

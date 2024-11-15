@@ -1,48 +1,163 @@
 // src/pages/index.js
-import React from 'react';
-import { Link } from 'gatsby';
+import React, { useState } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import './index.scss'; // Ensure this imports your global styles or is removed if global.scss is already imported in layout.js
+import IconLink from '../components/IconLink';
 
-import './index.scss';
+const IndexPage = () => {
+  const [formStatus, setFormStatus] = useState({
+    submitted: false,
+    submitting: false,
+    info: { error: false, msg: null }
+  });
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <main className="main-content">
-      <div className="intro-container">
-        <h1 className="name">Rashid Mushkani</h1>
-        <div className="affiliations">
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormStatus({ submitted: false, submitting: true, info: { error: false, msg: null } });
+
+    const formData = new FormData(e.target);
+    const formObject = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch('https://formspree.io/f/your-form-id', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(formObject)
+      });
+
+      if (response.ok) {
+        setFormStatus({ submitted: true, submitting: false, info: { error: false, msg: 'Thank you! Your message has been sent.' } });
+        e.target.reset(); // Reset form fields
+      } else {
+        const data = await response.json();
+        if (Object.hasOwnProperty.call(data, 'errors')) {
+          setFormStatus({ submitted: false, submitting: false, info: { error: true, msg: data.errors.map(error => error.message).join(', ') } });
+        } else {
+          setFormStatus({ submitted: false, submitting: false, info: { error: true, msg: 'Oops! There was a problem submitting your form.' } });
+        }
+      }
+    } catch (error) {
+      setFormStatus({ submitted: false, submitting: false, info: { error: true, msg: 'Oops! There was a problem submitting your form.' } });
+    }
+  };
+
+  return (
+    <Layout>
+      <div className="background-image-wrapper">
+        <div className="background-image"></div>
+        <div className="centered-content">
+          <h1 className="site-title">RASHID MUSHKANI</h1>
+          <p>AI & Urban Studies PhD Candidate</p>
           <p>University of Montreal</p>
-          <p>Doctoral Candidate</p>
-          {/* Add more affiliations if needed */}
-        </div>
-        <div className="roles">
-          <p>Urban Planner</p>
-          <p>AI Specialist</p>
-          {/* Add more roles if needed */}
         </div>
       </div>
-    </main>
-    <footer className="icon-bar">
-      <Link to="/papers/" className="icon-link">
-        <img src="/icons/papers.svg" alt="Papers" />
-        <span>Papers</span>
-      </Link>
-      <Link to="/projects/" className="icon-link">
-        <img src="/icons/projects.svg" alt="Projects" />
-        <span>Projects</span>
-      </Link>
-      <Link to="/bio/" className="icon-link">
-        <img src="/icons/bio.svg" alt="Bio" />
-        <span>Bio</span>
-      </Link>
-      <Link to="/contact/" className="icon-link">
-        <img src="/icons/contact.svg" alt="Contact" />
-        <span>Contact</span>
-      </Link>
-    </footer>
-  </Layout>
-);
+
+      {/* Icon Navigation Bar */}
+      <footer className="icon-bar">
+        <IconLink to="#papers" src="/icons/papers.svg" alt="Papers" label="Papers" />
+        <IconLink to="#projects" src="/icons/projects.svg" alt="Projects" label="Projects" />
+        <IconLink to="#bio" src="/icons/bio.svg" alt="Bio" label="Bio" />
+        <IconLink to="#contact" src="/icons/contact.svg" alt="Contact" label="Contact" />
+      </footer>
+
+      {/* Content Sections */}
+      <section id="papers" className="content-section">
+        <h2>Papers</h2>
+        <p>Here are some publications and papers by Rashid Ahmad Mushkani.</p>
+        {/* Add your papers with thumbnails and links here */}
+      </section>
+
+      <section id="projects" className="content-section">
+        <h2>Projects</h2>
+        <p>
+          Explore the various projects in urban planning, AI, and architecture led by Rashid Ahmad Mushkani.
+        </p>
+        {/* Add your projects with thumbnails and links here */}
+      </section>
+
+      <section id="bio" className="content-section">
+        <h2>Bio</h2>
+        <p>
+          Rashid Ahmad Mushkani is a specialist in urban planning, AI, and architecture, focusing on their intersection. He is a doctoral candidate at the University of Montreal.
+        </p>
+        {/* Add more biography details as needed */}
+      </section>
+
+      <section id="contact" className="content-section contact-section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me through the form below or connect with me on social media!</p>
+        
+        <div className="contact-container">
+          {/* Social Links */}
+          <div className="social-links">
+            <ul>
+              <li>
+                <a href="https://www.linkedin.com/in/rashid-mushkani" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <img src="/icons/linkedin.svg" alt="LinkedIn" />
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/rashid_mushkani" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <img src="/icons/instagram.svg" alt="Instagram" />
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rsdmu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <img src="/icons/github.svg" alt="GitHub" />
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="mailto:rashid.mushkani@gmail.com" aria-label="Email">
+                  <img src="/icons/email.svg" alt="Email" />
+                  Email
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Form */}
+          <form action="https://formspree.io/f/xkndbero" method="POST" className="contact-form" onSubmit={handleSubmit}>
+            {/* Feedback Messages */}
+            {formStatus.submitted && !formStatus.info.error && (
+              <div className="form-feedback success">
+                {formStatus.info.msg}
+              </div>
+            )}
+            {formStatus.info.error && (
+              <div className="form-feedback error">
+                {formStatus.info.msg}
+              </div>
+            )}
+
+            <div className="form-group">
+              <label htmlFor="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">Message</label>
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" disabled={formStatus.submitting}>
+              {formStatus.submitting ? 'Sending...' : 'Send'}
+            </button>
+          </form>
+        </div>
+      </section>
+    </Layout>
+  );
+};
 
 export default IndexPage;

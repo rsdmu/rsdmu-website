@@ -1,0 +1,30 @@
+/* src/components/ScrollSpyNav.scss */
+
+.scrollspy-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+  
+    li {
+      margin: 0 1rem;
+  
+      a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: 500;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: var(--primary-color);
+        }
+      }
+  
+      /* Active Link Styling */
+      &.is-current a {
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--primary-color);
+      }
+    }
+  }
+  

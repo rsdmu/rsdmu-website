@@ -1,54 +1,151 @@
-/* global.scss */
+/* src/styles/global.scss */
 
-/* System Font */
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+/* ---------------------------------------------------
+   1. Reset and Base Styles
+--------------------------------------------------- */
 
-/* Base Styling */
-html,
-body {
+/* Reset default browser styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: $font-family;
 }
 
-* {
-  box-sizing: border-box;
+/* Set base font and background colors using CSS variables */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Light Mode */
+/* ---------------------------------------------------
+   2. Theme Variables
+--------------------------------------------------- */
+
+/* Light Mode Variables */
 body.light {
   --primary-color: #381696;
   --background-color: #ffffff;
-  --text-color: #333333;
+  --text-color: #000000;
+  --icon-filter: none; /* No filter for light mode */
+  --strip-background-color: rgba(255, 255, 255, 0.5);
+  --header-background-color: rgba(255, 255, 255, 0.9);
 }
 
-/* Dark Mode */
+/* Dark Mode Variables */
 body.dark {
   --primary-color: #9984d5;
   --background-color: #0A041A;
-  --text-color: rgba(255, 255, 255, 0.88);
+  --text-color: #ffffff;
+  --icon-filter: invert(1); /* Invert icons for dark mode */
+  --strip-background-color: rgba(0, 0, 0, 0.3);
+  --header-background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Apply Variables */
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+/* ---------------------------------------------------
+   3. Smooth Scrolling
+--------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust based on header height */
 }
 
-/* Centered Content with Background Image */
-.background-image {
-  background-image: url('../../static/assets/background.jpg'); /* Corrected path */  
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+/* ---------------------------------------------------
+   4. Background Image Wrapper
+--------------------------------------------------- */
+
+.background-image-wrapper {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
 
-  /* Overlay for readability */
+.background-image-wrapper .background-image {
+  background-image: url('/assets/background.webp'); /* Use optimized format */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+.background-image-wrapper .centered-content {
+  position: relative;
+  z-index: 2;
+  color: var(--text-color);
+  text-align: center;
+  padding: 40px 20px;
+  max-width: 700px;
+}
+
+.site-title {
+  font-size: 4rem; /* Increase title size */
+  font-weight: bold;
+  color: var(--text-color); /* Use theme color */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+}
+
+/* ---------------------------------------------------
+   5. Header Styles
+--------------------------------------------------- */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Adjust as needed */
+  background: var(--header-background-color); /* Use CSS Variable */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.site-nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.site-nav a:hover {
+  color: var(--primary-color);
+}
+
+/* ---------------------------------------------------
+   6. Icon Navigation Bar
+--------------------------------------------------- */
+
+.icon-bar {
+  display: flex;
+  justify-content: center;
+  gap: 5rem; /* Increased gap for wider spacing */
+  padding: 2rem 0;
+  position: fixed; /* Fixed to stay visible */
+  bottom: 0; /* Align to the bottom */
+  width: 100%;
+  z-index: 10;
+
+  /* Blurry strip background */
   &::before {
     content: '';
     position: absolute;
@@ -56,99 +153,368 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+    background-color: var(--strip-background-color); /* Theme-based background color */
+    backdrop-filter: blur(8px); /* Apply blur for a soft effect */
+    z-index: -1; /* Place behind the icons */
+    border-radius: 8px;
   }
 
-  .centered-content {
+  /* Ensure content is above the blurry background */
+  > * {
     position: relative;
-    text-align: center;
-    padding: 40px 20px;
-    max-width: 700px;
-    border-radius: 10px;
-
-    .site-title {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-      color: var(--text-color);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .subtitle {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: var(--text-color);
-      margin-bottom: 30px;
-    }
-
-    .main-menu {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
-      margin-top: 20px;
-
-      a {
-        color: var(--text-color);
-        text-decoration: none;
-        font-size: 1.1rem;
-        font-weight: 500;
-        transition: color 0.3s;
-
-        &:hover {
-          color: var(--primary-color);
-        }
-      }
-    }
   }
 }
 
-/* Icon Links (Bottom Navigation) */
-.icon-links {
+.icon-link {
   display: flex;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 
-  a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
+  &:hover img {
+    transform: scale(1.2);
+    filter: var(--icon-filter) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.6));
+  }
 
-    img {
-      width: 100%;
-      height: auto;
-      /* Adjust icon color based on theme */
-      filter: invert(100%);
-      transition: filter 0.3s;
-    }
+  img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.8rem;
+    filter: var(--icon-filter); /* Ensure icons obey theme */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
 
-    &:hover img {
-      filter: invert(80%);
-    }
+  span {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
   }
 }
 
-/* Footer */
-.site-footer {
+/* ---------------------------------------------------
+   7. Content Sections
+--------------------------------------------------- */
+
+.content-section {
+  min-height: 100vh;
+  padding: 5rem 2rem;
   text-align: center;
-  padding: 20px;
   background-color: var(--background-color);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Responsive Adjustments */
-@media only screen and (max-width: 768px) {
-  .centered-content .site-title {
-    font-size: 2.5rem;
+.content-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+}
+
+/* ---------------------------------------------------
+   8. Contact Section Enhancements
+--------------------------------------------------- */
+
+.contact-section {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding-top: 6rem; /* Increased padding to move the section lower */
+  padding-bottom: 4rem; /* Add padding to the bottom */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-section h2 {
+  margin-bottom: 1.5rem; /* Increased space below the heading */
+}
+
+.contact-section p {
+  margin-bottom: 3rem; /* Increased space below the introductory paragraph */
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05); /* Slight background for contrast */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto; /* Center horizontally */
+  gap: 2rem; /* Space between social links and form */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Social Links */
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* Space between social links */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-links:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.social-links ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Space between each link */
+  padding: 0;
+}
+
+.social-links li {
+  display: flex;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.social-links a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  filter: var(--icon-filter); /* Ensure icons obey theme */
+  transition: transform 0.3s ease;
+}
+
+/* Contact Form */
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  align-self: flex-start;
+  margin: 0.5rem 0 0.2rem 0;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(56, 25, 150, 0.3);
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2b0e80; /* Specific color instead of using darken() */
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------
+   9. Footer Styling
+--------------------------------------------------- */
+
+.site-footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ---------------------------------------------------
+   10. Responsive Design
+--------------------------------------------------- */
+
+@media (max-width: 992px) {
+  .contact-container {
+    max-width: 90%;
+    padding: 1.5rem;
   }
 
-  .main-menu {
-    flex-direction: column;
-    gap: 10px;
+  .social-links {
+    gap: 1.5rem;
   }
 
-  .icon-links {
-    gap: 20px;
+  .social-links a {
+    font-size: 1rem;
   }
+
+  .contact-form input,
+  .contact-form textarea {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-bar {
+    gap: 2rem; /* Reduced gap for smaller screens */
+  }
+
+  .icon-link img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon-link span {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .contact-form,
+  .social-links {
+    max-width: none;
+    width: 100%;
+  }
+
+  .site-title {
+    font-size: 3rem;
+  }
+
+  .content-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* ---------------------------------------------------
+   11. Accessibility Enhancements
+--------------------------------------------------- */
+
+/* Focus States for Form Inputs and Textareas */
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px rgba(56, 25, 150, 0.3); /* Example focus shadow */
+  outline: none;
+}
+
+/* Ensure focus outlines are visible */
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 4px;
+}
+
+/* ---------------------------------------------------
+   12. Additional Transitions and Animations
+--------------------------------------------------- */
+
+/* Smooth transitions for hover effects */
+.social-links a,
+.contact-form button {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Smooth transition for theme changes on various elements */
+.site-header,
+.icon-bar,
+.site-nav a,
+.icon-link span,
+.contact-section,
+.contact-container,
+.social-links,
+.contact-form,
+.site-footer {
+  transition: background-color 0.3s ease, color 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effects for social links and contact form */
+.social-links a:hover,
+.contact-form button:hover {
+  color: var(--primary-color);
+  transform: translateX(5px);
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------------------------------------------------
+    16. Form Feedback Styling
+--------------------------------------------------- */
+
+.form-feedback {
+  width: 100%;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-feedback.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.form-feedback.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }

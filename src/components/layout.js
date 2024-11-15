@@ -1,10 +1,9 @@
-// src/components/Layout.js
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Navigation from "./navigation"
-import SEO from "./seo"
-import 'prismjs/themes/prism-okaidia.css'
-import "../styles/global.scss"
+// src/components/layout.js
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import SEO from "./seo";
+import ScrollSpyNav from "./ScrollSpyNav";
+import "../styles/global.scss";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -16,7 +15,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div className="site-wrapper">
@@ -24,22 +23,15 @@ const Layout = ({ children }) => {
         title={data.site.siteMetadata.title}
         description={data.site.siteMetadata.description}
       />
-      <header className="site-header">
-        <div className="background-image">
-          <div className="centered-content">
-            <h1 className="site-title">
-              <Link to="/">{data.site.siteMetadata.title}</Link>
-            </h1>
-            <Navigation />
-          </div>
-        </div>
-      </header>
+      <ScrollSpyNav />
+
       <main>{children}</main>
+
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} Rashid A. Mushkani</p>
+        <p>&copy; {new Date().getFullYear()} Rashid Mushkani. All rights reserved.</p>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
