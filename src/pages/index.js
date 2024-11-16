@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import './index.scss'; // Ensure this imports your global styles or is removed if global.scss is already imported in layout.js
 import IconLink from '../components/IconLink';
+import BioSection from "../components/BioSection"
 
 const IndexPage = () => {
   const [formStatus, setFormStatus] = useState({
@@ -20,7 +21,7 @@ const IndexPage = () => {
     const formObject = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('https://formspree.io/f/your-form-id', {
+      const response = await fetch('https://formspree.io/f/xkndbero', { // Ensure this is your correct Formspree ID
         method: 'POST',
         headers: {
           'Accept': 'application/json'
@@ -78,13 +79,8 @@ const IndexPage = () => {
         {/* Add your projects with thumbnails and links here */}
       </section>
 
-      <section id="bio" className="content-section">
-        <h2>Bio</h2>
-        <p>
-          Rashid Ahmad Mushkani is a specialist in urban planning, AI, and architecture, focusing on their intersection. He is a doctoral candidate at the University of Montreal.
-        </p>
-        {/* Add more biography details as needed */}
-      </section>
+      {/* Replace the existing bio section with BioSection component */}
+      <BioSection />
 
       <section id="contact" className="content-section contact-section">
         <h2>Contact</h2>

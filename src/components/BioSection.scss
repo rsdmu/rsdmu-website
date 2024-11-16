@@ -1,0 +1,169 @@
+/* src/components/BioSection.scss */
+
+.bio-section {
+    /* Define darkened primary color if not defined globally */
+    --primary-color-dark: #2f0c7e;  /* Uncomment if defined locally */
+  
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    h2 {
+      text-align: center;
+      margin-bottom: 3rem; /* Increased space below the title */
+      color: var(--primary-color); /* Consistent with other section titles */
+      font-size: 3rem;
+    }
+  
+    .bio-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; /* Stack image and text vertically */
+      align-items: center;
+      gap: 2rem; /* Space between image and text */
+    }
+  
+    /* Bio Photo */
+    .bio-photo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .profile-image {
+        width: 800px; /* Adjusted for a larger image */
+        height: 600px; /* Adjusted height for aspect ratio */
+        object-fit: cover; /* Ensures the image covers the container without distortion */
+        border-radius: 1px; /* Slightly rounded corners */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  
+    /* Bio Text */
+    .bio-text {
+      width: 100%;
+      max-width: 800px; /* Limit the width for better readability */
+      text-align: left; /* Align text to the left */
+  
+      /* Overview Section */
+      .bio-overview p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+  
+      /* Subsections */
+      .bio-timeline,
+      .bio-education,
+      .bio-awards {
+        margin-bottom: 2rem;
+  
+        h3 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+          color: var(--primary-color);
+        }
+  
+        .bio-list {
+          list-style-type: disc;
+          padding-left: 1.5rem;
+  
+          li {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+  
+            a {
+              color: var(--primary-color);
+              text-decoration: none;
+              transition: color 0.3s ease, text-decoration 0.3s ease;
+  
+              &:hover {
+                color: var(--primary-color-dark); /* Use the darkened color variable */
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+  
+        a {
+          color: var(--primary-color);
+          text-decoration: none;
+          transition: color 0.3s ease, text-decoration 0.3s ease;
+  
+          &:hover {
+            color: var(--primary-color-dark); /* Use the darkened color variable */
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    /* Download CV Button */
+    .download-cv {
+      text-align: center; /* Center the button */
+      margin-top: 2rem; /* Space above the button */
+  
+      .download-resume-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--primary-color);
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+  
+        &:hover {
+          background-color: var(--primary-color-dark); /* Use the darkened color variable */
+          transform: translateY(-2px);
+        }
+      }
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .bio-container {
+        padding: 0 1rem;
+      }
+  
+      .bio-photo {
+        .profile-image {
+          width: 400px; /* Reduced size for smaller screens */
+          height: auto; /* Maintain aspect ratio */
+        }
+      }
+  
+      .bio-text {
+        max-width: 100%;
+  
+        text-align: center; /* Center text on smaller screens */
+  
+        .bio-timeline,
+        .bio-education,
+        .bio-awards {
+          h3 {
+            text-align: center;
+          }
+  
+          .bio-list {
+            padding-left: 0;
+            list-style-position: inside;
+          }
+        }
+      }
+  
+      h2 {
+        margin-bottom: 2rem; /* Adjust spacing for smaller screens */
+      }
+    }
+  }
+  
