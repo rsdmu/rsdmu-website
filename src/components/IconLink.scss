@@ -1,0 +1,43 @@
+/* src/components/IconLink.scss */
+
+.icon-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .icon-link img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.8rem;
+    filter: var(--icon-filter); /* Ensure icons obey theme */
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .icon-link:hover img {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    filter: var(--icon-filter) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.6)); /* More pronounced shadow on hover */
+  }
+  
+  .icon-link span {
+    font-size: 1.2rem; /* Larger font size for labels at the bottom */
+    margin-top: 0.5rem;
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Specific styles for Home Button */
+  .home-button {
+    /* Inherit styles from icon-link */
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  
+    span {
+      display: none; /* Hide label for Home button */
+    }
+  }
+  

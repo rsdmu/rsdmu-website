@@ -27,7 +27,8 @@
     "react-helmet": "^6.1.0",
     "react-scrollspy": "^3.4.3",
     "sass": "^1.63.6",
-    "typeface-roboto": "^1.1.13"
+    "typeface-montserrat": "^1.1.13",
+    "typeface-bebas-neue": "^1.1.13"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
@@ -41,7 +42,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{js,jsx,json,md,scss}\""
   },
   "engines": {
     "node": ">=18.0.0"

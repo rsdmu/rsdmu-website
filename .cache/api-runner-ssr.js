@@ -7,9 +7,13 @@ var plugins = [{
       plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
       options: {"plugins":[],"output":"/","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
+      name: 'gatsby-plugin-react-helmet',
+      plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'gatsby-plugin-manifest',
       plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-manifest/gatsby-ssr.js'),
-      options: {"plugins":[],"name":"Rashid Mushkani Portfolio","short_name":"RashidMushkani","start_url":"/","background_color":"#ffffff","theme_color":"#381696","display":"standalone","icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"3f636a749d361da5d062927d440f8ef6"},
+      options: {"plugins":[],"name":"Rashid Mushkani Portfolio","short_name":"RashidMushkani","start_url":"/","background_color":"#000000","theme_color":"#5ab9ea","display":"standalone","icon":"src/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"3f636a749d361da5d062927d440f8ef6"},
     },{
       name: 'gatsby-plugin-offline',
       plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-offline/gatsby-ssr.js'),

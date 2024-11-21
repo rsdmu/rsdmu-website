@@ -1,35 +1,40 @@
 /* src/components/themeChanger.scss */
 
-.theme-changer {
+.theme-toggle-button {
   position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
+  top: 20px;          /* Offset from the top */
+  right: 80px;        /* Offset from the right, adjust to not overlap with Home button */
+  background-color: var(--primary-color); /* Updated to primary color */
   border: none;
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  color: #ffffff;
-  font-size: 1.2rem;
+  border-radius: 50%; /* Circular shape */
+  width: 50px;        /* Size of the button */
+  height: 50px;       /* Size of the button */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #ffffff;       /* Icon color */
+  font-size: 1.5rem;  /* Icon size */
+  z-index: 100;       /* Ensure it stays on top */
+  transition: background-color 0.3s, transform 0.2s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
   &:hover {
-    background-color: lighten(var(--primary-color), 10%);
+    background-color: var(--theme-toggle-hover-color); /* Use a new variable */
+    transform: scale(1.05);      /* Slight scaling effect */
   }
 
-  /* Adjust color based on the theme */
-  body.light & {
-    background-color: #333; /* Darker color in light mode */
-    color: #ffffff;
+  &:focus {
+    outline: 2px dashed var(--primary-color);
+    outline-offset: 4px;
   }
+}
 
-  body.dark & {
-    background-color: #ffffff; /* Lighter color in dark mode */
-    color: #333333;
-  }
+/* Define hover colors based on theme */
+body.light {
+  --theme-toggle-hover-color: var(--primary-color-light);
+}
+
+body.dark {
+  --theme-toggle-hover-color: var(--primary-color-dark);
 }

@@ -814,24 +814,188 @@ __webpack_require__.r(__webpack_exports__);
 var BioSection = function BioSection() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     id: "bio",
-    className: "content-section bio-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Bio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bio-container"
+    className: "bio-section"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: "bio-section__title"
+  }, "Bio"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__overview-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bio-text"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Rashid Ahmad Mushkani is a specialist in urban planning, AI, and architecture, focusing on their intersection. He is a doctoral candidate at the University of Montreal. With a passion for integrating artificial intelligence into urban development, Rashid aims to create sustainable and inclusive public spaces that cater to diverse populations."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "His research explores the impact of land use and vitality on fostering gender equality in urban public parks, using Kabul City, Afghanistan as a case study. Through qualitative methods such as observation, interviews, and surveys, Rashid seeks to inform city planning practices that promote socio-spatial bonds and perceived safety, especially for women."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Beyond academia, Rashid is actively involved in community projects that bridge technology and urban living, striving to make a tangible difference in the lives of city residents. His work not only contributes to scholarly discourse but also offers practical solutions for real-world urban challenges.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "bio-photo"
+    className: "bio-section__overview"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Rashid Mushkani is an Afghan-Canadian researcher, architect, and educator with expertise in urban planning, artificial intelligence, and participatory design. His work focuses on integrating AI technologies into urban planning processes, exploring how these tools can contribute to creating inclusive and accessible public spaces. He is currently a PhD candidate at the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://amenagement.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "University of Montreal"), ", where his research emphasizes responsible AI development, co-production of knowledge, and the intersection of technology and community values."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Mushkani's academic background includes a Master of Engineering in Architecture and Urban Planning from", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.tut.ac.jp/english/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Toyohashi University of Technology"), " ", "in Japan, where he examined socio-spatial equity in urban public parks. His professional experience encompasses architectural design, urban conservation, and public space revitalization projects with the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://the.akdn/en/where-we-work/central-asia/afghanistan/cultural-development-overview-afghanistan/restoration-in-kabul-afghanistan",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Aga Khan Development Network"), ". From 2017 to 2022, he served as an Assistant Lecturer at", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://ku.edu.af/en",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Kabul University"), ", teaching courses on environmental behavior, urban design, and architectural conservation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "His recent projects include ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "StreetReview"), ", a doctoral initiative employing AI to evaluate streetscape quality, and the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://mila.quebec/en/ai4humanity/applied-projects/artificial-intelligence-alignment-for-inclusion-aiai",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Artificial Intelligence Alignment for Inclusion (AIAI)"), " ", "project, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.unesco.org/en/no-racism-no-discrimination",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "ICCAR-UNESCO"), " ", "and", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://mila.quebec/en/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Mila - Quebec Artificial Intelligence Institute"), " ", "on issues of spatial inclusion and AI ethics in urban design.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__image-container"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.StaticImage, {
     src: "../images/profile-photo.webp" // Ensure this path is correct
     ,
-    alt: "Rashid Ahmad Mushkani",
+    alt: "Portrait of Rashid Mushkani",
     placeholder: "blurred",
     layout: "constrained",
-    width: 1500,
-    height: 2000,
-    className: "profile-image",
-    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/762319502.json */ "./.cache/caches/gatsby-plugin-image/762319502.json")
-  }))));
+    width: 1000 // Adjust as needed
+    ,
+    height: 1400 // Adjust as needed
+    ,
+    className: "bio-section__image",
+    __imageData: __webpack_require__(/*! ./.cache/caches/gatsby-plugin-image/805670706.json */ "./.cache/caches/gatsby-plugin-image/805670706.json")
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__full-width-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "bio-section__subtitle"
+  }, "Timeline"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "bio-section__list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024-Today:"), " PhD Candidate,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "University of Montreal")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024-Today:"), " Researcher,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://mila.quebec/en/directory/rashid-mushkani",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Mila - Quebec Artificial Intelligence Institute")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2022-Today:"), " Researcher,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://unesco-studio.umontreal.ca/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "UNESCO Chair in Urban Landscape")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2022-Today:"), " Researcher,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.ono-unit.com/english",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "International Urban Planning Lab")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2017-2022:"), " Assistant Lecturer,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.ku.edu.af/en",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Kabul University")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2016-2019:"), " Architect,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.archdaily.com/911456/chihilsitoon-garden-project-aga-khan-trust-for-culture",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Chihilsitoon Garden - Aga Khan Development Network")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__full-width-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "bio-section__subtitle"
+  }, "Education"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "bio-section__list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2022-2027:"), " Doctor of Philosophy in Interdisciplinary Planning,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://amenagement.umontreal.ca/accueil/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "University of Montreal")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2019-2021:"), " Master of Engineering in Architecture and Urban Planning,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.tut.ac.jp/english/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Toyohashi University of Technology")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2012-2016:"), " Bachelor of Architecture,", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.ku.edu.af/en",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Kabul University")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__full-width-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: "bio-section__subtitle"
+  }, "Honors & Awards"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+    className: "bio-section__list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://frq.gouv.qc.ca/en/program/frqsc-doctoral-training-scholarships-b2z-and-a2z2-autumn-2023-competition//",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "FRQSC Doctoral Training Award"), ", Fonds de recherche du Qu\xE9bec \u2013 Society and Culture"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.mitacs.ca/en/programs/accelerate",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Mitacs Accelerate Award"), ",", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://mila.quebec/en/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Mila - Quebec Artificial Intelligence Institute")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.umontreal.ca/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Guy-Desbarats Excellence Scholarship"), ", University of Montreal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2024:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.umontreal.ca/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Student Engagement Award"), ", University of Montreal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2023:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.umontreal.ca/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Perseverance Award"), ", University of Montreal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2022:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.umontreal.ca/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Welcome Award"), ", University of Montreal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2022:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.tut.ac.jp/english/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "TUT-DC Fellowship"), ", Toyohashi University of Technology"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2019:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://www.jica.go.jp/english/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "JICA Scholar"), ", Japan International Cooperation Agency"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2018:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://ku.edu.af/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Appreciation Award"), ", Kabul University"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "2016:"), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://ku.edu.af/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Best Student Award"), ", Kabul University"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "bio-section__download"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/documents/rashid_mushkani_cv.pdf",
+    download: true,
+    className: "bio-section__download-button",
+    "aria-label": "Download Rashid's CV"
+  }, "Download Rashid's CV")));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (BioSection);
 
@@ -850,20 +1014,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _IconLink_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./IconLink.scss */ "./src/components/IconLink.scss");
+/* harmony import */ var _IconLink_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_IconLink_scss__WEBPACK_IMPORTED_MODULE_1__);
 // src/components/IconLink.js
+
+
 
 var IconLink = function IconLink(_ref) {
   var to = _ref.to,
     src = _ref.src,
     alt = _ref.alt,
-    label = _ref.label;
+    label = _ref.label,
+    className = _ref.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: to,
-    className: "icon-link"
+    className: "icon-link ".concat(className ? className : "")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     src: src,
     alt: alt
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, label));
+  }), label && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, label));
+};
+IconLink.propTypes = {
+  to: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
+  src: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
+  alt: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string).isRequired,
+  label: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconLink);
 
@@ -884,18 +1062,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_scrollspy__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-scrollspy */ "./node_modules/react-scrollspy/lib/scrollspy.js");
 /* harmony import */ var _themeChanger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./themeChanger */ "./src/components/themeChanger.js");
-/* harmony import */ var _ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ScrollSpyNav.scss */ "./src/components/ScrollSpyNav.scss");
-/* harmony import */ var _ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _IconLink__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./IconLink */ "./src/components/IconLink.js");
+/* harmony import */ var _ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ScrollSpyNav.scss */ "./src/components/ScrollSpyNav.scss");
+/* harmony import */ var _ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_ScrollSpyNav_scss__WEBPACK_IMPORTED_MODULE_4__);
 // src/components/ScrollSpyNav.js
 
 
 
- // Create this SCSS file for styles
+ // Import IconLink for Home button
+ // Ensure this SCSS file exists and is correctly styled
 
 var ScrollSpyNav = function ScrollSpyNav() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "site-header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav-left"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_IconLink__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    to: "#home" // Link to the home section
+    ,
+    src: "/icons/home.svg" // Path to Home SVG
+    ,
+    alt: "Home",
+    label: "" // No label for Home
+    ,
+    className: "home-button" // Assign class for styling
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: "site-nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_scrollspy__WEBPACK_IMPORTED_MODULE_1__["default"], {
     items: ["papers", "projects", "bio", "contact"],
@@ -910,7 +1103,9 @@ var ScrollSpyNav = function ScrollSpyNav() {
     href: "#bio"
   }, "Bio")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "#contact"
-  }, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_themeChanger__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+  }, "Contact")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav-right"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_themeChanger__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ScrollSpyNav);
 
@@ -1038,11 +1233,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _themeChanger_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./themeChanger.scss */ "./src/components/themeChanger.scss");
+/* harmony import */ var _themeChanger_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_themeChanger_scss__WEBPACK_IMPORTED_MODULE_2__);
 
 // src/components/themeChanger.js
 
+
 var ThemeChanger = function ThemeChanger() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(typeof window !== "undefined" && window.localStorage.getItem("theme") ? window.localStorage.getItem("theme") : "light"),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(typeof window !== "undefined" && window.localStorage.getItem("theme") ? window.localStorage.getItem("theme") : "dark" // Default to dark theme
+    ),
     _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_0___default()(_useState, 2),
     theme = _useState2[0],
     setTheme = _useState2[1];
@@ -1098,8 +1297,8 @@ __webpack_require__.r(__webpack_exports__);
 // src/pages/index.js
 
 
+ // Updated import
 
- // Ensure this imports your global styles or is removed if global.scss is already imported in layout.js
 
 
 var IndexPage = function IndexPage() {
@@ -1208,85 +1407,97 @@ var IndexPage = function IndexPage() {
       return _ref.apply(this, arguments);
     };
   }();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_seo__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: "Home",
+    description: "Welcome to Rashid Mushkani's Portfolio"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    id: "home",
     className: "background-image-wrapper"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
     className: "background-image"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "overlay"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
     className: "centered-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h1", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "hero-subtitle",
+    style: {
+      textAlign: 'right'
+    }
+  }, "University of Montreal"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "hero-subtitle",
+    style: {
+      textAlign: 'right'
+    }
+  }, "AI & Urban Studies PhD Candidate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h1", {
     className: "site-title"
-  }, "RASHID MUSHKANI"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", null, "AI & Urban Studies PhD Candidate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", null, "University of Montreal"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("footer", {
-    className: "icon-bar"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    to: "#papers",
-    src: "/icons/papers.svg",
-    alt: "Papers",
-    label: "Papers"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    to: "#projects",
-    src: "/icons/projects.svg",
-    alt: "Projects",
-    label: "Projects"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    to: "#bio",
-    src: "/icons/bio.svg",
-    alt: "Bio",
-    label: "Bio"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_IconLink__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    to: "#contact",
-    src: "/icons/contact.svg",
-    alt: "Contact",
-    label: "Contact"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
+  }, "RASHID MUSHKANI"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
     id: "papers",
     className: "content-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Papers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", null, "Here are some publications and papers by Rashid Ahmad Mushkani.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Papers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/images/paper1.jpg",
+    alt: "Paper 1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", {
+    className: "grid-item-title"
+  }, "Paper Title One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "grid-item-author"
+  }, "Author: Rashid Mushkani"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/images/paper2.jpg",
+    alt: "Paper 2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", {
+    className: "grid-item-title"
+  }, "Paper Title Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "grid-item-author"
+  }, "Author: Rashid Mushkani"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
     id: "projects",
     className: "content-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", null, "Explore the various projects in urban planning, AI, and architecture led by Rashid Ahmad Mushkani.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_BioSection__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/images/project1.jpg",
+    alt: "Project 1"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", {
+    className: "grid-item-title"
+  }, "Project One"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "grid-item-author"
+  }, "AI Integration in Urban Design"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/images/project2.jpg",
+    alt: "Project 2"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "grid-item-content"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", {
+    className: "grid-item-title"
+  }, "Project Two"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", {
+    className: "grid-item-author"
+  }, "Sustainable Urban Development"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(_components_BioSection__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("section", {
     id: "contact",
     className: "content-section contact-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("p", null, "Feel free to reach out to me through the form below or connect with me on social media!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", null, "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
     className: "contact-container"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
-    className: "social-links"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
-    href: "https://www.linkedin.com/in/rashid-mushkani",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    "aria-label": "LinkedIn"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
-    src: "/icons/linkedin.svg",
-    alt: "LinkedIn"
-  }), "LinkedIn")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
-    href: "https://www.instagram.com/rashid_mushkani",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    "aria-label": "Instagram"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
-    src: "/icons/instagram.svg",
-    alt: "Instagram"
-  }), "Instagram")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
-    href: "https://github.com/rsdmu",
-    target: "_blank",
-    rel: "noopener noreferrer",
-    "aria-label": "GitHub"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
-    src: "/icons/github.svg",
-    alt: "GitHub"
-  }), "GitHub")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
-    href: "mailto:rashid.mushkani@gmail.com",
-    "aria-label": "Email"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
-    src: "/icons/email.svg",
-    alt: "Email"
-  }), "Email")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("form", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("form", {
     action: "https://formspree.io/f/xkndbero",
     method: "POST",
     className: "contact-form",
     onSubmit: handleSubmit
-  }, formStatus.submitted && !formStatus.info.error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "form-title-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", null, "Write")), formStatus.submitted && !formStatus.info.error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
     className: "form-feedback success"
   }, formStatus.info.msg), formStatus.info.error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
     className: "form-feedback error"
@@ -1322,7 +1533,73 @@ var IndexPage = function IndexPage() {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("button", {
     type: "submit",
     disabled: formStatus.submitting
-  }, formStatus.submitting ? 'Sending...' : 'Send')))));
+  }, formStatus.submitting ? 'Sending...' : 'Send')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "affiliations"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", null, "Affiliations"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("ul", {
+    className: "affiliations-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/udem.svg",
+    alt: "University of Montreal"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "University of Montreal"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://unesco-studio.umontreal.ca/team/rashid_mushkani.html",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/unesco.svg",
+    alt: "UNESCO Chair in Urban Landscape"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "UNESCO Chair in Urban Landscape"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://mila.quebec/en/directory/rashid-mushkani",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/mila.svg",
+    alt: "Mila - Quebec Artificial Intelligence Institute"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "Mila - Quebec Artificial Intelligence Institute"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://www.obvia.ca/en",
+    target: "_blank",
+    rel: "noopener noreferrer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/obvia.svg",
+    alt: "Obvia"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "International Observatory on the Societal Impacts of AI and Digital Technologies"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
+    className: "social-links"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h3", null, "Connect"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("ul", {
+    className: "social-list"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://www.linkedin.com/in/rashid-mushkani",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    "aria-label": "LinkedIn"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/linkedin.svg",
+    alt: "LinkedIn"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "LinkedIn"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://www.instagram.com/rashid_mushkani",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    "aria-label": "Instagram"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/instagram.svg",
+    alt: "Instagram"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "Instagram"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "https://github.com/rsdmu",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    "aria-label": "GitHub"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/github.svg",
+    alt: "GitHub"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "GitHub"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+    href: "mailto:rashid.mushkani@gmail.com",
+    "aria-label": "Email"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+    src: "/icons/email.svg",
+    alt: "Email"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("span", null, "Email"))))))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
@@ -3136,9 +3413,29 @@ exports.AbortError = AbortError;
 
 /***/ }),
 
+/***/ "./src/components/IconLink.scss":
+/*!**************************************!*\
+  !*** ./src/components/IconLink.scss ***!
+  \**************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "./src/components/ScrollSpyNav.scss":
 /*!******************************************!*\
   !*** ./src/components/ScrollSpyNav.scss ***!
+  \******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/themeChanger.scss":
+/*!******************************************!*\
+  !*** ./src/components/themeChanger.scss ***!
   \******************************************/
 /***/ (() => {
 
@@ -3161,1096 +3458,6 @@ exports.AbortError = AbortError;
   !*** ./src/styles/global.scss ***!
   \********************************/
 /***/ (() => {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/react-fast-compare/index.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-fast-compare/index.js ***!
-  \**************************************************/
-/***/ ((module) => {
-
-/* global Map:readonly, Set:readonly, ArrayBuffer:readonly */
-
-var hasElementType = typeof Element !== 'undefined';
-var hasMap = typeof Map === 'function';
-var hasSet = typeof Set === 'function';
-var hasArrayBuffer = typeof ArrayBuffer === 'function' && !!ArrayBuffer.isView;
-
-// Note: We **don't** need `envHasBigInt64Array` in fde es6/index.js
-
-function equal(a, b) {
-  // START: fast-deep-equal es6/index.js 3.1.3
-  if (a === b) return true;
-
-  if (a && b && typeof a == 'object' && typeof b == 'object') {
-    if (a.constructor !== b.constructor) return false;
-
-    var length, i, keys;
-    if (Array.isArray(a)) {
-      length = a.length;
-      if (length != b.length) return false;
-      for (i = length; i-- !== 0;)
-        if (!equal(a[i], b[i])) return false;
-      return true;
-    }
-
-    // START: Modifications:
-    // 1. Extra `has<Type> &&` helpers in initial condition allow es6 code
-    //    to co-exist with es5.
-    // 2. Replace `for of` with es5 compliant iteration using `for`.
-    //    Basically, take:
-    //
-    //    ```js
-    //    for (i of a.entries())
-    //      if (!b.has(i[0])) return false;
-    //    ```
-    //
-    //    ... and convert to:
-    //
-    //    ```js
-    //    it = a.entries();
-    //    while (!(i = it.next()).done)
-    //      if (!b.has(i.value[0])) return false;
-    //    ```
-    //
-    //    **Note**: `i` access switches to `i.value`.
-    var it;
-    if (hasMap && (a instanceof Map) && (b instanceof Map)) {
-      if (a.size !== b.size) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!b.has(i.value[0])) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!equal(i.value[1], b.get(i.value[0]))) return false;
-      return true;
-    }
-
-    if (hasSet && (a instanceof Set) && (b instanceof Set)) {
-      if (a.size !== b.size) return false;
-      it = a.entries();
-      while (!(i = it.next()).done)
-        if (!b.has(i.value[0])) return false;
-      return true;
-    }
-    // END: Modifications
-
-    if (hasArrayBuffer && ArrayBuffer.isView(a) && ArrayBuffer.isView(b)) {
-      length = a.length;
-      if (length != b.length) return false;
-      for (i = length; i-- !== 0;)
-        if (a[i] !== b[i]) return false;
-      return true;
-    }
-
-    if (a.constructor === RegExp) return a.source === b.source && a.flags === b.flags;
-    // START: Modifications:
-    // Apply guards for `Object.create(null)` handling. See:
-    // - https://github.com/FormidableLabs/react-fast-compare/issues/64
-    // - https://github.com/epoberezkin/fast-deep-equal/issues/49
-    if (a.valueOf !== Object.prototype.valueOf && typeof a.valueOf === 'function' && typeof b.valueOf === 'function') return a.valueOf() === b.valueOf();
-    if (a.toString !== Object.prototype.toString && typeof a.toString === 'function' && typeof b.toString === 'function') return a.toString() === b.toString();
-    // END: Modifications
-
-    keys = Object.keys(a);
-    length = keys.length;
-    if (length !== Object.keys(b).length) return false;
-
-    for (i = length; i-- !== 0;)
-      if (!Object.prototype.hasOwnProperty.call(b, keys[i])) return false;
-    // END: fast-deep-equal
-
-    // START: react-fast-compare
-    // custom handling for DOM elements
-    if (hasElementType && a instanceof Element) return false;
-
-    // custom handling for React/Preact
-    for (i = length; i-- !== 0;) {
-      if ((keys[i] === '_owner' || keys[i] === '__v' || keys[i] === '__o') && a.$$typeof) {
-        // React-specific: avoid traversing React elements' _owner
-        // Preact-specific: avoid traversing Preact elements' __v and __o
-        //    __v = $_original / $_vnode
-        //    __o = $_owner
-        // These properties contain circular references and are not needed when
-        // comparing the actual elements (and not their owners)
-        // .$$typeof and ._store on just reasonable markers of elements
-
-        continue;
-      }
-
-      // all other properties should be traversed as usual
-      if (!equal(a[keys[i]], b[keys[i]])) return false;
-    }
-    // END: react-fast-compare
-
-    // START: fast-deep-equal
-    return true;
-  }
-
-  return a !== a && b !== b;
-}
-// end fast-deep-equal
-
-module.exports = function isEqual(a, b) {
-  try {
-    return equal(a, b);
-  } catch (error) {
-    if (((error.message || '').match(/stack|recursion/i))) {
-      // warn on circular references, don't crash
-      // browsers give this different errors name and messages:
-      // chrome/safari: "RangeError", "Maximum call stack size exceeded"
-      // firefox: "InternalError", too much recursion"
-      // edge: "Error", "Out of stack space"
-      console.warn('react-fast-compare cannot handle circular refs');
-      return false;
-    }
-    // some other error. we should definitely know about these
-    throw error;
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/react-helmet/es/Helmet.js":
-/*!************************************************!*\
-  !*** ./node_modules/react-helmet/es/Helmet.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Helmet: () => (/* binding */ HelmetExport),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-side-effect */ "./node_modules/react-side-effect/lib/index.js");
-/* harmony import */ var react_side_effect__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_side_effect__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-fast-compare */ "./node_modules/react-fast-compare/index.js");
-/* harmony import */ var react_fast_compare__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_fast_compare__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! object-assign */ "./node_modules/gatsby/dist/internal-plugins/bundle-optimisations/polyfills/object-assign.js");
-/* harmony import */ var object_assign__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(object_assign__WEBPACK_IMPORTED_MODULE_3__);
-
-
-
-
-
-
-var ATTRIBUTE_NAMES = {
-    BODY: "bodyAttributes",
-    HTML: "htmlAttributes",
-    TITLE: "titleAttributes"
-};
-
-var TAG_NAMES = {
-    BASE: "base",
-    BODY: "body",
-    HEAD: "head",
-    HTML: "html",
-    LINK: "link",
-    META: "meta",
-    NOSCRIPT: "noscript",
-    SCRIPT: "script",
-    STYLE: "style",
-    TITLE: "title"
-};
-
-var VALID_TAG_NAMES = Object.keys(TAG_NAMES).map(function (name) {
-    return TAG_NAMES[name];
-});
-
-var TAG_PROPERTIES = {
-    CHARSET: "charset",
-    CSS_TEXT: "cssText",
-    HREF: "href",
-    HTTPEQUIV: "http-equiv",
-    INNER_HTML: "innerHTML",
-    ITEM_PROP: "itemprop",
-    NAME: "name",
-    PROPERTY: "property",
-    REL: "rel",
-    SRC: "src",
-    TARGET: "target"
-};
-
-var REACT_TAG_MAP = {
-    accesskey: "accessKey",
-    charset: "charSet",
-    class: "className",
-    contenteditable: "contentEditable",
-    contextmenu: "contextMenu",
-    "http-equiv": "httpEquiv",
-    itemprop: "itemProp",
-    tabindex: "tabIndex"
-};
-
-var HELMET_PROPS = {
-    DEFAULT_TITLE: "defaultTitle",
-    DEFER: "defer",
-    ENCODE_SPECIAL_CHARACTERS: "encodeSpecialCharacters",
-    ON_CHANGE_CLIENT_STATE: "onChangeClientState",
-    TITLE_TEMPLATE: "titleTemplate"
-};
-
-var HTML_TAG_MAP = Object.keys(REACT_TAG_MAP).reduce(function (obj, key) {
-    obj[REACT_TAG_MAP[key]] = key;
-    return obj;
-}, {});
-
-var SELF_CLOSING_TAGS = [TAG_NAMES.NOSCRIPT, TAG_NAMES.SCRIPT, TAG_NAMES.STYLE];
-
-var HELMET_ATTRIBUTE = "data-react-helmet";
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) {
-  return typeof obj;
-} : function (obj) {
-  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-};
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-var inherits = function (subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      enumerable: false,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-};
-
-var objectWithoutProperties = function (obj, keys) {
-  var target = {};
-
-  for (var i in obj) {
-    if (keys.indexOf(i) >= 0) continue;
-    if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
-    target[i] = obj[i];
-  }
-
-  return target;
-};
-
-var possibleConstructorReturn = function (self, call) {
-  if (!self) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return call && (typeof call === "object" || typeof call === "function") ? call : self;
-};
-
-var encodeSpecialCharacters = function encodeSpecialCharacters(str) {
-    var encode = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-
-    if (encode === false) {
-        return String(str);
-    }
-
-    return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
-};
-
-var getTitleFromPropsList = function getTitleFromPropsList(propsList) {
-    var innermostTitle = getInnermostProperty(propsList, TAG_NAMES.TITLE);
-    var innermostTemplate = getInnermostProperty(propsList, HELMET_PROPS.TITLE_TEMPLATE);
-
-    if (innermostTemplate && innermostTitle) {
-        // use function arg to avoid need to escape $ characters
-        return innermostTemplate.replace(/%s/g, function () {
-            return Array.isArray(innermostTitle) ? innermostTitle.join("") : innermostTitle;
-        });
-    }
-
-    var innermostDefaultTitle = getInnermostProperty(propsList, HELMET_PROPS.DEFAULT_TITLE);
-
-    return innermostTitle || innermostDefaultTitle || undefined;
-};
-
-var getOnChangeClientState = function getOnChangeClientState(propsList) {
-    return getInnermostProperty(propsList, HELMET_PROPS.ON_CHANGE_CLIENT_STATE) || function () {};
-};
-
-var getAttributesFromPropsList = function getAttributesFromPropsList(tagType, propsList) {
-    return propsList.filter(function (props) {
-        return typeof props[tagType] !== "undefined";
-    }).map(function (props) {
-        return props[tagType];
-    }).reduce(function (tagAttrs, current) {
-        return _extends({}, tagAttrs, current);
-    }, {});
-};
-
-var getBaseTagFromPropsList = function getBaseTagFromPropsList(primaryAttributes, propsList) {
-    return propsList.filter(function (props) {
-        return typeof props[TAG_NAMES.BASE] !== "undefined";
-    }).map(function (props) {
-        return props[TAG_NAMES.BASE];
-    }).reverse().reduce(function (innermostBaseTag, tag) {
-        if (!innermostBaseTag.length) {
-            var keys = Object.keys(tag);
-
-            for (var i = 0; i < keys.length; i++) {
-                var attributeKey = keys[i];
-                var lowerCaseAttributeKey = attributeKey.toLowerCase();
-
-                if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && tag[lowerCaseAttributeKey]) {
-                    return innermostBaseTag.concat(tag);
-                }
-            }
-        }
-
-        return innermostBaseTag;
-    }, []);
-};
-
-var getTagsFromPropsList = function getTagsFromPropsList(tagName, primaryAttributes, propsList) {
-    // Calculate list of tags, giving priority innermost component (end of the propslist)
-    var approvedSeenTags = {};
-
-    return propsList.filter(function (props) {
-        if (Array.isArray(props[tagName])) {
-            return true;
-        }
-        if (typeof props[tagName] !== "undefined") {
-            warn("Helmet: " + tagName + " should be of type \"Array\". Instead found type \"" + _typeof(props[tagName]) + "\"");
-        }
-        return false;
-    }).map(function (props) {
-        return props[tagName];
-    }).reverse().reduce(function (approvedTags, instanceTags) {
-        var instanceSeenTags = {};
-
-        instanceTags.filter(function (tag) {
-            var primaryAttributeKey = void 0;
-            var keys = Object.keys(tag);
-            for (var i = 0; i < keys.length; i++) {
-                var attributeKey = keys[i];
-                var lowerCaseAttributeKey = attributeKey.toLowerCase();
-
-                // Special rule with link tags, since rel and href are both primary tags, rel takes priority
-                if (primaryAttributes.indexOf(lowerCaseAttributeKey) !== -1 && !(primaryAttributeKey === TAG_PROPERTIES.REL && tag[primaryAttributeKey].toLowerCase() === "canonical") && !(lowerCaseAttributeKey === TAG_PROPERTIES.REL && tag[lowerCaseAttributeKey].toLowerCase() === "stylesheet")) {
-                    primaryAttributeKey = lowerCaseAttributeKey;
-                }
-                // Special case for innerHTML which doesn't work lowercased
-                if (primaryAttributes.indexOf(attributeKey) !== -1 && (attributeKey === TAG_PROPERTIES.INNER_HTML || attributeKey === TAG_PROPERTIES.CSS_TEXT || attributeKey === TAG_PROPERTIES.ITEM_PROP)) {
-                    primaryAttributeKey = attributeKey;
-                }
-            }
-
-            if (!primaryAttributeKey || !tag[primaryAttributeKey]) {
-                return false;
-            }
-
-            var value = tag[primaryAttributeKey].toLowerCase();
-
-            if (!approvedSeenTags[primaryAttributeKey]) {
-                approvedSeenTags[primaryAttributeKey] = {};
-            }
-
-            if (!instanceSeenTags[primaryAttributeKey]) {
-                instanceSeenTags[primaryAttributeKey] = {};
-            }
-
-            if (!approvedSeenTags[primaryAttributeKey][value]) {
-                instanceSeenTags[primaryAttributeKey][value] = true;
-                return true;
-            }
-
-            return false;
-        }).reverse().forEach(function (tag) {
-            return approvedTags.push(tag);
-        });
-
-        // Update seen tags with tags from this instance
-        var keys = Object.keys(instanceSeenTags);
-        for (var i = 0; i < keys.length; i++) {
-            var attributeKey = keys[i];
-            var tagUnion = object_assign__WEBPACK_IMPORTED_MODULE_3___default()({}, approvedSeenTags[attributeKey], instanceSeenTags[attributeKey]);
-
-            approvedSeenTags[attributeKey] = tagUnion;
-        }
-
-        return approvedTags;
-    }, []).reverse();
-};
-
-var getInnermostProperty = function getInnermostProperty(propsList, property) {
-    for (var i = propsList.length - 1; i >= 0; i--) {
-        var props = propsList[i];
-
-        if (props.hasOwnProperty(property)) {
-            return props[property];
-        }
-    }
-
-    return null;
-};
-
-var reducePropsToState = function reducePropsToState(propsList) {
-    return {
-        baseTag: getBaseTagFromPropsList([TAG_PROPERTIES.HREF, TAG_PROPERTIES.TARGET], propsList),
-        bodyAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.BODY, propsList),
-        defer: getInnermostProperty(propsList, HELMET_PROPS.DEFER),
-        encode: getInnermostProperty(propsList, HELMET_PROPS.ENCODE_SPECIAL_CHARACTERS),
-        htmlAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.HTML, propsList),
-        linkTags: getTagsFromPropsList(TAG_NAMES.LINK, [TAG_PROPERTIES.REL, TAG_PROPERTIES.HREF], propsList),
-        metaTags: getTagsFromPropsList(TAG_NAMES.META, [TAG_PROPERTIES.NAME, TAG_PROPERTIES.CHARSET, TAG_PROPERTIES.HTTPEQUIV, TAG_PROPERTIES.PROPERTY, TAG_PROPERTIES.ITEM_PROP], propsList),
-        noscriptTags: getTagsFromPropsList(TAG_NAMES.NOSCRIPT, [TAG_PROPERTIES.INNER_HTML], propsList),
-        onChangeClientState: getOnChangeClientState(propsList),
-        scriptTags: getTagsFromPropsList(TAG_NAMES.SCRIPT, [TAG_PROPERTIES.SRC, TAG_PROPERTIES.INNER_HTML], propsList),
-        styleTags: getTagsFromPropsList(TAG_NAMES.STYLE, [TAG_PROPERTIES.CSS_TEXT], propsList),
-        title: getTitleFromPropsList(propsList),
-        titleAttributes: getAttributesFromPropsList(ATTRIBUTE_NAMES.TITLE, propsList)
-    };
-};
-
-var rafPolyfill = function () {
-    var clock = Date.now();
-
-    return function (callback) {
-        var currentTime = Date.now();
-
-        if (currentTime - clock > 16) {
-            clock = currentTime;
-            callback(currentTime);
-        } else {
-            setTimeout(function () {
-                rafPolyfill(callback);
-            }, 0);
-        }
-    };
-}();
-
-var cafPolyfill = function cafPolyfill(id) {
-    return clearTimeout(id);
-};
-
-var requestAnimationFrame = typeof window !== "undefined" ? window.requestAnimationFrame && window.requestAnimationFrame.bind(window) || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || rafPolyfill : global.requestAnimationFrame || rafPolyfill;
-
-var cancelAnimationFrame = typeof window !== "undefined" ? window.cancelAnimationFrame || window.webkitCancelAnimationFrame || window.mozCancelAnimationFrame || cafPolyfill : global.cancelAnimationFrame || cafPolyfill;
-
-var warn = function warn(msg) {
-    return console && typeof console.warn === "function" && console.warn(msg);
-};
-
-var _helmetCallback = null;
-
-var handleClientStateChange = function handleClientStateChange(newState) {
-    if (_helmetCallback) {
-        cancelAnimationFrame(_helmetCallback);
-    }
-
-    if (newState.defer) {
-        _helmetCallback = requestAnimationFrame(function () {
-            commitTagChanges(newState, function () {
-                _helmetCallback = null;
-            });
-        });
-    } else {
-        commitTagChanges(newState);
-        _helmetCallback = null;
-    }
-};
-
-var commitTagChanges = function commitTagChanges(newState, cb) {
-    var baseTag = newState.baseTag,
-        bodyAttributes = newState.bodyAttributes,
-        htmlAttributes = newState.htmlAttributes,
-        linkTags = newState.linkTags,
-        metaTags = newState.metaTags,
-        noscriptTags = newState.noscriptTags,
-        onChangeClientState = newState.onChangeClientState,
-        scriptTags = newState.scriptTags,
-        styleTags = newState.styleTags,
-        title = newState.title,
-        titleAttributes = newState.titleAttributes;
-
-    updateAttributes(TAG_NAMES.BODY, bodyAttributes);
-    updateAttributes(TAG_NAMES.HTML, htmlAttributes);
-
-    updateTitle(title, titleAttributes);
-
-    var tagUpdates = {
-        baseTag: updateTags(TAG_NAMES.BASE, baseTag),
-        linkTags: updateTags(TAG_NAMES.LINK, linkTags),
-        metaTags: updateTags(TAG_NAMES.META, metaTags),
-        noscriptTags: updateTags(TAG_NAMES.NOSCRIPT, noscriptTags),
-        scriptTags: updateTags(TAG_NAMES.SCRIPT, scriptTags),
-        styleTags: updateTags(TAG_NAMES.STYLE, styleTags)
-    };
-
-    var addedTags = {};
-    var removedTags = {};
-
-    Object.keys(tagUpdates).forEach(function (tagType) {
-        var _tagUpdates$tagType = tagUpdates[tagType],
-            newTags = _tagUpdates$tagType.newTags,
-            oldTags = _tagUpdates$tagType.oldTags;
-
-
-        if (newTags.length) {
-            addedTags[tagType] = newTags;
-        }
-        if (oldTags.length) {
-            removedTags[tagType] = tagUpdates[tagType].oldTags;
-        }
-    });
-
-    cb && cb();
-
-    onChangeClientState(newState, addedTags, removedTags);
-};
-
-var flattenArray = function flattenArray(possibleArray) {
-    return Array.isArray(possibleArray) ? possibleArray.join("") : possibleArray;
-};
-
-var updateTitle = function updateTitle(title, attributes) {
-    if (typeof title !== "undefined" && document.title !== title) {
-        document.title = flattenArray(title);
-    }
-
-    updateAttributes(TAG_NAMES.TITLE, attributes);
-};
-
-var updateAttributes = function updateAttributes(tagName, attributes) {
-    var elementTag = document.getElementsByTagName(tagName)[0];
-
-    if (!elementTag) {
-        return;
-    }
-
-    var helmetAttributeString = elementTag.getAttribute(HELMET_ATTRIBUTE);
-    var helmetAttributes = helmetAttributeString ? helmetAttributeString.split(",") : [];
-    var attributesToRemove = [].concat(helmetAttributes);
-    var attributeKeys = Object.keys(attributes);
-
-    for (var i = 0; i < attributeKeys.length; i++) {
-        var attribute = attributeKeys[i];
-        var value = attributes[attribute] || "";
-
-        if (elementTag.getAttribute(attribute) !== value) {
-            elementTag.setAttribute(attribute, value);
-        }
-
-        if (helmetAttributes.indexOf(attribute) === -1) {
-            helmetAttributes.push(attribute);
-        }
-
-        var indexToSave = attributesToRemove.indexOf(attribute);
-        if (indexToSave !== -1) {
-            attributesToRemove.splice(indexToSave, 1);
-        }
-    }
-
-    for (var _i = attributesToRemove.length - 1; _i >= 0; _i--) {
-        elementTag.removeAttribute(attributesToRemove[_i]);
-    }
-
-    if (helmetAttributes.length === attributesToRemove.length) {
-        elementTag.removeAttribute(HELMET_ATTRIBUTE);
-    } else if (elementTag.getAttribute(HELMET_ATTRIBUTE) !== attributeKeys.join(",")) {
-        elementTag.setAttribute(HELMET_ATTRIBUTE, attributeKeys.join(","));
-    }
-};
-
-var updateTags = function updateTags(type, tags) {
-    var headElement = document.head || document.querySelector(TAG_NAMES.HEAD);
-    var tagNodes = headElement.querySelectorAll(type + "[" + HELMET_ATTRIBUTE + "]");
-    var oldTags = Array.prototype.slice.call(tagNodes);
-    var newTags = [];
-    var indexToDelete = void 0;
-
-    if (tags && tags.length) {
-        tags.forEach(function (tag) {
-            var newElement = document.createElement(type);
-
-            for (var attribute in tag) {
-                if (tag.hasOwnProperty(attribute)) {
-                    if (attribute === TAG_PROPERTIES.INNER_HTML) {
-                        newElement.innerHTML = tag.innerHTML;
-                    } else if (attribute === TAG_PROPERTIES.CSS_TEXT) {
-                        if (newElement.styleSheet) {
-                            newElement.styleSheet.cssText = tag.cssText;
-                        } else {
-                            newElement.appendChild(document.createTextNode(tag.cssText));
-                        }
-                    } else {
-                        var value = typeof tag[attribute] === "undefined" ? "" : tag[attribute];
-                        newElement.setAttribute(attribute, value);
-                    }
-                }
-            }
-
-            newElement.setAttribute(HELMET_ATTRIBUTE, "true");
-
-            // Remove a duplicate tag from domTagstoRemove, so it isn't cleared.
-            if (oldTags.some(function (existingTag, index) {
-                indexToDelete = index;
-                return newElement.isEqualNode(existingTag);
-            })) {
-                oldTags.splice(indexToDelete, 1);
-            } else {
-                newTags.push(newElement);
-            }
-        });
-    }
-
-    oldTags.forEach(function (tag) {
-        return tag.parentNode.removeChild(tag);
-    });
-    newTags.forEach(function (tag) {
-        return headElement.appendChild(tag);
-    });
-
-    return {
-        oldTags: oldTags,
-        newTags: newTags
-    };
-};
-
-var generateElementAttributesAsString = function generateElementAttributesAsString(attributes) {
-    return Object.keys(attributes).reduce(function (str, key) {
-        var attr = typeof attributes[key] !== "undefined" ? key + "=\"" + attributes[key] + "\"" : "" + key;
-        return str ? str + " " + attr : attr;
-    }, "");
-};
-
-var generateTitleAsString = function generateTitleAsString(type, title, attributes, encode) {
-    var attributeString = generateElementAttributesAsString(attributes);
-    var flattenedTitle = flattenArray(title);
-    return attributeString ? "<" + type + " " + HELMET_ATTRIBUTE + "=\"true\" " + attributeString + ">" + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">" : "<" + type + " " + HELMET_ATTRIBUTE + "=\"true\">" + encodeSpecialCharacters(flattenedTitle, encode) + "</" + type + ">";
-};
-
-var generateTagsAsString = function generateTagsAsString(type, tags, encode) {
-    return tags.reduce(function (str, tag) {
-        var attributeHtml = Object.keys(tag).filter(function (attribute) {
-            return !(attribute === TAG_PROPERTIES.INNER_HTML || attribute === TAG_PROPERTIES.CSS_TEXT);
-        }).reduce(function (string, attribute) {
-            var attr = typeof tag[attribute] === "undefined" ? attribute : attribute + "=\"" + encodeSpecialCharacters(tag[attribute], encode) + "\"";
-            return string ? string + " " + attr : attr;
-        }, "");
-
-        var tagContent = tag.innerHTML || tag.cssText || "";
-
-        var isSelfClosing = SELF_CLOSING_TAGS.indexOf(type) === -1;
-
-        return str + "<" + type + " " + HELMET_ATTRIBUTE + "=\"true\" " + attributeHtml + (isSelfClosing ? "/>" : ">" + tagContent + "</" + type + ">");
-    }, "");
-};
-
-var convertElementAttributestoReactProps = function convertElementAttributestoReactProps(attributes) {
-    var initProps = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-    return Object.keys(attributes).reduce(function (obj, key) {
-        obj[REACT_TAG_MAP[key] || key] = attributes[key];
-        return obj;
-    }, initProps);
-};
-
-var convertReactPropstoHtmlAttributes = function convertReactPropstoHtmlAttributes(props) {
-    var initAttributes = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-
-    return Object.keys(props).reduce(function (obj, key) {
-        obj[HTML_TAG_MAP[key] || key] = props[key];
-        return obj;
-    }, initAttributes);
-};
-
-var generateTitleAsReactComponent = function generateTitleAsReactComponent(type, title, attributes) {
-    var _initProps;
-
-    // assigning into an array to define toString function on it
-    var initProps = (_initProps = {
-        key: title
-    }, _initProps[HELMET_ATTRIBUTE] = true, _initProps);
-    var props = convertElementAttributestoReactProps(attributes, initProps);
-
-    return [react__WEBPACK_IMPORTED_MODULE_2___default().createElement(TAG_NAMES.TITLE, props, title)];
-};
-
-var generateTagsAsReactComponent = function generateTagsAsReactComponent(type, tags) {
-    return tags.map(function (tag, i) {
-        var _mappedTag;
-
-        var mappedTag = (_mappedTag = {
-            key: i
-        }, _mappedTag[HELMET_ATTRIBUTE] = true, _mappedTag);
-
-        Object.keys(tag).forEach(function (attribute) {
-            var mappedAttribute = REACT_TAG_MAP[attribute] || attribute;
-
-            if (mappedAttribute === TAG_PROPERTIES.INNER_HTML || mappedAttribute === TAG_PROPERTIES.CSS_TEXT) {
-                var content = tag.innerHTML || tag.cssText;
-                mappedTag.dangerouslySetInnerHTML = { __html: content };
-            } else {
-                mappedTag[mappedAttribute] = tag[attribute];
-            }
-        });
-
-        return react__WEBPACK_IMPORTED_MODULE_2___default().createElement(type, mappedTag);
-    });
-};
-
-var getMethodsForTag = function getMethodsForTag(type, tags, encode) {
-    switch (type) {
-        case TAG_NAMES.TITLE:
-            return {
-                toComponent: function toComponent() {
-                    return generateTitleAsReactComponent(type, tags.title, tags.titleAttributes, encode);
-                },
-                toString: function toString() {
-                    return generateTitleAsString(type, tags.title, tags.titleAttributes, encode);
-                }
-            };
-        case ATTRIBUTE_NAMES.BODY:
-        case ATTRIBUTE_NAMES.HTML:
-            return {
-                toComponent: function toComponent() {
-                    return convertElementAttributestoReactProps(tags);
-                },
-                toString: function toString() {
-                    return generateElementAttributesAsString(tags);
-                }
-            };
-        default:
-            return {
-                toComponent: function toComponent() {
-                    return generateTagsAsReactComponent(type, tags);
-                },
-                toString: function toString() {
-                    return generateTagsAsString(type, tags, encode);
-                }
-            };
-    }
-};
-
-var mapStateOnServer = function mapStateOnServer(_ref) {
-    var baseTag = _ref.baseTag,
-        bodyAttributes = _ref.bodyAttributes,
-        encode = _ref.encode,
-        htmlAttributes = _ref.htmlAttributes,
-        linkTags = _ref.linkTags,
-        metaTags = _ref.metaTags,
-        noscriptTags = _ref.noscriptTags,
-        scriptTags = _ref.scriptTags,
-        styleTags = _ref.styleTags,
-        _ref$title = _ref.title,
-        title = _ref$title === undefined ? "" : _ref$title,
-        titleAttributes = _ref.titleAttributes;
-    return {
-        base: getMethodsForTag(TAG_NAMES.BASE, baseTag, encode),
-        bodyAttributes: getMethodsForTag(ATTRIBUTE_NAMES.BODY, bodyAttributes, encode),
-        htmlAttributes: getMethodsForTag(ATTRIBUTE_NAMES.HTML, htmlAttributes, encode),
-        link: getMethodsForTag(TAG_NAMES.LINK, linkTags, encode),
-        meta: getMethodsForTag(TAG_NAMES.META, metaTags, encode),
-        noscript: getMethodsForTag(TAG_NAMES.NOSCRIPT, noscriptTags, encode),
-        script: getMethodsForTag(TAG_NAMES.SCRIPT, scriptTags, encode),
-        style: getMethodsForTag(TAG_NAMES.STYLE, styleTags, encode),
-        title: getMethodsForTag(TAG_NAMES.TITLE, { title: title, titleAttributes: titleAttributes }, encode)
-    };
-};
-
-var Helmet = function Helmet(Component) {
-    var _class, _temp;
-
-    return _temp = _class = function (_React$Component) {
-        inherits(HelmetWrapper, _React$Component);
-
-        function HelmetWrapper() {
-            classCallCheck(this, HelmetWrapper);
-            return possibleConstructorReturn(this, _React$Component.apply(this, arguments));
-        }
-
-        HelmetWrapper.prototype.shouldComponentUpdate = function shouldComponentUpdate(nextProps) {
-            return !react_fast_compare__WEBPACK_IMPORTED_MODULE_1___default()(this.props, nextProps);
-        };
-
-        HelmetWrapper.prototype.mapNestedChildrenToProps = function mapNestedChildrenToProps(child, nestedChildren) {
-            if (!nestedChildren) {
-                return null;
-            }
-
-            switch (child.type) {
-                case TAG_NAMES.SCRIPT:
-                case TAG_NAMES.NOSCRIPT:
-                    return {
-                        innerHTML: nestedChildren
-                    };
-
-                case TAG_NAMES.STYLE:
-                    return {
-                        cssText: nestedChildren
-                    };
-            }
-
-            throw new Error("<" + child.type + " /> elements are self-closing and can not contain children. Refer to our API for more information.");
-        };
-
-        HelmetWrapper.prototype.flattenArrayTypeChildren = function flattenArrayTypeChildren(_ref) {
-            var _babelHelpers$extends;
-
-            var child = _ref.child,
-                arrayTypeChildren = _ref.arrayTypeChildren,
-                newChildProps = _ref.newChildProps,
-                nestedChildren = _ref.nestedChildren;
-
-            return _extends({}, arrayTypeChildren, (_babelHelpers$extends = {}, _babelHelpers$extends[child.type] = [].concat(arrayTypeChildren[child.type] || [], [_extends({}, newChildProps, this.mapNestedChildrenToProps(child, nestedChildren))]), _babelHelpers$extends));
-        };
-
-        HelmetWrapper.prototype.mapObjectTypeChildren = function mapObjectTypeChildren(_ref2) {
-            var _babelHelpers$extends2, _babelHelpers$extends3;
-
-            var child = _ref2.child,
-                newProps = _ref2.newProps,
-                newChildProps = _ref2.newChildProps,
-                nestedChildren = _ref2.nestedChildren;
-
-            switch (child.type) {
-                case TAG_NAMES.TITLE:
-                    return _extends({}, newProps, (_babelHelpers$extends2 = {}, _babelHelpers$extends2[child.type] = nestedChildren, _babelHelpers$extends2.titleAttributes = _extends({}, newChildProps), _babelHelpers$extends2));
-
-                case TAG_NAMES.BODY:
-                    return _extends({}, newProps, {
-                        bodyAttributes: _extends({}, newChildProps)
-                    });
-
-                case TAG_NAMES.HTML:
-                    return _extends({}, newProps, {
-                        htmlAttributes: _extends({}, newChildProps)
-                    });
-            }
-
-            return _extends({}, newProps, (_babelHelpers$extends3 = {}, _babelHelpers$extends3[child.type] = _extends({}, newChildProps), _babelHelpers$extends3));
-        };
-
-        HelmetWrapper.prototype.mapArrayTypeChildrenToProps = function mapArrayTypeChildrenToProps(arrayTypeChildren, newProps) {
-            var newFlattenedProps = _extends({}, newProps);
-
-            Object.keys(arrayTypeChildren).forEach(function (arrayChildName) {
-                var _babelHelpers$extends4;
-
-                newFlattenedProps = _extends({}, newFlattenedProps, (_babelHelpers$extends4 = {}, _babelHelpers$extends4[arrayChildName] = arrayTypeChildren[arrayChildName], _babelHelpers$extends4));
-            });
-
-            return newFlattenedProps;
-        };
-
-        HelmetWrapper.prototype.warnOnInvalidChildren = function warnOnInvalidChildren(child, nestedChildren) {
-            if (true) {
-                if (!VALID_TAG_NAMES.some(function (name) {
-                    return child.type === name;
-                })) {
-                    if (typeof child.type === "function") {
-                        return warn("You may be attempting to nest <Helmet> components within each other, which is not allowed. Refer to our API for more information.");
-                    }
-
-                    return warn("Only elements types " + VALID_TAG_NAMES.join(", ") + " are allowed. Helmet does not support rendering <" + child.type + "> elements. Refer to our API for more information.");
-                }
-
-                if (nestedChildren && typeof nestedChildren !== "string" && (!Array.isArray(nestedChildren) || nestedChildren.some(function (nestedChild) {
-                    return typeof nestedChild !== "string";
-                }))) {
-                    throw new Error("Helmet expects a string as a child of <" + child.type + ">. Did you forget to wrap your children in braces? ( <" + child.type + ">{``}</" + child.type + "> ) Refer to our API for more information.");
-                }
-            }
-
-            return true;
-        };
-
-        HelmetWrapper.prototype.mapChildrenToProps = function mapChildrenToProps(children, newProps) {
-            var _this2 = this;
-
-            var arrayTypeChildren = {};
-
-            react__WEBPACK_IMPORTED_MODULE_2___default().Children.forEach(children, function (child) {
-                if (!child || !child.props) {
-                    return;
-                }
-
-                var _child$props = child.props,
-                    nestedChildren = _child$props.children,
-                    childProps = objectWithoutProperties(_child$props, ["children"]);
-
-                var newChildProps = convertReactPropstoHtmlAttributes(childProps);
-
-                _this2.warnOnInvalidChildren(child, nestedChildren);
-
-                switch (child.type) {
-                    case TAG_NAMES.LINK:
-                    case TAG_NAMES.META:
-                    case TAG_NAMES.NOSCRIPT:
-                    case TAG_NAMES.SCRIPT:
-                    case TAG_NAMES.STYLE:
-                        arrayTypeChildren = _this2.flattenArrayTypeChildren({
-                            child: child,
-                            arrayTypeChildren: arrayTypeChildren,
-                            newChildProps: newChildProps,
-                            nestedChildren: nestedChildren
-                        });
-                        break;
-
-                    default:
-                        newProps = _this2.mapObjectTypeChildren({
-                            child: child,
-                            newProps: newProps,
-                            newChildProps: newChildProps,
-                            nestedChildren: nestedChildren
-                        });
-                        break;
-                }
-            });
-
-            newProps = this.mapArrayTypeChildrenToProps(arrayTypeChildren, newProps);
-            return newProps;
-        };
-
-        HelmetWrapper.prototype.render = function render() {
-            var _props = this.props,
-                children = _props.children,
-                props = objectWithoutProperties(_props, ["children"]);
-
-            var newProps = _extends({}, props);
-
-            if (children) {
-                newProps = this.mapChildrenToProps(children, newProps);
-            }
-
-            return react__WEBPACK_IMPORTED_MODULE_2___default().createElement(Component, newProps);
-        };
-
-        createClass(HelmetWrapper, null, [{
-            key: "canUseDOM",
-
-
-            // Component.peek comes from react-side-effect:
-            // For testing, you may use a static peek() method available on the returned component.
-            // It lets you get the current state without resetting the mounted instance stack.
-            // Don’t use it for anything other than testing.
-
-            /**
-             * @param {Object} base: {"target": "_blank", "href": "http://mysite.com/"}
-             * @param {Object} bodyAttributes: {"className": "root"}
-             * @param {String} defaultTitle: "Default Title"
-             * @param {Boolean} defer: true
-             * @param {Boolean} encodeSpecialCharacters: true
-             * @param {Object} htmlAttributes: {"lang": "en", "amp": undefined}
-             * @param {Array} link: [{"rel": "canonical", "href": "http://mysite.com/example"}]
-             * @param {Array} meta: [{"name": "description", "content": "Test description"}]
-             * @param {Array} noscript: [{"innerHTML": "<img src='http://mysite.com/js/test.js'"}]
-             * @param {Function} onChangeClientState: "(newState) => console.log(newState)"
-             * @param {Array} script: [{"type": "text/javascript", "src": "http://mysite.com/js/test.js"}]
-             * @param {Array} style: [{"type": "text/css", "cssText": "div { display: block; color: blue; }"}]
-             * @param {String} title: "Title"
-             * @param {Object} titleAttributes: {"itemprop": "name"}
-             * @param {String} titleTemplate: "MySite.com - %s"
-             */
-            set: function set$$1(canUseDOM) {
-                Component.canUseDOM = canUseDOM;
-            }
-        }]);
-        return HelmetWrapper;
-    }((react__WEBPACK_IMPORTED_MODULE_2___default().Component)), _class.propTypes = {
-        base: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-        bodyAttributes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-        children: prop_types__WEBPACK_IMPORTED_MODULE_4___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().node)), (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node)]),
-        defaultTitle: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
-        defer: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-        encodeSpecialCharacters: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool),
-        htmlAttributes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-        link: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)),
-        meta: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)),
-        noscript: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)),
-        onChangeClientState: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
-        script: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)),
-        style: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().object)),
-        title: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string),
-        titleAttributes: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
-        titleTemplate: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string)
-    }, _class.defaultProps = {
-        defer: true,
-        encodeSpecialCharacters: true
-    }, _class.peek = Component.peek, _class.rewind = function () {
-        var mappedState = Component.rewind();
-        if (!mappedState) {
-            // provide fallback if mappedState is undefined
-            mappedState = mapStateOnServer({
-                baseTag: [],
-                bodyAttributes: {},
-                encodeSpecialCharacters: true,
-                htmlAttributes: {},
-                linkTags: [],
-                metaTags: [],
-                noscriptTags: [],
-                scriptTags: [],
-                styleTags: [],
-                title: "",
-                titleAttributes: {}
-            });
-        }
-
-        return mappedState;
-    }, _temp;
-};
-
-var NullComponent = function NullComponent() {
-    return null;
-};
-
-var HelmetSideEffects = react_side_effect__WEBPACK_IMPORTED_MODULE_0___default()(reducePropsToState, handleClientStateChange, mapStateOnServer)(NullComponent);
-
-var HelmetExport = Helmet(HelmetSideEffects);
-HelmetExport.renderStatic = HelmetExport.rewind;
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HelmetExport);
 
 
 
@@ -4643,142 +3850,6 @@ var throttle = function throttle(fn) {
 
 var _default = throttle;
 exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/react-side-effect/lib/index.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/react-side-effect/lib/index.js ***!
-  \*****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
-
-var React = __webpack_require__(/*! react */ "react");
-var React__default = _interopDefault(React);
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = Object.create(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  subClass.__proto__ = superClass;
-}
-
-var canUseDOM = !!(typeof window !== 'undefined' && window.document && window.document.createElement);
-function withSideEffect(reducePropsToState, handleStateChangeOnClient, mapStateOnServer) {
-  if (typeof reducePropsToState !== 'function') {
-    throw new Error('Expected reducePropsToState to be a function.');
-  }
-
-  if (typeof handleStateChangeOnClient !== 'function') {
-    throw new Error('Expected handleStateChangeOnClient to be a function.');
-  }
-
-  if (typeof mapStateOnServer !== 'undefined' && typeof mapStateOnServer !== 'function') {
-    throw new Error('Expected mapStateOnServer to either be undefined or a function.');
-  }
-
-  function getDisplayName(WrappedComponent) {
-    return WrappedComponent.displayName || WrappedComponent.name || 'Component';
-  }
-
-  return function wrap(WrappedComponent) {
-    if (typeof WrappedComponent !== 'function') {
-      throw new Error('Expected WrappedComponent to be a React component.');
-    }
-
-    var mountedInstances = [];
-    var state;
-
-    function emitChange() {
-      state = reducePropsToState(mountedInstances.map(function (instance) {
-        return instance.props;
-      }));
-
-      if (SideEffect.canUseDOM) {
-        handleStateChangeOnClient(state);
-      } else if (mapStateOnServer) {
-        state = mapStateOnServer(state);
-      }
-    }
-
-    var SideEffect =
-    /*#__PURE__*/
-    function (_PureComponent) {
-      _inheritsLoose(SideEffect, _PureComponent);
-
-      function SideEffect() {
-        return _PureComponent.apply(this, arguments) || this;
-      }
-
-      // Try to use displayName of wrapped component
-      // Expose canUseDOM so tests can monkeypatch it
-      SideEffect.peek = function peek() {
-        return state;
-      };
-
-      SideEffect.rewind = function rewind() {
-        if (SideEffect.canUseDOM) {
-          throw new Error('You may only call rewind() on the server. Call peek() to read the current state.');
-        }
-
-        var recordedState = state;
-        state = undefined;
-        mountedInstances = [];
-        return recordedState;
-      };
-
-      var _proto = SideEffect.prototype;
-
-      _proto.UNSAFE_componentWillMount = function UNSAFE_componentWillMount() {
-        mountedInstances.push(this);
-        emitChange();
-      };
-
-      _proto.componentDidUpdate = function componentDidUpdate() {
-        emitChange();
-      };
-
-      _proto.componentWillUnmount = function componentWillUnmount() {
-        var index = mountedInstances.indexOf(this);
-        mountedInstances.splice(index, 1);
-        emitChange();
-      };
-
-      _proto.render = function render() {
-        return React__default.createElement(WrappedComponent, this.props);
-      };
-
-      return SideEffect;
-    }(React.PureComponent);
-
-    _defineProperty(SideEffect, "displayName", "SideEffect(" + getDisplayName(WrappedComponent) + ")");
-
-    _defineProperty(SideEffect, "canUseDOM", canUseDOM);
-
-    return SideEffect;
-  };
-}
-
-module.exports = withSideEffect;
-
 
 /***/ }),
 
@@ -7051,14 +6122,14 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./.cache/caches/gatsby-plugin-image/762319502.json":
+/***/ "./.cache/caches/gatsby-plugin-image/805670706.json":
 /*!**********************************************************!*\
-  !*** ./.cache/caches/gatsby-plugin-image/762319502.json ***!
+  !*** ./.cache/caches/gatsby-plugin-image/805670706.json ***!
   \**********************************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRiABAABXRUJQVlA4IBQBAABQBgCdASoUABsAPtFcp04oJSOiKAqpABoJbACsOUB1Yo3gXEqaPCR1pIAk4d1YsPHJ9pG/JktkggWB5AD+P5kvWERzlv+Xtcxrw0BPjoM9VEdQ0Q3Zommtzgmf+12eD2LaMskKfzPgtNmTvq3N2rjmYsF8Q8cf/RIRH+SmDe8j87p/6stDMtkM++XsoOWAhQhlnnWxOxfO2LZkE4IJyVHwAj8NHnWRt0BTkpoEQktz1kUVRZH8Mxqyo5l/Wlobp6FAluhr6LZbfqT+FoTjNxV5PY448okjtvcj9DQmyxzwu1704AEYvOOIHBz9FrIlru1QIeHYQTDHEW9AglRtQmZWiHVvnG/wIQ24+/QDJN3+G0U0AAA="},"images":{"fallback":{"src":"/static/3bd4efd43254cd6bf0f2ee5abde9d557/ed073/profile-photo.webp","srcSet":"/static/3bd4efd43254cd6bf0f2ee5abde9d557/84c87/profile-photo.webp 239w,\\n/static/3bd4efd43254cd6bf0f2ee5abde9d557/772b4/profile-photo.webp 478w,\\n/static/3bd4efd43254cd6bf0f2ee5abde9d557/ed073/profile-photo.webp 955w","sizes":"(min-width: 955px) 955px, 100vw"},"sources":[]},"width":1500,"height":1999.476439790576}');
+module.exports = /*#__PURE__*/JSON.parse('{"layout":"constrained","placeholder":{"fallback":"data:image/webp;base64,UklGRhwBAABXRUJQVlA4IBABAAAwBgCdASoUABwAPtFcpU6oJSMiKAqpABoJbACsAd4tgnK8Jecipz5BswsOb2KEQzkHZzf2fCDSfl7cAPuS7+cmeyYq/fklXE/gJ4lmPe8SIW56GS0q1M3cToXjWhE88Fyqb5gwWCXysDHVscGkjvO5Mzdy6keG8vUud+Wtevmrvkx1u2DV1IIyuQn0bk5YKE1JrCOYuLKP/jCLz5JkjF2Is1mCvOUbHOfEZwEap5qT3aA5QwjtgiZy4izqClvIgPWo2nKgzp+wkGP41gM0IhU18WB7+39Fu5ppFfX+NFqQNeiFxKS/65syNx4vxmFSMuMXbxuGhHdgNnfgf1MRlffrEgzT/6CEN/3FPslTi4AAAA=="},"images":{"fallback":{"src":"/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp","srcSet":"/static/88867faf044097371b9619d62c5a5187/5bd58/profile-photo.webp 217w,\\n/static/88867faf044097371b9619d62c5a5187/3d8bc/profile-photo.webp 435w,\\n/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp 869w","sizes":"(min-width: 869px) 869px, 100vw"},"sources":[]},"width":1000,"height":1400.4602991944764}');
 
 /***/ }),
 

@@ -1,11 +1,88 @@
+/* src/pages/index.scss */
+
+/* ===================== */
+/*        VARIABLES      */
+/* ===================== */
+
+:root {
+  /* Color Variables */
+  --primary-color: #5ab9ea; /* Example Primary Color */
+  --primary-color-dark: #3d8ecf; /* Darker shade for hover effects */
+  --accent-color: #f39c12;  /* Example Accent Color */
+  --background-color: #ffffff; /* Light Theme Background */
+  --text-color: #333333;    /* Dark Text for Light Theme */
+  --form-background: #ffffff; /* Form Background */
+  --form-shadow: rgba(0, 0, 0, 0.1); /* Form Shadow Color */
+
+  /* Typography */
+  --font-family-primary: 'Montserrat', sans-serif;
+  --font-family-secondary: 'Bebas Neue', cursive;
+
+  /* Icon Filter for Themes */
+  --icon-filter: none;
+}
+
+/* ===================== */
+/*      RESET & BASE     */
+/* ===================== */
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: var(--font-family-primary);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===================== */
+/*   GLOBAL STYLES      */
+/* ===================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-secondary);
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
 /* Text Shadow for Improved Readability */
-.name, 
-.affiliations p, 
-.roles p, 
+.name,
+.affiliations p,
+.roles p,
 .icon-link span {
   text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5); /* Softer shadow */
 }
@@ -31,7 +108,8 @@ body {
   margin-bottom: 1rem;
 }
 
-.affiliations, .roles {
+.affiliations,
+.roles {
   font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -46,72 +124,429 @@ body.dark {
   --strip-background-color: rgba(0, 0, 0, 0.3); /* Darker strip for dark theme */
 }
 
-.icon-bar {
+
+/* ===================== */
+/*  TOP ICON NAV BAR    */
+/* ===================== */
+
+/* Top Icon Navigation Bar Styles */
+.top-icon-bar {
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
-  position: absolute;
-  bottom: 0; /* Align to the bottom */
-  width: 100%;
-  z-index: 10;
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--primary-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 
-  /* Add the blurry strip background */
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--strip-background-color); /* Theme-based background color */
-    backdrop-filter: blur(8px); /* Apply blur for a soft effect */
-    z-index: -1; /* Place behind the icons */
+  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 0.5rem;
+    }
+
+    span {
+      font-size: 0.9rem;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    &:hover {
+      color: var(--primary-color);
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center; /* Center on smaller screens */
   }
 }
 
 
-.icon-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 2.5rem;  /* Increase spacing between icons */
+/* ===================== */
+/*  CONTACT SECTION     */
+/* ===================== */
+
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: var(--background-color);
   color: var(--text-color);
-  text-decoration: none;
-  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  h2 {
+    font-family: var(--font-family-secondary);
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left; /* Left-aligned */
+    margin-left: 1rem; /* Indent section title if desired */
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 2000px;
+    margin: 0 auto;
+    gap: 3rem;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      align-items: flex-start; /* Corrected */
+    }
+  }
+
+  .contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    /* Removed padding-left: 1rem; to prevent unintended indentation */
+    align-items: flex-start; /* Ensure children align to the start */
+
+    @media (max-width: 992px) {
+      padding-left: 0;
+      width: 100%;
+    }
+
+    /* Directly target the h3 for indentation */
+    h3 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: left;
+      margin-left: 1rem; /* Indentation */
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.1rem;
+        font-weight: bold;
+        /* Removed align-items: left; as it's unnecessary in flex-direction: column */
+      }
+
+      input,
+      textarea {
+        padding: 0.8rem;
+        border: 1px solid var(--primary-color);
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+          border-color: var(--accent-color);
+          outline: none;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 150px;
+      }
+    }
+
+    button {
+      align-self: flex-start; /* Changed from 'left' to 'flex-start' */
+      padding: 0.7rem 2rem;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: var(--accent-color);
+        transform: scale(1.05);
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+
+    .form-feedback {
+      padding: 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-align: center;
+
+      &.success {
+        background-color: #d4edda;
+        color: #155724;
+      }
+
+      &.error {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+    }
+  }
+
+  /* ===================== */
+  /*    AFFILIATIONS SECTION */
+  /* ===================== */
+
+  .affiliations {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+
+    h3 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.8rem;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .affiliations-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+        }
+
+        img {
+          width: 110px;
+          height: 110px;
+          object-fit: contain;
+        }
+
+        span {
+          font-size: 1.7rem;
+          font-family: 'Montserrat', sans-serif;
+          line-height: 40px;
+          display: inline-block;
+        }
+
+        &:hover {
+          color: var(--primary-color);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  /* ===================== */
+  /*    SOCIAL LINKS SECTION */
+  /* ===================== */
+
+  .social-links {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h3 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .social-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          text-decoration: none;
+          color: var(--text-color);
+          transition: color 0.3s ease, transform 0.3s ease;
+
+          img {
+            width: 50px; /* Increased size */
+            height: 50px; /* Increased size */
+            object-fit: contain;
+          }
+
+          span {
+            font-size: 1.7rem;
+            font-family: 'Montserrat', sans-serif;
+          }
+
+          &:hover {
+            color: var(--primary-color);
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
 }
 
-.icon-link img {
-  width: 60px;         /* Larger icon size */
-  height: 60px;
-  margin-bottom: 0.8rem;
-  filter: var(--icon-filter);  /* Apply theme-based icon filter */
-  transition: transform 0.3s ease, filter 0.3s ease;
+/* ===================== */
+/*    RESPONSIVE DESIGN   */
+/* ===================== */
+
+/* General Responsive Styles */
+@media (max-width: 992px) {
+  .contact-section {
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .affiliations,
+    .social-links {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+  }
+
+  .top-icon-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 }
 
-.icon-link:hover img {
-  transform: scale(1.2); /* Slightly enlarge on hover */
-  filter: var(--icon-filter) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.6)); /* More pronounced shadow on hover */
+/* Responsive Adjustments for Very Small Screens */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .top-icon-bar a img,
+  .social-links .social-list li a img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-form,
+  .affiliations,
+  .social-links {
+    padding: 1rem;
+  }
+
+  .social-links .social-list li a span {
+    display: none; /* Hide labels on very small screens for better spacing */
+  }
+
+  /* Adjust indentation for small screens */
+  .contact-form h3 {
+    margin-left: 0.5rem;
+  }
 }
 
-.icon-link span {
-  font-size: 1.2rem; /* Larger font size for labels at the bottom */
-  margin-top: 0.5rem;
+/* ===================== */
+/*   OTHER SECTIONS      */
+/* ===================== */
+
+/* Example: Papers Section */
+.papers-section {
+  /* Your styles for the papers section */
 }
 
-.background-image {
-  background-image: url('/assets/background.jpg'); /* Ensure path is correct */
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 1;
+/* Example: Projects Section */
+.projects-section {
+  /* Your styles for the projects section */
 }
 
-/* Theme toggle button styling */
+/* Example: Bio Section */
+.bio-section {
+  /* Your styles for the bio section */
+}
+
+/* ===================== */
+/*    ADDITIONAL STYLES   */
+/* ===================== */
+
+/* Home Button Styles */
+.home-button {
+  position: fixed;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Position at the top left corner */
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%; /* Circular button */
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 100; /* Ensure it stays above other elements */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: var(--primary-color-dark); /* Darken on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+  img {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+  }
+}
+
+
+/* Theme Toggle Button Styling */
 .theme-toggle-button {
   position: fixed;
   top: 20px;          /* Offset from the top */
@@ -128,7 +563,7 @@ body.dark {
   color: white;       /* Icon color */
   font-size: 1.5rem;  /* Icon size */
   z-index: 100;       /* Ensure it stays on top */
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s ease;
 }
 
 .theme-toggle-button:hover {
@@ -136,15 +571,3 @@ body.dark {
   transform: scale(1.1);      /* Slight scaling effect */
 }
 
-.content-section {
-  min-height: 100vh;
-  padding: 5rem 2rem;
-  text-align: center;
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-.content-section h2 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}

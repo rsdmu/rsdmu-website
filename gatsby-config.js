@@ -56,6 +56,7 @@ module.exports = {
     // Other plugins
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-react-helmet",
 
     // Manifest for PWA support
     {
@@ -64,8 +65,8 @@ module.exports = {
         name: "Rashid Mushkani Portfolio",
         short_name: "RashidMushkani",
         start_url: "/",
-        background_color: "#ffffff",
-        theme_color: "#381696",
+        background_color: "#000000", // Changed to black to match dark theme
+        theme_color: "#5ab9ea", // Light blue primary color
         display: "standalone",
         icon: "src/images/icon.png",
       },

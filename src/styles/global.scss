@@ -1,5 +1,3 @@
-/* src/styles/global.scss */
-
 /* ---------------------------------------------------
    1. Reset and Base Styles
 --------------------------------------------------- */
@@ -13,9 +11,12 @@
   padding: 0;
 }
 
+/* Import Montserrat and Bebas Neue fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Bebas+Neue&display=swap');
+
 /* Set base font and background colors using CSS variables */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -28,22 +29,28 @@ body {
 
 /* Light Mode Variables */
 body.light {
-  --primary-color: #381696;
-  --background-color: #ffffff;
-  --text-color: #000000;
+  --primary-color: #5ab9ea; /* Light blue */
+  --primary-color-light: #7fcfff; /* 10% lighter */
+  --accent-color: #ff6f91;  /* Pink */
+  --background-color: #ffffff; /* White background for light mode */
+  --text-color: #000000; /* Black text for light mode */
   --icon-filter: none; /* No filter for light mode */
-  --strip-background-color: rgba(255, 255, 255, 0.5);
-  --header-background-color: rgba(255, 255, 255, 0.9);
+  --strip-background-color: rgba(255, 255, 255, 0.1);
+  --header-background-color: rgba(255, 255, 255, 0.8);
+  --background-image-url: url('/assets/light-background.webp'); /* Light theme background image */
 }
 
 /* Dark Mode Variables */
 body.dark {
-  --primary-color: #9984d5;
-  --background-color: #0A041A;
-  --text-color: #ffffff;
+  --primary-color: #5ab9ea; /* Light blue */
+  --primary-color-dark: #3a90c1; /* 10% darker */
+  --accent-color: #ff6f91;  /* Pink */
+  --background-color: #000000; /* Black background for dark mode */
+  --text-color: #ffffff; /* White text for dark mode */
   --icon-filter: invert(1); /* Invert icons for dark mode */
-  --strip-background-color: rgba(0, 0, 0, 0.3);
+  --strip-background-color: rgba(0, 0, 0, 0.7);
   --header-background-color: rgba(0, 0, 0, 0.9);
+  --background-image-url: url('/assets/dark-background.webp'); /* Dark theme background image */
 }
 
 /* ---------------------------------------------------
@@ -59,44 +66,110 @@ html {
    4. Background Image Wrapper
 --------------------------------------------------- */
 
-.background-image-wrapper {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.background-image-wrapper .background-image {
-  background-image: url('/assets/background.webp'); /* Use optimized format */
-  background-size: cover;
-  background-position: center;
-  filter: blur(8px);
+/* Background Image */
+.background-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   z-index: 1;
+  overflow: hidden; /* Ensure content doesn't overflow */
 }
 
-.background-image-wrapper .centered-content {
-  position: relative;
+.background-image::before,
+.background-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out; /* Transition for opacity */
+}
+
+.background-image::before {
+  background-image: url('/assets/light-background.webp'); /* Light theme image */
+  opacity: 1;
+  z-index: 1;
+}
+
+.background-image::after {
+  background-image: url('/assets/dark-background.webp'); /* Dark theme image */
+  opacity: 0;
   z-index: 2;
-  color: var(--text-color);
-  text-align: center;
-  padding: 40px 20px;
-  max-width: 700px;
 }
 
+/* When dark theme is active */
+body.dark .background-image::before {
+  opacity: 0;
+}
+
+body.dark .background-image::after {
+  opacity: 1;
+}
+
+/* Wrapper */
+.background-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Centered Content */
+.centered-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-end; /* Align items to the bottom */
+  height: 100%;
+  padding: 0 2rem 2rem 2rem; /* Padding: top right bottom left */
+}
+
+/* Hero Subtitles */
+.hero-subtitle {
+  margin: 0.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  align-self: flex-start; /* Align subtitles to the left */
+}
+
+/* Site Title */
 .site-title {
-  font-size: 4rem; /* Increase title size */
-  font-weight: bold;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 7rem; /* Increase title size */
+  font-weight: 700;
   color: var(--text-color); /* Use theme color */
   text-transform: uppercase;
+  letter-spacing: 0.3em; /* Increased letter spacing */
+  margin-bottom: 0.5rem;
+  text-align: left; /* Align text within the element to the left */
+  align-self: flex-start; /* Align the title to the left */
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  padding: 0.8rem 2rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--accent-color);
+  transform: scale(1.05);
 }
 
 /* ---------------------------------------------------
@@ -108,27 +181,44 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px; /* Adjust as needed */
   background: var(--header-background-color); /* Use CSS Variable */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0.1px);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 2rem;
   z-index: 1000;
   transition: background-color 0.3s ease;
+  height: 100px;
 }
 
-.site-nav a {
-  margin: 0 1rem;
+.site-header .site-nav ul li a {
   text-decoration: none;
   color: var(--text-color);
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.6rem; /* Increased font size */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   font-weight: 500;
   transition: color 0.3s ease;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem; /* Increased gap */
 }
 
 .site-nav a:hover {
   color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .site-nav a {
+    font-size: 1.5rem; /* Slightly smaller on mobile */
+  }
+
+  .site-nav ul {
+    gap: 1.5rem; /* Reduce gap on smaller screens */
+  }
 }
 
 /* ---------------------------------------------------
@@ -172,26 +262,25 @@ html {
   color: var(--text-color);
   text-decoration: none;
   font-size: 1.2rem;
-  transition: color 0.3s ease;
+}
 
-  &:hover img {
-    transform: scale(1.2);
-    filter: var(--icon-filter) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.6));
-  }
+.icon-link img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.8rem;
+  filter: var(--icon-filter); /* Apply theme-based icon filter */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
 
-  img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 0.8rem;
-    filter: var(--icon-filter); /* Ensure icons obey theme */
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
+.icon-link:hover img {
+  transform: scale(1.2); /* Slightly enlarge on hover */
+  filter: var(--icon-filter) drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.6)); /* More pronounced shadow on hover */
+}
 
-  span {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
-  }
+.icon-link span {
+  font-size: 1.2rem; /* Larger font size for labels at the bottom */
+  margin-top: 0.5rem;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* ---------------------------------------------------
@@ -201,24 +290,72 @@ html {
 .content-section {
   min-height: 100vh;
   padding: 5rem 2rem;
-  text-align: center;
+  text-align: left;
   background-color: var(--background-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Content Sections */
 .content-section h2 {
+  font-family: 'Bebas Neue', cursive;
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-
 .content-section p {
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
   max-width: 800px;
   margin: 0 auto 2rem auto;
+  text-align: left;
+}
+
+/* Grid Layout for Publications and Projects */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(90, 185, 234, 0.3);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.grid-item-content {
+  padding: 1rem;
+}
+
+.grid-item-title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.grid-item-author {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
 }
 
 /* ---------------------------------------------------
@@ -234,7 +371,7 @@ html {
 }
 
 .contact-section h2 {
-  margin-bottom: 15rem; /* Increased space below the heading */
+  margin-bottom: 5rem; /* Increased space below the heading */
 }
 
 .contact-section p {
@@ -336,13 +473,20 @@ html {
   margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #ccc;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(56, 25, 150, 0.3);
+  box-shadow: 0 0 5px rgba(90, 185, 234, 0.3);
   outline: none;
 }
 
@@ -354,16 +498,18 @@ html {
 .contact-form button {
   padding: 0.8rem 2rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: var(--primary-color);
   color: #fff;
   font-size: 1rem;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .contact-form button:hover {
-  background-color: #2b0e80; /* Specific color instead of using darken() */
+  background-color: var(--accent-color);
   transform: translateY(-2px);
 }
 
@@ -400,6 +546,18 @@ html {
   .contact-form input,
   .contact-form textarea {
     max-width: 100%;
+  }
+
+  .site-nav a {
+    font-size: 1rem;
+  }
+
+  .site-title {
+    font-size: 3rem;
+  }
+
+  .content-section {
+    padding: 3rem 1rem;
   }
 }
 
@@ -445,7 +603,7 @@ html {
 input:focus,
 textarea:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(56, 25, 150, 0.3); /* Example focus shadow */
+  box-shadow: 0 0 5px rgba(90, 185, 234, 0.3); /* Example focus shadow */
   outline: none;
 }
 
@@ -463,8 +621,9 @@ button:focus-visible {
 
 /* Smooth transitions for hover effects */
 .social-links a,
-.contact-form button {
-  transition: color 0.3s ease, transform 0.3s ease;
+.contact-form button,
+.cta-button {
+  transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
 /* Smooth transition for theme changes on various elements */
@@ -476,13 +635,15 @@ button:focus-visible {
 .contact-container,
 .social-links,
 .contact-form,
-.site-footer {
+.site-footer,
+.cta-button {
   transition: background-color 0.3s ease, color 0.3s ease, filter 0.3s ease;
 }
 
 /* Hover effects for social links and contact form */
 .social-links a:hover,
-.contact-form button:hover {
+.contact-form button:hover,
+.cta-button:hover {
   color: var(--primary-color);
   transform: translateX(5px);
 }
@@ -491,34 +652,12 @@ button:focus-visible {
   transform: translateY(-2px);
 }
 
-/* ---------------------------------------------------
-    16. Form Feedback Styling
---------------------------------------------------- */
-
-.form-feedback {
-  width: 100%;
-  max-width: 500px;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.form-feedback.success {
-  background-color: #d4edda;
-  color: #155724;
-  border: 1px solid #c3e6cb;
-}
-
-.form-feedback.error {
-  background-color: #f8d7da;
-  color: #721c24;
-  border: 1px solid #f5c6cb;
+.cta-button:hover {
+  transform: scale(1.05);
 }
 
 /* ---------------------------------------------------
-    16. Fade-in animation for sections
+   13. Fade-in animation for sections
 --------------------------------------------------- */
 
 @keyframes fadeIn {
@@ -548,4 +687,73 @@ button:focus-visible {
   .bio-text {
     animation-delay: 0.6s;
   }
+}
+
+/* ---------------------------------------------------
+   14. Home Button Styles
+--------------------------------------------------- */
+
+/* Home Button Styles */
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%; /* Circular button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background-color: var(--accent-color); /* Change to accent color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+  img {
+    width: 24px; /* Adjust icon size as needed */
+    height: 24px;
+    filter: invert(1); /* Invert icon color to match --icon-color */
+    transition: filter 0.3s ease;
+  }
+
+  /* Optional: Remove label spacing if label is empty */
+  span {
+    display: none;
+  }
+}
+
+/* Optional: Focus State for Accessibility */
+.home-button:focus {
+  outline: 2px dashed var(--primary-color);
+  outline-offset: 4px;
+}
+
+/* Adjust the home section to account for the fixed header */
+#home {
+  padding-top: 80px; /* Adjust based on your header's height */
+}
+
+/* ---------------------------------------------------
+   15. ScrollSpy Navigation Styles
+--------------------------------------------------- */
+
+.scrollspy-nav li {
+  display: inline-block;
+}
+
+.scrollspy-nav li a {
+  display: block;
+  padding: 10px 15px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.scrollspy-nav li a.is-current {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }

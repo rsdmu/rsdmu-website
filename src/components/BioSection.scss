@@ -1,169 +1,226 @@
 /* src/components/BioSection.scss */
 
+/* BEM Naming Convention: .bio-section is the Block */
+
 .bio-section {
-    /* Define darkened primary color if not defined globally */
-    /* --primary-color-dark: #2f0c7e;  /* Uncomment if defined locally */
+  padding: 5rem 2rem;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Title */
+.bio-section__title {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  width: 100%;
+}
+
+/* Overview and Image Container */
+.bio-section__overview-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  width: 100%;
+  max-width: none; /* Remove max-width to allow full width */
+  margin-bottom: 4rem;
+}
+
+/* Bio Overview */
+.bio-section__overview {
+  flex: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.bio-section__overview p {
+  margin-bottom: 1.5rem;
+}
+
+/* Profile Image Container */
+.bio-section__image-container {
+  flex: 1.3;
+  display: flex;
+  align-items: flex-start; /* Changed from 'top' to 'flex-start' */
+  justify-content: flex-start; /* Changed from 'left' to 'flex-start' */
+  overflow: hidden; /* Hides any overflow when the image scales */
+  border-radius: 10px; /* Matches the image's border-radius */
+}
+
+.bio-section__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(90, 185, 234, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Smooth transition */
   
-    padding: 4rem 2rem;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  
-    h2 {
-      text-align: center;
-      margin-bottom: 3rem; /* Increased space below the title */
-      color: var(--primary-color); /* Consistent with other section titles */
-      font-size: 3rem;
-    }
-  
-    .bio-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; /* Stack image and text vertically */
-      align-items: center;
-      gap: 2rem; /* Space between image and text */
-    }
-  
-    /* Bio Photo */
-    .bio-photo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  
-      .profile-image {
-        width: 800px; /* Adjusted for a larger image */
-        height: 600px; /* Adjusted height for aspect ratio */
-        object-fit: cover; /* Ensures the image covers the container without distortion */
-        border-radius: 1px; /* Slightly rounded corners */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
-        &:hover {
-          transform: scale(1.05);
-          box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-      }
-    }
-  
-    /* Bio Text */
-    .bio-text {
-      width: 100%;
-      max-width: 800px; /* Limit the width for better readability */
-      text-align: left; /* Align text to the left */
-  
-      /* Overview Section */
-      .bio-overview p {
-        font-size: 1.1rem;
-        line-height: 1.8;
-        margin-bottom: 1.5rem;
-      }
-  
-      /* Subsections */
-      .bio-timeline,
-      .bio-education,
-      .bio-awards {
-        margin-bottom: 2rem;
-  
-        h3 {
-          font-size: 2rem;
-          margin-bottom: 1rem;
-          color: var(--primary-color);
-        }
-  
-        .bio-list {
-          list-style-type: disc;
-          padding-left: 1.5rem;
-  
-          li {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-  
-            a {
-              color: var(--primary-color);
-              text-decoration: none;
-              transition: color 0.3s ease, text-decoration 0.3s ease;
-  
-              &:hover {
-                color: var(--primary-color-dark); /* Use the darkened color variable */
-                text-decoration: underline;
-              }
-            }
-          }
-        }
-  
-        a {
-          color: var(--primary-color);
-          text-decoration: none;
-          transition: color 0.3s ease, text-decoration 0.3s ease;
-  
-          &:hover {
-            color: var(--primary-color-dark); /* Use the darkened color variable */
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  
-    /* Download CV Button */
-    .download-cv {
-      text-align: center; /* Center the button */
-      margin-top: 2rem; /* Space above the button */
-  
-      .download-resume-button {
-        display: inline-block;
-        padding: 0.75rem 1.5rem;
-        background-color: var(--primary-color);
-        color: #ffffff;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 1rem;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-  
-        &:hover {
-          background-color: var(--primary-color-dark); /* Use the darkened color variable */
-          transform: translateY(-2px);
-        }
-      }
-    }
-  
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      .bio-container {
-        padding: 0 1rem;
-      }
-  
-      .bio-photo {
-        .profile-image {
-          width: 400px; /* Reduced size for smaller screens */
-          height: auto; /* Maintain aspect ratio */
-        }
-      }
-  
-      .bio-text {
-        max-width: 100%;
-  
-        text-align: center; /* Center text on smaller screens */
-  
-        .bio-timeline,
-        .bio-education,
-        .bio-awards {
-          h3 {
-            text-align: center;
-          }
-  
-          .bio-list {
-            padding-left: 0;
-            list-style-position: inside;
-          }
-        }
-      }
-  
-      h2 {
-        margin-bottom: 2rem; /* Adjust spacing for smaller screens */
-      }
-    }
+  &:hover,
+  &:focus {
+    transform: scale(1.05); /* Zoom in by 5% */
   }
-  
+}
+
+/* Full-Width Containers (Timeline, Education, Honors & Awards) */
+.bio-section__full-width-container {
+  width: 100%;
+  /* Remove max-width and center alignment */
+  margin: 0 0 4rem 0;
+  padding: 0;
+}
+
+/* Subtitles */
+.bio-section__subtitle {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+}
+
+/* Lists */
+.bio-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bio-section__list li {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.bio-section__link {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* Download CV Button */
+.bio-section__download {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.bio-section__download-button {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: 
+    background-color 0.3s ease, 
+    color 0.3s ease, 
+    transform 0.3s ease;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(90, 185, 234, 0.5);
+  }
+}
+
+/* Responsive Design */
+
+/* Tablets and Small Desktops */
+@media (max-width: 992px) {
+  .bio-section__overview-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bio-section__overview {
+    flex: none;
+    width: 100%;
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+/* Profile Image Container */
+.bio-section__image-container {
+  flex: 1; /* Adjusted from 1.3 to 1 for proportional sizing */
+  display: flex;
+  align-items: flex-start; /* Ensures the image aligns at the top */
+  justify-content: flex-start; /* Aligns the image to the left */
+  overflow: hidden; /* Hides any overflow when the image scales */
+  border-radius: 10px; /* Matches the image's border-radius */
+  box-shadow: 0 4px 20px rgba(90, 185, 234, 0.3); /* Optional: Apply shadow to the container */
+}
+
+  .bio-section__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .bio-section__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .bio-section__list li {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+  .bio-section {
+    padding: 3rem 1rem;
+  }
+
+  .bio-section__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2em;
+  }
+
+  .bio-section__subtitle {
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+  }
+
+  .bio-section__overview {
+    font-size: 1.6rem;
+  }
+
+  .bio-section__list li {
+    font-size: 1.6rem;
+  }
+
+  .bio-section__download-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1.5rem;
+  }
+}

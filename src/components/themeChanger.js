@@ -1,11 +1,12 @@
 // src/components/themeChanger.js
 import React, { useEffect, useState } from "react";
+import "./themeChanger.scss";
 
 const ThemeChanger = () => {
   const [theme, setTheme] = useState(
     typeof window !== "undefined" && window.localStorage.getItem("theme")
       ? window.localStorage.getItem("theme")
-      : "light"
+      : "dark" // Default to dark theme
   );
 
   useEffect(() => {
