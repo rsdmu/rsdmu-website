@@ -19,6 +19,14 @@ var plugins = [{
       plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-offline/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-webfonts',
+      plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby-plugin-webfonts/gatsby-ssr.js'),
+      options: {"plugins":[],"fonts":{"google":[{"family":"Montserrat","variants":["400","700"]},{"family":"Bebas Neue","variants":["400"]}]},"formats":["woff2","woff"],"useMinify":true,"usePreload":true,"usePreconnect":true,"crossOrigin":"anonymous"},
+    },{
+      name: 'default-site-plugin',
+      plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/gatsby-ssr.js'),
+      options: {"plugins":[]},
+    },{
       name: 'partytown',
       plugin: require('/Users/rsdmu/Desktop/rsdmu/rsdmu-website/node_modules/gatsby/dist/internal-plugins/partytown/gatsby-ssr.js'),
       options: {"plugins":[]},
