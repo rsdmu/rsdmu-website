@@ -1,5 +1,9 @@
 // gatsby-config.js
 
+require("dotenv").config({
+  path: `.env`,
+});
+
 module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
@@ -109,8 +113,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [
-          "G-X3HZGWVSDS", // Google Analytics / GA4
-          // You can add additional tracking IDs here
+          process.env.GATSBY_GOOGLE_ANALYTICS_ID, // Google Analytics / GA4
         ],
         pluginConfig: {
           head: true,
