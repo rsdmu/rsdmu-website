@@ -6453,8 +6453,11 @@ exports.components = {
   "component---src-pages-index-js": function componentSrcPagesIndexJs() {
     return __webpack_require__.e(/*! import() | component---src-pages-index-js */ "component---src-pages-index-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/pages/index.js?export=default */ "./src/pages/index.js?export=default"));
   },
-  "component---src-templates-blog-template-js": function componentSrcTemplatesBlogTemplateJs() {
-    return __webpack_require__.e(/*! import() | component---src-templates-blog-template-js */ "component---src-templates-blog-template-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/templates/blogTemplate.js?export=default */ "./src/templates/blogTemplate.js?export=default"));
+  "component---src-templates-publication-template-js": function componentSrcTemplatesPublicationTemplateJs() {
+    return __webpack_require__.e(/*! import() | component---src-templates-publication-template-js */ "component---src-templates-publication-template-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/templates/publicationTemplate.js?export=default */ "./src/templates/publicationTemplate.js?export=default"));
+  },
+  "component---src-templates-work-template-js": function componentSrcTemplatesWorkTemplateJs() {
+    return __webpack_require__.e(/*! import() | component---src-templates-work-template-js */ "component---src-templates-work-template-js").then(__webpack_require__.bind(__webpack_require__, /*! ./../../../src/templates/workTemplate.js?export=default */ "./src/templates/workTemplate.js?export=default"));
   }
 };
 exports.head = {};

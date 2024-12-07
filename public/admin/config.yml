@@ -43,7 +43,7 @@ collections:
                 required: false
   - name: blog
     label: Blog
-    folder: _data/blog
+    folder: src/_data
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     create: true
     fields:
@@ -67,7 +67,7 @@ collections:
       - label: Featured Image
         name: thumbnail
         widget: image
-        hint: "Image size 1280x800 works best :)"
+        hint: "Image size 1280x800 work best :)"
         required: false
         media_library:
           config:

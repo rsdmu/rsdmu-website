@@ -29,7 +29,7 @@ const BioSection = () => {
             <a href="https://www.tut.ac.jp/english/" target="_blank" rel="noopener noreferrer" className="bio-section__link">
               Toyohashi University of Technology
             </a>{" "}
-            in Japan, where he examined socio-spatial equity in urban public parks. His professional experience encompasses architectural design, urban conservation, and public space revitalization projects with the{" "}
+            in Japan, where he examined socio-spatial equity in urban public parks. His professional experience encompasses architectural design, urban conservation, and public space revitalization publications with the{" "}
             <a
               href="https://the.akdn/en/where-we-work/central-asia/afghanistan/cultural-development-overview-afghanistan/restoration-in-kabul-afghanistan"
               target="_blank"
@@ -45,16 +45,16 @@ const BioSection = () => {
             , teaching courses on environmental behavior, urban design, and architectural conservation.
           </p>
           <p>
-            His recent projects include <strong>StreetReview</strong>, a doctoral initiative employing AI to evaluate streetscape quality, and the{" "}
+            His recent publications include <strong>StreetReview</strong>, a doctoral initiative employing AI to evaluate streetscape quality, and the{" "}
             <a
-              href="https://mila.quebec/en/ai4humanity/applied-projects/artificial-intelligence-alignment-for-inclusion-aiai"
+              href="https://mila.quebec/en/ai4humanity/applied-publications/artificial-intelligence-alignment-for-inclusion-aiai"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
               Artificial Intelligence Alignment for Inclusion (AIAI)
             </a>{" "}
-            project, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as{" "}
+            publication, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as{" "}
             <a
               href="https://www.unesco.org/en/no-racism-no-discrimination"
               target="_blank"
@@ -152,7 +152,7 @@ const BioSection = () => {
           <li>
             <strong>2016-2019:</strong> Architect,{" "}
             <a
-              href="https://www.archdaily.com/911456/chihilsitoon-garden-project-aga-khan-trust-for-culture"
+              href="https://www.archdaily.com/911456/chihilsitoon-garden-publication-aga-khan-trust-for-culture"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"

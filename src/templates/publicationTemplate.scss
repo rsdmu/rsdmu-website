@@ -1,0 +1,93 @@
+/* src/templates/publicationTemplate.scss */
+
+.publication-template {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--form-background);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--form-shadow);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+
+  .publication-date,
+  .publication-author {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  .publication-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .publication-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .abstract-toggle-button {
+      background: none;
+      border: none;
+      color: var(--accent-color);
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color-darker); /* Use the darker shade */
+      }
+    }
+
+    .pdf-download-link {
+      text-decoration: none;
+      color: var(--accent-color);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &:hover,
+      &:focus {
+        color: var(--accent-color-darker); /* Use the darker shade */
+      }
+    }
+  }
+
+  .abstract-content {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--secondary-color);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+}
+
+/* Keyframes for Abstract Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px; /* Adjust as needed */
+  }
+}

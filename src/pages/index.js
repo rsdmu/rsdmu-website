@@ -1,17 +1,33 @@
 // src/pages/index.js
-import React, { useState } from 'react';
-import Layout from '../components/layout';
-import Seo from '../components/seo'; // Updated import
-import './index.scss';
-import IconLink from '../components/IconLink';
-import BioSection from "../components/BioSection"
 
-const IndexPage = () => {
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HZGWVSDS"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X3HZGWVSDS');
+</script>
+
+import React, { useState } from 'react';
+import { graphql, Link } from 'gatsby';
+import Layout from '../components/layout';
+import Seo from '../components/seo';
+import './index.scss';
+import BioSection from "../components/BioSection";
+import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa'; // Import Icons
+
+
+
+const IndexPage = ({ data }) => {
   const [formStatus, setFormStatus] = useState({
     submitted: false,
     submitting: false,
     info: { error: false, msg: null }
   });
+
+  const [openAbstracts, setOpenAbstracts] = useState({}); // State to track open abstracts
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -45,18 +61,27 @@ const IndexPage = () => {
     }
   };
 
+  // Extract work and publications data
+  const work = data.allMarkdownRemarkWork.edges;
+  const publications = data.allMarkdownRemarkPublications.edges;
+
+  // Toggle abstract display
+  const toggleAbstract = (path) => {
+    setOpenAbstracts(prevState => ({
+      ...prevState,
+      [path]: !prevState[path]
+    }));
+  };
+
   return (
     <Layout>
-      <Seo title="Home" description="Welcome to Rashid Mushkani's Portfolio" />
+      <Seo title="Home" description="Welcome to Rashid Mushkani's Website" />
       
-      {/* Assign an ID to the top section */}
+      {/* Hero Section */}
       <div id="home" className="background-image-wrapper">
-        {/* Set the WebP image as a background */}
         <div className="background-image"></div>
-        {/* Overlay that changes with the theme */}
         <div className="overlay"></div>
         <div className="centered-content">
-          {/* Move the subtitles above the name and align them to the right */}
           <h1 className="site-title">RASHID MUSHKANI</h1>
           <p className="hero-subtitle" style={{ textAlign: 'left' }}>
             AI & Urban Studies PhD Candidate
@@ -64,59 +89,89 @@ const IndexPage = () => {
           <p className="hero-subtitle" style={{ textAlign: 'left' }}>
             University of Montreal
           </p>
-
         </div>
       </div>
 
-
-      {/* Content Sections */}
-      <section id="papers" className="content-section">
-        <h2>Papers</h2>
+      {/* Work Section */}
+      <section id="work" className="content-section work-section">
+        <h2>Work</h2>
         <div className="grid-container">
-          {/* Example Grid Items */}
-          <div className="grid-item">
-            <img src="/images/paper1.jpg" alt="Paper 1" />
-            <div className="grid-item-content">
-              <h3 className="grid-item-title">Paper Title One</h3>
-              <p className="grid-item-author">Author: Rashid Mushkani</p>
+          {work.map(({ node }) => (
+            <div className="grid-item" key={node.frontmatter.path}>
+              {node.frontmatter.thumbnail && (
+                <Link to={`/${node.frontmatter.path}`}>
+                  <img src={node.frontmatter.thumbnail.publicURL} alt={node.frontmatter.title} className="grid-item-thumbnail" />
+                </Link>
+              )}
+              <div className="grid-item-content">
+                <p className="grid-item-date">{node.frontmatter.date}</p>
+                <h3 className="grid-item-title">
+                  <Link to={`/${node.frontmatter.path}`}>
+                    {node.frontmatter.title}
+                  </Link>
+                </h3>
+              </div>
             </div>
-          </div>
-          <div className="grid-item">
-            <img src="/images/paper2.jpg" alt="Paper 2" />
-            <div className="grid-item-content">
-              <h3 className="grid-item-title">Paper Title Two</h3>
-              <p className="grid-item-author">Author: Rashid Mushkani</p>
-            </div>
-          </div>
-          {/* Add more grid items as needed */}
+          ))}
         </div>
       </section>
 
-      <section id="projects" className="content-section">
-        <h2>Projects</h2>
+      {/* Publications Section */}
+      <section id="publications" className="content-section publications-section">
+        <h2>Publications</h2>
         <div className="grid-container">
-          {/* Example Grid Items */}
-          <div className="grid-item">
-            <img src="/images/project1.jpg" alt="Project 1" />
-            <div className="grid-item-content">
-              <h3 className="grid-item-title">Project One</h3>
-              <p className="grid-item-author">AI Integration in Urban Design</p>
+          {publications.map(({ node }) => (
+            <div className="grid-item" key={node.frontmatter.path}>
+              {node.frontmatter.thumbnail && (
+                <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer">
+                  <img src={node.frontmatter.thumbnail.publicURL} alt={node.frontmatter.title} className="grid-item-thumbnail" />
+                </a>
+              )}
+              <div className="grid-item-content">
+                <h3 className="grid-item-title">
+                  <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer">
+                    {node.frontmatter.title}
+                  </a>
+                </h3>
+                <p className="grid-item-author">{node.frontmatter.author}</p>
+                <div className="publication-actions">
+                  <button
+                    className="abstract-toggle-button"
+                    onClick={() => toggleAbstract(node.frontmatter.path)}
+                    aria-expanded={openAbstracts[node.frontmatter.path] || false}
+                    aria-controls={`abstract-${node.frontmatter.path}`}
+                  >
+                    {openAbstracts[node.frontmatter.path] ? <FaEyeSlash /> : <FaEye />} Abstract
+                  </button>
+                  <a
+                    href={node.frontmatter.pdf}
+                    className="pdf-download-link"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Download PDF"
+                  >
+                    <FaFilePdf /> PDF
+                  </a>
+                </div>
+                {openAbstracts[node.frontmatter.path] && (
+                  <div
+                    id={`abstract-${node.frontmatter.path}`}
+                    className="abstract-content"
+                  >
+                    <p>{node.frontmatter.abstract}</p>
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-          <div className="grid-item">
-            <img src="/images/project2.jpg" alt="Project 2" />
-            <div className="grid-item-content">
-              <h3 className="grid-item-title">Project Two</h3>
-              <p className="grid-item-author">Sustainable Urban Development</p>
-            </div>
-          </div>
-          {/* Add more grid items as needed */}
+          ))}
         </div>
       </section>
 
-      {/* Replace the existing bio section with BioSection component */}
+      {/* Bio Section */}
       <BioSection />
 
+      {/* Contact Section */}
       <section id="contact" className="content-section contact-section">
         <h2>Contact</h2>
         <div className="contact-container">
@@ -230,5 +285,47 @@ const IndexPage = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    allMarkdownRemarkWork: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/data/work/" } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+            thumbnail {
+              publicURL
+            }
+            date(formatString: "YYYY")
+          }
+        }
+      }
+    }
+    allMarkdownRemarkPublications: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/src/data/publications/" } }
+      sort: { frontmatter: { date: DESC } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+            thumbnail {
+              publicURL
+            }
+            author
+            link
+            abstract
+            pdf
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

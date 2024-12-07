@@ -1,4 +1,5 @@
 // gatsby-config.js
+
 module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
@@ -9,12 +10,21 @@ module.exports = {
     googleVerification: "google39150de1d9b66663",
   },
   plugins: [
-    // Source content from the '_data/blog' directory
+
+    // Source content from the 'src/data/work' directory
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "blog",
-        path: `${__dirname}/_data/blog`,
+        name: "work",
+        path: `${__dirname}/src/data/work`,
+      },
+    },
+    // Source content from the 'src/data/publications' directory
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "publications",
+        path: `${__dirname}/src/data/publications`,
       },
     },
     // Source images from the 'src/images' directory
@@ -30,7 +40,6 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
-          "gatsby-remark-relative-images",
           {
             resolve: "gatsby-remark-images",
             options: {

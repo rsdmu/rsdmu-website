@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import SEO from "./seo";
 import ScrollSpyNav from "./ScrollSpyNav";
 import "../styles/global.scss";
+import BioSection from "../components/BioSection";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,9 @@ const Layout = ({ children }) => {
       />
       <ScrollSpyNav />
 
-      <main>{children}</main>
+      <main style={{ paddingTop: "80px" }}> {/* Adjust padding as needed */}
+        {children}
+      </main>
 
       <footer className="site-footer">
         <p>&copy; {new Date().getFullYear()} Rashid Mushkani. All rights reserved.</p>

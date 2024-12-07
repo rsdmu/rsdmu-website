@@ -11,6 +11,16 @@
   padding: 0;
 }
 
+.main-content {
+  padding-top: 200px; /* Adjust based on your header height */
+  padding-bottom: 2rem; /* Optional: Add padding at the bottom */
+}
+
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, div {
+  color: var(--text-color);
+}
+
 /* Set base font and background colors using CSS variables */
 body {
   font-family: 'Montserrat', sans-serif;
@@ -28,26 +38,32 @@ body {
 body.light {
   --primary-color: #5ab9ea; /* Light blue */
   --primary-color-light: #7fcfff; /* 10% lighter */
-  --accent-color: #ff6f91;  /* Pink */
-  --background-color: #ffffff; /* White background for light mode */
+  --accent-color: #FF4081; /* Original Accent Color */
+  --accent-color-darker: #E73370; /* 10% Darker Shade */
+  --background-color: #f5f5f5; /* White background for light mode */
   --text-color: #000000; /* Black text for light mode */
   --icon-filter: none; /* No filter for light mode */
   --strip-background-color: rgba(255, 255, 255, 0.1);
   --header-background-color: rgba(255, 255, 255, 0.8);
   --background-image-url: url('/assets/light-background.webp'); /* Light theme background image */
+  --form-background: #f5f5f5; /* Light theme form background */
+  --form-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark Mode Variables */
 body.dark {
   --primary-color: #5ab9ea; /* Light blue */
   --primary-color-dark: #3a90c1; /* 10% darker */
-  --accent-color: #ff6f91;  /* Pink */
+  --accent-color: #E73370;
+  --accent-color-darker: #CC295E;
   --background-color: #000000; /* Black background for dark mode */
   --text-color: #ffffff; /* White text for dark mode */
   --icon-filter: invert(1); /* Invert icons for dark mode */
   --strip-background-color: rgba(0, 0, 0, 0.7);
   --header-background-color: rgba(0, 0, 0, 0.9);
   --background-image-url: url('/assets/dark-background.webp'); /* Dark theme background image */
+  --form-background: #000000; /* Dark theme form background */
+  --form-shadow: rgba(255, 255, 255, 0.1);
 }
 
 /* ---------------------------------------------------
@@ -286,7 +302,7 @@ body.dark .background-image::after {
 
 .content-section {
   min-height: 100vh;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   text-align: left;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -310,7 +326,7 @@ body.dark .background-image::after {
   text-align: left;
 }
 
-/* Grid Layout for Publications and Projects */
+/* Grid Layout for Publications and Publications */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -349,7 +365,7 @@ body.dark .background-image::after {
   margin-bottom: 0.5rem;
 }
 
-.grid-item-author {
+.grid-item-date {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   color: var(--text-color);
@@ -727,10 +743,12 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-/* Adjust the home section to account for the fixed header */
+
 #home {
-  padding-top: 80px; /* Adjust based on your header's height */
+  /*padding-top: 80px;*/
 }
+
+
 
 /* ---------------------------------------------------
    15. ScrollSpy Navigation Styles

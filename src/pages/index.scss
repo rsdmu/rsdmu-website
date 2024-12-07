@@ -8,7 +8,7 @@
   /* Color Variables */
   --primary-color: #5ab9ea; /* Example Primary Color */
   --primary-color-dark: #3d8ecf; /* Darker shade for hover effects */
-  --accent-color: #f39c12;  /* Example Accent Color */
+  --accent-color: #E73370;
   --background-color: #ffffff; /* Light Theme Background */
   --text-color: #333333;    /* Dark Text for Light Theme */
   --form-background: #ffffff; /* Form Background */
@@ -492,24 +492,258 @@ body.dark {
   }
 }
 
+
+
 /* ===================== */
-/*   OTHER SECTIONS      */
+/*    WORK SECTION     */
 /* ===================== */
 
-/* Example: Papers Section */
-.papers-section {
-  /* Your styles for the papers section */
+.work-section {
+  padding: 5rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  h2 {
+    font-family: var(--font-family-secondary);
+    font-size: 5rem; /* Adjust as needed */
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+    gap: 1.5rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+
+  .grid-item {
+    background-color: var(--form-background);
+    /*border: 1px solid var(--primary-color);*/
+    border-radius: 10px;
+    overflow: hidden; /* Ensures child elements don't overflow */
+    position: relative; /* For any absolute positioning inside */
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px var(--form-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px var(--form-shadow);
+    }
+
+    .grid-item-thumbnail {
+      width: 100%;
+      height: auto; /* Set a fixed height or use aspect ratio */
+      object-fit: cover; /* Ensures the image covers the entire area without distortion */
+      display: block;
+    }
+
+    .grid-item-content {
+      text-align: left;
+    }
+
+    .grid-item-title {
+      font-size: 2.5rem; /* Adjust as needed */
+      margin-bottom: 0rem;
+      font-family: var(--font-family-secondary);
+      color: var(--primary-color-dark);
+      text-transform: none;
+    }
+
+    .grid-item-date {
+      font-size: 1rem;
+
+
+    }
+  }
 }
 
-/* Example: Projects Section */
-.projects-section {
-  /* Your styles for the projects section */
+
+/* ===================== */
+/*    PUBLICATIONS SECTION   */
+/* ===================== */
+
+.publications-section {
+  padding: 5rem 2rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  h2 {
+    font-family: var(--font-family-secondary);
+    font-size: 5rem; /* Adjust as needed */
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    text-align: left;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+    gap: 1.5rem;
+
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+
+  .grid-item {
+    background-color: var(--form-background);
+    border-radius: 10px;
+    overflow: hidden; /* Ensures child elements don't overflow */
+    position: relative; /* For any absolute positioning inside */
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 6px var(--form-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 12px var(--form-shadow);
+    }
+
+    .grid-item-thumbnail {
+      width: 100%;
+      height: 400px; /* Set a fixed height */
+      object-fit: cover; /* Ensures the image covers the entire area without distortion */
+      display: block;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+
+    .grid-item-content {
+      padding: 1rem;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .grid-item-title {
+      font-size: 2rem; /* Adjust as needed */
+      margin-bottom: 0.5rem;
+      font-family: var(--font-family-secondary);
+      color: var(--primary-color-dark);
+      text-transform: none;
+
+
+      a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover,
+        &:focus {
+          color: var(--primary-color);
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .grid-item-author {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+
+    /* Updated Publication Actions */
+    .publication-actions {
+      display: flex;
+      justify-content: space-between; /* Position icons on opposite ends */
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid var(--accent-color); /* Thin border */
+      border-radius: 25px; /* Rounded rectangular shape */
+      padding: 0.5rem 1rem; /* Padding inside the border */
+
+      /* Abstract Toggle Button */
+      .abstract-toggle-button {
+        background: none;
+        border: none;
+        color: var(--text-color);
+        font-size: 1.2rem; /* Increase font size for larger icons */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover,
+        &:focus {
+          color: var(--accent-color-darker); /* Use the darker shade */
+        }
+
+        /* Target the icon inside the button */
+        svg {
+          width: 1.5em; /* Increase icon size */
+          height: 1.5em;
+        }
+      }
+
+      /* PDF Download Link */
+      .pdf-download-link {
+        text-decoration: none;
+        color: var(--text-color);
+        font-size: 1.2rem; /* Increase font size for larger icons */
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &:hover,
+        &:focus {
+          color: var(--accent-color-darker); /* Use the darker shade */
+        }
+
+        /* Target the icon inside the link */
+        svg {
+          width: 1.5em; /* Increase icon size */
+          height: 1.5em;
+        }
+      }
+    }
+
+    .abstract-content {
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--secondary-color);
+      font-size: 0.9rem;
+      color: var(--text-color);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  }
 }
 
-/* Example: Bio Section */
-.bio-section {
-  /* Your styles for the bio section */
+/* Keyframes for Abstract Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 500px; /* Adjust as needed */
+  }
 }
+
 
 /* ===================== */
 /*    ADDITIONAL STYLES   */
