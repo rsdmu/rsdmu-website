@@ -79,13 +79,8 @@ module.exports = {
     },
     // Offline support
     "gatsby-plugin-offline",
-    // Netlify adapter
-    {
-      resolve: "gatsby-adapter-netlify",
-      options: {
-        // Configure options if needed
-      },
-    },
+    // Netlify adapter (corrected to gatsby-plugin-netlify)
+    "gatsby-plugin-netlify",
     // Font loading plugin using gatsby-plugin-webfonts
     {
       resolve: `gatsby-plugin-webfonts`,
@@ -109,5 +104,21 @@ module.exports = {
         crossOrigin: `anonymous`, // Uncomment if needed
       },
     },
+    // Google Analytics 4 Plugin
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          "G-X3HZGWVSDS", // Google Analytics / GA4
+          // You can add additional tracking IDs here
+        ],
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
+
   ],
 };
