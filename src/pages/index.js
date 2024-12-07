@@ -1,15 +1,3 @@
-// src/pages/index.js
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3HZGWVSDS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-X3HZGWVSDS');
-</script>
-
 import React, { useState } from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';

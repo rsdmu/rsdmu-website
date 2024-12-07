@@ -1,9 +1,5 @@
 // gatsby-config.js
 
-require("dotenv").config({
-  path: `.env`,
-});
-
 module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
@@ -83,8 +79,13 @@ module.exports = {
     },
     // Offline support
     "gatsby-plugin-offline",
-    // Netlify adapter (corrected to gatsby-plugin-netlify)
-    "gatsby-plugin-netlify",
+    // Netlify adapter
+    {
+      resolve: "gatsby-adapter-netlify",
+      options: {
+        // Configure options if needed
+      },
+    },
     // Font loading plugin using gatsby-plugin-webfonts
     {
       resolve: `gatsby-plugin-webfonts`,
@@ -108,20 +109,5 @@ module.exports = {
         crossOrigin: `anonymous`, // Uncomment if needed
       },
     },
-    // Google Analytics 4 Plugin
-    {
-      resolve: `gatsby-plugin-google-gtag`,
-      options: {
-        trackingIds: [
-          process.env.GATSBY_GOOGLE_ANALYTICS_ID, // Google Analytics / GA4
-        ],
-        pluginConfig: {
-          head: true,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-        },
-      },
-    },
-
   ],
 };
