@@ -3,7 +3,7 @@ title: "The Role of Land Use and Vitality in Fostering Gender Equality in Urban 
 date: "2021-12-01"
 path: "the-role-of-land-use-and-vitality-gender-equality-kabul"
 type: "publications"
-thumbnail: "./images/img_40siton.jpeg"
+thumbnail: "./images/img_40siton.jpg"
 author: "Rashid Mushkani, Haruka Ono"
 description: "A qualitative study exploring the relationship between land use, urban vitality, and gender equality in Kabul's public parks."
 link: "https://doi.org/10.1016/j.habitatint.2021.102462"

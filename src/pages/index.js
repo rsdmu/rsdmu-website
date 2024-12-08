@@ -1,12 +1,13 @@
+// src/pages/index.js
 import React, { useState } from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import './index.scss';
 import BioSection from "../components/BioSection";
-import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa'; // Import Icons
-
-
+import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa';
+import PublicationSchema from '../components/PublicationSchema'; 
+import WorkSchema from '../components/WorkSchema';
 
 const IndexPage = ({ data }) => {
   const [formStatus, setFormStatus] = useState({
@@ -15,7 +16,7 @@ const IndexPage = ({ data }) => {
     info: { error: false, msg: null }
   });
 
-  const [openAbstracts, setOpenAbstracts] = useState({}); // State to track open abstracts
+  const [openAbstracts, setOpenAbstracts] = useState({});
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -25,7 +26,7 @@ const IndexPage = ({ data }) => {
     const formObject = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('https://formspree.io/f/xkndbero', { // Ensure this is your correct Formspree ID
+      const response = await fetch('https://formspree.io/f/xkndbero', {
         method: 'POST',
         headers: {
           'Accept': 'application/json'
@@ -35,7 +36,7 @@ const IndexPage = ({ data }) => {
 
       if (response.ok) {
         setFormStatus({ submitted: true, submitting: false, info: { error: false, msg: 'Thank you! Your message has been sent.' } });
-        e.target.reset(); // Reset form fields
+        e.target.reset();
       } else {
         const data = await response.json();
         if (Object.hasOwnProperty.call(data, 'errors')) {
@@ -49,11 +50,9 @@ const IndexPage = ({ data }) => {
     }
   };
 
-  // Extract work and publications data
   const work = data.allMarkdownRemarkWork.edges;
   const publications = data.allMarkdownRemarkPublications.edges;
 
-  // Toggle abstract display
   const toggleAbstract = (path) => {
     setOpenAbstracts(prevState => ({
       ...prevState,
@@ -71,12 +70,8 @@ const IndexPage = ({ data }) => {
         <div className="overlay"></div>
         <div className="centered-content">
           <h1 className="site-title">RASHID MUSHKANI</h1>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>
-            AI & Urban Studies PhD Candidate
-          </p>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>
-            University of Montreal
-          </p>
+          <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
+          <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal — Mila</p>
         </div>
       </div>
 
@@ -98,6 +93,7 @@ const IndexPage = ({ data }) => {
                     {node.frontmatter.title}
                   </Link>
                 </h3>
+                <WorkSchema work={node.frontmatter} />
               </div>
             </div>
           ))}
@@ -150,41 +146,34 @@ const IndexPage = ({ data }) => {
                     <p>{node.frontmatter.abstract}</p>
                   </div>
                 )}
+                <PublicationSchema publication={node.frontmatter} />
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Bio Section */}
       <BioSection />
 
       {/* Contact Section */}
       <section id="contact" className="content-section contact-section">
         <h2>Contact</h2>
         <div className="contact-container">
-          {/* Contact Form */}
           <form
             action="https://formspree.io/f/xkndbero"
             method="POST"
             className="contact-form"
             onSubmit={handleSubmit}
           >
-            {/* Form Title Wrapper */}
             <div className="form-title-wrapper">
               <h3>Write</h3>
             </div>
 
-            {/* Feedback Messages */}
             {formStatus.submitted && !formStatus.info.error && (
-              <div className="form-feedback success">
-                {formStatus.info.msg}
-              </div>
+              <div className="form-feedback success">{formStatus.info.msg}</div>
             )}
             {formStatus.info.error && (
-              <div className="form-feedback error">
-                {formStatus.info.msg}
-              </div>
+              <div className="form-feedback error">{formStatus.info.msg}</div>
             )}
 
             <div className="form-group">
@@ -207,7 +196,6 @@ const IndexPage = ({ data }) => {
             </button>
           </form>
           
-          {/* Affiliations */}
           <div className="affiliations">
             <h3>Affiliations</h3>
             <ul className="affiliations-list">
@@ -226,7 +214,7 @@ const IndexPage = ({ data }) => {
               <li>
                 <a href="https://mila.quebec/en/directory/rashid-mushkani" target="_blank" rel="noopener noreferrer">
                   <img src="/icons/mila.svg" alt="Mila - Quebec Artificial Intelligence Institute" />
-                  <span>Mila - Quebec Artificial Intelligence Institute</span>
+                  <span>Mila - Quebec AI Institute</span>
                 </a>
               </li>
               <li>
@@ -238,7 +226,6 @@ const IndexPage = ({ data }) => {
             </ul>
           </div>
 
-          {/* Social Links */}
           <div className="social-links">
             <h3>Connect</h3>
             <ul className="social-list">
@@ -288,7 +275,9 @@ export const query = graphql`
             thumbnail {
               publicURL
             }
-            date(formatString: "YYYY")
+            date(formatString: "YYYY-MM-DD")
+            description
+            author
           }
         }
       }
@@ -309,6 +298,7 @@ export const query = graphql`
             link
             abstract
             pdf
+            date(formatString: "2024-12-12")
           }
         }
       }

@@ -1,5 +1,4 @@
 // src/templates/publicationTemplate.js
-
 import React, { useState } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
@@ -7,6 +6,7 @@ import Seo from "../components/seo";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa';
 import "./publicationTemplate.scss"; // Ensure this file exists and contains necessary styles
+import PublicationSchema from '../components/PublicationSchema'; // Import the schema component
 
 const PublicationTemplate = ({ data }) => {
   const { markdownRemark: publication } = data;
@@ -22,6 +22,10 @@ const PublicationTemplate = ({ data }) => {
   return (
     <Layout>
       <Seo title={frontmatter.title} description={frontmatter.description || frontmatter.title} />
+      
+      {/* Add JSON-LD Schema */}
+      <PublicationSchema publication={frontmatter} />
+
       <div className="publication-template">
         <h1>{frontmatter.title}</h1>
         <p className="publication-date">Year: {frontmatter.date}</p>
@@ -68,7 +72,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "YYYY")
+        date(formatString: "2024-12-12") # Ensure date is in ISO format
         thumbnail {
           childImageSharp {
             gatsbyImageData(
@@ -83,6 +87,7 @@ export const query = graphql`
         link
         abstract
         pdf
+        path
       }
     }
   }

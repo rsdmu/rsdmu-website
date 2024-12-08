@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       />
       <ScrollSpyNav />
 
-      <main style={{ paddingTop: "80px" }}> {/* Adjust padding as needed */}
+      <main style={{ paddingTop: "0px" }}> {/* Adjust padding as needed */}
         {children}
       </main>
 

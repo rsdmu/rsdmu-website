@@ -805,3 +805,71 @@ body.dark {
   transform: scale(1.1);      /* Slight scaling effect */
 }
 
+
+.contact-section h2,
+.work-section h2,
+.publications-section h2 {
+  margin-left: 0 !important; 
+}
+
+/* Ensure responsiveness on smaller screens: Adjust heading sizes slightly */
+@media (max-width: 576px) {
+  .contact-section h2,
+  .work-section h2,
+  .publications-section h2 {
+    font-size: 3rem;
+  }
+  
+}
+
+@media (max-width: 430px) {
+  .site-header {
+    /* Ensure header elements can wrap if needed */
+    flex-wrap: wrap;
+    padding: 0.5rem 1rem;
+    height: auto; /* Let the height adjust as items wrap */
+  }
+
+  .site-header .site-nav ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    padding: 0;
+    margin: 0;
+  }
+
+  .site-header .site-nav ul li a {
+    font-size: 1rem; /* Slightly smaller font */
+    letter-spacing: 0.05em; /* Reduce letter-spacing if needed */
+    padding: 0.5rem; /* Reduce padding so items fit better */
+  }
+
+  /* Adjust positions of theme toggle and home button if needed 
+     to ensure they don't overlap nav links */
+  .theme-toggle-button,
+  .home-button {
+    position: static; 
+    margin: 0.5rem;
+    transform: none;
+  }
+
+  /* Ensure that top icon bar (if any) can also adapt */
+  .top-icon-bar {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+}
+
+
+/* ============================== */
+/* RESPONSIVE STYLES FOR SMALLER SCREENS */
+/* ============================== */
+@media (max-width: 430px) {
+  .social-links .social-list a span {
+    display: inline !important;
+    color: var(--text-color) !important;
+    font-size: 2rem !important;
+  }
+}

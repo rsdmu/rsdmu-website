@@ -7,10 +7,10 @@ import Seo from "../components/seo";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import "./workTemplate.scss";
 
-const workTemplate = ({ data }) => {
+const WorkTemplate = ({ data }) => {
   const { markdownRemark: work } = data;
   const { frontmatter, html } = work;
-  const image = getImage(frontmatter.thumbnail);
+  const thumbnailImage = getImage(frontmatter.thumbnail);
 
   return (
     <Layout>
@@ -19,8 +19,10 @@ const workTemplate = ({ data }) => {
         <h1>{frontmatter.title}</h1>
         <p className="work-date">{frontmatter.date}</p>
         <p className="work-author">Author: {frontmatter.author}</p>
-        {image && (
-          <GatsbyImage image={image} alt={`${frontmatter.title} Thumbnail`} className="work-thumbnail" />
+        {thumbnailImage && (
+          <div className="work-thumbnail">
+            <GatsbyImage image={thumbnailImage} alt={`${frontmatter.title} Thumbnail`} />
+          </div>
         )}
         <div className="work-content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
@@ -34,11 +36,11 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         thumbnail {
           childImageSharp {
             gatsbyImageData(
-              width: 800
+              width: 1400
               placeholder: BLURRED
               formats: [AUTO, WEBP, AVIF]
             )
@@ -46,9 +48,10 @@ export const query = graphql`
         }
         description
         author
+        path
       }
     }
   }
 `;
 
-export default workTemplate;
+export default WorkTemplate;
