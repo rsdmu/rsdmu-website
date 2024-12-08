@@ -45,7 +45,7 @@ const BioSection = () => {
             , teaching courses on environmental behavior, urban design, and architectural conservation.
           </p>
           <p>
-            His recent publications include <strong>StreetReview</strong>, a doctoral initiative employing AI to evaluate streetscape quality, and the{" "}
+            His recent project include <strong><a href="https://rsdmu.com/enhancing-inclusivity-public-spaces-ai-university-montreal/" target="_blank" rel="noopener noreferrer" className="bio-section__link">Street Review</a></strong>, a doctoral initiative employing AI to evaluate streetscape quality, and the{" "}
             <a
               href="https://mila.quebec/en/ai4humanity/applied-publications/artificial-intelligence-alignment-for-inclusion-aiai"
               target="_blank"
@@ -54,7 +54,7 @@ const BioSection = () => {
             >
               Artificial Intelligence Alignment for Inclusion (AIAI)
             </a>{" "}
-            publication, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as{" "}
+            project, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as{" "}
             <a
               href="https://www.unesco.org/en/no-racism-no-discrimination"
               target="_blank"

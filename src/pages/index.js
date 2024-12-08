@@ -71,7 +71,7 @@ const IndexPage = ({ data }) => {
         <div className="centered-content">
           <h1 className="site-title">RASHID MUSHKANI</h1>
           <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal — Mila</p>
+          <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal I Mila - Quebec AI Institute</p>
         </div>
       </div>
 

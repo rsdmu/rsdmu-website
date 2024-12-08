@@ -1,6 +1,6 @@
 ---
 title: "Co-Producing AI for Evaluating Public Spaces"
-date: "2024-06-15"
+date: "2024-11-11"
 path: "co-producing-ai-evaluating-public-spaces"
 type: "work"
 thumbnail: "./images/points_60.png"  # Update with your thumbnail image path
@@ -37,7 +37,7 @@ Public spaces in Canadian cities are often designed without adequate tools to me
 
 The heatmap below illustrates the inclusivity of various public spaces in Montreal based on our AI model's analysis.
 
-<iframe src="./images/montreal_folium_heatmap_group_inclusivity.html" width="100%" height="600px" style="border:none;"></iframe>
+<iframe src="https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html" width="100%" height="800px" style="border:none;"></iframe>
 
 
 The heatmap generated from the AI model highlights areas in Montreal that are more or less inclusive. Key findings include:
@@ -48,16 +48,17 @@ The heatmap generated from the AI model highlights areas in Montreal that are mo
 
 ## Future Directions
 
-- **Platform Development:** Create a user-friendly platform to facilitate public consultations, allowing citizens to visualize and contribute to the design of their neighborhoods.
+-**Platform Development:** Create a user-friendly platform to facilitate public consultations, allowing citizens to visualize and contribute to the design of their neighborhoods.
 
-- **Data Expansion:** Increase the dataset with more images to improve AI model accuracy and reduce biases.
+-**Data Expansion:** Increase the dataset with more images to improve AI model accuracy and reduce biases.
 
-- **Partnerships and Funding:** Seek collaborations and funding to pilot the platform and expand the project’s reach.
+-**Partnerships and Funding:** Seek collaborations and funding to pilot the platform and expand the project’s reach.
 
 ## Related Links
 
 - [University of Montreal](https://www.umontreal.ca/)
 - [Mila - Quebec AI Institute](https://mila.quebec/en)
+- [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
 
 ## Tags
 

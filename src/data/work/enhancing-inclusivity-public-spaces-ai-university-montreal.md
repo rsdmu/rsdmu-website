@@ -1,6 +1,6 @@
 ---
 title: "Thesis Project: Street Review & Wedesign"
-date: "2024-05-30"
+date: "2023-05-30"
 path: "enhancing-inclusivity-public-spaces-ai-university-montreal"
 type: "work"
 thumbnail: "./images/thesis_project.jpg"  # Update with your thumbnail image path
