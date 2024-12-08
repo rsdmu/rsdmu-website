@@ -194,6 +194,17 @@ body.dark {
     letter-spacing: 0.3em;
     text-align: left; /* Left-aligned */
     margin-left: 1rem; /* Indent section title if desired */
+
+    /* Responsive Adjustments for h2 */
+    @media (max-width: 992px) {
+      font-size: 4rem;
+      margin-left: 0.5rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.5rem;
+      margin-left: 0.3rem;
+    }
   }
 
   .contact-container {
@@ -208,6 +219,41 @@ body.dark {
     @media (max-width: 992px) {
       flex-direction: column;
       align-items: flex-start; /* Corrected */
+    }
+
+    /* New Media Query for Arranging Affiliations and Social Links Side by Side */
+    @media (max-width: 768px) {
+      /* Switch to CSS Grid for better layout control */
+      display: grid;
+      grid-template-columns: 1fr; /* Default single column */
+      grid-template-rows: auto auto;
+      grid-gap: 2rem;
+
+      /* Make .contact-form span the full width */
+      .contact-form {
+        grid-column: 1 / -1;
+      }
+
+      /* Create a new grid row for affiliations and social links */
+      .affiliations,
+      .social-links {
+        grid-column: span 1;
+      }
+
+      /* On very small screens, arrange affiliations and social-links side by side */
+      @media (max-width: 576px) {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+        grid-template-rows: auto auto;
+        
+        /* Assign each to a grid column */
+        .affiliations {
+          grid-column: 1 / 2;
+        }
+
+        .social-links {
+          grid-column: 2 / 3;
+        }
+      }
     }
   }
 
@@ -234,6 +280,11 @@ body.dark {
       letter-spacing: 0.1em;
       text-align: left;
       margin-left: 1rem; /* Indentation */
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+        margin-left: 0.5rem;
+      }
     }
 
     .form-group {
@@ -258,11 +309,20 @@ body.dark {
           border-color: var(--accent-color);
           outline: none;
         }
+
+        @media (max-width: 576px) {
+          font-size: 0.9rem;
+          padding: 0.6rem;
+        }
       }
 
       textarea {
         resize: vertical;
         min-height: 150px;
+
+        @media (max-width: 576px) {
+          min-height: 120px;
+        }
       }
     }
 
@@ -288,6 +348,11 @@ body.dark {
         background-color: #ccc;
         cursor: not-allowed;
       }
+
+      @media (max-width: 576px) {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.9rem;
+      }
     }
 
     .form-feedback {
@@ -304,6 +369,11 @@ body.dark {
       &.error {
         background-color: #f8d7da;
         color: #721c24;
+      }
+
+      @media (max-width: 576px) {
+        padding: 0.8rem;
+        font-size: 0.9rem;
       }
     }
   }
@@ -326,6 +396,10 @@ body.dark {
       margin-bottom: 1.5rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
     }
 
     .affiliations-list {
@@ -346,12 +420,21 @@ body.dark {
           display: flex;
           align-items: center;
           gap: 3rem;
+
+          @media (max-width: 576px) {
+            gap: 1.5rem;
+          }
         }
 
         img {
           width: 110px;
           height: 110px;
           object-fit: contain;
+
+          @media (max-width: 576px) {
+            width: 70px;
+            height: 70px;
+          }
         }
 
         span {
@@ -359,6 +442,11 @@ body.dark {
           font-family: 'Montserrat', sans-serif;
           line-height: 40px;
           display: inline-block;
+
+          @media (max-width: 576px) {
+            font-size: 1.3rem;
+            line-height: 1.2;
+          }
         }
 
         &:hover {
@@ -386,6 +474,10 @@ body.dark {
       margin-bottom: 1.5rem;
       text-transform: uppercase;
       letter-spacing: 0.1em;
+
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
     }
 
     .social-list {
@@ -395,6 +487,10 @@ body.dark {
       display: flex;
       flex-direction: column;
       gap: 5rem;
+
+      @media (max-width: 576px) {
+        gap: 2rem;
+      }
 
       li {
         a {
@@ -409,11 +505,20 @@ body.dark {
             width: 50px; /* Increased size */
             height: 50px; /* Increased size */
             object-fit: contain;
+
+            @media (max-width: 576px) {
+              width: 35px;
+              height: 35px;
+            }
           }
 
           span {
             font-size: 1.7rem;
             font-family: 'Montserrat', sans-serif;
+
+            @media (max-width: 576px) {
+              font-size: 1.3rem;
+            }
           }
 
           &:hover {
@@ -435,7 +540,7 @@ body.dark {
   .contact-section {
     .contact-container {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
 
     .affiliations,
@@ -458,37 +563,77 @@ body.dark {
 
 /* Responsive Adjustments for Very Small Screens */
 @media (max-width: 576px) {
-  h1 {
-    font-size: 2.5rem;
-  }
+  .contact-section {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 2rem;
 
-  h2 {
-    font-size: 2rem;
-  }
+      .contact-form {
+        grid-column: 1 / -1; /* Span full width */
+      }
 
-  h3 {
-    font-size: 1.5rem;
-  }
+      .affiliations {
+        grid-column: 1 / 2;
+      }
 
-  .top-icon-bar a img,
-  .social-links .social-list li a img {
-    width: 30px;
-    height: 30px;
-  }
+      .social-links {
+        grid-column: 2 / 3;
+      }
+    }
 
-  .contact-form,
-  .affiliations,
-  .social-links {
-    padding: 1rem;
-  }
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      margin-left: 0.3rem;
+    }
 
-  .social-links .social-list li a span {
-    display: none; /* Hide labels on very small screens for better spacing */
-  }
+    .contact-form h3 {
+      margin-left: 0.5rem;
+    }
 
-  /* Adjust indentation for small screens */
-  .contact-form h3 {
-    margin-left: 0.5rem;
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+
+    .contact-form button {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-form .form-feedback {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .affiliations h3,
+    .social-links h3 {
+      font-size: 1.5rem;
+    }
+
+    .affiliations .affiliations-list li a img,
+    .social-links .social-list li a img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .affiliations .affiliations-list li a span,
+    .social-links .social-list li a span {
+      font-size: 0.8rem !important;
+    }
+
+    /* Adjust gaps for social links */
+    .social-links .social-list {
+      gap: 2rem;
+    }
+
+    /* Hide labels on very small screens for better spacing */
+    .social-links .social-list li a span {
+      display: none;
+    }
   }
 }
 
@@ -556,7 +701,7 @@ body.dark {
     }
 
     .grid-item-title {
-      font-size: 2.5rem; /* Adjust as needed */
+      font-size: 2rem; /* Adjust as needed */
       margin-bottom: 0rem;
       font-family: var(--font-family-secondary);
       color: var(--primary-color-dark);
@@ -570,7 +715,6 @@ body.dark {
     }
   }
 }
-
 
 /* ===================== */
 /*    PUBLICATIONS SECTION   */
@@ -590,6 +734,20 @@ body.dark {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     text-align: left;
+
+    /* Responsive Adjustments for h2 */
+    @media (max-width: 992px) {
+      font-size: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 576px) {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
   }
 
   .grid-container {
@@ -603,6 +761,11 @@ body.dark {
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    /* Optional: Adjust grid gap on very small screens */
+    @media (max-width: 576px) {
+      gap: 1rem;
     }
   }
 
@@ -623,13 +786,26 @@ body.dark {
 
     .grid-item-thumbnail {
       width: 100%;
-      height: 400px; /* Set a fixed height */
+      height: 400px; /* Default fixed height */
       object-fit: cover; /* Ensures the image covers the entire area without distortion */
       display: block;
       transition: transform 0.3s ease;
 
       &:hover {
         transform: scale(1.05);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        height: 300px;
+      }
+
+      @media (max-width: 768px) {
+        height: 200px;
+      }
+
+      @media (max-width: 576px) {
+        height: 150px; /* Smaller height for very small screens */
       }
     }
 
@@ -658,12 +834,21 @@ body.dark {
           text-decoration: underline;
         }
       }
+
+      /* Responsive Adjustments */
+      @media (max-width: 576px) {
+        font-size: 1.5rem;
+      }
     }
 
     .grid-item-author {
       font-size: 1rem;
       margin-bottom: 1rem;
       color: var(--text-color);
+
+      @media (max-width: 576px) {
+        font-size: 0.9rem;
+      }
     }
 
     /* Updated Publication Actions */
@@ -676,6 +861,19 @@ body.dark {
       border: 1px solid var(--accent-color); /* Thin border */
       border-radius: 25px; /* Rounded rectangular shape */
       padding: 0.5rem 1rem; /* Padding inside the border */
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        gap: 0.8rem; /* Reduce gap between buttons */
+        padding: 0.4rem 0.8rem; /* Adjust padding */
+      }
+
+      @media (max-width: 576px) {
+        flex-direction: row; /* Stack buttons vertically */
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 0.3rem 0.5rem;
+      }
 
       /* Abstract Toggle Button */
       .abstract-toggle-button {
@@ -697,6 +895,26 @@ body.dark {
         svg {
           width: 1.5em; /* Increase icon size */
           height: 1.5em;
+          transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          font-size: 1rem;
+
+          svg {
+            width: 1.2em;
+            height: 1.2em;
+          }
+        }
+
+        @media (max-width: 576px) {
+          font-size: 0.9rem;
+
+          svg {
+            width: 1em;
+            height: 1em;
+          }
         }
       }
 
@@ -718,6 +936,26 @@ body.dark {
         svg {
           width: 1.5em; /* Increase icon size */
           height: 1.5em;
+          transition: width 0.3s ease, height 0.3s ease;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          font-size: 1rem;
+
+          svg {
+            width: 1.2em;
+            height: 1.2em;
+          }
+        }
+
+        @media (max-width: 576px) {
+          font-size: 0.9rem;
+
+          svg {
+            width: 1em;
+            height: 1em;
+          }
         }
       }
     }
@@ -728,22 +966,95 @@ body.dark {
       font-size: 0.9rem;
       color: var(--text-color);
       animation: fadeIn 0.3s ease-in-out;
+
+      @media (max-width: 576px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  /* Keyframes for Abstract Fade-In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      max-height: 500px; /* Adjust as needed */
+    }
+  }
+
+  /* ===================== */
+  /*    RESPONSIVE DESIGN   */
+  /* ===================== */
+
+  /* General Responsive Styles */
+  @media (max-width: 992px) {
+    .publications-section {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .publications-section {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  /* Responsive Adjustments for Very Small Screens */
+  @media (max-width: 576px) {
+    .publications-section {
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .grid-container {
+        gap: 1rem;
+      }
+
+      .grid-item {
+        .grid-item-content {
+          padding: 0.8rem;
+        }
+
+        .grid-item-title {
+          font-size: 1.5rem;
+        }
+
+        .grid-item-author {
+          font-size: 0.9rem;
+        }
+
+        .publication-actions {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.5rem;
+          padding: 0.3rem 0.5rem;
+
+          .abstract-toggle-button,
+          .pdf-download-link {
+            font-size: 0.9rem;
+
+            svg {
+              width: 1em;
+              height: 1em;
+            }
+          }
+        }
+
+        .abstract-content {
+          font-size: 0.8rem;
+        }
+      }
     }
   }
 }
-
-/* Keyframes for Abstract Fade-In */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    max-height: 0;
-  }
-  to {
-    opacity: 1;
-    max-height: 500px; /* Adjust as needed */
-  }
-}
-
 
 /* ===================== */
 /*    ADDITIONAL STYLES   */

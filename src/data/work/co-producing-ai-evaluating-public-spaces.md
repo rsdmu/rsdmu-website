@@ -37,8 +37,7 @@ Public spaces in Canadian cities are often designed without adequate tools to me
 
 The heatmap below illustrates the inclusivity of various public spaces in Montreal based on our AI model's analysis.
 
-<iframe src="https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html" width="100%" height="800px" style="border:none;"></iframe>
-
+**Explore the inclusivity heatmap [here](https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html).**
 
 The heatmap generated from the AI model highlights areas in Montreal that are more or less inclusive. Key findings include:
 

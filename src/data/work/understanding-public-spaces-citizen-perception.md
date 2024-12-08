@@ -56,10 +56,8 @@ These themes demonstrate that public spaces operate as dynamic ecosystems influe
 
 The second visualization, represented by a dense network of nodes and links, showcases the detailed concepts and keywords extracted from participants' discussions. Each node represents a concept—such as adaptability, welcoming atmosphere, practicality, safety, funding, maintenance, socio-economic impact, or diversity of use—while node size correlates with frequency of mention. Links between nodes illustrate how ideas relate and cluster around core principles shaping public space experiences.
 
-Below is the interactive conceptual network visualization:
 
-<iframe src="https://mid-spaces.github.io/landing-page/nodesplot.html" width="100%" height="800px" style="border:none;"></iframe> 
-
+**Explore the detailed conceptual network visualization [here](https://mid-spaces.github.io/landing-page/nodesplot.html).**
 
 ## Interpretation and Impact
 

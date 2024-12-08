@@ -1,5 +1,5 @@
 ---
-title: "Validating Knowledge in Intersectoral Research: A Framework for City Science"
+title: "Knowledge in Intersectoral Research"
 date: "2024-11-20"
 path: "validating-knowledge-intersectoral-research-framework-city-science"
 type: "work"
@@ -41,8 +41,7 @@ Our framework categorizes perspectives within the six dimensions, promoting a st
 
 
 ## Interactive Visualization
-Explore the detailed concepts [here](https://mid-spaces.github.io/landing-page/network.html).
-<iframe src="https://mid-spaces.github.io/landing-page/network.html" width="100%" height="1000px" style="border:none;"></iframe>
+**Explore the detailed concepts [here](https://mid-spaces.github.io/landing-page/network.html).**
 
 ## Impact
 
