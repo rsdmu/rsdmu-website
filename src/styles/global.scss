@@ -608,6 +608,98 @@ body.dark .background-image::after {
   }
 }
 
+
+
+/* Tablet Devices */
+@media (min-width: 370px) and (max-width: 530px) {
+  .site-header {
+    padding: 0 1.5rem;
+    height: 80px;
+  }
+
+  .site-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .content-section h2 {
+    font-size: 1rem;
+  }
+
+  .content-section p {
+    font-size: 0.7rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .site-header {
+    padding: 0 1.5rem;
+    height: 80px;
+  }
+
+  .site-title {
+    font-size: 5rem;
+  }
+
+  .cta-button {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+  }
+
+  .content-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .content-section p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1200px) {
+  .site-title {
+    font-size: 8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+  }
+
+  .icon-link img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-link span {
+    font-size: 1.3rem;
+  }
+
+  .grid-item img {
+    height: 250px;
+  }
+
+  .content-section {
+    padding: 4rem 2rem;
+  }
+}
+
 /* ---------------------------------------------------
    11. Accessibility Enhancements
 --------------------------------------------------- */
@@ -765,4 +857,104 @@ button:focus-visible {
 .scrollspy-nav li a.is-current {
   color: var(--primary-color);
   border-bottom: 2px solid var(--primary-color);
+}
+
+/* ---------------------------------------------------
+   16. Additional Responsive Enhancements
+--------------------------------------------------- */
+
+/* Landscape Mobile Devices */
+@media (orientation: landscape) and (max-width: 768px) {
+  .site-title {
+    font-size: 4rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .icon-bar {
+    padding: 1.5rem 0;
+  }
+}
+
+/* High-Resolution Displays */
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  /* High-res images or adjustments */
+  .background-image::before,
+  .background-image::after {
+    background-size: cover;
+  }
+
+  .grid-item img {
+    height: 220px;
+  }
+}
+
+/* ---------------------------------------------------
+   17. Custom Properties for Enhanced Responsiveness
+--------------------------------------------------- */
+
+:root {
+  --breakpoint-small: 480px;
+  --breakpoint-medium: 768px;
+  --breakpoint-large: 1024px;
+  --breakpoint-xlarge: 1200px;
+}
+
+/* Utilizing Custom Breakpoints */
+@media (max-width: var(--breakpoint-small)) {
+  .site-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .icon-link img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-link span {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: var(--breakpoint-xlarge)) {
+  .site-title {
+    font-size: 9rem;
+  }
+
+  .content-section {
+    padding: 5rem 3rem;
+  }
+
+  .cta-button {
+    padding: 1.2rem 3rem;
+    font-size: 1.2rem;
+  }
+
+  .icon-link img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icon-link span {
+    font-size: 1.5rem;
+  }
 }

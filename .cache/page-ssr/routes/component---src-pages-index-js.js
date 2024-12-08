@@ -871,12 +871,17 @@ var BioSection = function BioSection() {
     target: "_blank",
     rel: "noopener noreferrer",
     className: "bio-section__link"
-  }, "Kabul University"), ", teaching courses on environmental behavior, urban design, and architectural conservation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "His recent publications include ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "StreetReview"), ", a doctoral initiative employing AI to evaluate streetscape quality, and the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Kabul University"), ", teaching courses on environmental behavior, urban design, and architectural conservation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "His recent project include ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "https://rsdmu.com/enhancing-inclusivity-public-spaces-ai-university-montreal/",
+    target: "_blank",
+    rel: "noopener noreferrer",
+    className: "bio-section__link"
+  }, "Street Review")), ", a doctoral initiative employing AI to evaluate streetscape quality, and the", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://mila.quebec/en/ai4humanity/applied-publications/artificial-intelligence-alignment-for-inclusion-aiai",
     target: "_blank",
     rel: "noopener noreferrer",
     className: "bio-section__link"
-  }, "Artificial Intelligence Alignment for Inclusion (AIAI)"), " ", "publication, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+  }, "Artificial Intelligence Alignment for Inclusion (AIAI)"), " ", "project, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "https://www.unesco.org/en/no-racism-no-discrimination",
     target: "_blank",
     rel: "noopener noreferrer",
@@ -1641,7 +1646,7 @@ var IndexPage = function IndexPage(_ref) {
     style: {
       textAlign: 'left'
     }
-  }, "University of Montreal \u2014 Mila"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement("section", {
+  }, "University of Montreal I Mila - Quebec AI Institute"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement("section", {
     id: "work",
     className: "content-section work-section"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement("h2", null, "Work"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement("div", {
