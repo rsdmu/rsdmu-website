@@ -544,27 +544,25 @@ body.dark {
 
     .affiliations h3,
     .social-links h3 {
-      font-size: 1.2rem !important;
+      font-size: 1rem !important;
     }
 
     .affiliations .affiliations-list li a img,
     .social-links .social-list li a img {
-      width: 30px !important;
+      width: 20px !important;
       height: 20px !important;
     }
 
     .affiliations .affiliations-list li a span,
     .social-links .social-list li a span {
-      font-size: 0.7rem !important;
+      font-size: 0.6rem !important;
     }
 
     .social-links .social-list {
-      gap: 3rem !important;
+      gap: 1.5rem !important;
     }
 
-    .social-links .social-list li a span {
-      display: none;
-    }
+
   }
 
   .site-header { 
