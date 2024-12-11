@@ -69,7 +69,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Rashid Mushkani Portfolio",
-        short_name: "RashidMushkani",
+        short_name: "Rashid",
         start_url: "/",
         background_color: "#000000",
         theme_color: "#5ab9ea",
@@ -87,6 +87,7 @@ module.exports = {
       },
     },
     // Font loading plugin using gatsby-plugin-webfonts
+    /*
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -108,6 +109,6 @@ module.exports = {
         usePreconnect: true,
         crossOrigin: `anonymous`, // Uncomment if needed
       },
-    },
+    }, */
   ],
 };
