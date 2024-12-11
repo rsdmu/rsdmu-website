@@ -547,19 +547,23 @@ body.dark {
       font-size: 1rem !important;
     }
 
-    .affiliations .affiliations-list li a img,
+    .affiliations .affiliations-list li a img {
+      width: 30px !important;
+      height: 30px !important;
+    }
+
     .social-links .social-list li a img {
-      width: 20px !important;
-      height: 20px !important;
+      width: 15px !important;
+      height: 15px !important;
     }
 
     .affiliations .affiliations-list li a span,
     .social-links .social-list li a span {
-      font-size: 0.6rem !important;
+      font-size: 0.7rem !important;
     }
 
     .social-links .social-list {
-      gap: 1.5rem !important;
+      gap: 3rem !important;
     }
 
 
@@ -808,7 +812,7 @@ body.dark {
       }
 
       @media (max-width: 576px) {
-        flex-direction: column;
+        flex-direction: row;
         align-items: flex-start;
         gap: 0.5rem;
         padding: 0.3rem 0.5rem;
