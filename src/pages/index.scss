@@ -1247,16 +1247,4 @@ body.dark {
   }
   
 }
-
-
-/* ============================== */
-/* RESPONSIVE STYLES FOR SMALLER SCREENS */
-/* ============================== */
-@media (max-width: 430px) {
-  .social-links .social-list a span {
-    display: inline !important;
-    color: var(--text-color) !important;
-    font-size: 2rem !important;
-  }
-}
 }
