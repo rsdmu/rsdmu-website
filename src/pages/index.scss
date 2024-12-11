@@ -636,6 +636,81 @@ body.dark {
       display: none;
     }
   }
+
+  /* Responsive Adjustments for Very Small Screens */
+@media (max-width: 430px) {
+  .contact-section {
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-gap: 2rem;
+
+      .contact-form {
+        grid-column: 1 / -1; /* Span full width */
+      }
+
+      .affiliations {
+        grid-column: 1 / 2;
+      }
+
+      .social-links {
+        grid-column: 2 / 3;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      margin-left: 0.3rem;
+    }
+
+    .contact-form h3 {
+      margin-left: 0.5rem;
+    }
+
+    .contact-form .form-group input,
+    .contact-form .form-group textarea {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+
+    .contact-form button {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .contact-form .form-feedback {
+      padding: 0.8rem;
+      font-size: 0.9rem;
+    }
+
+    .affiliations h3,
+    .social-links h3 {
+      font-size: 1.2rem !important;
+    }
+
+    .affiliations .affiliations-list li a img,
+    .social-links .social-list li a img {
+      width: 30px !important;
+      height: 20px !important;
+    }
+
+    .affiliations .affiliations-list li a span,
+    .social-links .social-list li a span {
+      font-size: 0.7rem !important;
+    }
+
+    /* Adjust gaps for social links */
+    .social-links .social-list {
+      gap: 3rem !important;
+    }
+
+    /* Hide labels on very small screens for better spacing */
+    .social-links .social-list li a span {
+      display: none;
+    }
+  }
 }
 
 
