@@ -54,6 +54,7 @@ This initiative empowers marginalized communities to actively shape urban design
 3. **Human Annotation:**
    - Sixteen annotators evaluated image pairs through an accessible web interface.
 
+</div>
 
 
 ---
@@ -69,18 +70,16 @@ This initiative empowers marginalized communities to actively shape urban design
 
 The MID-Space dataset is a valuable resource for:
 
+<div style="margin-left: 40px;">
+
 - **AI Alignment Research:** Developing models that better reflect pluralistic human values.
 - **Urban Design:** Crowd-sourcing input for inclusive public space design.
 - **Generative AI Tools:** Enhancing text-to-image models for equity-focused visualization tasks.
 
-## Further explore here:
-<iframe
-	src="https://cupum-mid-space-viewer.hf.space"
-	frameborder="0"
-	width="1400"
-	height="1300"
-></iframe>
+</div>
 
+
+## Further explore by clicking here: [MID-Space Viewer](https://cupum-mid-space-viewer.hf.space)
 
 ## Related Links
 

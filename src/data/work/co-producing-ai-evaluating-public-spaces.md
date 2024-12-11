@@ -14,11 +14,17 @@ Public spaces in Canadian cities are often designed without adequate tools to me
 
 ## Project Objectives
 
+<div style="margin-left: 40px;">
+
 - **Assess Inclusivity:** Develop AI models to evaluate the inclusiveness of public spaces in Montreal.
 - **Community Engagement:** Involve diverse citizen groups in the assessment and design process to ensure public spaces meet varied community needs.
 - **Ethical AI Development:** Implement participatory and intersectoral AI production methods to address potential biases and ethical challenges.
 
+</div>
+
 ## Methodology and Analyses
+
+<div style="margin-left: 40px;">
 
 1. **Semi-Structured Interviews:**  
    Conducted with representatives of diverse groups in Montreal to gather insights into the utilization of street spaces by marginalized communities.
@@ -32,6 +38,7 @@ Public spaces in Canadian cities are often designed without adequate tools to me
 4. **Algorithm Training and Evaluation:**  
    Fine-tuned a Multi-Layer Perceptron (MLP) pretrained on ImageNet to correlate image attributes with inclusivity scores, followed by workshop evaluations with participants.
 
+</div>
 
 ## Results and Impact
 
@@ -41,17 +48,29 @@ The heatmap below illustrates the inclusivity of various public spaces in Montre
 
 The heatmap generated from the AI model highlights areas in Montreal that are more or less inclusive. Key findings include:
 
+
+<div style="margin-left: 40px;">
+
 - **Predictive Accuracy:** The AI model achieved approximately 90% accuracy in predicting the inclusivity of public spaces based on spatial elements like sidewalk construction and surrounding buildings.
 - **Community Insights:** Engagement with diverse community groups provided valuable criteria that enhanced the model’s relevance and effectiveness.
 - **Urban Planning:** The heatmap serves as a tool for urban planners to identify and address areas needing improvement, fostering more inclusive and cohesive urban environments.
 
+</div>
+
+
 ## Future Directions
+
+
+<div style="margin-left: 40px;">
 
 -**Platform Development:** Create a user-friendly platform to facilitate public consultations, allowing citizens to visualize and contribute to the design of their neighborhoods.
 
 -**Data Expansion:** Increase the dataset with more images to improve AI model accuracy and reduce biases.
 
 -**Partnerships and Funding:** Seek collaborations and funding to pilot the platform and expand the project’s reach.
+
+</div>
+
 
 ## Related Links
 
