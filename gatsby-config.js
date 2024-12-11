@@ -87,7 +87,6 @@ module.exports = {
       },
     },
     // Font loading plugin using gatsby-plugin-webfonts
-    /*
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
@@ -109,6 +108,6 @@ module.exports = {
         usePreconnect: true,
         crossOrigin: `anonymous`, // Uncomment if needed
       },
-    }, */
+    }, 
   ],
 };
