@@ -1,6 +1,6 @@
 ---
 title: "Understanding Public Spaces Through Citizen Perception: A Visual Exploration"
-date: "2024-12-12"
+date: "2024-01-05"
 path: "understanding-public-spaces-citizen-perception"
 type: "work"
 thumbnail: "./images/concepts-public-space.png"  # Update with your thumbnail image path
@@ -16,11 +16,17 @@ In Montreal, a participatory research project engaged 15 citizens representing v
 
 ## Project Objectives
 
+<div style="margin-left: 40px;">
+
 - **Capture Diverse Perspectives:** Gather qualitative input from participants of varied identities to understand the rich tapestry of public space usage.
 - **Identify Core Themes:** Extract recurring themes and concepts that influence public space inclusivity, aesthetics, functionality, and safety.
 - **Visualize Connections:** Use data visualization tools to represent the complex relationships between ideas, supporting urban planners in making informed decisions.
 
+</div>
+
 ## Methodology
+
+<div style="margin-left: 40px;">
 
 1. **Data Collection (Interviews and Focus Groups):**  
    Conducted semi-structured interviews and focus groups with 15 citizens in Montreal. The participants discussed their experiences, preferences, and concerns related to public spaces, providing a spectrum of viewpoints.
@@ -34,11 +40,15 @@ In Montreal, a participatory research project engaged 15 citizens representing v
    - **Thematic Network:** Illustrates high-level categories such as accessibility, safety, community engagement, aesthetics, cultural significance, functional design, and management.
    - **Conceptual Network (Detailed Keywords):** Depicts a dense web of specific concepts, revealing intricate interconnections and the frequency of mentions.
 
+</div>
+
 ## Results and Visualizations
 
 ### Thematic Network
 
 The below visualization provides a high-level thematic map. It highlights seven critical categories:
+
+<div style="margin-left: 40px;">
 
 - **Accessibility and Inclusivity**
 - **Safety and Security**
@@ -47,6 +57,8 @@ The below visualization provides a high-level thematic map. It highlights seven 
 - **Historical and Cultural Significance**
 - **Functional Design and Utility**
 - **Management and Responsibility**
+
+</div>
 
 These themes demonstrate that public spaces operate as dynamic ecosystems influenced by multifaceted factors. The interplay among these categories shapes how residents perceive and engage with the urban environment.
 
@@ -65,9 +77,13 @@ These visualizations underscore the importance of participatory approaches in ur
 
 ## Future Directions
 
+<div style="margin-left: 40px;">
+
 - **Refined Analysis:** Continue refining data analysis techniques to capture even deeper insights from expanded participant groups.
 - **Policy Integration:** Incorporate these findings into policy guidelines and urban planning frameworks that prioritize inclusivity.
 - **Public Engagement Platform:** Develop a digital platform that allows ongoing community input, visualization updates, and iterative design processes.
+
+</div>
 
 ## Related Links
 

@@ -225,7 +225,7 @@ body.dark {
     @media (max-width: 768px) {
       /* Switch to CSS Grid for better layout control */
       display: grid;
-      grid-template-columns: 1fr; /* Default single column */
+      grid-template-columns: 2fr; /* Default single column */
       grid-template-rows: auto auto;
       grid-gap: 2rem;
 
@@ -237,7 +237,7 @@ body.dark {
       /* Create a new grid row for affiliations and social links */
       .affiliations,
       .social-links {
-        grid-column: span 1;
+        grid-column: span 2;
       }
 
       /* On very small screens, arrange affiliations and social-links side by side */
@@ -391,7 +391,7 @@ body.dark {
 
     h3 {
       font-family: 'Bebas Neue', cursive;
-      font-size: 1.8rem;
+      font-size: 2rem;
       color: var(--primary-color);
       margin-bottom: 1.5rem;
       text-transform: uppercase;
@@ -562,7 +562,7 @@ body.dark {
 }
 
 /* Responsive Adjustments for Very Small Screens */
-@media (max-width: 576px) {
+@media (max-width: 384px) {
   .contact-section {
     .contact-container {
       display: grid;
@@ -611,7 +611,7 @@ body.dark {
 
     .affiliations h3,
     .social-links h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     .affiliations .affiliations-list li a img,

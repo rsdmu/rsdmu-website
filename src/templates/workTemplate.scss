@@ -2,8 +2,8 @@
 
 /* Work Template Styles */
 .work-template {
-  max-width: 1400px; /* Ensures the container doesn't exceed 1400px */
-  margin: 0 auto;
+  max-width: 1400px; 
+  margin: auto;
   padding: 10rem 1rem; /* Adjust padding as needed */
   font-family: 'Montserrat', sans-serif;
   color: #3d8ecf;
@@ -91,8 +91,8 @@
       }
     }
 
-    /* Removed Image Gallery Styles */
-    /*
+  
+    
     .image-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -132,7 +132,7 @@
           transition: opacity 0.3s ease;
 
           .caption-text {
-            margin: 0;
+            margin: 10;
             text-align: center;
           }
         }
@@ -142,7 +142,7 @@
         }
       }
     }
-    */
+    
 
     /* Ensure All Images Within .work-content Take Full Width */
     img {

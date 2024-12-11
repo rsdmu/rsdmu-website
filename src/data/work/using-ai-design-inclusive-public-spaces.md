@@ -24,9 +24,13 @@ Public spaces in cities were primarily designed in the mid-20th century, often n
 
 ## Project Objectives
 
+<div style="margin-left: 40px;">
+
 - **Assess Inclusivity:** Develop AI models to evaluate the inclusiveness of public spaces.
 - **Design Enhancement:** Utilize generative AI to create conceptual designs that align with the specific context of Montreal.
 - **Community Engagement:** Involve diverse citizen groups in the assessment and design process to ensure public spaces meet varied needs.
+
+</div>
 
 ## Methodology
 
@@ -48,10 +52,13 @@ The predictive AI model successfully identified inclusive and exclusive spaces, 
 
 ## Future Directions
 
+<div style="margin-left: 40px;">
+
 - **Platform Development:** Create a user-friendly platform to facilitate public consultations, allowing citizens to visualize and contribute to the design of their neighborhoods.
 - **Data Expansion:** Increase the dataset with more images to improve AI model accuracy and reduce biases.
 - **Partnerships and Funding:** Seek collaborations and funding to pilot the platform and expand the project’s reach.
 
+</div>
 
 ## Related Links
 

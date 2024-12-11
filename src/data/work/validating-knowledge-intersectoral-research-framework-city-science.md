@@ -19,6 +19,9 @@ Intersectoral research combining **Artificial Intelligence (AI)**, **social scie
 ## Method
 
 We reviewed the most cited papers from **2014 to 2024** across AI, social sciences, and urban planning. The analysis focused on six dimensions:
+
+<div style="margin-left: 40px;">
+
 1. **Ontological**
 2. **Epistemological**
 3. **Methodological**
@@ -26,19 +29,24 @@ We reviewed the most cited papers from **2014 to 2024** across AI, social scienc
 5. **Axiological**
 6. **Valorization**
 
+</div>
+
 Based on this, we developed a **validation framework** to guide researchers in selecting appropriate methodologies and epistemologies. The framework was tested through **case studies** and refined with input from experts in each field.
 
 ## Findings
 
 Our framework categorizes perspectives within the six dimensions, promoting a structured approach to validate intersectoral studies:
 
-1. **Ontological:** Defining reality in city science and AI.
-2. **Epistemological:** Understanding knowledge scope in interdisciplinary research.
-3. **Methodological:** Choosing methods that integrate AI, social sciences, and urban planning.
-4. **Teleological:** Aligning research with societal needs.
-5. **Axiological:** Incorporating values and ethics.
-6. **Valorization:** Ensuring practical impact.
+<div style="margin-left: 40px;">
 
+  1. **Ontological:** Defining reality in city science and AI.
+  2. **Epistemological:** Understanding knowledge scope in interdisciplinary research.
+  3. **Methodological:** Choosing methods that integrate AI, social sciences, and urban planning.
+  4. **Teleological:** Aligning research with societal needs.
+  5. **Axiological:** Incorporating values and ethics.
+  6. **Valorization:** Ensuring practical impact.
+
+</div>
 
 ## Interactive Visualization
 **Explore the detailed concepts [here](https://mid-spaces.github.io/landing-page/network.html).**
