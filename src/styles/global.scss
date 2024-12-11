@@ -1,33 +1,28 @@
+/* ===================== */
+/*      FONT FACE         */
+/* ===================== */
+
+/* Montserrat Variable Font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust based on the actual range of your variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bebas Neue Regular */
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ---------------------------------------------------
    1. Reset and Base Styles
 --------------------------------------------------- */
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat-Regular.woff2') format('woff2'),
-       url('/assets/fonts/Montserrat-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/assets/fonts/Montserrat-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Montserrat-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url('/assets/fonts/BebasNeue-Regular.woff2') format('woff2'),
-       url('/assets/fonts/BebasNeue-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 /* Reset default browser styles */
 *,
