@@ -24,13 +24,12 @@ Welcome to **Rashid Mushkani's Personal Website**! This website serves as an onl
 
 ## Features
 
-- **Hero Section:** Prominently displays Rashid's name, title, and affiliations with a visually appealing background.
+- **Hero Section:** Displays Rashid's name, title, and affiliations with a background.
 - **Work Section:** Showcases Rashid's projects and research work with thumbnails, titles, dates, and detailed descriptions.
-- **Publications Section:** Lists Rashid's publications with options to view abstracts and download PDFs.
-- **Bio Section:** Provides a brief biography highlighting Rashid's academic journey and expertise.
+- **Publications Section:** Lists publications with options to view abstracts and download PDFs.
+- **Bio Section:** Provides a brief biography highlighting academic journey and expertise.
 - **Contact Section:** Includes a contact form powered by Formspree, along with affiliations and social media links for easy connectivity.
 - **Responsive Design:** Ensures optimal viewing experience across various devices and screen sizes.
-- **Self-Hosted Fonts:** Utilizes locally hosted fonts for improved performance and security.
 - **Accessibility:** Incorporates best practices to make the website accessible to all users.
 
 ## Technologies Used
@@ -60,8 +59,8 @@ npm install -g gatsby-cli
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/rsdmu/rsdmu-website.git
+cd rsdmu-website
 ```
 
 ### Install Dependencies
@@ -100,19 +99,8 @@ gatsby build
 
 ### Netlify Configuration
 
-Ensure that your `netlify.toml` file is correctly configured, especially regarding Content Security Policy (CSP) headers to allow self-hosted fonts and other resources.
+Ensure that your `netlify.toml` file is correctly configured.
 
-```toml
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; style-src 'self'; font-src 'self'; script-src 'self'; img-src 'self' data:; connect-src 'self';"
-    X-Frame-Options = "DENY"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "no-referrer-when-downgrade"
-    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
-    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-```
 
 **Note:** Adjust the CSP as needed based on your project's requirements.
 
@@ -121,7 +109,7 @@ Ensure that your `netlify.toml` file is correctly configured, especially regardi
 Here's an overview of the project's folder structure:
 
 ```plaintext
-your-project/
+rsdmu-website/
 ├── src/
 │   ├── components/
 │   │   ├── BioSection.js
@@ -132,21 +120,16 @@ your-project/
 │   │   └── ...other components
 │   ├── data/
 │   │   ├── publications/
-│   │   │   └── your-publication-files.md
+│   │   │   └── -publication-files.md
 │   │   └── work/
-│   │       └── your-work-files.md
-│   ├── fonts/
-│   │   ├── Montserrat-VariableFont_wght.ttf
-│   │   └── BebasNeue-Regular.ttf
+│   │       └── -work-files.md
+│   │   
 │   ├── pages/
 │   │   ├── index.js
 │   │   └── ...other pages
 │   └── styles/
 │       └── index.scss
 ├── static/
-│   └── fonts/
-│       ├── Montserrat-VariableFont_wght.ttf
-│       └── BebasNeue-Regular.ttf
 ├── gatsby-config.js
 ├── gatsby-browser.js
 ├── gatsby-node.js
@@ -166,7 +149,7 @@ your-project/
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:
+Contributions are welcome! If you'd like to contribute to this project, posting a blog, using the website tempalte, please follow these guidelines:
 
 ### Fork the Repository
 
@@ -207,4 +190,3 @@ Feel free to reach out through any of the following platforms:
 - **GitHub:** [github.com/rsdmu](https://github.com/rsdmu)
 - **Instagram:** [instagram.com/rashid_mushkani](https://instagram.com/rashid_mushkani)
 
-This README was generated to provide a comprehensive overview of Rashid Mushkani's Personal Website, facilitating easy setup, development, and contribution.
