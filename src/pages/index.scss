@@ -559,7 +559,7 @@ body.dark {
 
     .affiliations .affiliations-list li a span,
     .social-links .social-list li a span {
-      font-size: 0.7rem !important;
+      font-size: 0.8rem !important;
     }
 
     .social-links .social-list {
@@ -812,7 +812,7 @@ body.dark {
       }
 
       @media (max-width: 576px) {
-        flex-direction: row;
+        flex-direction: row !important;
         align-items: flex-start;
         gap: 0.5rem;
         padding: 0.3rem 0.5rem;
