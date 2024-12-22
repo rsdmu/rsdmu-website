@@ -79,7 +79,7 @@ const BioSection = () => {
         {/* Profile Image */}
         <div className="bio-section__image-container">
           <StaticImage
-            src="../images/profile-photo.webp" // Ensure this path is correct
+            src="../images/profile-photo.webp"
             alt="Portrait of Rashid Mushkani"
             placeholder="blurred"
             layout="constrained"

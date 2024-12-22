@@ -63,6 +63,25 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <Seo title="Home" description="Welcome to Rashid Mushkani's Website" />
+
+      {/* Structured Data JSON-LD */}
+      <script type="application/ld+json">
+        {`
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Rashid Ahmad Mushkani",
+          "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
+          "jobTitle": "PhD Candidate at University of Montreal",
+          "affiliation": "Mila / University of Montreal",
+          "url": "https://rsdmu.com",
+          "sameAs": [
+            "https://www.linkedin.com/in/rashid-mushkani",
+            "https://github.com/rsdmu"
+          ]
+        }
+        `}
+      </script>
       
       {/* Hero Section */}
       <div id="home" className="background-image-wrapper">
