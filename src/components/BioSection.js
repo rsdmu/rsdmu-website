@@ -95,7 +95,7 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Timeline</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2024-Today:</strong> PhD Candidate,{" "}
+            <strong>2022-Today:</strong> PhD Candidate,{" "}
             <a
               href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
               target="_blank"
@@ -106,7 +106,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2024-Today:</strong> Researcher,{" "}
+            <strong>2023-Today:</strong> Researcher,{" "}
             <a
               href="https://mila.quebec/en/directory/rashid-mushkani"
               target="_blank"
@@ -128,7 +128,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2022-Today:</strong> Researcher,{" "}
+            <strong>2019-2022:</strong> Researcher,{" "}
             <a
               href="https://www.ono-unit.com/english"
               target="_blank"
@@ -168,7 +168,7 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Education</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2022-2027:</strong> Doctor of Philosophy in Interdisciplinary Planning,{" "}
+            <strong>2022-Today:</strong> Doctor of Philosophy in Interdisciplinary Planning,{" "}
             <a
               href="https://amenagement.umontreal.ca/accueil/"
               target="_blank"
