@@ -208,6 +208,18 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Honors & Awards</h3>
         <ul className="bio-section__list">
           <li>
+            <strong>2025:</strong>{" "}
+            <a
+              href="https://bourses.umontreal.ca/repertoire-des-bourses/detail-dune-bourse/bid/2084/bsl/Bourses-en-intelligence-artificielle-des-%C3%89tudes-sup%C3%A9rieures-et-postdoctorales-ESP-2024-2025/#:~:text=ESP)%202024%2D2025-,Bourses%20en%20intelligence%20artificielle%20des%20%C3%89tudes,postdoctorales%20(ESP)%202024%2D2025&text=%C3%80%20l'intention%20des%20%C3%A9tudiantes,adoption%20de%20l'intelligence%20artificielle."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Bourses en intelligence artificielle des Études supérieures et postdoctorales (ESP)
+            </a>
+            , University of Montreal
+          </li>
+          <li>
             <strong>2024:</strong>{" "}
             <a
               href="https://frq.gouv.qc.ca/en/program/frqsc-doctoral-training-scholarships-b2z-and-a2z2-autumn-2023-competition//"
