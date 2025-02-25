@@ -102,7 +102,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              University of Montreal
+              University of Montreal I Mila - Quebec Artificial Intelligence Institute
             </a>
           </li>
           <li>
@@ -346,6 +346,94 @@ const BioSection = () => {
               Best Student Award
             </a>
             , Kabul University
+          </li>
+        </ul>
+      </div>
+
+      {/* Talks */}
+      <div className="bio-section__full-width-container">
+        <h3 className="bio-section__subtitle">Talks</h3>
+        <ul className="bio-section__list">
+          <li>
+            <strong>2025:</strong> "Right to AI" – AI &amp; Cities track at the AMLD – Applied Machine Learning Days, EPFL, Lausanne, Switzerland on February 12, 2025 (09:00 AM–12:30 PM).{" "}
+            <a
+              href="https://dvstudies.net/2025/02/18/aicities-applied-machine-learning-days/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2025:</strong> Participatory AI Research &amp; Practice Symposium – "The Right to AI: Rethinking Participatory Approaches in AI" on February 7, 2025.{" "}
+            <a
+              href="https://pairs25.notion.site/Agenda-8th-Feb-17a260e24e1a8092b9e4ebe332807534?p=182260e24e1a81ad9618e685bf3b1110&pm=c"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2024:</strong> "Using AI to Design Inclusive Public Spaces" – Conference: Innovate for Cities 2024 in Montreal.{" "}
+            <a
+              href="https://rsdmu.com/using-ai-design-inclusive-public-spaces/#:~:text=A%20predictive%20AI%20model%20was,sidewalk%20construction%20and%20surrounding%20buildings."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2024:</strong> Contributed Talk at the Pluralistic Alignment Workshop – "MID-Space: Aligning Diverse Communities' Needs to Inclusive Public Spaces" at NeurIPS, Vancouver.{" "}
+            <a
+              href="https://neurips.cc/virtual/2024/109216"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2023:</strong> Symposium on "Spatial Justice in Practice" – November 30, 2023, 09:00–17:30 at Berlage Rooms (Communicatie BK).{" "}
+            <a
+              href="https://issuu.com/robertorocco/docs/template_abstracts_def?fr=xKAE9_zU1NQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2021:</strong> "Power and Political System in a Century of Urbanization" – Presented in Kabul, Afghanistan at the Asian Studies Online Consortium: Challenge and Harmony in Asia (Online).
+          </li>
+          <li>
+            <strong>2020:</strong> "Spatial Equity and Accessibility of Public Parks in Kabul City, Afghanistan" – In proceedings of the 16th Conference of Asian and African City Planning (Online).{" "}
+            <a
+              href="https://www.aacp2003.com/conference-top"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2019:</strong> "A Social Study of Public Space" – The 15th Conference of International Development and Urban Planning, December 22, 2019, Tokyo City University.
+          </li>
+          <li>
+            <strong>2018:</strong> "Urban Fabric of Kabul Old City" – Tabriz, Iran.
+          </li>
+          <li>
+            <strong>2016:</strong> "Heritage and Public Space in Kabul" – Aga Khan Development Network, India.
+          </li>
+          <li>
+            <strong>2016:</strong> "Urban Fabric of Kabul" – Kabul University, Kabul, Afghanistan.
           </li>
         </ul>
       </div>
