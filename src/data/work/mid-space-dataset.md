@@ -13,6 +13,10 @@ description: "Introducing the MID-Space dataset, designed to align AI-generated 
 
 **Project Team:** Shravan Nayak, Rashid Mushkani, Hugo Berard, Allison Cohen, Shin Koseki, Hadrien Bertrand, Emmanuel Beaudry Marchand, Toumadher Ammar, Jerome Solis.
 
+[Watch the Lecture on NeurIPS](https://neurips.cc/virtual/2024/109216)
+
+[![Watch the Lecture on NeurIPS](./images/ai_inclusive_midspace.png)](https://neurips.cc/virtual/2024/109216)
+
 ## Project Overview
 
 The **MID-Space** dataset bridges the gap between AI-generated visualizations and diverse community preferences in public space design. Created through participatory workshops and fine-tuned using Stable Diffusion XL, the dataset aligns AI outputs with six key criteria:
