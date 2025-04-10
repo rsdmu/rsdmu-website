@@ -36,7 +36,7 @@ const BioSection = () => {
             >
               Aga Khan Development Network
             </a>{" "}
-            and taught urban design at{" "}
+            and taught foundational design and environmental design courses at{" "}
             <a
               href="https://ku.edu.af/en"
               target="_blank"
@@ -45,9 +45,6 @@ const BioSection = () => {
             >
               Kabul University
             </a>.
-          </p>
-          <p>
-            I collaborate with academics, professionals, policymakers, and communities on AI ethics and spatial justice.
           </p>
           <p>
             Currently, I’m a PhD candidate at the{" "}
@@ -72,13 +69,16 @@ const BioSection = () => {
             </strong>{" "}
             and{" "}
             <a
-              href="https://mila.quebec/en/ai4humanity/applied-publications/artificial-intelligence-alignment-for-inclusion-aiai"
+              href="https://mila.quebec/en/ai4humanity/applied-projects/artificial-intelligence-alignment-for-inclusion-aiai"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
               Artificial Intelligence Alignment for Inclusion (AIAI)
             </a>.
+          </p>
+          <p>
+            I collaborate with academics, professionals, policymakers, and communities on AI ethics and spatial justice.
           </p>
           <p>Email me for questions, collaboration opportunities, or anything else.</p>
         </div>
