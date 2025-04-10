@@ -8,12 +8,49 @@ const BioSection = () => {
     <section id="bio" className="bio-section">
       <h2 className="bio-section__title">Bio</h2>
 
-      {/* Bio Overview and Profile Image */}
       <div className="bio-section__overview-container">
         {/* Bio Overview */}
         <div className="bio-section__overview">
           <p>
-            Rashid Mushkani is an Afghan-Canadian researcher, architect, and educator with expertise in urban planning, artificial intelligence, and participatory design. His work focuses on integrating AI technologies into urban planning processes, exploring how these tools can contribute to creating inclusive and accessible public spaces. He is currently a PhD candidate at the{" "}
+            I’m Rashid. I research urban planning and artificial intelligence through participatory design.
+          </p>
+          <p>
+            My work explores inclusive public space, socio-spatial justice, and pluralistic AI alignment, advocating a "Right to AI" grounded in power, inclusion, and community participation.
+          </p>
+          <p>
+            I hold a Master of Engineering from{" "}
+            <a
+              href="https://www.tut.ac.jp/english/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Toyohashi University of Technology
+            </a>
+            , Japan, where I studied socio-spatial equity in urban parks. Professionally, I've collaborated with the{" "}
+            <a
+              href="https://the.akdn/en/where-we-work/central-asia/afghanistan/cultural-development-overview-afghanistan/restoration-in-kabul-afghanistan"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Aga Khan Development Network
+            </a>{" "}
+            and taught urban design at{" "}
+            <a
+              href="https://ku.edu.af/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Kabul University
+            </a>.
+          </p>
+          <p>
+            I collaborate with academics, professionals, policymakers, and communities on AI ethics and spatial justice.
+          </p>
+          <p>
+            Currently, I’m a PhD candidate at the{" "}
             <a
               href="https://amenagement.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
               target="_blank"
@@ -22,30 +59,18 @@ const BioSection = () => {
             >
               University of Montreal
             </a>
-            , where his research emphasizes responsible AI development, co-production of knowledge, and the intersection of technology and community values.
-          </p>
-          <p>
-            Mushkani's academic background includes a Master of Engineering in Architecture and Urban Planning from{" "}
-            <a href="https://www.tut.ac.jp/english/" target="_blank" rel="noopener noreferrer" className="bio-section__link">
-              Toyohashi University of Technology
-            </a>{" "}
-            in Japan, where he examined socio-spatial equity in urban public parks. His professional experience encompasses architectural design, urban conservation, and public space revitalization publications with the{" "}
-            <a
-              href="https://the.akdn/en/where-we-work/central-asia/afghanistan/cultural-development-overview-afghanistan/restoration-in-kabul-afghanistan"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Aga Khan Development Network
-            </a>
-            . From 2017 to 2022, he served as an Assistant Lecturer at{" "}
-            <a href="https://ku.edu.af/en" target="_blank" rel="noopener noreferrer" className="bio-section__link">
-              Kabul University
-            </a>
-            , teaching courses on environmental behavior, urban design, and architectural conservation.
-          </p>
-          <p>
-            His recent project include <strong><a href="https://rsdmu.com/enhancing-inclusivity-public-spaces-ai-university-montreal/" target="_blank" rel="noopener noreferrer" className="bio-section__link">Street Review</a></strong>, a doctoral initiative employing AI to evaluate streetscape quality, and the{" "}
+            , leading projects like{" "}
+            <strong>
+              <a
+                href="https://rsdmu.com/enhancing-inclusivity-public-spaces-ai-university-montreal/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bio-section__link"
+              >
+                Street Review
+              </a>
+            </strong>{" "}
+            and{" "}
             <a
               href="https://mila.quebec/en/ai4humanity/applied-publications/artificial-intelligence-alignment-for-inclusion-aiai"
               target="_blank"
@@ -53,27 +78,9 @@ const BioSection = () => {
               className="bio-section__link"
             >
               Artificial Intelligence Alignment for Inclusion (AIAI)
-            </a>{" "}
-            project, which develops community-annotated datasets to align AI outputs with diverse perspectives. He collaborates with organizations such as{" "}
-            <a
-              href="https://www.unesco.org/en/no-racism-no-discrimination"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              ICCAR-UNESCO
-            </a>{" "}
-            and{" "}
-            <a
-              href="https://mila.quebec/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Mila - Quebec Artificial Intelligence Institute
-            </a>{" "}
-            on issues of spatial inclusion and AI ethics in urban design.
+            </a>.
           </p>
+          <p>Email me for questions, collaboration opportunities, or anything else.</p>
         </div>
 
         {/* Profile Image */}
