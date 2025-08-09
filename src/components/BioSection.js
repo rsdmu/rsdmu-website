@@ -217,6 +217,18 @@ const BioSection = () => {
           <li>
             <strong>2025:</strong>{" "}
             <a
+              href="https://mila.quebec/en/news/milas-science-communication-contest-ai-research-in-3-minutes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Mila’s Science Communication Contest (Speed Science) – 3rd Prize
+            </a>
+            , Mila – Quebec Artificial Intelligence Institute
+          </li>
+          <li>
+            <strong>2025:</strong>{" "}
+            <a
               href="https://bourses.umontreal.ca/repertoire-des-bourses/detail-dune-bourse/bid/2084/bsl/Bourses-en-intelligence-artificielle-des-%C3%89tudes-sup%C3%A9rieures-et-postdoctorales-ESP-2024-2025/#:~:text=ESP)%202024%2D2025-,Bourses%20en%20intelligence%20artificielle%20des%20%C3%89tudes,postdoctorales%20(ESP)%202024%2D2025&text=%C3%80%20l'intention%20des%20%C3%A9tudiantes,adoption%20de%20l'intelligence%20artificielle."
               target="_blank"
               rel="noopener noreferrer"
@@ -234,7 +246,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Mitacs Accelerate Award
+              Mitacs Accelerate Award - 2
             </a>
             ,{" "}
             <a
@@ -266,7 +278,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Mitacs Accelerate Award
+              Mitacs Accelerate Award - 1 
             </a>
             ,{" "}
             <a
@@ -381,6 +393,20 @@ const BioSection = () => {
       <div className="bio-section__full-width-container">
         <h3 className="bio-section__subtitle">Talks</h3>
         <ul className="bio-section__list">
+          
+          <li>
+            <strong>2025:</strong> "Locked Out by Design" – Speed Science Grand Finale, Mila, Montreal, Canada.{" "}
+            <a
+              href="https://www.youtube.com/watch?v=fiLFFUw6moI"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Watch
+            </a>
+          </li>
+
+
           <li>
             <strong>2025:</strong> "Right to AI" – AI &amp; Cities track at the AMLD – Applied Machine Learning Days, EPFL, Lausanne, Switzerland.{" "}
             <a
