@@ -406,9 +406,9 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2024:</strong> "Designing Inclusive Cities with Participatory AI" – Guest talk at the AI4Good Lab (Mila), Montreal, Canada.{" "}
+            <strong>2025:</strong> "Designing Inclusive Cities with Participatory AI" – Guest talk at the AI4Good Lab (Mila), Montreal, Canada.{" "}
             <a
-              href="https://mila.quebec/en/news/milas-science-communication-contest-ai-research-in-3-minutes"
+              href="https://mila.quebec/en/news/ai4good-lab-2025-14-ai-projects-for-social-impact"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"

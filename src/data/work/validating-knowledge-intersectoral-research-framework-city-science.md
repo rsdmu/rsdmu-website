@@ -3,7 +3,7 @@ title: "Knowledge in Intersectoral Research"
 date: "2024-11-20"
 path: "validating-knowledge-intersectoral-research-framework-city-science"
 type: "work"
-thumbnail: "./images/network_analysis.png"
+thumbnail: "./images/network.gif"
 author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "A framework to validate knowledge in AI, social sciences, and urban planning for credible city science."
 ---

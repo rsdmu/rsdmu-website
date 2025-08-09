@@ -53,9 +53,12 @@ Cities often rely on standardized audits to judge street quality, but lived expe
 
 ## Visual Summary
 
-<p align="center">
-  <img src="./images/jum-paper.gif" alt="Animated summary of methods and findings for Montréal street perception study" style="max-width: 780px; width: 100%; border-radius: 12px;" />
-</p>
+<div align="center">
+
+![Animated summary of methods and findings for Montréal street perception study](./images/jum-paper.gif)
+
+</div>
+
 
 ## Future Directions
 
