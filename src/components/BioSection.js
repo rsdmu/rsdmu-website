@@ -249,7 +249,7 @@ const BioSection = () => {
           <li>
             <strong>2024:</strong>{" "}
             <a
-              href="https://frq.gouv.qc.ca/en/program/frqsc-doctoral-training-scholarships-b2z-and-a2z2-autumn-2023-competition//"
+              href="https://doi.org/10.69777/347989"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
