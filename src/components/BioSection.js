@@ -227,6 +227,26 @@ const BioSection = () => {
             , University of Montreal
           </li>
           <li>
+            <strong>2025:</strong>{" "}
+            <a
+              href="https://www.mitacs.ca/en/programs/accelerate"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Mitacs Accelerate Award
+            </a>
+            ,{" "}
+            <a
+              href="https://mila.quebec/en/ai4humanity/applied-projects/artificial-intelligence-alignment-for-inclusion-aiai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Mila - Quebec Artificial Intelligence Institute
+            </a>
+          </li>
+          <li>
             <strong>2024:</strong>{" "}
             <a
               href="https://frq.gouv.qc.ca/en/program/frqsc-doctoral-training-scholarships-b2z-and-a2z2-autumn-2023-competition//"
