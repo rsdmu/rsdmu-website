@@ -224,7 +224,7 @@ const BioSection = () => {
             >
               Mila’s Science Communication Contest (Speed Science) – 3rd Prize
             </a>
-            , Mila – Quebec Artificial Intelligence Institute
+            , Mila – Quebec AI Institute
           </li>
           <li>
             <strong>2025:</strong>{" "}
@@ -405,8 +405,39 @@ const BioSection = () => {
               Watch
             </a>
           </li>
-
-
+          <li>
+            <strong>2024:</strong> "Designing Inclusive Cities with Participatory AI" – Guest talk at the AI4Good Lab (Mila), Montreal, Canada.{" "}
+            <a
+              href="https://mila.quebec/en/news/milas-science-communication-contest-ai-research-in-3-minutes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2025:</strong> "Position: The Right to AI" – Poster at ICML 2025, Vancouver, Canada.{" "}
+            <a
+              href="https://icml.cc/virtual/2025/poster/40155"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2025:</strong> "LIVS: A Pluralistic Alignment Dataset for Inclusive Public Spaces" – Poster at ICML 2025, Vancouver, Canada.{" "}
+            <a
+              href="https://icml.cc/virtual/2025/poster/45204"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
           <li>
             <strong>2025:</strong> "Right to AI" – AI &amp; Cities track at the AMLD – Applied Machine Learning Days, EPFL, Lausanne, Switzerland.{" "}
             <a

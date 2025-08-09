@@ -4,7 +4,7 @@ date: "2025-07-23"
 path: "public-perceptions-montreal-streets"
 type: "work"
 thumbnail: "./images/jum-paper.gif"  
-author: "Rashid Mushkani (Université de Montréal, Mila – Quebec AI Institute), Hugo Berard, Toumadher Ammar, Shin Koseki"
+author: "Rashid Mushkani, Hugo Berard, Toumadher Ammar, Shin Koseki"
 description: "How Montréal residents rate and rank streets—individually and in small groups—and what that means for managing more inclusive public spaces."
 ---
 
@@ -66,13 +66,6 @@ Cities often rely on standardized audits to judge street quality, but lived expe
 - **Broader Cohorts:** Expand to additional communities (e.g., teens, Indigenous groups) and neighborhoods to test generalizability.
 
 </div>
-
-## Publication & Open Access
-
-- **Journal:** *Journal of Urban Management* (Special Issue: *Managing (for) the Public*)  
-- **Status:** In Press, Corrected Proof — Available online **23 July 2025**  
-- **DOI:** https://doi.org/10.1016/j.jum.2025.07.004  
-- **License:** Open access (Creative Commons)
 
 ## How to Cite
 
