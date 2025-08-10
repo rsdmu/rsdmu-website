@@ -1,5 +1,5 @@
 ---
-title: "What Montréalers Really Think About Their Streets"
+title: "From Aesthetics to Access: How Montréalers Rate Their Streets"
 date: "2025-07-23"
 path: "public-perceptions-montreal-streets"
 type: "work"
@@ -12,7 +12,7 @@ description: "How Montréal residents rate and rank streets—individually and i
 
 Cities often judge street quality with standardized audits, yet lived experiences vary across gender, age, mobility, culture, and income. This study asks where Montréal residents tend to **agree** (for instance, on aesthetics) and where they **diverge** (often on inclusivity and practicality), and how small-group discussion can turn contested ideas into clearer guidance for managers.
 
-![Animated summary of methods and findings for Montréal street perception study](./images/jum-paper.gif)
+[Animated summary of methods and findings for Montréal street perception study](./images/jum-paper.gif)
 
 ## What we set out to learn
 
