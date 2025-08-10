@@ -8,7 +8,7 @@ author: "Rashid Mushkani"
 description: "A no-nonsense, five-phase guide to building AI *with* communities—so decisions, risks, and benefits are shared from day one."
 ---
 
-*Five phases for building AI that communities trust—because they helped shape it from the start.*
+*Five phases for building AI that communities trust, because they helped shape it from the start.*
 
 [Read the Paper on arXiv](https://arxiv.org/abs/2508.00138)
 
@@ -16,10 +16,9 @@ description: "A no-nonsense, five-phase guide to building AI *with* communities�
 ## Why This Matters
 
 Too much AI is still built *about* people, not *with* them.  
-**Co-Producing AI** changes that dynamic by treating communities as equal partners at every stage—from defining the problem to deciding when to retire a system.
+**Co-Producing AI** changes that dynamic by treating communities as equal partners at every stage, from defining the problem to deciding when to retire a system.
 
-This isn’t about token feedback sessions or vague promises to “circle back.”  
-It’s about shared power, open choices, and long-term accountability.
+This isn’t about token feedback sessions or vague promises to “circle back.” It’s about shared power, open choices, and long-term accountability.
 
 
 ## The People-First Lifecycle
@@ -42,7 +41,7 @@ Finally, **Co-Maintenance** ensures the process doesn’t end at launch. Systems
 Shifting real decision-making power to those most affected builds deeper trust.  
 Feedback must be continuous, not a one-off formality.  
 Privacy needs to be tailored to each context, rather than forced into a single mold.  
-And meaningful participation takes resources—funding for travel, childcare, and accessibility so everyone can actually take part.
+And meaningful participation takes resources, funding for travel, childcare, and accessibility so everyone can actually take part.
 
 
 ## What You Leave With
@@ -57,8 +56,7 @@ The playbook grew out of four multidisciplinary workshops in Montréal (2024), i
 
 ## Why This Approach Stands Apart
 
-Global AI guidelines—from the Montréal Declaration to IEEE EAD, NIST AI RMF, and EU Trustworthy AI—give us principles.  
-This framework adds the missing *“how”*: practical checkpoints, governance routines, and a commitment to ongoing co-maintenance.
+Global AI guidelines, from the Montréal Declaration to IEEE EAD, NIST AI RMF, and EU Trustworthy AI, give us principles. This framework adds the missing *“how”*: practical checkpoints, governance routines, and a commitment to ongoing co-maintenance.
 
 
 ## Visuals
@@ -72,13 +70,7 @@ This framework adds the missing *“how”*: practical checkpoints, governance r
 
 ## Where It Works Best
 
-This approach is especially powerful in AI governance, where big ideas need to translate into everyday practice. It’s vital for high-stakes systems in health, finance, and public services—places where trust is not optional. And it can help shift organizational culture away from “participation-washing” toward genuine, resourced involvement.
-
-
-**Links:**  
-- Paper → [arXiv:2508.00138](https://arxiv.org/abs/2508.00138)  
-- UNESCO Chair in Urban Landscape → <https://unesco-studio.umontreal.ca/>  
-- Mila – Quebec AI Institute → <https://mila.quebec/>
+This approach is especially powerful in AI governance, where big ideas need to translate into everyday practice. It’s vital for high-stakes systems in health, finance, and public services, places where trust is not optional. And it can help shift organizational culture away from “participation-washing” toward genuine, resourced involvement.
 
 **Tags:**  
 AI Governance · Participatory AI · Co-design · Design Justice · Expansive Learning · DEI

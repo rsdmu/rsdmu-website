@@ -12,7 +12,14 @@ description: "How Montréal residents rate and rank streets—individually and i
 
 Cities often judge street quality with standardized audits, yet lived experiences vary across gender, age, mobility, culture, and income. This study asks where Montréal residents tend to **agree** (for instance, on aesthetics) and where they **diverge** (often on inclusivity and practicality), and how small-group discussion can turn contested ideas into clearer guidance for managers.
 
-[Animated summary of methods and findings for Montréal street perception study](./images/jum-paper.gif)
+<div className="image-gallery">
+  <div className="gallery-item">
+    <img src="./images/jum-paper.gif" alt="Animated summary of methods and findings for Montréal street perception study." />
+    <div className="caption">
+      <p className="caption-text">Animated summary of methods and findings for Montréal street perception study.</p>
+    </div>
+  </div>
+</div>
 
 ## What we set out to learn
 
@@ -32,10 +39,10 @@ Crucially, small-group dialogue **tightened agreement**, especially for **access
 
 ## Why it matters for management
 
-Audits work well for physical benchmarks—curb ramps, seating, lighting, shade—where agreement is naturally higher. But for dimensions where experiences diverge, technical checklists aren’t enough. Embedding **recurring, small-group consultations** into routine management cycles can surface contested meanings early, reduce noise in evaluations, and guide more inclusive choices about design trade-offs, operations, and programming.
+Audits work well for physical benchmarks, curb ramps, seating, lighting, shade, where agreement is naturally higher. But for dimensions where experiences diverge, technical checklists aren’t enough. Embedding **recurring, small-group consultations** into routine management cycles can surface contested meanings early, reduce noise in evaluations, and guide more inclusive choices about design trade-offs, operations, and programming.
 
 ## Looking ahead
 
-We plan to scale the process across more neighborhoods, invite under-represented cohorts (e.g., teens and Indigenous communities), and test richer media—short videos and 360° views—to better capture flow, noise, and time-of-day change.
+We plan to scale the process across more neighborhoods, invite under-represented cohorts (e.g., teens and Indigenous communities), and test richer media, short videos and 360° views, to better capture flow, noise, and time-of-day change.
 
 **Tags:** Urban Planning · Public Space · Inclusivity · Participation · Street Perception · Montréal

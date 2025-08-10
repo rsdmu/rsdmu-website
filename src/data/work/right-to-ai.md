@@ -1,6 +1,6 @@
 ---
 title: "AI as Societal Infrastructure"
-date: "2025-08-09"
+date: "2025-07-15"
 path: "right-to-ai"
 type: "work"
 thumbnail: "./images/right-to-ai-cover.png"
@@ -8,7 +8,7 @@ author: "Rashid Mushkani"
 description: "A declaration, research agenda, and nonprofit initiative enabling communities to co-design, oversee, and steward AI that shapes daily life."
 ---
 
-*AI is everywhere now—deciding what we see online, shaping our cities, influencing healthcare, finance, and education. Yet most of us have almost no say in how these systems are created or governed.*
+*AI is everywhere now, deciding what we see online, shaping our cities, influencing healthcare, finance, and education. Yet most of us have almost no say in how these systems are created or governed.*
 
 ## Why This Matters
 
@@ -18,21 +18,21 @@ If AI is going to be as essential as roads, schools, or public parks, then it mu
 
 ## What is *The Right to AI*?
 
-Back in 2022, what began as a collaboration with over thirty community organizations across Montréal has grown into a nonprofit movement. Our vision is straightforward: **AI not just for the people, but by the people**.
+In 2022, a collaboration with over thirty community organizations across Montréal set out to explore the city’s spaces and improve them through emerging technologies like AI. What started as a research initiative has since evolved into a nonprofit movement with a clear vision: **AI not just for the people, but by the people**.
 
-We host workshops where communities experiment with and critique real AI systems, surfacing both potential benefits and potential harms.  
-We publish open research on how to involve the public at every stage—from collecting and managing data, to designing models, to overseeing how they’re deployed.  
-We work with policymakers so that those most affected by automated systems are no longer the last to be consulted.
+ - We host workshops where communities experiment with and critique real AI systems, surfacing both potential benefits and potential harms.  
+ - We publish open research on how to involve the public at every stage, from collecting and managing data, to designing models, to overseeing how they’re deployed.  
+ - We work with policymakers so that those most affected by automated systems are no longer the last to be consulted.
 
 ## The Paper
 
-Our foundational paper borrows from Lefebvre’s *Right to the City*, applying it to AI. It makes the case that AI is now part of our social infrastructure and must be treated as a shared resource. It explores challenges like generative agents, mass data extraction, and conflicting values across cultures—and offers practical steps for more democratic governance.
+Our foundational paper borrows from Lefebvre’s *Right to the City*, applying it to AI. It makes the case that AI is now part of our social infrastructure and must be treated as a shared resource. It explores challenges like generative agents, mass data extraction, and conflicting values across cultures, and offers practical steps for more democratic governance.
 
 The heart of it is simple: participation must matter. It should change how data is governed, how models are trained, and whether certain systems are deployed at all.
 
 ## A Ladder of Participation
 
-At the bottom rung, people are just consumers—clicking “accept” and occasionally filling out feedback forms, while decisions stay centralized.
+At the bottom rung, people are just consumers, clicking “accept” and occasionally filling out feedback forms, while decisions stay centralized.
 
 A step up, organizations invite limited input and offer more transparency, but the real power stays with them.
 

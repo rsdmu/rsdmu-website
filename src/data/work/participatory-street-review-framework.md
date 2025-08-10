@@ -8,7 +8,7 @@ author: "Rashid Mushkani"
 description: "A participatory ‘Street Review’ uncovers hidden barriers on Montréal streets—showing why inclusive design needs context, culture, and conversation."
 ---
 
-*No single street met all needs—what we learned from talking, walking, and rating.*
+*No single street met all needs—what we learned from group-dicussion, ranking, and rating.*
 
 [Read on Habitat International I ScienceDirect](https://doi.org/10.1016/j.habitatint.2025.103536) · [View Dataset on Hugging Face](https://huggingface.co/datasets/rsdmu/streetreview)
 
@@ -43,6 +43,6 @@ Most streets performed *adequately* but rarely excelled across all dimensions. A
 ![Word cloud of 600+ street descriptors.](./images/wordcloud.png)  
 *Descriptors grouped into four main dimensions.*
 
-**More:** [Habitat International](https://doi.org/10.1016/j.habitatint.2025.103536) · [Dataset](https://huggingface.co/datasets/rsdmu/streetreview) · <https://unesco-studio.umontreal.ca/>
+**More:** [Habitat International](https://doi.org/10.1016/j.habitatint.2025.103536) · [Dataset](https://huggingface.co/datasets/rsdmu/streetreview)
 
 *Tags: Inclusive Urbanism · Street Design · Accessibility · Inclusivity · Participatory Methods · Montréal*
