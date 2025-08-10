@@ -3,8 +3,8 @@ title: "The Right to AI: A Participatory Framework for AI as Societal Infrastruc
 date: "2025-08-09"
 path: "right-to-ai"
 type: "work"
-thumbnail: "./images/ladder.png"
-author: "Rashid Mushkani, Hugo Berard, Allison Cohen, Shin Koseki"
+thumbnail: "./images/right-to-ai-cover.png"
+author: "Rashid Mushkani"
 description: "A declaration, research agenda, and nonprofit initiative enabling communities to co‑design, oversee, and steward AI that shapes daily life."
 ---
 
@@ -26,11 +26,11 @@ Since 2022, **The Right to AI** has grown from a three‑year multidisciplinary 
 
 </div>
 
-## Position: *The Right to AI* (Paper)
+## The Right to AI (paper)
 
 <div style="margin-left: 40px;">
 
-This position paper argues that people and communities have a **Right to AI**—a governance right to shape, critique, and oversee AI infrastructures. Extending Lefebvre’s *Right to the City* and drawing on Arnstein’s ladder, the paper:
+This paper argues that people and communities have a **Right to AI**—a governance right to shape, critique, and oversee AI infrastructures. Extending Lefebvre’s *Right to the City* and drawing on Arnstein’s ladder, the paper:
   
 - Reframes **AI as societal infrastructure** requiring collective governance.  
 - Analyzes challenges posed by generative agents, large‑scale data extraction, and value pluralism.  
@@ -90,11 +90,9 @@ This position paper argues that people and communities have a **Right to AI**—
 
 <div style="margin-left: 40px;">
 
-- **Declaration of the Right to AI** — open for public and organizational endorsement.  
-- **Paper** — *Position: The Right to AI*.  
-- **Poster** — visual summary of the framework.  
-- **Short Talk** — condensed presentation.  
-- **Book — Coming Soon.**
+- [The Right to AI (non-profit)](https://www.therighttoai.org/)  
+- [About The Right to AI](https://www.therighttoai.org/about)  
+- [Book on the Right to AI](https://www.therighttoai.org/book)  
 
 </div>
 
@@ -103,7 +101,7 @@ This position paper argues that people and communities have a **Right to AI**—
 
 <div align="center">
 
-![Poster/visual summary for The Right to AI](./images/right-to-ai.jpg)
+![Poster/visual summary for The Right to AI](./images/right-to-ai-poster.png)
 
 </div>
 
@@ -111,12 +109,6 @@ This position paper argues that people and communities have a **Right to AI**—
 
 Mushkani, R., Berard, H., Cohen, A., & Koseki, S. (2025). **Position: The Right to AI.** *Proceedings of the 42nd International Conference on Machine Learning (ICML 2025), PMLR 267, Vancouver.* arXiv:2501.17899.
 
-
-## Related Links
-
-- [The Right to AI (non-profit)](https://www.therighttoai.org/)  
-- [About The Right to AI](https://www.therighttoai.org/about)  
-- [Book on the Right to AI](https://www.therighttoai.org/book)  
 
 
 ## Tags
