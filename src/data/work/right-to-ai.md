@@ -5,120 +5,87 @@ path: "right-to-ai"
 type: "work"
 thumbnail: "./images/right-to-ai-cover.png"
 author: "Rashid Mushkani"
-description: "A declaration, research agenda, and nonprofit initiative enabling communities to co‑design, oversee, and steward AI that shapes daily life."
+description: "A declaration, research agenda, and nonprofit initiative enabling communities to co-design, oversee, and steward AI that shapes daily life."
 ---
 
-## Problem
+*AI is everywhere now—deciding what we see online, shaping our cities, influencing healthcare, finance, and education. Yet most of us have almost no say in how these systems are created or governed.*
 
-AI systems increasingly shape everyday life—public space, finance, healthcare, education—yet most people have little say in how these systems are designed, deployed, and governed. Current models concentrate power in a few institutions and treat the public as consumers rather than co‑creators, risking bias, exclusion, and a loss of democratic legitimacy.
+---
 
-## Overview
+## Why This Matters
 
-Since 2022, **The Right to AI** has grown from a three‑year multidisciplinary collaboration with **30+ community organizations across Montréal** into a non‑profit organization. Our aim is to make AI a **societal infrastructure** governed with **pluralism, transparency, and shared stewardship**—not just *AI for* the people, but **AI by the people**.
+Right now, AI is largely in the hands of a few companies and institutions. The public is treated as an audience, not as co-authors of the technology that will shape our future. This imbalance risks embedding bias, sidelining communities, and eroding trust.
 
-## What We Do
+If AI is going to be as essential as roads, schools, or public parks, then it must be designed and run with the same spirit of shared ownership and public accountability.
 
-<div style="margin-left: 40px;">
+---
 
-- **Workshops.** Community co‑creation sessions where participants prototype with and critically reflect on AI systems—surfacing benefits, harms, and local priorities.  
-- **Research.** Peer‑reviewed studies and open data on methods for public participation across the AI lifecycle (data, design, deployment, oversight).  
-- **Advocacy.** Policy engagement to elevate the voices most affected by automated systems yet least consulted in their creation.
+## What is *The Right to AI*?
 
-</div>
+Back in 2022, what began as a collaboration with over thirty community organizations across Montréal has grown into a nonprofit movement. Our vision is straightforward: **AI not just for the people, but by the people**.
 
-## The Right to AI (paper)
+We host workshops where communities experiment with and critique real AI systems, surfacing both potential benefits and potential harms.  
+We publish open research on how to involve the public at every stage—from collecting and managing data, to designing models, to overseeing how they’re deployed.  
+We work with policymakers so that those most affected by automated systems are no longer the last to be consulted.
 
-<div style="margin-left: 40px;">
+---
 
-This paper argues that people and communities have a **Right to AI**—a governance right to shape, critique, and oversee AI infrastructures. Extending Lefebvre’s *Right to the City* and drawing on Arnstein’s ladder, the paper:
-  
-- Reframes **AI as societal infrastructure** requiring collective governance.  
-- Analyzes challenges posed by generative agents, large‑scale data extraction, and value pluralism.  
-- Proposes **grassroots participatory methodologies**, shared data stewardship, and transparent design processes.  
-- Distills lessons from **nine participatory AI case studies** and introduces a **four‑tier model** for participation.
+## The Paper
 
-</div>
+Our foundational paper borrows from Lefebvre’s *Right to the City*, applying it to AI. It makes the case that AI is now part of our social infrastructure and must be treated as a shared resource. It explores challenges like generative agents, mass data extraction, and conflicting values across cultures—and offers practical steps for more democratic governance.
 
-## Four‑Tier Ladder of the Right to AI
+The heart of it is simple: participation must matter. It should change how data is governed, how models are trained, and whether certain systems are deployed at all.
 
-<div style="margin-left: 40px;">
+---
 
-1. **Consumer‑Based (Minimal Right).** People use AI with little influence beyond surveys/feedback; power remains centralized.  
-2. **Private Organization‑Led.** Companies integrate limited stakeholder input; transparency improves but conflicts of interest persist.  
-3. **Government‑Controlled.** Regulation and consultations add accountability, but may miss local contexts and lived expertise.  
-4. **Citizen‑Controlled (Maximal Right).** Community assemblies, data trusts, and co‑ownership of datasets enable **shared authority** over objectives, risks, and audits—with expert collaboration where stakes are high.
+## A Ladder of Participation
 
-</div>
+At the bottom rung, people are just consumers—clicking “accept” and occasionally filling out feedback forms, while decisions stay centralized.
 
-## Lessons from Practice
+A step up, organizations invite limited input and offer more transparency, but the real power stays with them.
 
-<div style="margin-left: 40px;">
+Government-controlled models add regulations and consultations, which help, but can miss the nuance of local realities.
 
-- **Engage early & continuously.** Early involvement prevents tokenism and surfaces value conflicts before they harden.  
-- **Balance expertise and lived experience.** Translational facilitation and community‑guided metrics bridge technical and local knowledge.  
-- **Resource for equity.** Durable participation needs training, open tools, and institutional support to avoid participation‑washing.  
-- **Make participation consequential.** Tie deliberation to clear changes in data policy, model objectives, and deployment decisions.
+At the top is citizen control: community assemblies, data trusts, and shared ownership of AI systems, where everyday people and experts decide together on risks, goals, and oversight.
 
-</div>
+---
 
-## Recommendations
+## What We’ve Learned
 
-<div style="margin-left: 40px;">
+Engaging communities early and keeping them involved prevents tokenism. Pairing technical expertise with lived experience ensures AI reflects real needs and values. But this work must be resourced—through training, open tools, and institutional backing—or participation becomes symbolic rather than meaningful. And above all, community input must lead to real changes in policy, design, and deployment.
 
-- **Build capacity:** AI literacy programs, open educational materials, and accessible tooling.  
-- **Facilitate participation:** Interfaces for feedback, translation, and co‑creation—powered by LLMs where helpful.  
-- **Formalize assemblies:** Local AI councils that can mature from advisory roles to decision authority.  
-- **Establish data trusts & audits:** Community‑governed data stewardship and transparent, public‑facing audits.  
-- **Localize models:** Fine‑tune with community‑curated datasets for context‑sensitive behavior.  
-- **Mediate conflicts:** Standing panels for ethical disputes and cultural sensitivities.  
-- **Mobilize researchers:** Incentives and practices that embed community engagement throughout the AI lifecycle.
+---
 
-</div>
+## Moving Forward
+
+We need to build AI literacy so people can confidently engage in these conversations.  
+We need accessible tools and interfaces for everyday participation.  
+We need local AI councils that start in advisory roles and grow into decision-making power.  
+We need community-run data trusts and public audits.  
+And we need to localize AI models so they serve the cultures and contexts they operate in.
+
+---
 
 ## How You Can Help
 
-<div style="margin-left: 40px;">
+You can volunteer to bring the Right to AI into your community.  
+You can join research projects exploring new ways to involve the public in AI governance.  
+You can collaborate on workshops, studies, or pilot programs.  
 
-- **Volunteer** to share and activate the Right to AI in your community or field.  
-- **Join research projects** on public participation in AI.  
-- **Collaborate** on a study, workshop, or pilot deployment.  
-- **Contact:** <contact@therighttoai.org>
+**Contact:** <contact@therighttoai.org>
 
-</div>
+---
 
-## Outputs & Materials
+## Explore More
 
-<div style="margin-left: 40px;">
+[The Right to AI — nonprofit](https://www.therighttoai.org/)  
+[About The Right to AI](https://www.therighttoai.org/about)  
+[Book: The Right to AI](https://www.therighttoai.org/book)
 
-- [The Right to AI (non-profit)](https://www.therighttoai.org/)  
-- [About The Right to AI](https://www.therighttoai.org/about)  
-- [Book on the Right to AI](https://www.therighttoai.org/book)  
-
-</div>
-
-
-## Visual
-
-<div align="center">
+---
 
 ![Poster/visual summary for The Right to AI](./images/right-to-ai-poster.png)
 
-</div>
+---
 
-## How to Cite
-
-Mushkani, R., Berard, H., Cohen, A., & Koseki, S. (2025). **Position: The Right to AI.** *Proceedings of the 42nd International Conference on Machine Learning (ICML 2025), PMLR 267, Vancouver.* arXiv:2501.17899.
-
-
-
-## Tags
-
-<div class="tags">
-  <span class="tag">AI Governance</span>
-  <span class="tag">Participation</span>
-  <span class="tag">Pluralism</span>
-  <span class="tag">Open Source</span>
-  <span class="tag">Data Stewardship</span>
-  <span class="tag">Workshops</span>
-  <span class="tag">Montréal</span>
-</div>
+**Tags:** AI Governance; Participation; Pluralism; Open Source; Data Stewardship; Workshops; Montréal
