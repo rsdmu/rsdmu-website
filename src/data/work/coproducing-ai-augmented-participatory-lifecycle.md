@@ -1,5 +1,5 @@
 ---
-title: "Build AI With People, Not For Them: The 5-Phase Co-Production Playbook"
+title: "Build AI With People, Not For Them"
 date: "2025-07-31"
 path: "coproducing-ai-augmented-participatory-lifecycle"
 type: "work"

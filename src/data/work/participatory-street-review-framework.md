@@ -1,6 +1,6 @@
 ---
 title: "No Street Works for Everyone"
-date: "2025-10-01"
+date: "2025-05-01"
 path: "participatory-street-review-framework"
 type: "work"
 thumbnail: "./images/radar_chart_intersecting.png"
