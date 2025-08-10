@@ -1,5 +1,5 @@
 ---
-title: "Inclusive by Design? Steering AI to Visualize Inclusive Spaces"
+title: "Co-Creating the City We See: Aligning AI to Reflect Diverse, Intersectional, and Place-Specific Visions of Inclusion"
 date: "2025-08-10"
 path: "livs-pluralistic-alignment"
 type: "work"
@@ -49,21 +49,21 @@ Global, single-objective alignment often flattens local norms. **Pluralistic ali
 <div style="width:100%">
   <img src="./images/participatory-approach-livs.png" alt="Participatory workflow behind LIVS.">
 </div>  
-*A two-year co-creation process: outreach → criteria → prompts → images → multi-criteria comparisons → model tuning.*
+A two-year co-creation process: outreach → criteria → prompts → images → multi-criteria comparisons → model tuning.
 
 ---
 
 <div style="width:100%">
   <img src="./images/0_634-critiera.png" alt="From 634 community concepts to six criteria.">
 </div>  
-*Distillation pipeline: Accessibility · Safety · Comfort · Invitingness · Inclusivity · Diversity.*
+Distillation pipeline: Accessibility · Safety · Comfort · Invitingness · Inclusivity · Diversity.
 
 ---
 
 <div style="width:100%">
   <img src="./images/challenges_marginalized_users.png" alt="Where models still miss for marginalized users.">
 </div>  
-*Persistent gaps: intersectional identities consistently differ in their evaluations compared to majority groups.*
+Persistent gaps: intersectional identities consistently differ in their evaluations compared to majority groups.
 
 ---
 

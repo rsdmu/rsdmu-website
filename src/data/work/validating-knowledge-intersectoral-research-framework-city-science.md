@@ -55,12 +55,6 @@ Our framework categorizes perspectives within the six dimensions, promoting a st
 
 This framework bridges disciplinary silos, enhancing the **credibility** and **relevance** of intersectoral research in city science. It provides a clear guide for researchers to adopt or avoid certain perspectives, ensuring **socially accountable knowledge**. Future steps include testing the framework in other domains, expanding stakeholder engagement, integrating with policy development, and developing educational programs.
 
-## Related Links
-
-- [University of Montreal](https://www.umontreal.ca/)
-- [Mila - Quebec AI Institute](https://mila.quebec/en)
-- [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
-
 ## Tags
 
 <div class="tags">

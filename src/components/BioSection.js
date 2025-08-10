@@ -101,6 +101,28 @@ const BioSection = () => {
       <div className="bio-section__full-width-container">
         <h3 className="bio-section__subtitle">Timeline</h3>
         <ul className="bio-section__list">
+           <li>
+            <strong>2025-Today:</strong> Lecturer,{" "}
+            <a
+              href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              University of Montreal
+            </a>
+          </li>
+          <li>
+            <strong>2022-2023:</strong> Practical Training Lecturer,{" "}
+            <a
+              href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              University of Montreal
+            </a>
+          </li>
           <li>
             <strong>2022-Today:</strong> PhD Candidate,{" "}
             <a
@@ -113,7 +135,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2023-Today:</strong> Researcher,{" "}
+            <strong>2023-2025:</strong> Researcher,{" "}
             <a
               href="https://mila.quebec/en/directory/rashid-mushkani"
               target="_blank"
@@ -146,7 +168,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2017-2022:</strong> Assistant Lecturer,{" "}
+            <strong>2017-2022:</strong> Assistant Professor,{" "}
             <a
               href="https://www.ku.edu.af/en"
               target="_blank"
