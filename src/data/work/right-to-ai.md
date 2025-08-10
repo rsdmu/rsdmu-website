@@ -1,6 +1,6 @@
 ---
 title: "AI as Societal Infrastructure"
-date: "2025-07-15"
+date: "2025-08-01"
 path: "right-to-ai"
 type: "work"
 thumbnail: "./images/right-to-ai-cover.png"

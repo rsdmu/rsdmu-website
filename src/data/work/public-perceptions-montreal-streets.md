@@ -12,8 +12,10 @@ description: "How Montréal residents rate and rank streets—individually and i
 
 Cities often judge street quality with standardized audits, yet lived experiences vary across gender, age, mobility, culture, and income. This study asks where Montréal residents tend to **agree** (for instance, on aesthetics) and where they **diverge** (often on inclusivity and practicality), and how small-group discussion can turn contested ideas into clearer guidance for managers.
 
-![Summary of methods and findings for Montréal street perception study.](./images/jum-paper.png)
+<img src="./images/jum-paper.png" alt="Summary of methods and findings for Montréal street perception study." style="width: 100%;" />
+
 *Summary of methods and findings for Montréal street perception study.*
+
 
 ## What we set out to learn
 

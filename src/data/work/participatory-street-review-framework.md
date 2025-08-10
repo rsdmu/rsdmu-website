@@ -1,6 +1,6 @@
 ---
-title: "No Street Works for Everyone"
-date: "2025-08-01"
+title: "No Street Works for Everyone?"
+date: "2025-06-01"
 path: "participatory-street-review-framework"
 type: "work"
 thumbnail: "./images/streetview_images.jpg"
