@@ -1,16 +1,16 @@
 ---
 title: "No Street Works for Everyone"
-date: "2025-05-01"
+date: "2025-08-01"
 path: "participatory-street-review-framework"
 type: "work"
-thumbnail: "./images/radar_chart_intersecting.png"
+thumbnail: "./images/streetview_images.jpg"
 author: "Rashid Mushkani"
 description: "A participatory ‘Street Review’ uncovers hidden barriers on Montréal streets—showing why inclusive design needs context, culture, and conversation."
 ---
 
 *No single street met all needs—what we learned from talking, walking, and rating.*
 
-[Read on ScienceDirect](https://doi.org/10.1016/j.habitatint.2025.103536) · [View Dataset on Hugging Face](https://huggingface.co/datasets/rsdmu/streetreview)
+[Read on Habitat International I ScienceDirect](https://doi.org/10.1016/j.habitatint.2025.103536) · [View Dataset on Hugging Face](https://huggingface.co/datasets/rsdmu/streetreview)
 
 ## The Big Idea
 

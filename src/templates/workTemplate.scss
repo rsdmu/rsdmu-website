@@ -2,16 +2,18 @@
 
 /* Work Template Styles */
 .work-template {
-  max-width: 1400px; 
+  max-width: 1400px;
   margin: auto;
   padding: 10rem 1rem; /* Adjust padding as needed */
   font-family: 'Montserrat', sans-serif;
-  color: #3d8ecf;
+
+  /* Use theme text color globally, don't tint the whole page blue */
+  color: var(--text-color);
 
   h1 {
     font-size: 3.5rem;
     margin-bottom: 0.5rem;
-    color: #3d8ecf;
+    color: var(--primary-color);
     line-height: 1.2;
     text-align: center;
     text-transform: capitalize;
@@ -20,7 +22,7 @@
   h2 {
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
-    color: #3d8ecf;
+    color: var(--primary-color);
     line-height: 1.2;
     text-align: left;
     text-transform: capitalize;
@@ -29,7 +31,7 @@
   h3 {
     font-size: 2.3rem;
     margin-bottom: 0.5rem;
-    color: #3d8ecf;
+    color: var(--primary-color);
     line-height: 1.2;
     text-align: left;
     text-transform: capitalize;
@@ -38,7 +40,7 @@
   .work-date,
   .work-author {
     font-size: 1rem;
-    color: #7f8c8d;
+    color: var(--muted-text-color);
     margin-bottom: 0.5rem;
     text-align: center;
   }
@@ -60,7 +62,7 @@
   .work-content {
     font-size: 1.3rem;
     line-height: 1.6;
-    color: #34495e;
+    color: var(--text-color);
 
     p {
       margin-bottom: 1.5rem;
@@ -68,7 +70,7 @@
     }
 
     h2 {
-      color: #3d8ecf;
+      color: var(--primary-color);
       margin-top: 3rem;
       margin-bottom: 1rem;
     }
@@ -83,16 +85,15 @@
     }
 
     a {
-      color: #2980b9;
+      color: var(--primary-color-dark, var(--primary-color));
       text-decoration: none;
 
       &:hover {
+        color: var(--accent-color);
         text-decoration: underline;
       }
     }
 
-  
-    
     .image-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -121,7 +122,7 @@
           bottom: 0;
           left: 0;
           width: 100%;
-          background: rgba(0, 0, 0, 0.6);
+          background: rgba(0, 0, 0, 0.6); /* Works over images in both themes */
           color: #fff;
           padding: 0.5rem;
           font-size: 0.9rem;
@@ -132,7 +133,7 @@
           transition: opacity 0.3s ease;
 
           .caption-text {
-            margin: 10;
+            margin: 10px; /* was: 10 (unitless) */
             text-align: center;
           }
         }
@@ -142,7 +143,6 @@
         }
       }
     }
-    
 
     /* Ensure All Images Within .work-content Take Full Width */
     img {
@@ -157,25 +157,14 @@
 
     /* Responsive Typography */
     @media (max-width: 768px) {
-      h1 {
-        font-size: 2rem;
-      }
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1.6rem; }
+      h3 { font-size: 1.4rem; }
 
-      h2 {
-        font-size: 1.6rem;
-      }
+      /* fix nested selector: target the same block, not .work-content .work-content */
+      font-size: 1rem;
 
-      h3 {
-        font-size: 1.4rem;
-      }
-
-      .work-content {
-        font-size: 1rem;
-      }
-
-      .work-content p {
-        font-size: 1.2rem;
-      }
+      p { font-size: 1.2rem; }
     }
   }
 
@@ -186,7 +175,7 @@
     h3 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: #2c3e50;
+      color: var(--text-color);
     }
 
     ul {
@@ -197,11 +186,12 @@
         margin-bottom: 0.5rem;
 
         a {
-          color: #2980b9;
+          color: var(--primary-color-dark, var(--primary-color));
           text-decoration: none;
           font-weight: 500;
 
           &:hover {
+            color: var(--accent-color);
             text-decoration: underline;
           }
         }
@@ -217,8 +207,9 @@
     gap: 0.5rem;
 
     .tag {
-      background-color: #ecf0f1;
-      color: #2c3e50;
+      /* Use theme-aware subtle surface + readable text */
+      background-color: var(--blockquote-bg);
+      color: var(--blockquote-text);
       padding: 0.3rem 0.6rem;
       border-radius: 4px;
       font-size: 0.85rem;
@@ -226,17 +217,18 @@
   }
 }
 
+/* Full-width images override */
 .work-template .work-content img {
-    width: 100% !important;
-    max-width: 1400 !important;
-  }
-  
-/* Optional: Enhance Blockquotes within Work Content */
+  width: 100% !important;
+  max-width: 1400px !important; /* add px */
+}
+
+/* Theme-aware blockquote (fixes the “Street Review” quote readability) */
 .work-template .work-content blockquote {
-  border-left: 4px solid #2980b9;
-  background-color: #f0f3f4;
+  border-left: 4px solid var(--blockquote-border);
+  background-color: var(--blockquote-bg);
+  color: var(--blockquote-text);
   padding: 0.5rem 1rem;
   margin: 1.5rem 0;
   font-style: italic;
-  color: #7f8c8d;
 }

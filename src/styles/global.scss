@@ -48,6 +48,10 @@ body.light {
   --background-image-url: url('/assets/light-background.webp'); /* Light theme background image */
   --form-background: #f5f5f5; /* Light theme form background */
   --form-shadow: rgba(0, 0, 0, 0.1);
+  --muted-text-color: #6b7280;            /* used for dates/authors */
+  --blockquote-bg: #f0f3f4;               /* light card */
+  --blockquote-text: #374151;             /* dark gray text */
+  --blockquote-border: var(--primary-color);
 }
 
 /* Dark Mode Variables */
@@ -64,6 +68,10 @@ body.dark {
   --background-image-url: url('/assets/dark-background.webp'); /* Dark theme background image */
   --form-background: #000000; /* Dark theme form background */
   --form-shadow: rgba(255, 255, 255, 0.1);
+  --muted-text-color: #9aa0a6;            /* lighter gray for dark bg */
+  --blockquote-bg: rgba(255,255,255,0.06);/* subtle light overlay */
+  --blockquote-text: #e5e7eb;             /* near-white */
+  --blockquote-border: var(--primary-color-dark);
 }
 
 /* ---------------------------------------------------
