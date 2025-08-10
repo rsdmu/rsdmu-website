@@ -1,5 +1,5 @@
 ---
-title: "Public perceptions of Montréal's streets: Implications for inclusive public space making and management"
+title: "What Montréalers Really Think About Their Streets"
 date: "2025-07-23"
 path: "public-perceptions-montreal-streets"
 type: "work"

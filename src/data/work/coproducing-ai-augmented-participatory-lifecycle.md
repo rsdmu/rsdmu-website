@@ -3,7 +3,7 @@ title: "Build AI With People, Not For Them"
 date: "2025-07-31"
 path: "coproducing-ai-augmented-participatory-lifecycle"
 type: "work"
-thumbnail: "./images/ai-lifecycle-augmented.png"
+thumbnail: "./images/ai-lifecycle-augmented.gif"
 author: "Rashid Mushkani"
 description: "A no-nonsense, five-phase guide to building AI *with* communities—so decisions, risks, and benefits are shared from day one."
 ---

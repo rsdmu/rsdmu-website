@@ -1,5 +1,5 @@
 ---
-title: "MID-Space: Aligning Diverse Communities’ Needs to Inclusive Public Spaces"
+title: "Aligning Diverse Communities’ Needs to Inclusive Public Spaces"
 date: "2024-12-15"
 path: "mid-space-dataset"
 type: "work"
