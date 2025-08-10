@@ -51,16 +51,21 @@ Global, single-objective alignment often flattens local norms. **Pluralistic ali
 </div>  
 *A two-year co-creation process: outreach → criteria → prompts → images → multi-criteria comparisons → model tuning.*
 
+---
+
 <div style="width:100%">
   <img src="./images/0_634-critiera.png" alt="From 634 community concepts to six criteria.">
 </div>  
 *Distillation pipeline: Accessibility · Safety · Comfort · Invitingness · Inclusivity · Diversity.*
 
+---
+
 <div style="width:100%">
   <img src="./images/challenges_marginalized_users.png" alt="Where models still miss for marginalized users.">
 </div>  
-*Persistent gaps: subtle inclusivity cues, detailed accessibility features, and cultural signaling remain challenging.*
+*Persistent gaps: intersectional identities consistently differ in their evaluations compared to majority groups.*
 
+---
 
 **More:** [arXiv](https://arxiv.org/abs/2503.01894) · [OpenReview / ICML 2025](https://openreview.net/forum?id=Spoe53kbj9) · [Project & Dataset (mid-space.one)](https://mid-space.one)
 
