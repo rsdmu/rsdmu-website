@@ -168,7 +168,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2017-2022:</strong> Assistant Professor,{" "}
+            <strong>2017-2021:</strong> Assistant Professor,{" "}
             <a
               href="https://www.ku.edu.af/en"
               target="_blank"
@@ -424,7 +424,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Watch
+              3 mins Watch
             </a>
           </li>
           <li>
@@ -439,25 +439,25 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2025:</strong> "Position: The Right to AI" – Poster at ICML 2025, Vancouver, Canada.{" "}
+            <strong>2025:</strong> "Position: The Right to AI" – Forty-Second International Conference on Machine Learning 2025, Vancouver, Canada.{" "}
             <a
               href="https://icml.cc/virtual/2025/poster/40155"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Details
+              5 mins Watch - Details
             </a>
           </li>
           <li>
-            <strong>2025:</strong> "LIVS: A Pluralistic Alignment Dataset for Inclusive Public Spaces" – Poster at ICML 2025, Vancouver, Canada.{" "}
+            <strong>2025:</strong> "LIVS: A Pluralistic Alignment Dataset for Inclusive Public Spaces" – Forty-Second International Conference on Machine Learning 2025, Vancouver, Canada.{" "}
             <a
               href="https://icml.cc/virtual/2025/poster/45204"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Details
+              5 mins Watch - Details
             </a>
           </li>
           <li>
@@ -490,7 +490,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Details
+              15 mins Watch - Details
             </a>
           </li>
           <li>
@@ -501,7 +501,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Details
+              15 mins Watch - Details
             </a>
           </li>
           <li>
