@@ -387,12 +387,12 @@ const BioSection = () => {
           <li>
             <strong>2018:</strong>{" "}
             <a
-              href="https://ku.edu.af/"
+              href="https://drive.google.com/file/d/1LOd3D782jRApV8Spsg7zzb9g-oS2FlmO/view"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Appreciation Award
+              Teaching Performance & Academic Excellence Award,
             </a>
             , Kabul University
           </li>
