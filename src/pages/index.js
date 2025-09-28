@@ -66,21 +66,27 @@ const IndexPage = ({ data }) => {
 
       {/* Structured Data JSON-LD */}
       <script type="application/ld+json">
-        {`
-        {
+        {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
+          "@id": "https://rsdmu.com/#bio",
           "name": "Rashid Ahmad Mushkani",
           "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
           "jobTitle": "PhD Candidate at University of Montreal",
           "affiliation": "Mila / University of Montreal",
-          "url": "https://rsdmu.com",
+          "url": "https://rsdmu.com/",
           "sameAs": [
             "https://www.linkedin.com/in/rashid-mushkani",
-            "https://github.com/rsdmu"
+            "https://github.com/rsdmu",
+            "https://scholar.google.com/citations?user=PClylNUAAAAJ&hl=en",
+            "https://unesco-studio.umontreal.ca/team/rashid_mushkani.html",
+            "https://orcid.org/0000-0002-3173-8310",
+            "https://amenagement.umontreal.ca/en/recherche/professeurs/fiche/in/in35141/sg/Rashid%20Mushkani/",
+            "https://www.researchgate.net/profile/Rashid-Mushkani-2?ev=hdr_xprf",
+            "https://sp-exchange.ca/podcast/urban-planning-artificial-intelligence-and-inclusive-cities-an-interview-with-rashid-mushkani/",
+            "https://mila.quebec/en/directory/rashid-mushkani"
           ]
-        }
-        `}
+        })}
       </script>
       
       {/* Hero Section */}
