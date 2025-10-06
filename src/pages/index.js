@@ -112,8 +112,15 @@ const IndexPage = ({ data }) => {
           "@context": "https://schema.org",
           "@type": "Person",
           "@id": "https://rsdmu.com/#bio",
-          "name": "Rashid Ahmad Mushkani",
-          "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
+          "name": "Rashid Mushkani",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://rsdmu.com/#headshot",
+            "url": "https://rsdmu.com/assets/rashid-mushkani-headshot.webp",
+            "width": 1396,
+            "height": 1744,
+            "caption": "Rashid Mushkani smiling outdoors."
+          },
           "jobTitle": "PhD Candidate at University of Montreal",
           "affiliation": "Mila / University of Montreal",
           "description": "Rashid Mushkani is a researcher and lecturer at the University of Montreal and Mila researching participatory AI for inclusive public spaces and socio-spatial justice.",
