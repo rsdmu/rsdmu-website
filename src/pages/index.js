@@ -5,6 +5,7 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import './index.scss';
 import BioSection from "../components/BioSection";
+import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
 import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa';
 import PublicationSchema from '../components/PublicationSchema'; 
 import WorkSchema from '../components/WorkSchema';
@@ -60,33 +61,54 @@ const IndexPage = ({ data }) => {
     }));
   };
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": RASHID_ID,
+    "name": "Rashid Ahmad Mushkani",
+    "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
+    "jobTitle": "PhD Candidate at University of Montreal",
+    "affiliation": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.umontreal.ca/#organization",
+        "name": "University of Montreal",
+        "url": "https://www.umontreal.ca/en/",
+        "logo": "https://rsdmu.com/icons/udem.svg"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://unesco-studio.umontreal.ca/#organization",
+        "name": "UNESCO Chair in Urban Landscape",
+        "url": "https://unesco-studio.umontreal.ca/",
+        "logo": "https://rsdmu.com/icons/unesco.svg"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://mila.quebec/#organization",
+        "name": "Mila - Quebec Artificial Intelligence Institute",
+        "url": "https://mila.quebec/en/",
+        "logo": "https://rsdmu.com/icons/mila.svg"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.obvia.ca/#organization",
+        "name": "International Observatory on the Societal Impacts of AI and Digital Technologies",
+        "url": "https://www.obvia.ca/en",
+        "logo": "https://rsdmu.com/icons/obvia.svg"
+      }
+    ],
+    "url": RASHID_URL,
+    "sameAs": RASHID_SAME_AS
+  };
+
   return (
     <Layout>
       <Seo title="Home" description="Welcome to Rashid Mushkani's Website" />
 
       {/* Structured Data JSON-LD */}
       <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "@id": "https://rsdmu.com/#bio",
-          "name": "Rashid Ahmad Mushkani",
-          "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
-          "jobTitle": "PhD Candidate at University of Montreal",
-          "affiliation": "Mila / University of Montreal",
-          "url": "https://rsdmu.com/",
-          "sameAs": [
-            "https://www.linkedin.com/in/rashid-mushkani",
-            "https://github.com/rsdmu",
-            "https://scholar.google.com/citations?user=PClylNUAAAAJ&hl=en",
-            "https://unesco-studio.umontreal.ca/team/rashid_mushkani.html",
-            "https://orcid.org/0000-0002-3173-8310",
-            "https://amenagement.umontreal.ca/en/recherche/professeurs/fiche/in/in35141/sg/Rashid%20Mushkani/",
-            "https://www.researchgate.net/profile/Rashid-Mushkani-2?ev=hdr_xprf",
-            "https://sp-exchange.ca/podcast/urban-planning-artificial-intelligence-and-inclusive-cities-an-interview-with-rashid-mushkani/",
-            "https://mila.quebec/en/directory/rashid-mushkani"
-          ]
-        })}
+        {JSON.stringify(personSchema)}
       </script>
       
       {/* Hero Section */}
