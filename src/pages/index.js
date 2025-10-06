@@ -74,7 +74,37 @@ const IndexPage = ({ data }) => {
           "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
           "jobTitle": "PhD Candidate at University of Montreal",
           "affiliation": "Mila / University of Montreal",
+          "description": "Rashid Mushkani is a researcher and lecturer at the University of Montreal and Mila researching participatory AI for inclusive public spaces and socio-spatial justice.",
           "url": "https://rsdmu.com/",
+          "knowsAbout": [
+            "Participatory urban planning",
+            "Inclusive public spaces",
+            "Socio-spatial justice",
+            "Pluralistic AI alignment",
+            "Artificial intelligence ethics",
+            "Spatial justice"
+          ],
+          "knowsLanguage": [
+            "English"
+          ],
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "PhD Candidate and Lecturer in Urban Planning and AI",
+            "description": "Advances participatory design and inclusive public space research through AI collaborations at the University of Montreal and Mila.",
+            "startDate": "2022",
+            "employer": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Montreal",
+                "sameAs": "https://amenagement.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
+              },
+              {
+                "@type": "ResearchOrganization",
+                "name": "Mila - Quebec Artificial Intelligence Institute",
+                "sameAs": "https://mila.quebec/en/directory/rashid-mushkani"
+              }
+            ]
+          },
           "sameAs": [
             "https://www.linkedin.com/in/rashid-mushkani",
             "https://github.com/rsdmu",
