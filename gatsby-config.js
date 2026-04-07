@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
     description:
-      "Portfolio of Rashid Ahmad Mushkani, specializing in urban planning, AI, and architecture.",
+      "Official website of Rashid Ahmad Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.",
     author: "Rashid Mushkani",
     siteUrl: "https://rsdmu.com", // Ensure this is correct
     googleVerification: "google39150de1d9b66663",
@@ -86,28 +86,5 @@ module.exports = {
         // Configure options if needed
       },
     },
-    // Font loading plugin using gatsby-plugin-webfonts
-    {
-      resolve: `gatsby-plugin-webfonts`,
-      options: {
-        fonts: {
-          google: [
-            {
-              family: `Montserrat`,
-              variants: [`400`, `700`],
-            },
-            {
-              family: `Bebas Neue`,
-              variants: [`400`],
-            },
-          ],
-        },
-        formats: ["woff2", "woff"],
-        useMinify: true,
-        usePreload: true,
-        usePreconnect: true,
-        crossOrigin: `anonymous`, // Uncomment if needed
-      },
-    }, 
   ],
 };

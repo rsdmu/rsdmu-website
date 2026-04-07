@@ -12,10 +12,10 @@ const BioSection = () => {
         {/* Bio Overview */}
         <div className="bio-section__overview">
           <p>
-            I’m Rashid. I research urban planning and artificial intelligence through participatory design.
+            Rashid Ahmad Mushkani is a researcher in urban planning and artificial intelligence who works through participatory design.
           </p>
           <p>
-            My work explores inclusive public space, socio-spatial justice, and pluralistic AI alignment, advocating a "Right to AI" grounded in power, inclusion, and community participation.
+            His work explores inclusive public space, socio-spatial justice, and pluralistic AI alignment, advocating a "Right to AI" grounded in power, inclusion, and community participation.
           </p>
           <p>
             I hold a Master of Engineering from{" "}

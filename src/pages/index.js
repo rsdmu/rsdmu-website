@@ -5,10 +5,11 @@ import Layout from '../components/layout';
 import Seo from '../components/seo';
 import './index.scss';
 import BioSection from "../components/BioSection";
-import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
 import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa';
+import PersonProfileSchema from '../components/PersonProfileSchema';
 import PublicationSchema from '../components/PublicationSchema'; 
 import WorkSchema from '../components/WorkSchema';
+import { RASHID_PRIMARY_IMAGE, RASHID_PROFILE_DESCRIPTION } from '../constants/rashidProfile';
 
 const IndexPage = ({ data }) => {
   const [formStatus, setFormStatus] = useState({
@@ -30,7 +31,8 @@ const IndexPage = ({ data }) => {
       const response = await fetch('https://formspree.io/f/xkndbero', {
         method: 'POST',
         headers: {
-          'Accept': 'application/json'
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(formObject)
       });
@@ -39,8 +41,11 @@ const IndexPage = ({ data }) => {
         setFormStatus({ submitted: true, submitting: false, info: { error: false, msg: 'Thank you! Your message has been sent.' } });
         e.target.reset();
       } else {
-        const data = await response.json();
-        if (Object.hasOwnProperty.call(data, 'errors')) {
+        const data = response.headers.get('content-type')?.includes('application/json')
+          ? await response.json()
+          : null;
+
+        if (data && Object.hasOwnProperty.call(data, 'errors')) {
           setFormStatus({ submitted: false, submitting: false, info: { error: true, msg: data.errors.map(error => error.message).join(', ') } });
         } else {
           setFormStatus({ submitted: false, submitting: false, info: { error: true, msg: 'Oops! There was a problem submitting your form.' } });
@@ -61,112 +66,17 @@ const IndexPage = ({ data }) => {
     }));
   };
 
-  const personSchema = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": RASHID_ID,
-    "name": "Rashid Ahmad Mushkani",
-    "image": "https://rsdmu.com/static/88867faf044097371b9619d62c5a5187/cc927/profile-photo.webp",
-    "jobTitle": "PhD Candidate at University of Montreal",
-    "affiliation": [
-      {
-        "@type": "Organization",
-        "@id": "https://www.umontreal.ca/#organization",
-        "name": "University of Montreal",
-        "url": "https://www.umontreal.ca/en/",
-        "logo": "https://rsdmu.com/icons/udem.svg"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://unesco-studio.umontreal.ca/#organization",
-        "name": "UNESCO Chair in Urban Landscape",
-        "url": "https://unesco-studio.umontreal.ca/",
-        "logo": "https://rsdmu.com/icons/unesco.svg"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://mila.quebec/#organization",
-        "name": "Mila - Quebec Artificial Intelligence Institute",
-        "url": "https://mila.quebec/en/",
-        "logo": "https://rsdmu.com/icons/mila.svg"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://www.obvia.ca/#organization",
-        "name": "International Observatory on the Societal Impacts of AI and Digital Technologies",
-        "url": "https://www.obvia.ca/en",
-        "logo": "https://rsdmu.com/icons/obvia.svg"
-      }
-    ],
-    "url": RASHID_URL,
-    "sameAs": RASHID_SAME_AS
-  };
-
   return (
     <Layout>
-      <Seo title="Home" description="Welcome to Rashid Mushkani's Website" />
-
-      {/* Structured Data JSON-LD */}
-      <script type="application/ld+json">
-        {JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "@id": "https://rsdmu.com/#bio",
-          "name": "Rashid Mushkani",
-          "image": {
-            "@type": "ImageObject",
-            "@id": "https://rsdmu.com/#headshot",
-            "url": "https://rsdmu.com/assets/rashid-mushkani-headshot.webp",
-            "width": 1396,
-            "height": 1744,
-            "caption": "Rashid Mushkani smiling outdoors."
-          },
-          "jobTitle": "PhD Candidate at University of Montreal",
-          "affiliation": "Mila / University of Montreal",
-          "description": "Rashid Mushkani is a researcher and lecturer at the University of Montreal and Mila researching participatory AI for inclusive public spaces and socio-spatial justice.",
-          "url": "https://rsdmu.com/",
-          "knowsAbout": [
-            "Participatory urban planning",
-            "Inclusive public spaces",
-            "Socio-spatial justice",
-            "Pluralistic AI alignment",
-            "Artificial intelligence ethics",
-            "Spatial justice"
-          ],
-          "knowsLanguage": [
-            "English"
-          ],
-          "hasOccupation": {
-            "@type": "Occupation",
-            "name": "PhD Candidate and Lecturer in Urban Planning and AI",
-            "description": "Advances participatory design and inclusive public space research through AI collaborations at the University of Montreal and Mila.",
-            "startDate": "2022",
-            "employer": [
-              {
-                "@type": "CollegeOrUniversity",
-                "name": "University of Montreal",
-                "sameAs": "https://amenagement.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
-              },
-              {
-                "@type": "ResearchOrganization",
-                "name": "Mila - Quebec Artificial Intelligence Institute",
-                "sameAs": "https://mila.quebec/en/directory/rashid-mushkani"
-              }
-            ]
-          },
-          "sameAs": [
-            "https://www.linkedin.com/in/rashid-mushkani",
-            "https://github.com/rsdmu",
-            "https://scholar.google.com/citations?user=PClylNUAAAAJ&hl=en",
-            "https://unesco-studio.umontreal.ca/team/rashid_mushkani.html",
-            "https://orcid.org/0000-0002-3173-8310",
-            "https://amenagement.umontreal.ca/en/recherche/professeurs/fiche/in/in35141/sg/Rashid%20Mushkani/",
-            "https://www.researchgate.net/profile/Rashid-Mushkani-2?ev=hdr_xprf",
-            "https://sp-exchange.ca/podcast/urban-planning-artificial-intelligence-and-inclusive-cities-an-interview-with-rashid-mushkani/",
-            "https://mila.quebec/en/directory/rashid-mushkani"
-          ]
-        })}
-      </script>
+      <Seo
+        title="Rashid Mushkani"
+        description={RASHID_PROFILE_DESCRIPTION}
+        pathname="/"
+        image={RASHID_PRIMARY_IMAGE}
+        imageAlt="Portrait of Rashid Mushkani"
+        type="profile"
+      />
+      <PersonProfileSchema />
       
       {/* Hero Section */}
       <div id="home" className="background-image-wrapper">
@@ -402,7 +312,7 @@ export const query = graphql`
             link
             abstract
             pdf
-            date(formatString: "2024-12-12")
+            date(formatString: "YYYY")
           }
         }
       }
