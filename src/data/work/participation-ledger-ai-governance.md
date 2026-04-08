@@ -1,5 +1,5 @@
 ---
-title: "Participation Ledger: Traceable, Enforceable, and Compensable Participation for AI Governance"
+title: "Participation Ledger"
 date: "2026-02-17"
 path: "participation-ledger-ai-governance"
 type: "work"

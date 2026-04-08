@@ -1,5 +1,5 @@
 ---
-title: "Co-Creating the City We See: Aligning AI to Reflect Diverse, Intersectional, and Place-Specific Visions of Inclusion"
+title: "Co-Creating the City We See"
 date: "2025-08-10"
 path: "livs-pluralistic-alignment"
 type: "work"
