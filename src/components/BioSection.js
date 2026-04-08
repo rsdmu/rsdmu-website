@@ -416,39 +416,6 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Talks &amp; Events</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2026:</strong> "Street Review" – Colloque Perspective 360, ACSA, Université de Montréal, Montréal, Canada.{" "}
-            <a
-              href="https://doi.org/10.1016/j.cities.2025.106602"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Paper
-            </a>
-          </li>
-          <li>
-            <strong>2026:</strong> "The Right to AI" – Critical Science Reading Group, Mila - Québec AI Institute, Montréal, Canada.{" "}
-            <a
-              href="https://arxiv.org/abs/2501.17899"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Paper
-            </a>
-          </li>
-          <li>
-            <strong>2026:</strong> "AIAI: AI for Inclusive Urban Spaces" – KIT Delegation Visit, Mila - Québec AI Institute, Montréal, Canada.{" "}
-            <a
-              href="https://unesco-studio.umontreal.ca/projects/aiai/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Project
-            </a>
-          </li>
-          <li>
             <strong>2026:</strong> "Participatory AI in Design: From Research to Practice" – InDesCanada, Carleton University, Ottawa, Canada.{" "}
             <em>Upcoming: May 3</em>.{" "}
             <a
@@ -499,6 +466,39 @@ const BioSection = () => {
               className="bio-section__link"
             >
               Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "Street Review" – Colloque Perspective 360, ACSA, Université de Montréal, Montréal, Canada.{" "}
+            <a
+              href="https://doi.org/10.1016/j.cities.2025.106602"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "The Right to AI" – Critical Science Reading Group, Mila - Québec AI Institute, Montréal, Canada.{" "}
+            <a
+              href="https://arxiv.org/abs/2501.17899"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "AIAI: AI for Inclusive Urban Spaces" – KIT Delegation Visit, Mila - Québec AI Institute, Montréal, Canada.{" "}
+            <a
+              href="https://unesco-studio.umontreal.ca/projects/aiai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Project
             </a>
           </li>
           <li>
