@@ -4,9 +4,10 @@ import {
   RASHID_ALTERNATE_NAMES,
   RASHID_EMAIL,
   RASHID_ID,
-  RASHID_IMAGE_SET,
+  RASHID_IMAGE_OBJECTS,
   RASHID_JOB_TITLE,
   RASHID_KNOWS_ABOUT,
+  RASHID_PRIMARY_IMAGE_OBJECT_ID,
   RASHID_PROFILE_CREATED_AT,
   RASHID_PROFILE_DESCRIPTION,
   RASHID_PROFILE_PAGE_ID,
@@ -17,6 +18,19 @@ import {
 } from '../constants/rashidProfile';
 
 const PersonProfileSchema = () => {
+  const imageObjects = RASHID_IMAGE_OBJECTS.map((image, index) => ({
+    '@type': 'ImageObject',
+    '@id': image.id,
+    url: image.url,
+    contentUrl: image.url,
+    thumbnailUrl: image.url,
+    width: image.width,
+    height: image.height,
+    caption: image.caption,
+    representativeOfPage: index === 0,
+    encodingFormat: 'image/jpeg',
+  }));
+
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -40,9 +54,11 @@ const PersonProfileSchema = () => {
         isPartOf: {
           '@id': RASHID_WEBSITE_ID,
         },
+        image: {
+          '@id': RASHID_PRIMARY_IMAGE_OBJECT_ID,
+        },
         primaryImageOfPage: {
-          '@type': 'ImageObject',
-          url: RASHID_IMAGE_SET[2],
+          '@id': RASHID_PRIMARY_IMAGE_OBJECT_ID,
         },
         mainEntity: {
           '@id': RASHID_ID,
@@ -62,7 +78,9 @@ const PersonProfileSchema = () => {
         alternateName: RASHID_ALTERNATE_NAMES,
         description: RASHID_PROFILE_DESCRIPTION,
         email: `mailto:${RASHID_EMAIL}`,
-        image: RASHID_IMAGE_SET,
+        image: imageObjects.map((image) => ({
+          '@id': image['@id'],
+        })),
         sameAs: RASHID_SAME_AS,
         jobTitle: RASHID_JOB_TITLE,
         knowsAbout: RASHID_KNOWS_ABOUT,
@@ -103,6 +121,7 @@ const PersonProfileSchema = () => {
           },
         ],
       },
+      ...imageObjects,
     ],
   };
 

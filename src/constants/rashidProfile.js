@@ -7,17 +7,40 @@ export const RASHID_EMAIL = 'rashid.mushkani@gmail.com';
 export const RASHID_JOB_TITLE = 'PhD Candidate in Urban Planning and AI';
 export const RASHID_PROFILE_DESCRIPTION = 'Official website of Rashid Ahmad Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.';
 export const RASHID_PROFILE_CREATED_AT = '2024-11-13T10:49:58-05:00';
-export const RASHID_PROFILE_UPDATED_AT = '2026-04-07T00:00:00-04:00';
+export const RASHID_PROFILE_UPDATED_AT = '2026-04-08T00:00:00-04:00';
 export const RASHID_ALTERNATE_NAMES = [
   'Rashid Mushkani',
   'Rashid A. Mushkani',
 ];
-export const RASHID_IMAGE_SET = [
-  'https://rsdmu.com/assets/rashid-mushkani-headshot-1x1.jpg',
-  'https://rsdmu.com/assets/rashid-mushkani-headshot-4x3.jpg',
-  'https://rsdmu.com/assets/rashid-mushkani-headshot-16x9.jpg',
+export const RASHID_PROFILE_IMAGE_ALT = 'Portrait of Rashid Mushkani';
+export const RASHID_IMAGE_OBJECTS = [
+  {
+    id: 'https://rsdmu.com/#headshot-1x1',
+    url: 'https://rsdmu.com/assets/rashid-mushkani-headshot-1x1.jpg',
+    width: 920,
+    height: 920,
+    caption: RASHID_PROFILE_IMAGE_ALT,
+  },
+  {
+    id: 'https://rsdmu.com/#headshot-4x3',
+    url: 'https://rsdmu.com/assets/rashid-mushkani-headshot-4x3.jpg',
+    width: 920,
+    height: 690,
+    caption: RASHID_PROFILE_IMAGE_ALT,
+  },
+  {
+    id: 'https://rsdmu.com/#headshot-16x9',
+    url: 'https://rsdmu.com/assets/rashid-mushkani-headshot-16x9.jpg',
+    width: 920,
+    height: 517,
+    caption: RASHID_PROFILE_IMAGE_ALT,
+  },
 ];
-export const RASHID_PRIMARY_IMAGE = RASHID_IMAGE_SET[2];
+export const RASHID_IMAGE_SET = RASHID_IMAGE_OBJECTS.map((image) => image.url);
+export const RASHID_PRIMARY_IMAGE = RASHID_IMAGE_OBJECTS[0].url;
+export const RASHID_PRIMARY_IMAGE_WIDTH = RASHID_IMAGE_OBJECTS[0].width;
+export const RASHID_PRIMARY_IMAGE_HEIGHT = RASHID_IMAGE_OBJECTS[0].height;
+export const RASHID_PRIMARY_IMAGE_OBJECT_ID = RASHID_IMAGE_OBJECTS[0].id;
 export const RASHID_KNOWS_ABOUT = [
   'Participatory AI',
   'Pluralistic AI alignment',

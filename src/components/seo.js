@@ -3,7 +3,12 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import { RASHID_PRIMARY_IMAGE } from "../constants/rashidProfile"
+import {
+  RASHID_PRIMARY_IMAGE,
+  RASHID_PRIMARY_IMAGE_HEIGHT,
+  RASHID_PRIMARY_IMAGE_WIDTH,
+  RASHID_PROFILE_IMAGE_ALT,
+} from "../constants/rashidProfile"
 
 const normaliseUrl = (siteUrl, path = "/") => {
   const baseUrl = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl
@@ -24,7 +29,9 @@ const SEO = ({
   description,
   pathname = "/",
   image = RASHID_PRIMARY_IMAGE,
-  imageAlt = "Portrait of Rashid Mushkani",
+  imageAlt = RASHID_PROFILE_IMAGE_ALT,
+  imageWidth = RASHID_PRIMARY_IMAGE_WIDTH,
+  imageHeight = RASHID_PRIMARY_IMAGE_HEIGHT,
   type = "website",
   noindex = false,
 }) => {
@@ -48,6 +55,7 @@ const SEO = ({
   const resolvedTitle = title || defaultTitle
   const canonicalUrl = normaliseUrl(siteUrl, pathname)
   const imageUrl = normaliseUrl(siteUrl, image)
+  const twitterCard = type === "profile" ? "summary" : "summary_large_image"
   const titleTemplate = resolvedTitle && resolvedTitle !== defaultTitle
     ? `%s | ${defaultTitle}`
     : undefined
@@ -76,6 +84,10 @@ const SEO = ({
         {
           rel: `canonical`,
           href: canonicalUrl,
+        },
+        {
+          rel: `image_src`,
+          href: imageUrl,
         },
       ]}
       meta={[
@@ -127,9 +139,25 @@ const SEO = ({
           property: `og:image:alt`,
           content: imageAlt,
         },
+        ...(imageWidth
+          ? [
+              {
+                property: `og:image:width`,
+                content: String(imageWidth),
+              },
+            ]
+          : []),
+        ...(imageHeight
+          ? [
+              {
+                property: `og:image:height`,
+                content: String(imageHeight),
+              },
+            ]
+          : []),
         {
           name: `twitter:card`,
-          content: `summary_large_image`,
+          content: twitterCard,
         },
         {
           name: `twitter:title`,
@@ -142,6 +170,10 @@ const SEO = ({
         {
           name: `twitter:image`,
           content: imageUrl,
+        },
+        {
+          name: `twitter:image:alt`,
+          content: imageAlt,
         },
         ...profileMeta,
       ]}

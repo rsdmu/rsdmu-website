@@ -9,7 +9,13 @@ import { FaFilePdf, FaEye, FaEyeSlash } from 'react-icons/fa';
 import PersonProfileSchema from '../components/PersonProfileSchema';
 import PublicationSchema from '../components/PublicationSchema'; 
 import WorkSchema from '../components/WorkSchema';
-import { RASHID_PRIMARY_IMAGE, RASHID_PROFILE_DESCRIPTION } from '../constants/rashidProfile';
+import {
+  RASHID_PRIMARY_IMAGE,
+  RASHID_PRIMARY_IMAGE_HEIGHT,
+  RASHID_PRIMARY_IMAGE_WIDTH,
+  RASHID_PROFILE_DESCRIPTION,
+  RASHID_PROFILE_IMAGE_ALT,
+} from '../constants/rashidProfile';
 
 const IndexPage = ({ data }) => {
   const [formStatus, setFormStatus] = useState({
@@ -73,7 +79,9 @@ const IndexPage = ({ data }) => {
         description={RASHID_PROFILE_DESCRIPTION}
         pathname="/"
         image={RASHID_PRIMARY_IMAGE}
-        imageAlt="Portrait of Rashid Mushkani"
+        imageAlt={RASHID_PROFILE_IMAGE_ALT}
+        imageWidth={RASHID_PRIMARY_IMAGE_WIDTH}
+        imageHeight={RASHID_PRIMARY_IMAGE_HEIGHT}
         type="profile"
       />
       <PersonProfileSchema />
@@ -83,11 +91,29 @@ const IndexPage = ({ data }) => {
         <div className="background-image"></div>
         <div className="overlay"></div>
         <div className="centered-content">
-          <h1 className="site-title">RASHID MUSHKANI</h1>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal I Mila - Quebec AI Institute</p>
+          <div className="hero-layout">
+            <div className="hero-copy">
+              <h1 className="site-title">RASHID MUSHKANI</h1>
+              <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
+              <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal I Mila - Quebec AI Institute</p>
+            </div>
+            <div className="hero-headshot-frame">
+              <img
+                src={RASHID_PRIMARY_IMAGE}
+                alt={RASHID_PROFILE_IMAGE_ALT}
+                className="hero-headshot"
+                width={RASHID_PRIMARY_IMAGE_WIDTH}
+                height={RASHID_PRIMARY_IMAGE_HEIGHT}
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+              />
+            </div>
+          </div>
         </div>
       </div>
+
+      <BioSection />
 
       {/* Work Section */}
       <section id="work" className="content-section work-section">
@@ -166,8 +192,6 @@ const IndexPage = ({ data }) => {
           ))}
         </div>
       </section>
-
-      <BioSection />
 
       {/* Contact Section */}
       <section id="contact" className="content-section contact-section">
