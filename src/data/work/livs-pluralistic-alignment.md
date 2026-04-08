@@ -1,5 +1,5 @@
 ---
-title: "Plural Cities: How Different Communities Imagine What Urban Spaces Should Look Like and Who They Should Welcome"
+title: "Plural Cities: How Different Communities Imagine What Urban Spaces Should Look Like and Who They Should Welcome, and How These Diverging Visions Can Be Captured, Compared, and Integrated to Shape More Inclusive, Context-Aware, and Equitable Public Environments Through Generative Models"
 date: "2025-08-10"
 path: "livs-pluralistic-alignment"
 type: "work"
