@@ -449,9 +449,10 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2026:</strong> "AI Pluralism: What Models Do, Who Decides, and Why It Matters" – Montréal AI Safety, Ethics, and Governance, UQAM, Montréal, Canada.{" "}
+            <strong>2026:</strong> "Participatory AI in Design: From Research to Practice" – InDesCanada, Carleton University, Ottawa, Canada.{" "}
+            <em>Upcoming: May 3</em>.{" "}
             <a
-              href="https://luma.com/azd9irwp"
+              href="https://indescanada.ca/"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
@@ -479,6 +480,17 @@ const BioSection = () => {
             </a>
           </li>
           <li>
+            <strong>2026:</strong> "AI Pluralism: What Models Do, Who Decides, and Why It Matters" – Montréal AI Safety, Ethics, and Governance, UQAM, Montréal, Canada.{" "}
+            <a
+              href="https://luma.com/azd9irwp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
             <strong>2026:</strong> "Measuring What Matters: The AI Pluralism Index" – Second Conference of the International Association for Safe and Ethical AI (IASEAI'26), Paris, France.{" "}
             <a
               href="https://arxiv.org/abs/2510.08193"
@@ -487,17 +499,6 @@ const BioSection = () => {
               className="bio-section__link"
             >
               Paper
-            </a>
-          </li>
-          <li>
-            <strong>2026:</strong> "Participatory AI in Design: From Research to Practice" – InDesCanada, Carleton University, Ottawa, Canada.{" "}
-            <a
-              href="https://indescanada.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              Details
             </a>
           </li>
           <li>
