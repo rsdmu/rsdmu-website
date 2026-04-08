@@ -1,5 +1,5 @@
 ---
-title: "Measuring What Matters: The AI Pluralism Index"
+title: "AI Pluralism Index"
 date: "2026-02-24"
 path: "ai-pluralism-index"
 type: "work"
