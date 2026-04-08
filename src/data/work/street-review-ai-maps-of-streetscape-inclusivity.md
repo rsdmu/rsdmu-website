@@ -1,5 +1,5 @@
 ---
-title: "Street Review: AI Maps of Streetscape Inclusivity"
+title: "AI Maps of Streetscape Inclusivity"
 date: "2026-03-01"
 path: "street-review-ai-maps-of-streetscape-inclusivity"
 type: "work"
@@ -16,13 +16,13 @@ description: "A mixed-methods Street Review framework that combines community ev
 
 Streets are used by people with very different histories, mobilities, identities, and expectations. Yet many street assessments still flatten those differences into a single technical score or a narrow design checklist.
 
-**Street Review** pushes in a different direction. It combines participatory evaluation with AI-based image analysis so planners can ask not only whether a street is functional, but also who feels included, who does not, and which physical features appear to shape those differences.
+With **Street Review**, I took a different approach. I combined participatory evaluation with AI-based image analysis so planners can ask not only whether a street functions, but also who feels included, who does not, and which physical features seem to shape those differences.
 
 ## What This Framework Adds
 
-This version of Street Review expands the method beyond small-group deliberation alone. It pairs community knowledge with large-scale visual analysis, making it possible to connect lived experience to recurring streetscape patterns across a city.
+This version of Street Review moves beyond small-group deliberation alone. It pairs community knowledge with large-scale visual analysis, making it possible to connect lived experience to recurring streetscape patterns across a city.
 
-In Montréal, the framework brought together **28 residents**, semi-directed interviews, image-based evaluations, and approximately **45,000 street-view images from Mapillary**. That combination made it possible to move from individual impressions to structured, comparable urban evidence.
+In Montréal, I combined **28 residents**, semi-directed interviews, image-based evaluations, and approximately **45,000 street-view images from Mapillary**. That combination made it possible to move from individual impressions to structured, comparable urban evidence.
 
 ## How It Works
 
@@ -34,9 +34,9 @@ Second, those judgments are connected to streetscape attributes such as sidewalk
 
 Third, AI-supported analysis turns those relationships into visual outputs such as heatmaps and model comparisons, helping reveal where perceptions converge, where they split across demographic groups, and which features seem to matter most.
 
-## What We Found
+## What I Found
 
-The paper shows that perceptions of inclusivity and accessibility vary meaningfully across participant groups. Those differences are not noise; they are part of what inclusive planning needs to understand.
+The paper shows that perceptions of inclusivity and accessibility vary meaningfully across participant groups. Those differences are not noise. They are part of what inclusive planning has to understand.
 
 The framework also suggests that **sidewalk and building quality can matter more than greenery alone** when people judge whether a street feels inclusive. Group-based evaluation remains important because it helps calibrate judgments, surface disagreement, and make demographic differences visible instead of averaging them away.
 
@@ -69,7 +69,7 @@ For researchers, it demonstrates how participatory methods and machine learning 
 
 This approach is especially useful for inclusive street design, municipal diagnostics, and public-space policy where subjective experience matters as much as formal standards.
 
-It is also a strong fit for cities that need practical ways to connect community input, visual data, and repeatable analysis when evaluating safety, accessibility, and belonging in everyday streetscapes.
+It also suits cities that need a practical way to connect community input, visual data, and repeatable analysis when evaluating safety, accessibility, and belonging in everyday streetscapes.
 
 **More:** [Cities / ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0264275125009059) · [DOI](https://doi.org/10.1016/j.cities.2025.106602) · [Street Review dataset](https://huggingface.co/datasets/rsdmu/streetreview)
 

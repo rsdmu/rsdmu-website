@@ -10,72 +10,41 @@ description: "Restoration and modernization of Chihilsitoon Garden in Kabul, Afg
 
 *Photograph of Chihilsitoon Garden in Kabul.*
 
-**Project team:** Ajmal Maiwandi, Sekandar Seradj, Rashid Mushkani, Farhad Alawi, Rizaq Batoor, Shahwali Ghaznawi, Ayaz Hosham, Firoz Jami, Khalid Khan, Abdullah Mahmood, Koukaba Mojadidi, Shahab Mushref, Naweed Nahel, Nehmat Nayab, Ikram Rahimzay, Abdullah Safi, Shaiq Sarwari, Omid Shams, Najib Stanikzay, Waris Qaimizada, Mustafa Ahmadi, Mustafa Asghari, Shafiq Furqani, Basir Langari, Hamid Rahimi, Wahidullah Sabawoon, Tahir Shafaq, Waheed Stanikzai, Naeem Wahidi, Ertugrul Erbay, Arash Boostani.
+**My role:** I contributed as part of the Aga Khan Trust for Culture design team.
 
 ## Project Overview
 
-The **Chihilsitoon Garden Project** in Kabul, Afghanistan, restored and updated the historic Chihilsitoon Garden by adding new rammed earth buildings, sports areas, and commercial spaces while preserving its cultural heritage. The architecture uses materials suited to the local climate and integrates modern facilities with the garden's traditional elements. Sustainable methods, such as efficient water management and eco-friendly construction, were implemented to ensure long-term maintenance. The project involved working with local authorities and the community to create a space that meets public needs and supports ongoing upkeep through revenue-generating facilities.
+The **Chihilsitoon Garden Project** in Kabul restored and updated a historic garden while adding new rammed-earth buildings, sports areas, and commercial spaces. The project was careful not to treat heritage as a museum object. It preserved the site’s historical character while making it useful to contemporary public life.
+
+The architecture draws on materials suited to the local climate and folds modern facilities into the garden’s traditional structure. Water management, public programming, and revenue-generating components were all part of the long-term maintenance strategy.
 
 ## Visual Documentation
 
-<div className="image-gallery">
-  <div className="gallery-item">
-    <img src="./images/40siton_palace_elev_sec.jpg" alt="Facade and Elevation of the Chihilsitoon Palace." />
-    <div className="caption">
-      <p className="caption-text">Facade and Elevation of the Chihilsitoon Palace.</p>
-    </div>
-  </div>
-  <div className="gallery-item">
-    <img src="./images/40siton_site_plan.jpg" alt="Chihilsitoon Garden Site Plan." />
-    <div className="caption">
-      <p className="caption-text">Chihilsitoon Garden Site Plan.</p>
-    </div>
-  </div>
-  <div className="gallery-item">
-    <img src="./images/public_space_40siton.jpg" alt="Public spaces within the Chihilsitoon Garden." />
-    <div className="caption">
-      <p className="caption-text">Public spaces within the Chihilsitoon Garden.</p>
-    </div>
-  </div>
-  <div className="gallery-item">
-    <img src="./images/auditorium_plan.jpg" alt="Floor plan of the auditorium in Chihilsitoon Garden." />
-    <div className="caption">
-      <p className="caption-text">Floor plan of the auditorium in Chihilsitoon Garden.</p>
-    </div>
-  </div>
-  <div className="gallery-item">
-    <img src="./images/auditorium_water_pond.jpg" alt="Facade of the Auditorium in Chihilsitoon Garden." />
-    <div className="caption">
-      <p className="caption-text">Facade of the Auditorium in Chihilsitoon Garden.</p>
-    </div>
-  </div>
-  <div className="gallery-item">
-    <img src="./images/auditorium_interior.jpg" alt="Facade of the Auditorium in Chihilsitoon Garden." />
-    <div className="caption">
-      <p className="caption-text">Facade of the Auditorium in Chihilsitoon Garden.</p>
-    </div>
-  </div>
-</div>
+![Facade and elevation of the Chihilsitoon Palace.](./images/40siton_palace_elev_sec.jpg)
+*Elevation study of the restored palace.*
+
+![Chihilsitoon Garden site plan.](./images/40siton_site_plan.jpg)
+*The site plan showing the larger public landscape strategy.*
+
+![Public spaces within Chihilsitoon Garden.](./images/public_space_40siton.jpg)
+*A view of the garden as lived public space rather than isolated monument.*
+
+![Floor plan of the auditorium.](./images/auditorium_plan.jpg)
+*The auditorium plan inserted into the larger garden complex.*
+
+![Exterior of the auditorium.](./images/auditorium_water_pond.jpg)
+*The auditorium facing water and landscape.*
+
+![Interior of the auditorium.](./images/auditorium_interior.jpg)
+*Interior atmosphere of the new public building.*
+
+## Why I Value This Project
+
+I value this project because it shows how restoration can remain public-facing. Chihilsitoon protects a historic site, but it also makes room for recreation, gathering, and long-term stewardship. That balance is difficult to achieve, and rare.
 
 ## Related Links
 
 - [Full Project on ArchDaily](https://www.archdaily.com/911456/chihilsitoon-garden-project-aga-khan-trust-for-culture)
 - [Aga Khan Trust for Culture](https://www.akdn.org/our-agencies/aga-khan-trust-culture)
 
-## Tags
-
-<div class="tags">
-  <span class="tag">Urban Design</span>
-  <span class="tag">Public Space</span>
-  <span class="tag">Sustainability</span>
-  <span class="tag">Restoration</span>
-  <span class="tag">Architecture</span>
-</div>
-
-<div class="tags">
-  <span class="tag">Urban Regeneration</span>
-  <span class="tag">Adaptive Reuse</span>
-  <span class="tag">Economic Development</span>
-  <span class="tag">Historic Preservation</span>
-  <span class="tag">Public Spaces</span>
-</div>
+*Tags: Urban Design · Public Space · Sustainability · Restoration · Architecture · Urban Regeneration · Historic Preservation*

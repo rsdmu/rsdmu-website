@@ -16,19 +16,19 @@ description: "A framework for turning community input into something durable, au
 
 Participatory AI is now widely discussed, but too often participation ends where the workshop ends.
 
-People are invited to comment, annotate, deliberate, or report harms. Then systems evolve, models are updated, vendors change, and the original contributions become hard to trace. In many cases, participation leaves little durable record of what changed, who decided, or whether commitments were upheld.
+People are invited to comment, annotate, deliberate, or report harms. Then the system changes, the model is updated, the vendor shifts direction, and the original contribution becomes hard to trace. In many cases, participation leaves almost no durable record of what changed, who decided, or whether commitments were kept.
 
 If participation cannot be traced, it is easy to ignore. If it cannot be enforced, it remains advisory. If it is never compensated, it becomes difficult to sustain fairly.
 
 ## The Problem
 
-Public-sector and civic AI systems often rely on community knowledge, yet that knowledge is usually documented informally and disconnected from the technical systems it is supposed to shape.
+Public-sector and civic AI systems often rely on community knowledge, yet that knowledge is usually documented informally and kept separate from the technical systems it is supposed to shape.
 
 Prompts, annotations, meeting notes, incident reports, and evaluative feedback can all influence a system. But these artifacts rarely travel forward in a structured way. They are not reliably tied to model updates, deployment rules, or future evaluation. As a result, participation is often symbolic rather than accountable.
 
 ## The Core Idea
 
-The **Participation Ledger** is a machine-readable and auditable framework for recording how participation affects AI systems over time.
+I developed the **Participation Ledger** as a machine-readable, auditable framework for recording how participation affects AI systems over time.
 
 It treats participation as traceable influence. Contributions are linked to concrete changes in datasets, prompts, adapters, policies, guardrails, or evaluation suites. Those changes are then tied to replayable tests, so commitments can be checked again in future releases.
 
@@ -38,7 +38,7 @@ Instead of asking people to trust that input mattered, the ledger creates a reco
 
 ### 1) A Participation Evidence Standard
 
-The first layer records the conditions of participation itself: who participated, through what role, under what consent and privacy terms, with what compensation, and under what reuse boundaries.
+The first layer records the conditions of participation itself: who took part, in what role, under which consent and privacy terms, with what compensation, and under what reuse boundaries.
 
 This matters because participation is never neutral. Recruitment pathways, intermediaries, honoraria, consent scope, and retention rules all shape what participation means in practice.
 
@@ -46,7 +46,7 @@ This matters because participation is never neutral. Recruitment pathways, inter
 
 The second layer links contributions to system changes and to replayable tests.
 
-A community-raised concern should not stay trapped in a workshop summary. It should become something that can be checked again later. If a later version of the model fails the same test, that regression becomes visible.
+A community-raised concern should not stay trapped in a workshop summary. It should become something that can be tested again later. If a later version of the model fails the same test, the regression becomes visible.
 
 This turns participation into part of the system's memory, not just part of its origin story.
 
@@ -64,7 +64,7 @@ Together, these mechanisms push participation closer to infrastructure: somethin
 
 The ledger is especially relevant for public-sector and civic AI, where systems often cross institutional boundaries and where community input is central to legitimacy.
 
-It is useful for urban planning tools, consultation platforms, participatory datasets, model evaluation pipelines, and procurement contexts where organizations need evidence that commitments are being maintained after deployment, not just promised before it.
+It is useful for urban planning tools, consultation platforms, participatory datasets, model evaluation pipelines, and procurement settings where organizations need evidence that commitments are being maintained after deployment, not merely promised before it.
 
 ## Visual
 
@@ -75,7 +75,7 @@ It is useful for urban planning tools, consultation platforms, participatory dat
 
 The Participation Ledger is ultimately about power.
 
-It asks what it would take for participation to have continuity across versions, across organizations, and across time. It asks how communities can move from being sources of feedback to being recognized participants in governance. And it asks how technical systems can better remember the social commitments they are built on.
+I see it as a way of asking what it would take for participation to endure across versions, across organizations, and across time. It asks how communities can move from being sources of feedback to recognized participants in governance. It also asks how technical systems can remember the social commitments they are built on.
 
 **More:** [arXiv](https://arxiv.org/abs/2602.10916) · [PAIRS presentation page](https://www.pairs.site/Rights-and-incentives-A-participation-ledger-for-people-centered-AI-2fd260e24e1a81c3be45fa84ae19ebd2?pvs=21)
 

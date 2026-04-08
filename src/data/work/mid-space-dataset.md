@@ -9,19 +9,19 @@ description: "Introducing the MID-Space dataset, designed to align AI-generated 
 ---
 
 
-*Example visualizations generated using Stable Diffusion XL, fine-tuned with the MID-Space dataset.*
+*A dataset for public-space images built from local preferences rather than generic aesthetic defaults.*
 
 **Project Team:** Shravan Nayak, Rashid Mushkani, Hugo Berard, Allison Cohen, Shin Koseki, Hadrien Bertrand, Emmanuel Beaudry Marchand, Toumadher Ammar, Jerome Solis.
 
-[Watch the Lecture on NeurIPS](https://neurips.cc/virtual/2024/109216)
+[Watch the Lecture on NeurIPS](https://neurips.cc/virtual/2024/109216) · [View the Dataset on Hugging Face](https://huggingface.co/datasets/CUPUM/mid-space)
 
 [![Watch the Lecture on NeurIPS](./images/ai_inclusive_midspace.png)](https://neurips.cc/virtual/2024/109216)
 
-## Project Overview
+## Why MID-Space Exists
 
-The **MID-Space** dataset bridges the gap between AI-generated visualizations and diverse community preferences in public space design. Created through participatory workshops and fine-tuned using Stable Diffusion XL, the dataset aligns AI outputs with six key criteria:
+The **MID-Space** dataset grew out of a straightforward problem: image-generation tools are good at making cities look polished, but they are not naturally good at making them look inclusive.
 
-<div style="margin-left: 40px;">
+I helped build MID-Space to narrow that gap. The dataset connects AI-generated visualizations to six criteria that emerged from participatory work around public space:
 
 - **Accessibility**
 - **Safety**
@@ -30,75 +30,41 @@ The **MID-Space** dataset bridges the gap between AI-generated visualizations an
 - **Invitingness**
 - **Comfort**
 
-</div>
+The point was not to produce one ideal image of the city. It was to make room for the fact that different people look for different things in public space, and that those differences should shape the model rather than be erased by it.
 
-This initiative empowers marginalized communities to actively shape urban design, promoting inclusive, equitable, and user-centered public spaces.
+## What the Dataset Contains
 
-## Dataset Features
+- **Textual prompts:** 3,350 prompts representing varied public-space typologies
+- **AI-generated images:** 13,465 visualizations created with Stable Diffusion XL
+- **Annotations:** More than 42,000 raw and roughly 35,000 distinct annotations evaluating image pairs on a -1 to +1 scale for up to three criteria at a time
 
-<div style="margin-left: 40px;">
+## How I Built It
 
-- **Textual Prompts:** 3,350 prompts representing diverse public space typologies.
-- **AI-Generated Images:** 13,465 visualizations created with Stable Diffusion XL.
-- **Annotations:** Over 42,000 (in raw) and 35,000 distinct annotations evaluating preferences on a -1 to +1 scale for up to three criteria per image pair.
+I began with three workshops involving diverse Montréal communities to identify the criteria that should matter most. From there, the team generated 440 base prompts, expanded them into 2,910 synthetic prompts, and used Stable Diffusion XL to produce multiple candidate images for each one.
 
-</div>
-
-## Data Collection Process
-
-<div style="margin-left: 40px;">
-
-1. **Community Workshops:**
-   - Conducted three workshops with diverse Montreal communities to identify six alignment criteria.
-   - Generated 440 textual prompts, expanded to 2,910 synthetic prompts using GPT-4.
-
-2. **Image Generation:**
-   - Stable Diffusion XL created 20 images per prompt, refined using CLIP similarity scoring.
-
-3. **Human Annotation:**
-   - Sixteen annotators evaluated image pairs through an accessible web interface.
-
-</div>
+Those images were then refined using CLIP similarity scoring and evaluated by sixteen annotators through an accessible interface. The result was not just a pile of outputs, but a dataset that encoded preference, disagreement, and trade-off.
 
 
----
 ## Visual Documentation
 
 ![Fine-tuned visualization emphasizing accessibility.](./images/exp3.png)
-*Fine-tuned visualization emphasizing safety.*
+*A fine-tuned visualization emphasizing safety and legibility in public space.*
 
 ![Visualization promoting diversity and inclusivity.](./images/exp1.png)
-*Visualization promoting inclusivity versus all criteria.*
+*A comparison showing how inclusivity shifts against other criteria.*
 
-## Applications
+## What It Makes Possible
 
-The MID-Space dataset is a valuable resource for:
-
-<div style="margin-left: 40px;">
-
-- **AI Alignment Research:** Developing models that better reflect pluralistic human values.
-- **Urban Design:** Crowd-sourcing input for inclusive public space design.
-- **Generative AI Tools:** Enhancing text-to-image models for equity-focused visualization tasks.
-
-</div>
+MID-Space is useful for **AI alignment research**, where local and plural values matter; for **urban design**, where residents need better ways to influence what future public spaces might look like; and for **generative AI tools**, where equity cannot be treated as an afterthought.
 
 
-## Further explore by clicking here: [MID-Space Viewer](https://cupum-mid-space-viewer.hf.space)
+## Explore Further
+
+[MID-Space Viewer](https://cupum-mid-space-viewer.hf.space)
 
 ## Related Links
 
-- [View Dataset on Hugging Face](https://huggingface.co/datasets/CUPUM/mid-space)
 - [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
 - [Mila – Quebec AI Institute](https://mila.quebec/)
 
-## Tags
-
-<div class="tags">
-  <span class="tag">Generative AI</span>
-  <span class="tag">Urban Planning</span>
-  <span class="tag">Inclusivity</span>
-  <span class="tag">Community Engagement</span>
-  <span class="tag">Public Spaces</span>
-
-</div>
-
+*Tags: Generative AI · Urban Planning · Inclusivity · Community Engagement · Public Spaces*

@@ -3,87 +3,46 @@ title: "Understanding Public Spaces Through Citizen Perception: A Visual Explora
 date: "2024-01-05"
 path: "understanding-public-spaces-citizen-perception"
 type: "work"
-thumbnail: "./images/concepts-public-space.png"  # Update with your thumbnail image path
+thumbnail: "./images/concepts-public-space.png"
 author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "Visualizing citizen perceptions of Montreal's public spaces to reveal underlying themes, concepts, and opportunities for inclusive urban design."
 ---
 
-## Context and Problem
+*Before I trained models, I wanted to understand the language people already use to describe public space.*
 
-Public spaces are more than just physical locations; they serve as platforms where diverse communities intersect, interact, and share experiences. As cities strive to design inclusive and accessible environments, understanding how different citizens perceive and utilize these spaces is crucial. Without tools that capture a broad range of perspectives—across lines of ability, identity, culture, and background—urban planners risk overlooking critical factors that foster or hinder equitable usage.
+## Why This Matters
 
-In Montreal, a participatory research project engaged 15 citizens representing various identities—LGBTQ+, elderly, disabled individuals, and people from different racial and gender backgrounds. Through interviews and focus groups, these participants shared their insights on what makes public spaces welcoming, functional, and meaningful. This qualitative data was then analyzed to reveal nuanced layers of design, usage, and perception.
+Public spaces are not just physical settings. They are social settings, and that means people read them through memory, culture, mobility, identity, and experience. If planning tools ignore that complexity, they end up measuring only the easiest parts of urban life.
 
-## Project Objectives
+In Montréal, I worked with 15 participants representing varied identities, including LGBTQ+ people, elders, disabled residents, and people from different racial and gender backgrounds. Through interviews and focus groups, they described what makes a public space welcoming, functional, and meaningful.
 
-<div style="margin-left: 40px;">
+## How I Worked
 
-- **Capture Diverse Perspectives:** Gather qualitative input from participants of varied identities to understand the rich tapestry of public space usage.
-- **Identify Core Themes:** Extract recurring themes and concepts that influence public space inclusivity, aesthetics, functionality, and safety.
-- **Visualize Connections:** Use data visualization tools to represent the complex relationships between ideas, supporting urban planners in making informed decisions.
+I conducted semi-structured interviews and focus groups, then transcribed and analyzed the conversations with the open-source **Mistral 32B** language model. That process helped surface recurring concepts tied to inclusivity, aesthetics, functionality, safety, and public meaning.
 
-</div>
+From there, I organized the findings into two visual formats:
 
-## Methodology
+- a **thematic network** showing the major categories that structured the conversations
+- a **conceptual network** showing the denser web of specific terms and associations that appeared within them
 
-<div style="margin-left: 40px;">
+## What Emerged
 
-1. **Data Collection (Interviews and Focus Groups):**  
-   Conducted semi-structured interviews and focus groups with 15 citizens in Montreal. The participants discussed their experiences, preferences, and concerns related to public spaces, providing a spectrum of viewpoints.
+Seven broad themes stood out: **accessibility and inclusivity**, **safety and security**, **community engagement and social interaction**, **aesthetic value and maintenance**, **historical and cultural significance**, **functional design and utility**, and **management and responsibility**.
 
-2. **Transcription and Analysis:**  
-   Conversations were transcribed and analyzed using the open-source Mistral 32B language model. This allowed the extraction of recurring themes, concepts, and keywords central to understanding inclusivity and usability in public spaces.
-
-3. **Data Visualization:**  
-   From the analyzed data, key themes and concepts were organized into visual networks. Two main visualizations were produced:
-   
-   - **Thematic Network:** Illustrates high-level categories such as accessibility, safety, community engagement, aesthetics, cultural significance, functional design, and management.
-   - **Conceptual Network (Detailed Keywords):** Depicts a dense web of specific concepts, revealing intricate interconnections and the frequency of mentions.
-
-</div>
-
-## Results and Visualizations
-
-### Thematic Network
-
-The below visualization provides a high-level thematic map. It highlights seven critical categories:
-
-<div style="margin-left: 40px;">
-
-- **Accessibility and Inclusivity**
-- **Safety and Security**
-- **Community Engagement and Social Interaction**
-- **Aesthetic Value and Maintenance**
-- **Historical and Cultural Significance**
-- **Functional Design and Utility**
-- **Management and Responsibility**
-
-</div>
-
-These themes demonstrate that public spaces operate as dynamic ecosystems influenced by multifaceted factors. The interplay among these categories shapes how residents perceive and engage with the urban environment.
+The point of the visualizations was not decoration. It was to make qualitative knowledge easier to inspect. The thematic network shows the large categories that shaped the discussion. The conceptual network reveals the finer web of associations beneath them.
 
 ![Thematic Network Visualization](./images/thematic_network.png)
+*A thematic map of the ideas residents returned to most often when describing public space.*
 
-### Conceptual Network Visualization
+## Why the Visualizations Matter
 
-The second visualization, represented by a dense network of nodes and links, showcases the detailed concepts and keywords extracted from participants' discussions. Each node represents a concept—such as adaptability, welcoming atmosphere, practicality, safety, funding, maintenance, socio-economic impact, or diversity of use—while node size correlates with frequency of mention. Links between nodes illustrate how ideas relate and cluster around core principles shaping public space experiences.
+These visualizations make it harder to treat public-space design as a narrow technical problem. They show that what people value in a place is inseparable from how they move through it, how they remember it, and whether they feel recognized by it.
 
+For planners and policymakers, that means the work can function as a map of public meaning, not just public preference.
 
-**Explore the detailed conceptual network visualization [here](https://mid-spaces.github.io/landing-page/nodesplot.html).**
+## Explore the Network
 
-## Interpretation and Impact
-
-These visualizations underscore the importance of participatory approaches in urban design. By centering the voices of diverse citizens, planners and policymakers can identify which attributes genuinely matter to the community. The thematic and conceptual networks serve as roadmaps, guiding the creation of public spaces that reflect local values and respond to the nuanced needs of all users.
-
-## Future Directions
-
-<div style="margin-left: 40px;">
-
-- **Refined Analysis:** Continue refining data analysis techniques to capture even deeper insights from expanded participant groups.
-- **Policy Integration:** Incorporate these findings into policy guidelines and urban planning frameworks that prioritize inclusivity.
-- **Public Engagement Platform:** Develop a digital platform that allows ongoing community input, visualization updates, and iterative design processes.
-
-</div>
+[Detailed conceptual network visualization](https://mid-spaces.github.io/landing-page/nodesplot.html)
 
 ## Related Links
 
@@ -91,12 +50,4 @@ These visualizations underscore the importance of participatory approaches in ur
 - [Mila - Quebec AI Institute](https://mila.quebec/en)
 - [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
 
-## Tags
-
-<div class="tags">
-  <span class="tag">Public Spaces</span>
-  <span class="tag">Citizen Participation</span>
-  <span class="tag">Data Visualization</span>
-  <span class="tag">Inclusive Urban Design</span>
-  <span class="tag">Montreal</span>
-</div>
+*Tags: Public Spaces · Citizen Participation · Data Visualization · Inclusive Urban Design · Montreal*

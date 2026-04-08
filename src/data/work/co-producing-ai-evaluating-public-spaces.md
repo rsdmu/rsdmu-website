@@ -3,74 +3,53 @@ title: "Co-Producing AI for Evaluating Public Spaces"
 date: "2024-11-11"
 path: "co-producing-ai-evaluating-public-spaces"
 type: "work"
-thumbnail: "./images/points_60.png"  # Update with your thumbnail image path
+thumbnail: "./images/points_60.png"
 author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "A collaborative project utilizing AI to assess and design inclusive public spaces in Montreal, integrating community input and ethical AI practices."
 ---
 
-## Problem
+*A pilot project that asked whether AI could help a city see exclusion before residents are forced to live it.*
 
-Public spaces in Canadian cities are often designed without adequate tools to measure and compare the risks of exclusion based on factors such as gender, age, and religiosity. As cities become increasingly diverse, marginalized communities—including elderly women, LGBTQ+ individuals, people with disabilities, and indigenous populations—experience differential access and utilization of these spaces. This lack of inclusivity can lead to socially fragmented urban environments and reduced social cohesion.
+[Explore the Montréal heatmap](https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html)
 
-## Project Objectives
+## Why I Started This
 
-<div style="margin-left: 40px;">
+Public spaces in Canadian cities are rarely evaluated with tools that can compare how exclusion is experienced across gender, age, disability, religiosity, or migration history. As cities grow more diverse, the usual design language often fails to describe who is being left out.
 
-- **Assess Inclusivity:** Develop AI models to evaluate the inclusiveness of public spaces in Montreal.
-- **Community Engagement:** Involve diverse citizen groups in the assessment and design process to ensure public spaces meet varied community needs.
-- **Ethical AI Development:** Implement participatory and intersectoral AI production methods to address potential biases and ethical challenges.
+I started this project to build a more grounded way of reading those differences. The aim was not to let AI replace public judgment. It was to let public judgment shape the model from the start.
 
-</div>
+## What I Built
 
-## Methodology and Analyses
+I combined several layers of evidence.
 
-<div style="margin-left: 40px;">
+First, I conducted semi-structured interviews with representatives of diverse communities in Montréal to understand how different groups use and read street space.
 
-1. **Semi-Structured Interviews:**  
-   Conducted with representatives of diverse groups in Montreal to gather insights into the utilization of street spaces by marginalized communities.
+Second, I ran focus-group exercises with 20 participants from varied backgrounds, asking them to evaluate safety, accessibility, and inclusion through curated Mapillary images.
 
-2. **Focus Group Exercises:**  
-   Engaged 20 participants from varied backgrounds to evaluate aspects like safety and accessibility in urban spaces using curated Mapillary images.
+Third, I used those criteria to guide pairwise comparisons and labeling across roughly 15,000 street images.
 
-3. **Pairwise Image Comparison:**  
-   Pairwise comparisons and labeling of 15,000 Mapillary images, guided by criteria developed from interviews and focus groups.
+Finally, I fine-tuned a Multi-Layer Perceptron pretrained on ImageNet so it could relate visible street attributes to the inclusivity scores participants had helped define.
 
-4. **Algorithm Training and Evaluation:**  
-   Fine-tuned a Multi-Layer Perceptron (MLP) pretrained on ImageNet to correlate image attributes with inclusivity scores, followed by workshop evaluations with participants.
+## What the Model Showed
 
-</div>
+The resulting heatmap highlights where Montréal streets appear more or less inclusive according to the model and, by extension, to the criteria that emerged from participatory work.
 
-## Results and Impact
+The system reached roughly **90% predictive accuracy** on the available data, with spatial cues such as sidewalk construction, surrounding buildings, and overall maintenance carrying substantial weight. Just as important, the project showed that the model improved when the criteria came from community engagement rather than from abstract design assumptions.
 
-The heatmap below illustrates the inclusivity of various public spaces in Montreal based on our AI model's analysis.
+![Sampled Montréal street locations.](./images/points_60.png)
+*The sampled street locations that anchored the project’s first round of analysis.*
 
-**Explore the inclusivity heatmap [here](https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html).**
+## Why This Matters
 
-The heatmap generated from the AI model highlights areas in Montreal that are more or less inclusive. Key findings include:
+For planners, the project offers a practical way to identify where attention is needed without pretending that inclusion can be captured through geometry alone.
 
+For participatory AI, it shows that models become more useful when communities help define what the model is actually trying to see.
 
-<div style="margin-left: 40px;">
+For public-space design, it offers a way to move from anecdote to evidence without losing the values that make the issue worth studying in the first place.
 
-- **Predictive Accuracy:** The AI model achieved approximately 90% accuracy in predicting the inclusivity of public spaces based on spatial elements like sidewalk construction and surrounding buildings.
-- **Community Insights:** Engagement with diverse community groups provided valuable criteria that enhanced the model’s relevance and effectiveness.
-- **Urban Planning:** The heatmap serves as a tool for urban planners to identify and address areas needing improvement, fostering more inclusive and cohesive urban environments.
+## What Comes Next
 
-</div>
-
-
-## Future Directions
-
-
-<div style="margin-left: 40px;">
-
--**Platform Development:** Create a user-friendly platform to facilitate public consultations, allowing citizens to visualize and contribute to the design of their neighborhoods.
-
--**Data Expansion:** Increase the dataset with more images to improve AI model accuracy and reduce biases.
-
--**Partnerships and Funding:** Seek collaborations and funding to pilot the platform and expand the project’s reach.
-
-</div>
-
+I want to turn the heatmap into a more public-facing platform so residents can explore, question, and contribute to the analysis themselves. I also want to expand the dataset, reduce bias, and test the approach at a larger scale.
 
 ## Related Links
 
@@ -78,12 +57,4 @@ The heatmap generated from the AI model highlights areas in Montreal that are mo
 - [Mila - Quebec AI Institute](https://mila.quebec/en)
 - [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
 
-## Tags
-
-<div class="tags">
-  <span class="tag">Artificial Intelligence</span>
-  <span class="tag">Urban Planning</span>
-  <span class="tag">Inclusivity</span>
-  <span class="tag">Community Engagement</span>
-  <span class="tag">Public Spaces</span>
-</div>
+*Tags: Artificial Intelligence · Urban Planning · Inclusivity · Community Engagement · Public Spaces*

@@ -3,27 +3,32 @@ title: "Thesis Project: Street Review & Wedesign"
 date: "2023-05-30"
 path: "enhancing-inclusivity-public-spaces-ai-university-montreal"
 type: "work"
-thumbnail: "./images/thesis_project.jpg"  # Update with your thumbnail image path
+thumbnail: "./images/thesis_project.jpg"
 author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "Utilizing AI models to assess and design inclusive public spaces in Montreal, fostering community engagement and urban improvement."
 ---
 
-## Problem
+*My doctoral work asks a simple question: can AI help cities read public space through the eyes of the people design usually misses?*
 
-Canadian public spaces exhibit varying levels of inclusivity, impacting how different community groups utilize and interact within these environments. There is a need to identify the factors that contribute to the inclusiveness or exclusiveness of these spaces to ensure they accommodate the diverse needs of all citizens.
+## Thesis Focus
 
-## Project Objectives
+This thesis is the umbrella project behind my work on **Street Review** and **Wedesign**. One strand asks how existing streets and public spaces are experienced by different groups. The other asks how generative tools might help imagine alternatives that are more inclusive, legible, and context-aware.
 
-The project aims to develop AI models to assess the inclusiveness of public spaces and utilize generative AI to create conceptual designs tailored to the city's context. It also involves diverse citizen groups in the assessment and design process to ensure that public spaces meet various community needs.
+At its core, the research is about public judgment. I am interested in how people with different identities, mobilities, and histories read the same place differently, and how those differences can shape both evaluation and design.
 
-## Methodology
+## How I Approach It
 
-A predictive AI model was developed using approximately 60 data points, achieving around 90% accuracy in predicting inclusivity based on spatial elements. Additionally, a generative AI model was created to produce conceptual designs aligned with Montreal's context, facilitating the visualization of urban environments. Community workshops were conducted with 20 participants from different backgrounds to formulate AI prompts and ensure the models reflect diverse user perspectives.
+I combine predictive and generative AI with interviews, workshops, image evaluation, and participatory prompt design. The predictive side of the work tests whether spatial features can help explain perceived inclusivity. The generative side asks whether alternative visualizations can be tuned to reflect local priorities rather than generic design assumptions.
 
-## Results and Impact
+Workshops with diverse participants are central to the thesis. They help define the criteria that matter, shape the prompts and evaluation process, and keep the research grounded in lived experience rather than abstract proxies.
 
-Comming ...!
+## Why This Matters
 
+Public spaces are often designed and managed as though their qualities were obvious and universal. They are not. A place that feels welcoming to one person can feel inaccessible, unsafe, or indifferent to another. I see this thesis as an effort to build tools that make those differences visible before design decisions are locked in.
+
+## What This Work Has Produced
+
+So far, the thesis has produced models for evaluating inclusivity, participatory workflows for generating alternative public-space images, and a research agenda that links AI development to public consultation rather than separating the two.
 
 ## Related Links
 
@@ -33,12 +38,4 @@ Comming ...!
 - [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
 
 
-## Tags
-
-<div class="tags">
-  <span class="tag">Artificial Intelligence</span>
-  <span class="tag">Urban Planning</span>
-  <span class="tag">Inclusivity</span>
-  <span class="tag">Community Engagement</span>
-  <span class="tag">Public Spaces</span>
-</div>
+*Tags: Artificial Intelligence · Urban Planning · Inclusivity · Community Engagement · Public Spaces*
