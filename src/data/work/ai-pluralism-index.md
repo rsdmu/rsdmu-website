@@ -1,6 +1,6 @@
 ---
 title: "AI Pluralism Index"
-date: "2026-02-24"
+date: "2026-04-01"
 path: "ai-pluralism-index"
 type: "work"
 thumbnail: "./images/ai-pluralism.png"
