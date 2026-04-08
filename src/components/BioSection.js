@@ -413,9 +413,93 @@ const BioSection = () => {
 
       {/* Talks */}
       <div className="bio-section__full-width-container">
-        <h3 className="bio-section__subtitle">Talks</h3>
+        <h3 className="bio-section__subtitle">Talks &amp; Events</h3>
         <ul className="bio-section__list">
-          
+          <li>
+            <strong>2026:</strong> "Street Review" – Colloque Perspective 360, ACSA, Université de Montréal, Montréal, Canada.{" "}
+            <a
+              href="https://doi.org/10.1016/j.cities.2025.106602"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "The Right to AI" – Critical Science Reading Group, Mila - Québec AI Institute, Montréal, Canada.{" "}
+            <a
+              href="https://arxiv.org/abs/2501.17899"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "AIAI: AI for Inclusive Urban Spaces" – KIT Delegation Visit, Mila - Québec AI Institute, Montréal, Canada.{" "}
+            <a
+              href="https://unesco-studio.umontreal.ca/projects/aiai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Project
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "AI Pluralism: What Models Do, Who Decides, and Why It Matters" – Montréal AI Safety, Ethics, and Governance, UQAM, Montréal, Canada.{" "}
+            <a
+              href="https://luma.com/azd9irwp"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "Participation Ledger: Traceable, Enforceable, and Compensable Participation for AI Governance" – PAIRS: Participatory AI Research &amp; Practice Symposium, Online.{" "}
+            <a
+              href="https://arxiv.org/abs/2602.10916"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>{" "}
+            <a
+              href="https://www.pairs.site/Rights-and-incentives-A-participation-ledger-for-people-centered-AI-2fd260e24e1a81c3be45fa84ae19ebd2?pvs=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "Measuring What Matters: The AI Pluralism Index" – Second Conference of the International Association for Safe and Ethical AI (IASEAI'26), Paris, France.{" "}
+            <a
+              href="https://arxiv.org/abs/2510.08193"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Paper
+            </a>
+          </li>
+          <li>
+            <strong>2026:</strong> "Participatory AI in Design: From Research to Practice" – InDesCanada, Carleton University, Ottawa, Canada.{" "}
+            <a
+              href="https://indescanada.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Details
+            </a>
+          </li>
           <li>
             <strong>2025:</strong> "Locked Out by Design" – Speed Science Grand Finale, Mila, Montreal, Canada.{" "}
             <a
