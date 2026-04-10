@@ -62,7 +62,7 @@ For researchers, it demonstrates how participatory methods and machine learning 
 ![Model performance across Street Review indicators.](./images/model-performance.png)
 *Comparative model performance across the indicators used in the Street Review framework.*
 
-![Montréal inclusivity heatmap.](./images/montreal-heatmap.png)
+![Montréal inclusivity heatmap.](./images/group-inclusivity-citywide-spatial-patterns.png)
 *Heatmap showing how perceived streetscape inclusivity varies across sampled Montréal locations.*
 
 ## Where This Can Be Used
