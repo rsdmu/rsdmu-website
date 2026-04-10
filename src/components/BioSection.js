@@ -238,7 +238,7 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Honors & Awards</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2025:</strong>{" "}
+            <strong>2026:</strong>{" "}
             <a
               href="https://amenagement.umontreal.ca/a-propos/actualites/nouvelles/nouvelle/news/detail/News/concours-jeunes-chercheurs-jeunes-chercheuses-2026-la-faculte-distribue-trois-bourses-de-10-0/"
               target="_blank"
