@@ -240,6 +240,18 @@ const BioSection = () => {
           <li>
             <strong>2025:</strong>{" "}
             <a
+              href="https://amenagement.umontreal.ca/a-propos/actualites/nouvelles/nouvelle/news/detail/News/concours-jeunes-chercheurs-jeunes-chercheuses-2026-la-faculte-distribue-trois-bourses-de-10-0/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              Jeunes chercheurs, jeunes chercheuses Competition – $10,000 Award
+            </a>
+            , Université de Montréal
+          </li>
+          <li>
+            <strong>2025:</strong>{" "}
+            <a
               href="https://mila.quebec/en/news/milas-science-communication-contest-ai-research-in-3-minutes"
               target="_blank"
               rel="noopener noreferrer"
