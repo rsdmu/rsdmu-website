@@ -37,7 +37,12 @@ const PublicationTemplate = ({ data }) => {
         <p className="publication-author">Author: {frontmatter.author}</p>
         {thumbnailUrl && (
           <a href={frontmatter.link} target="_blank" rel="noopener noreferrer">
-            <img src={thumbnailUrl} alt={`${frontmatter.title} Thumbnail`} className="publication-thumbnail" />
+            <img
+              src={thumbnailUrl}
+              alt={`${frontmatter.title} Thumbnail`}
+              className="publication-thumbnail"
+              decoding="async"
+            />
           </a>
         )}
         <div className="publication-actions">

@@ -26,7 +26,11 @@ const WorkTemplate = ({ data }) => {
         <p className="work-author">Author: {frontmatter.author}</p>
         {thumbnailUrl && (
           <div className="work-thumbnail">
-            <img src={thumbnailUrl} alt={`${frontmatter.title} Thumbnail`} />
+            <img
+              src={thumbnailUrl}
+              alt={`${frontmatter.title} Thumbnail`}
+              decoding="async"
+            />
           </div>
         )}
         <div className="work-content" dangerouslySetInnerHTML={{ __html: html }} />

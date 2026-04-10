@@ -53,7 +53,7 @@ For **policymakers and regulators**, it offers an auditable way to turn broad pr
 
 ## Visual
 
-![AI Pluralism Index overview.](./images/ai-pluralism.png)
+![AI Pluralism Index overview.](./images/ai-pluralism-method.png)
 *Overview of the AI Pluralism Index and its evidence-based governance pillars.*
 
 ## What Comes Next

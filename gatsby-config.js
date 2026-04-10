@@ -4,9 +4,10 @@ module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
     description:
-      "Official website of Rashid Ahmad Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.",
+      "Official website of Rashid Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.",
     author: "Rashid Mushkani",
     siteUrl: "https://rsdmu.com", // Ensure this is correct
+    locale: "en-CA",
     googleVerification: "google39150de1d9b66663",
   },
   plugins: [
@@ -77,8 +78,6 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    // Offline support
-    "gatsby-plugin-offline",
     // Netlify adapter
     {
       resolve: "gatsby-adapter-netlify",

@@ -4,8 +4,10 @@ import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import {
+  RASHID_LOCALE,
   RASHID_PRIMARY_IMAGE,
   RASHID_PRIMARY_IMAGE_HEIGHT,
+  RASHID_PRIMARY_IMAGE_TYPE,
   RASHID_PRIMARY_IMAGE_WIDTH,
   RASHID_PROFILE_IMAGE_ALT,
 } from "../constants/rashidProfile"
@@ -32,6 +34,7 @@ const SEO = ({
   imageAlt = RASHID_PROFILE_IMAGE_ALT,
   imageWidth = RASHID_PRIMARY_IMAGE_WIDTH,
   imageHeight = RASHID_PRIMARY_IMAGE_HEIGHT,
+  imageType = RASHID_PRIMARY_IMAGE_TYPE,
   type = "website",
   noindex = false,
 }) => {
@@ -55,13 +58,14 @@ const SEO = ({
   const resolvedTitle = title || defaultTitle
   const canonicalUrl = normaliseUrl(siteUrl, pathname)
   const imageUrl = normaliseUrl(siteUrl, image)
+  const locale = RASHID_LOCALE.replace("-", "_")
   const twitterCard = type === "profile" ? "summary" : "summary_large_image"
   const titleTemplate = resolvedTitle && resolvedTitle !== defaultTitle
     ? `%s | ${defaultTitle}`
     : undefined
   const robotsContent = noindex
     ? `noindex, nofollow`
-    : `index, follow, max-image-preview:large`
+    : `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`
   const profileMeta = type === "profile"
     ? [
         {
@@ -108,8 +112,32 @@ const SEO = ({
           content: robotsContent,
         },
         {
+          name: `googlebot`,
+          content: robotsContent,
+        },
+        {
+          name: `image`,
+          content: imageUrl,
+        },
+        {
+          itemProp: `name`,
+          content: resolvedTitle,
+        },
+        {
+          itemProp: `description`,
+          content: metaDescription,
+        },
+        {
+          itemProp: `image`,
+          content: imageUrl,
+        },
+        {
           property: `og:site_name`,
           content: defaultTitle,
+        },
+        {
+          property: `og:locale`,
+          content: locale,
         },
         {
           property: `og:title`,
@@ -139,6 +167,14 @@ const SEO = ({
           property: `og:image:alt`,
           content: imageAlt,
         },
+        ...(imageType
+          ? [
+              {
+                property: `og:image:type`,
+                content: imageType,
+              },
+            ]
+          : []),
         ...(imageWidth
           ? [
               {
@@ -169,6 +205,10 @@ const SEO = ({
         },
         {
           name: `twitter:image`,
+          content: imageUrl,
+        },
+        {
+          name: `twitter:image:src`,
           content: imageUrl,
         },
         {

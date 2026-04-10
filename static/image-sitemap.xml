@@ -6,6 +6,11 @@
   <url>
     <loc>https://rsdmu.com/</loc>
     <image:image>
+      <image:loc>https://rsdmu.com/assets/rashid-mushkani-portrait.webp</image:loc>
+      <image:title>Rashid Mushkani</image:title>
+      <image:caption>Portrait of Rashid Mushkani</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://rsdmu.com/assets/rashid-mushkani-headshot-1x1.jpg</image:loc>
       <image:title>Rashid Mushkani</image:title>
       <image:caption>Portrait of Rashid Mushkani</image:caption>

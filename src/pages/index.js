@@ -83,25 +83,31 @@ const IndexPage = ({ data }) => {
       <PersonProfileSchema />
       
       {/* Hero Section */}
-      <div id="home" className="background-image-wrapper">
+      <header id="home" className="background-image-wrapper" aria-labelledby="home-title">
         <div className="background-image"></div>
         <div className="overlay"></div>
         <div className="centered-content">
-          <h1 className="site-title">RASHID MUSHKANI</h1>
+          <h1 id="home-title" className="site-title">RASHID MUSHKANI</h1>
           <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
           <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal I Mila - Quebec AI Institute</p>
         </div>
-      </div>
+      </header>
 
       {/* Work Section */}
-      <section id="work" className="content-section work-section">
-        <h2>Work</h2>
+      <section id="work" className="content-section work-section" aria-labelledby="work-heading">
+        <h2 id="work-heading">Work</h2>
         <div className="grid-container">
           {work.map(({ node }) => (
             <div className="grid-item" key={node.frontmatter.path}>
               {node.frontmatter.thumbnail && (
                 <Link to={`/${node.frontmatter.path}`}>
-                  <img src={node.frontmatter.thumbnail.publicURL} alt={node.frontmatter.title} className="grid-item-thumbnail" />
+                  <img
+                    src={node.frontmatter.thumbnail.publicURL}
+                    alt={node.frontmatter.title}
+                    className="grid-item-thumbnail"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </Link>
               )}
               <div className="grid-item-content">
@@ -119,14 +125,20 @@ const IndexPage = ({ data }) => {
       </section>
 
       {/* Publications Section */}
-      <section id="publications" className="content-section publications-section">
-        <h2>Publications</h2>
+      <section id="publications" className="content-section publications-section" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
         <div className="grid-container">
           {publications.map(({ node }) => (
             <div className="grid-item" key={node.frontmatter.path}>
               {node.frontmatter.thumbnail && (
                 <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer">
-                  <img src={node.frontmatter.thumbnail.publicURL} alt={node.frontmatter.title} className="grid-item-thumbnail" />
+                  <img
+                    src={node.frontmatter.thumbnail.publicURL}
+                    alt={node.frontmatter.title}
+                    className="grid-item-thumbnail"
+                    loading="lazy"
+                    decoding="async"
+                  />
                 </a>
               )}
               <div className="grid-item-content">
@@ -174,8 +186,8 @@ const IndexPage = ({ data }) => {
       <BioSection />
 
       {/* Contact Section */}
-      <section id="contact" className="content-section contact-section">
-        <h2>Contact</h2>
+      <section id="contact" className="content-section contact-section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
         <div className="contact-container">
           <form
             action="https://formspree.io/f/xkndbero"

@@ -1,18 +1,19 @@
 // src/components/BioSection.js
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { RASHID_PROFILE_IMAGE_ALT } from "../constants/rashidProfile";
 import "./BioSection.scss";
 
 const BioSection = () => {
   return (
-    <section id="bio" className="bio-section">
-      <h2 className="bio-section__title">Bio</h2>
+    <section id="bio" className="bio-section" aria-labelledby="bio-heading">
+      <h2 id="bio-heading" className="bio-section__title">Bio</h2>
 
       <div className="bio-section__overview-container">
         {/* Bio Overview */}
         <div className="bio-section__overview">
           <p>
-            Rashid Ahmad Mushkani is a researcher in urban planning and artificial intelligence who works through participatory design.
+            Rashid Mushkani is a researcher in urban planning and artificial intelligence who works through participatory design.
           </p>
           <p>
             His work explores inclusive public space, socio-spatial justice, and pluralistic AI alignment, advocating a "Right to AI" grounded in power, inclusion, and community participation.
@@ -86,8 +87,8 @@ const BioSection = () => {
         {/* Profile Image */}
         <div className="bio-section__image-container">
           <StaticImage
-            src="../images/profile-photo.webp"
-            alt="Portrait of Rashid Mushkani"
+            src="../images/rashid-mushkani-portrait.webp"
+            alt={RASHID_PROFILE_IMAGE_ALT}
             placeholder="blurred"
             layout="constrained"
             width={1000} // Adjust as needed

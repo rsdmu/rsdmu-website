@@ -3,10 +3,14 @@ import { Helmet } from 'react-helmet';
 import {
   RASHID_ALTERNATE_NAMES,
   RASHID_EMAIL,
+  RASHID_FAMILY_NAME,
+  RASHID_GIVEN_NAME,
   RASHID_ID,
   RASHID_IMAGE_OBJECTS,
+  RASHID_IMAGE_SET,
   RASHID_JOB_TITLE,
   RASHID_KNOWS_ABOUT,
+  RASHID_LOCALE,
   RASHID_PRIMARY_IMAGE_OBJECT_ID,
   RASHID_PROFILE_CREATED_AT,
   RASHID_PROFILE_DESCRIPTION,
@@ -27,9 +31,18 @@ const PersonProfileSchema = () => {
     width: image.width,
     height: image.height,
     caption: image.caption,
+    name: index === 0 ? 'Primary portrait of Rashid Mushkani' : `${image.caption} (${image.width}x${image.height})`,
+    description: RASHID_PROFILE_DESCRIPTION,
     representativeOfPage: index === 0,
-    encodingFormat: 'image/jpeg',
+    encodingFormat: image.encodingFormat || 'image/jpeg',
+    creator: {
+      '@id': RASHID_ID,
+    },
+    creditText: 'Rashid Mushkani',
+    copyrightNotice: 'Rashid Mushkani',
+    inLanguage: RASHID_LOCALE,
   }));
+  const primaryImage = imageObjects[0];
 
   const schema = {
     '@context': 'https://schema.org',
@@ -40,7 +53,10 @@ const PersonProfileSchema = () => {
         url: RASHID_URL,
         name: 'Rashid Mushkani',
         description: RASHID_PROFILE_DESCRIPTION,
-        inLanguage: 'en-CA',
+        inLanguage: RASHID_LOCALE,
+        image: {
+          '@id': primaryImage['@id'],
+        },
         publisher: {
           '@id': RASHID_ID,
         },
@@ -51,12 +67,15 @@ const PersonProfileSchema = () => {
         url: RASHID_URL,
         name: 'Rashid Mushkani',
         description: RASHID_PROFILE_DESCRIPTION,
+        inLanguage: RASHID_LOCALE,
         isPartOf: {
           '@id': RASHID_WEBSITE_ID,
         },
-        image: {
-          '@id': RASHID_PRIMARY_IMAGE_OBJECT_ID,
+        about: {
+          '@id': RASHID_ID,
         },
+        thumbnailUrl: primaryImage.url,
+        image: RASHID_IMAGE_SET,
         primaryImageOfPage: {
           '@id': RASHID_PRIMARY_IMAGE_OBJECT_ID,
         },
@@ -71,16 +90,22 @@ const PersonProfileSchema = () => {
         '@id': RASHID_ID,
         identifier: 'rashid-mushkani',
         url: RASHID_URL,
+        givenName: RASHID_GIVEN_NAME,
+        familyName: RASHID_FAMILY_NAME,
         mainEntityOfPage: {
           '@id': RASHID_PROFILE_PAGE_ID,
         },
-        name: 'Rashid Ahmad Mushkani',
+        subjectOf: {
+          '@id': RASHID_PROFILE_PAGE_ID,
+        },
+        name: 'Rashid Mushkani',
         alternateName: RASHID_ALTERNATE_NAMES,
         description: RASHID_PROFILE_DESCRIPTION,
         email: `mailto:${RASHID_EMAIL}`,
-        image: imageObjects.map((image) => ({
-          '@id': image['@id'],
-        })),
+        image: RASHID_IMAGE_SET,
+        photo: {
+          '@id': primaryImage['@id'],
+        },
         sameAs: RASHID_SAME_AS,
         jobTitle: RASHID_JOB_TITLE,
         knowsAbout: RASHID_KNOWS_ABOUT,
