@@ -1,6 +1,6 @@
 ---
 title: "Measuring What Matters: The AI Pluralism Index"
-date: "2026-02-11"
+date: "2026-03-20"
 path: "measuring-what-matters-ai-pluralism-index"
 type: "publications"
 thumbnail: "./images/ai_governance_indicators.png"
