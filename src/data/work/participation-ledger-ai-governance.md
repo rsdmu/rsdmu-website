@@ -68,7 +68,7 @@ It is useful for urban planning tools, consultation platforms, participatory dat
 
 ## Visual
 
-![Participation Ledger overview.](./images/participation-ledger.png)
+![Participation Ledger overview.](./images/participation-ledger-overview.png)
 *Conceptual overview of the Participation Ledger and its role in making AI participation traceable, enforceable, and durable.*
 
 ## Why This Matters Beyond One Project
