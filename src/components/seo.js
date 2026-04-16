@@ -11,20 +11,7 @@ import {
   RASHID_PRIMARY_IMAGE_WIDTH,
   RASHID_PROFILE_IMAGE_ALT,
 } from "../constants/rashidProfile"
-
-const normaliseUrl = (siteUrl, path = "/") => {
-  const baseUrl = siteUrl.endsWith("/") ? siteUrl.slice(0, -1) : siteUrl
-
-  if (!path) {
-    return `${baseUrl}/`
-  }
-
-  if (/^https?:\/\//.test(path)) {
-    return path
-  }
-
-  return `${baseUrl}${path.startsWith("/") ? path : `/${path}`}`
-}
+import { normaliseUrl } from "../utils/contentMetadata"
 
 const SEO = ({
   title,
@@ -37,6 +24,7 @@ const SEO = ({
   imageType = RASHID_PRIMARY_IMAGE_TYPE,
   type = "website",
   noindex = false,
+  keywords = [],
 }) => {
   const { site } = useStaticQuery(graphql`
     query {
@@ -46,6 +34,7 @@ const SEO = ({
           description
           author
           siteUrl
+          locale
           googleVerification
         }
       }
@@ -58,8 +47,16 @@ const SEO = ({
   const resolvedTitle = title || defaultTitle
   const canonicalUrl = normaliseUrl(siteUrl, pathname)
   const imageUrl = normaliseUrl(siteUrl, image)
-  const locale = RASHID_LOCALE.replace("-", "_")
+  const pageLocale = site.siteMetadata.locale || RASHID_LOCALE
+  const locale = pageLocale.replace("-", "_")
   const twitterCard = type === "profile" ? "summary" : "summary_large_image"
+  const resolvedKeywords = Array.from(
+    new Set(
+      keywords
+        .map(keyword => keyword?.trim())
+        .filter(Boolean)
+    )
+  )
   const titleTemplate = resolvedTitle && resolvedTitle !== defaultTitle
     ? `%s | ${defaultTitle}`
     : undefined
@@ -81,12 +78,22 @@ const SEO = ({
 
   return (
     <Helmet
-      htmlAttributes={{ lang: "en" }}
+      htmlAttributes={{ lang: pageLocale }}
       title={resolvedTitle}
       titleTemplate={titleTemplate}
       link={[
         {
           rel: `canonical`,
+          href: canonicalUrl,
+        },
+        {
+          rel: `alternate`,
+          hrefLang: pageLocale,
+          href: canonicalUrl,
+        },
+        {
+          rel: `alternate`,
+          hrefLang: `x-default`,
           href: canonicalUrl,
         },
         {
@@ -99,6 +106,14 @@ const SEO = ({
           name: `description`,
           content: metaDescription,
         },
+        ...(resolvedKeywords.length > 0
+          ? [
+              {
+                name: `keywords`,
+                content: resolvedKeywords.join(`, `),
+              },
+            ]
+          : []),
         {
           name: `author`,
           content: site.siteMetadata?.author || "",

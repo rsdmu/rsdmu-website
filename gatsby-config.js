@@ -62,7 +62,60 @@ module.exports = {
     // SCSS support
     "gatsby-plugin-sass",
     // Sitemap generation
-    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        excludes: [
+          "/404",
+          "/404.html",
+          "/404/",
+          "/dev-404-page",
+          "/dev-404-page/",
+          "/offline-plugin-app-shell-fallback",
+        ],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage {
+              nodes {
+                path
+              }
+            }
+            allMarkdownRemark {
+              nodes {
+                frontmatter {
+                  path
+                  date
+                }
+              }
+            }
+          }
+        `,
+        resolvePages: ({ allSitePage, allMarkdownRemark }) => {
+          const lastmodByPath = new Map(
+            allMarkdownRemark.nodes
+              .filter((node) => node.frontmatter?.path && node.frontmatter?.date)
+              .map((node) => [
+                `/${node.frontmatter.path.replace(/^\/+|\/+$/g, "")}/`,
+                node.frontmatter.date,
+              ])
+          )
+
+          return allSitePage.nodes.map((page) => ({
+            ...page,
+            lastmod: lastmodByPath.get(page.path),
+          }))
+        },
+        serialize: ({ path, lastmod }) => ({
+          url: path,
+          ...(lastmod ? { lastmod } : {}),
+        }),
+      },
+    },
     // React Helmet for managing document head
     "gatsby-plugin-react-helmet",
     // Manifest for PWA support

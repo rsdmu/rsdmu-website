@@ -3,15 +3,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
+import {
+  normaliseUrl,
+  splitAuthorNames,
+} from '../utils/contentMetadata';
 
 const RASHID_NAME_VARIANTS = new Set([
   'Rashid Mushkani',
   'Rashid A. Mushkani',
   'Rashid Ahmad Mushkani',
 ].map(name => name.toLowerCase()));
-
-const normaliseSiteUrl = (siteUrl) =>
-  siteUrl.endsWith('/') ? siteUrl.slice(0, -1) : siteUrl;
 
 const mapAuthor = (rawName) => {
   const name = rawName.trim();
@@ -39,23 +40,22 @@ const PublicationSchema = ({ publication }) => {
         siteMetadata {
           siteUrl
           title
+          locale
         }
       }
     }
   `);
 
-  const { siteUrl, title: siteTitle } = data.site.siteMetadata;
-  const baseSiteUrl = normaliseSiteUrl(siteUrl);
+  const { siteUrl, title: siteTitle, locale } = data.site.siteMetadata;
 
-  // Split authors by comma and trim whitespace
   const authors = publication.author
-    ? publication.author.split(',').map(mapAuthor)
+    ? splitAuthorNames(publication.author).map(mapAuthor)
     : [];
 
-  // Construct the absolute URL for the thumbnail image if it exists
   const imageUrl = publication.thumbnail?.publicURL
-    ? `${baseSiteUrl}${publication.thumbnail.publicURL}`
+    ? normaliseUrl(siteUrl, publication.thumbnail.publicURL)
     : undefined;
+  const pageUrl = normaliseUrl(siteUrl, publication.path);
 
   const schema = {
     "@context": "https://schema.org",
@@ -66,14 +66,15 @@ const PublicationSchema = ({ publication }) => {
     "url": publication.link,
     "image": imageUrl,
     "abstract": publication.abstract,
+    ...(locale ? { "inLanguage": locale } : {}),
     "publisher": {
       "@type": "Organization",
-      "name": siteTitle, // Using site title as publisher name
+      "name": siteTitle,
       "url": siteUrl,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${baseSiteUrl}/${publication.path}`,
+      "@id": pageUrl,
     },
   };
 

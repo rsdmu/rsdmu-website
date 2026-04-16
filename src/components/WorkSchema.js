@@ -3,15 +3,16 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
+import {
+  normaliseUrl,
+  splitAuthorNames,
+} from '../utils/contentMetadata';
 
 const RASHID_NAME_VARIANTS = new Set([
   'Rashid Mushkani',
   'Rashid A. Mushkani',
   'Rashid Ahmad Mushkani',
 ].map(name => name.toLowerCase()));
-
-const normaliseSiteUrl = (siteUrl) =>
-  siteUrl.endsWith('/') ? siteUrl.slice(0, -1) : siteUrl;
 
 const mapAuthor = (rawName) => {
   const name = rawName.trim();
@@ -39,41 +40,55 @@ const WorkSchema = ({ work }) => {
         siteMetadata {
           siteUrl
           title
+          locale
         }
       }
     }
   `);
 
-  const { siteUrl, title: siteTitle } = data.site.siteMetadata;
-  const baseSiteUrl = normaliseSiteUrl(siteUrl);
+  const { siteUrl, title: siteTitle, locale } = data.site.siteMetadata;
 
-  // Split authors by comma and trim whitespace
   const authors = work.author
-    ? work.author.split(',').map(mapAuthor)
+    ? splitAuthorNames(work.author).map(mapAuthor)
     : [];
 
-  // Construct the absolute URL for the thumbnail image if it exists
   const imageUrl = work.thumbnail?.publicURL
-    ? `${baseSiteUrl}${work.thumbnail.publicURL}`
+    ? normaliseUrl(siteUrl, work.thumbnail.publicURL)
     : undefined;
+  const pageUrl = normaliseUrl(siteUrl, work.path);
+  const keywords = Array.isArray(work.keywords)
+    ? work.keywords.filter(Boolean)
+    : [];
+  const description = work.description || work.title;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
+    "headline": work.title,
     "name": work.title,
     "author": authors,
     "datePublished": work.date,
-    "description": work.description,
-    "url": `${baseSiteUrl}/${work.path}`,
+    "description": description,
+    "url": pageUrl,
     "image": imageUrl,
+    ...(locale ? { "inLanguage": locale } : {}),
+    ...(keywords.length > 0 ? { "keywords": keywords } : {}),
+    ...(keywords.length > 0
+      ? {
+          "about": keywords.map(keyword => ({
+            "@type": "Thing",
+            "name": keyword,
+          })),
+        }
+      : {}),
     "publisher": {
       "@type": "Organization",
-      "name": siteTitle, // Using site title as publisher name
+      "name": siteTitle,
       "url": siteUrl,
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `${baseSiteUrl}/${work.path}`,
+      "@id": pageUrl,
     },
   };
 
