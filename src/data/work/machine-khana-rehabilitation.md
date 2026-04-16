@@ -8,34 +8,31 @@ author: "Rashid Mushkani, photo credit AKCS-A"
 description: "Modernization and adaptive reuse of the historic Machine Khana industrial complex in Kabul, contributing to urban regeneration and economic development."
 ---
 
-*An industrial complex on the Kabul riverfront, restored and reopened as a public-facing place of commerce, culture, and everyday use.*
-
-**My role:** I worked with the AKCS-A design team during the early phase of the project, before moving to Japan in mid-2019.
+*Machine Khana shows how conservation can serve daily urban life instead of separating heritage from it (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024).*
 
 ## Project Overview
 
-The **Kabul Riverfront Transformation** project, led by the Aga Khan Trust for Culture, set out to build a heritage zone along the Kabul River in the Old City. One of its central moves was the restoration of the 19th-century **Machine Khana** industrial complex.
+Machine Khana sits within the Kabul Riverfront Transformation project, an effort to create a heritage zone along the Kabul River and improve living, working, and environmental conditions in central Kabul (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024). A central part of that effort was the rehabilitation and adaptive reuse of the late nineteenth-century Machine Khana industrial complex into a site for commercial, cultural, educational, and civic use (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024).
 
-Historic warehouses and administrative buildings were converted into commercial and public spaces. The design preserved the character of the original structures while introducing new utilities, landscaping, and public amenities, including libraries and exhibition space. The result is a project that treats preservation not as nostalgia, but as a way of giving old structures a second civic life.
+According to the project brief and site documentation, the rehabilitation modernized existing warehouses and administrative blocks, added service buildings and infrastructure, and paired restoration with landscaping, drainage, lighting, and public amenities intended to reactivate the riverfront for daily use (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024). The goal was economic as well as civic: to turn underused industrial heritage into a working urban asset (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024).
+
+## Why It Matters
+
+Machine Khana does not treat preservation and present-day need as opposites. The project reuses historic industrial buildings while opening space for commerce, public services, exhibition, and cultural activity, tying architectural repair to urban livelihood and public life in central Kabul (Aga Khan Cultural Services-Afghanistan, 2024; Aga Khan Trust for Culture, 2024).
 
 ## Visual Documentation
 
 ![Retail spaces within the restored warehouse.](./images/machine_khana_1.jpg)
-*Shipping containers repurposed into retail spaces within the restored warehouse.*
+*Retail spaces inserted into the rehabilitated warehouse complex.*
 
 ![A botanical interior inserted into the industrial shell.](./images/machine_khana_2.jpg)
-*Industrial architecture softened by greenery and light.*
+*A restored industrial interior adapted for contemporary use.*
 
 ![Offices and retail spaces inside the rehabilitated complex.](./images/machine_khana_3.jpg)
-*Adaptive reuse at work inside the former warehouse.*
+*Adaptive reuse inside the Machine Khana complex.*
 
-## Why It Matters
+## References
 
-Projects like this matter because they prove that urban regeneration does not have to erase the past in order to make room for the present. Machine Khana preserves an industrial landmark while creating jobs, public amenities, and a stronger riverfront.
+Aga Khan Cultural Services-Afghanistan. (2024). *Project brief: Machine Khana*. Archnet. https://www.archnet.org/publications/15256
 
-## Related Links
-
-- [Aga Khan Trust for Culture](https://www.akdn.org/our-agencies/aga-khan-trust-culture)
-- [Full Project Details](https://www.archnet.org/sites/21839)
-
-*Tags: Urban Regeneration · Adaptive Reuse · Economic Development · Historic Preservation · Public Spaces*
+Aga Khan Trust for Culture. (2024). *Machine Khana Rehabilitation*. Archnet. https://www.archnet.org/sites/21839

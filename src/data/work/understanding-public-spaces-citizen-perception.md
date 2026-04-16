@@ -8,46 +8,33 @@ author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "Visualizing citizen perceptions of Montreal's public spaces to reveal underlying themes, concepts, and opportunities for inclusive urban design."
 ---
 
-*Before I trained models, I wanted to understand the language people already use to describe public space.*
+*Before I asked models to classify streets, I needed to understand the language residents already used to describe public space, because that language is part of the evidence too (Gowaikar et al., 2024; Mushkani & Koseki, 2025).*
 
-## Why This Matters
+## Why This Work Matters
 
-Public spaces are not just physical settings. They are social settings, and that means people read them through memory, culture, mobility, identity, and experience. If planning tools ignore that complexity, they end up measuring only the easiest parts of urban life.
+The early Montréal work showed that public-space evaluation is never only about form. People talk about welcome, safety, belonging, maintenance, memory, and everyday usability in ways that are shaped by identity and lived experience, and those meanings need to be heard before they can be translated into datasets or models (Gowaikar et al., 2024; Mushkani & Koseki, 2025).
 
-In Montréal, I worked with 15 participants representing varied identities, including LGBTQ+ people, elders, disabled residents, and people from different racial and gender backgrounds. Through interviews and focus groups, they described what makes a public space welcoming, functional, and meaningful.
+## How I Used The Visualizations
 
-## How I Worked
+This exploratory phase relied on interviews and group conversations to map recurring ideas in how residents described public space in Montréal. The thematic and conceptual network diagrams were a way of making those qualitative patterns visible before turning them into more structured evaluation criteria and image-based assessment tasks (Gowaikar et al., 2024; Mushkani & Koseki, 2025; Mushkani et al., 2025).
 
-I conducted semi-structured interviews and focus groups, then transcribed and analyzed the conversations with the open-source **Mistral 32B** language model. That process helped surface recurring concepts tied to inclusivity, aesthetics, functionality, safety, and public meaning.
+What mattered was not only which words appeared, but how they clustered. Concerns about accessibility, safety, aesthetics, practicality, management, and social interaction were not separate boxes. They overlapped, reinforced one another, and sometimes pulled in different directions, which is part of why later participatory street studies found disagreement to be analytically useful rather than methodologically inconvenient (Mushkani & Koseki, 2025; Mushkani et al., 2025).
 
-From there, I organized the findings into two visual formats:
+## Why The Networks Still Matter
 
-- a **thematic network** showing the major categories that structured the conversations
-- a **conceptual network** showing the denser web of specific terms and associations that appeared within them
-
-## What Emerged
-
-Seven broad themes stood out: **accessibility and inclusivity**, **safety and security**, **community engagement and social interaction**, **aesthetic value and maintenance**, **historical and cultural significance**, **functional design and utility**, and **management and responsibility**.
-
-The point of the visualizations was not decoration. It was to make qualitative knowledge easier to inspect. The thematic network shows the large categories that shaped the discussion. The conceptual network reveals the finer web of associations beneath them.
+These visualizations helped make one point visible: public-space design is also a problem of public meaning. If planning tools cannot register what people mean when they describe care, exclusion, comfort, or disorder, they miss much of the social life of the place they are supposed to improve (Gowaikar et al., 2024; Mushkani & Koseki, 2025). Later published work on Montréal streets confirmed that inclusive evaluation becomes stronger when residents can first describe and then collectively deliberate what they are seeing (Mushkani & Koseki, 2025; Mushkani et al., 2025).
 
 ![Thematic Network Visualization](./images/thematic_network.png)
-*A thematic map of the ideas residents returned to most often when describing public space.*
+*A thematic map of recurring ideas in residents' descriptions of public space.*
 
-## Why the Visualizations Matter
-
-These visualizations make it harder to treat public-space design as a narrow technical problem. They show that what people value in a place is inseparable from how they move through it, how they remember it, and whether they feel recognized by it.
-
-For planners and policymakers, that means the work can function as a map of public meaning, not just public preference.
-
-## Explore the Network
+## Explore The Network
 
 [Detailed conceptual network visualization](https://mid-spaces.github.io/landing-page/nodesplot.html)
 
-## Related Links
+## References
 
-- [University of Montreal](https://www.umontreal.ca/)
-- [Mila - Quebec AI Institute](https://mila.quebec/en)
-- [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
+Gowaikar, S., Berard, H., Mushkani, R., Beaudry Marchand, E., Ammar, T., & Koseki, S. (2024). *AI-EDI-SPACE: A co-designed dataset for evaluating the quality of public spaces*. arXiv. https://doi.org/10.48550/arXiv.2411.00956
 
-*Tags: Public Spaces · Citizen Participation · Data Visualization · Inclusive Urban Design · Montreal*
+Mushkani, R., & Koseki, S. (2025). *Intersecting perspectives: A participatory street review framework for urban inclusivity*. Habitat International, 164, 103536. https://doi.org/10.1016/j.habitatint.2025.103536
+
+Mushkani, R., Berard, H., Ammar, T., & Koseki, S. (2025). *Public perceptions of Montréal's streets: Implications for inclusive public space making and management*. Journal of Urban Management, Advance online publication. https://doi.org/10.1016/j.jum.2025.07.004

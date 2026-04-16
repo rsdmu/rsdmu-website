@@ -8,75 +8,41 @@ author: "Rashid Mushkani"
 description: "A framework for turning community input into something durable, auditable, and actionable across the AI lifecycle."
 ---
 
-*A framework for turning community input into something durable, auditable, and actionable across the AI lifecycle.*
+*The Participation Ledger asks a direct question: if public participation matters, why is it so rarely recorded in a way that can be traced, enforced, or fairly compensated later (Mushkani, 2026; Mushkani et al., 2025)?*
 
 [Read on arXiv](https://arxiv.org/abs/2602.10916) · [View the PAIRS presentation page](https://www.pairs.site/Rights-and-incentives-A-participation-ledger-for-people-centered-AI-2fd260e24e1a81c3be45fa84ae19ebd2?pvs=21)
 
-## Why This Matters
+## Why I Built It
 
-Participatory AI is now widely discussed, but too often participation ends where the workshop ends.
+Participatory AI is now widely discussed, but participation too often ends where the workshop ends. People annotate, deliberate, file harms, or help define criteria; then the model changes, the interface changes, the institution changes, and the original contribution becomes difficult to recover in any durable way (Mushkani, 2026). When that happens, participation becomes easy to praise and easy to ignore.
 
-People are invited to comment, annotate, deliberate, or report harms. Then the system changes, the model is updated, the vendor shifts direction, and the original contribution becomes hard to trace. In many cases, participation leaves almost no durable record of what changed, who decided, or whether commitments were kept.
-
-If participation cannot be traced, it is easy to ignore. If it cannot be enforced, it remains advisory. If it is never compensated, it becomes difficult to sustain fairly.
-
-## The Problem
-
-Public-sector and civic AI systems often rely on community knowledge, yet that knowledge is usually documented informally and kept separate from the technical systems it is supposed to shape.
-
-Prompts, annotations, meeting notes, incident reports, and evaluative feedback can all influence a system. But these artifacts rarely travel forward in a structured way. They are not reliably tied to model updates, deployment rules, or future evaluation. As a result, participation is often symbolic rather than accountable.
+That problem follows directly from the concerns raised in my earlier work on the **Right to AI**. If communities are meant to shape AI systems in meaningful ways, their influence cannot remain informal, buried in slide decks, or reduced to institutional memory. It needs a record, a mechanism, and a set of rights that survive version changes and organizational turnover (Mushkani, 2026; Mushkani et al., 2025).
 
 ## The Core Idea
 
-I developed the **Participation Ledger** as a machine-readable, auditable framework for recording how participation affects AI systems over time.
+The **Participation Ledger** is a machine-readable framework for recording how participation affects AI systems over time (Mushkani, 2026). In practice, it links contributions such as annotations, prompts, tests, deliberations, incident reports, and policy requests to concrete system changes in datasets, prompts, adapters, rules, guardrails, and evaluation suites (Mushkani, 2026). The goal is to make participation inspectable rather than ceremonial.
 
-It treats participation as traceable influence. Contributions are linked to concrete changes in datasets, prompts, adapters, policies, guardrails, or evaluation suites. Those changes are then tied to replayable tests, so commitments can be checked again in future releases.
+The framework has three main parts. First, a **Participation Evidence Standard** records the terms of participation itself: who took part, in what role, under what consent, privacy, compensation, and reuse conditions (Mushkani, 2026). Second, an **influence-tracing layer** connects those contributions to replayable tests, so later versions can be checked against earlier commitments (Mushkani, 2026). Third, a set of governance instruments, including **Capability Vouchers** and **Participation Credits**, is meant to give communities durable standing rather than symbolic presence (Mushkani, 2026).
 
-Instead of asking people to trust that input mattered, the ledger creates a record that can be inspected.
+## Why That Matters
 
-## Three Building Blocks
+What I care about here is not record-keeping for its own sake. It is the shift in power that record-keeping can make possible. If a community-raised concern can be tied to a concrete system change and retested later, the system has a memory of its social commitments. If participation can trigger rights or ongoing recognition, it starts to look less like unpaid civic labor and more like governance infrastructure (Mushkani, 2026).
 
-### 1) A Participation Evidence Standard
-
-The first layer records the conditions of participation itself: who took part, in what role, under which consent and privacy terms, with what compensation, and under what reuse boundaries.
-
-This matters because participation is never neutral. Recruitment pathways, intermediaries, honoraria, consent scope, and retention rules all shape what participation means in practice.
-
-### 2) Influence Tracing and Tests of Change
-
-The second layer links contributions to system changes and to replayable tests.
-
-A community-raised concern should not stay trapped in a workshop summary. It should become something that can be tested again later. If a later version of the model fails the same test, the regression becomes visible.
-
-This turns participation into part of the system's memory, not just part of its origin story.
-
-### 3) Rights and Incentives
-
-The third layer introduces governance primitives that make participation more durable.
-
-**Capability Vouchers** allow authorized community stewards to request, constrain, or pause specific system capabilities within a defined adoption boundary.
-
-**Participation Credits** create auditable recognition for contributions that continue to generate value over time, such as tests that catch regressions or artifacts that remain in active evaluation use.
-
-Together, these mechanisms push participation closer to infrastructure: something that can be traced, activated, and maintained.
-
-## Where This Can Be Used
-
-The ledger is especially relevant for public-sector and civic AI, where systems often cross institutional boundaries and where community input is central to legitimacy.
-
-It is useful for urban planning tools, consultation platforms, participatory datasets, model evaluation pipelines, and procurement settings where organizations need evidence that commitments are being maintained after deployment, not merely promised before it.
+This is especially relevant for public-sector and civic AI, where systems move across institutional boundaries and where legitimacy depends on more than technical performance. Urban planning tools, consultation platforms, participatory datasets, procurement systems, and public-service models all need a way to show not just that participation happened, but what it changed and whether those changes endured (Mushkani, 2026).
 
 ## Visual
 
 ![Participation Ledger overview.](./images/participation-ledger-overview.png)
-*Conceptual overview of the Participation Ledger and its role in making AI participation traceable, enforceable, and durable.*
+*Conceptual overview of the Participation Ledger.*
 
-## Why This Matters Beyond One Project
+## Why It Matters Beyond One Project
 
-The Participation Ledger is ultimately about power.
-
-I see it as a way of asking what it would take for participation to endure across versions, across organizations, and across time. It asks how communities can move from being sources of feedback to recognized participants in governance. It also asks how technical systems can remember the social commitments they are built on.
+For me, the ledger is ultimately about power. It asks what would need to change for communities to move from being consulted at the edges of AI systems to being recognized as participants in governance across versions, vendors, and time (Mushkani, 2026; Mushkani et al., 2025). That is a technical question, but it is also a constitutional one.
 
 **More:** [arXiv](https://arxiv.org/abs/2602.10916) · [PAIRS presentation page](https://www.pairs.site/Rights-and-incentives-A-participation-ledger-for-people-centered-AI-2fd260e24e1a81c3be45fa84ae19ebd2?pvs=21)
 
-*Tags: Participatory AI · AI Governance · Auditability · Public Sector AI · Urban AI · Accountability*
+## References
+
+Mushkani, R. (2026). *Traceable, enforceable, and compensable participation: A participation ledger for people-centered AI governance*. arXiv. https://arxiv.org/abs/2602.10916
+
+Mushkani, R., Berard, H., Cohen, A., & Koseki, S. (2025). *Position: The Right to AI*. arXiv. https://arxiv.org/abs/2501.17899

@@ -8,56 +8,33 @@ author: "Rashid Mushkani"
 description: "A declaration, research agenda, and nonprofit initiative enabling communities to co-design, oversee, and steward AI that shapes daily life."
 ---
 
-*AI is everywhere now, deciding what appears online, shaping cities, and influencing healthcare, finance, and education. Yet ordinary people still have almost no say in how these systems are created or governed.*
+*The Right to AI begins from a basic premise: if AI is becoming infrastructure, the public should help govern it (Mushkani et al., 2025).*
 
-## Why This Matters
+## Why This Claim Matters
 
-AI is still largely in the hands of a few companies and institutions. The public is treated as an audience, not as a co-author of the technology that will shape everyday life. That imbalance risks hardening bias, sidelining communities, and draining public trust.
+The present AI landscape is still dominated by a narrow set of firms and institutions, while the people most affected by automated systems are often invited in late, if at all (Mushkani et al., 2025). That imbalance is not only a democratic problem. It is also a design problem, because systems built without meaningful public influence are more likely to harden bias, miss local realities, and weaken trust (Mushkani et al., 2025).
 
-If AI is going to be as essential as roads, schools, or public parks, then it must be designed and run with the same spirit of shared ownership and public accountability.
+The paper argues that AI should be understood less as a consumer product and more as **societal infrastructure**: something closer to transit, housing systems, schools, or public space in the scale of its social consequences (Mushkani et al., 2025). Once AI is seen that way, questions of ownership, access, accountability, and public stewardship move from the margins to the center.
 
-## What is *The Right to AI*?
+## What The Paper Does
 
-I began this work in 2022 with more than thirty community organizations across Montréal. The original effort focused on public space, inclusion, and emerging technologies. It has since grown into a broader nonprofit movement with a simple conviction: **AI should not merely serve the public; it should answer to the public.**
+The paper sets out a research agenda for treating AI as part of public life rather than as a sealed technical product (Mushkani et al., 2025). It asks how communities can shape AI systems before those systems become entrenched and how participation can change design, data governance, oversight, and deployment decisions in concrete ways (Mushkani et al., 2025).
 
-- I host workshops where communities test, critique, and question real AI systems, surfacing both promise and harm.
-- I publish research on how the public can shape AI at every stage, from data stewardship to deployment and oversight.
-- I work with policymakers so that the people most affected by automated systems are no longer the last to be consulted.
+## What The Paper Argues
 
-## The Paper
+The paper draws on Lefebvre's *Right to the City* to argue for a **Right to AI**: the capacity and entitlement of individuals and communities to shape, critique, and govern the AI infrastructures that affect their lives (Mushkani et al., 2025). It treats data as socially produced, questions market-led and state-centric models that leave the public at a distance, and proposes participatory alternatives such as local councils, data trusts, stakeholder-led oversight, and conflict-resolution mechanisms that recognize plural values rather than assuming one universal public interest (Mushkani et al., 2025).
 
-The paper borrows from Lefebvre’s *Right to the City* and applies that logic to AI. I argue that AI now operates as social infrastructure and should be treated as a shared resource rather than a private black box. The paper takes on generative agents, mass data extraction, and conflict across values and cultures, then turns toward practical forms of democratic governance.
+What matters in that argument is its insistence that participation must do real work. It should not stop at comment boxes or consultation theater. It should shape whether systems are built, how data is governed, who can inspect harms, and what forms of redress are available (Mushkani et al., 2025).
 
-The heart of it is simple: participation must matter. It should change how data is governed, how models are trained, and whether certain systems are deployed at all.
+## From Consultation To Power
 
-## A Ladder of Participation
+The paper adapts the logic of participation ladders to AI governance. At the bottom are models that treat people as consumers, perhaps informed but largely powerless. Higher up are approaches that invite some transparency or consultation while retaining centralized control. At the top are arrangements closer to shared governance, where communities and experts help decide the goals, risks, and limits of the system together (Mushkani et al., 2025).
 
-At the bottom rung, people are just consumers, clicking “accept” and occasionally filling out feedback forms, while decisions stay centralized.
-
-A step up, organizations invite limited input and offer more transparency, but the real power stays with them.
-
-Government-controlled models add regulations and consultations, which help, but can miss the nuance of local realities.
-
-At the top is citizen control: community assemblies, data trusts, and shared ownership of AI systems, where everyday people and experts decide together on risks, goals, and oversight.
-
-
-## What I Have Learned
-
-I have learned that early involvement matters, but continuity matters even more. Technical expertise is not enough on its own; lived experience changes what problems are visible and what risks count. I have also learned that participation fails when it is unfunded. Without training, accessibility, time, and institutional backing, even good intentions collapse into symbolism.
+That framework is useful because it clarifies a mistake that appears constantly in AI governance: mistaking visibility for power. Being asked for feedback is not the same thing as having standing. Reading a policy is not the same thing as being able to contest it. The Right to AI keeps pressing on that difference (Mushkani et al., 2025).
 
 ## What Comes Next
 
-I want to see stronger public AI literacy, better tools for everyday participation, local AI councils that can grow from advisory bodies into decision-making ones, and community-run data trusts backed by real audits. I also want to see AI systems localized to the cultures and contexts in which they operate, rather than exported as if one model fits every place.
-
-
-## How to Help
-
-You can volunteer to bring the Right to AI into your community.  
-You can join research projects exploring new ways to involve the public in AI governance.  
-You can collaborate on workshops, studies, or pilot programs.  
-
-**Contact:** <contact@therighttoai.org>
-
+I see the next phase in practical terms: better public AI literacy, stronger local participation tools, and governance arrangements that can move from advisory rituals toward durable public authority (Mushkani et al., 2025).
 
 ## Explore More
 
@@ -65,8 +42,9 @@ You can collaborate on workshops, studies, or pilot programs.
 [About The Right to AI](https://www.therighttoai.org/about)  
 [Book: The Right to AI](https://www.therighttoai.org/book)
 
-
 ![Poster/visual summary for The Right to AI](./images/right-to-ai-poster.png)
+*Poster/visual summary for The Right to AI.*
 
+## References
 
-*Tags: AI Governance · Participation · Pluralism · Open Source · Data Stewardship · Workshops · Montréal*
+Mushkani, R., Berard, H., Cohen, A., & Koseki, S. (2025). *Position: The Right to AI*. arXiv. https://arxiv.org/abs/2501.17899

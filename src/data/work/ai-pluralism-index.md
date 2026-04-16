@@ -8,60 +8,50 @@ author: "Rashid Mushkani"
 description: "A public framework for evaluating not just what AI systems can do, but who gets a say in how they are built and governed."
 ---
 
-*A public framework for evaluating not just what AI systems can do, but who gets a say in how they are built and governed.*
+*The AI Pluralism Index asks a public question: who gets a say in how AI systems are built and governed (Mushkani, 2026).*
 
 [Read on arXiv](https://arxiv.org/abs/2510.08193) · [Explore the Index](https://aipluralism.wiki/) · [View Code](https://github.com/rsdmu/aipi-pluralism-index)
 
-## Why This Matters
+## Why I Built It
 
-AI systems increasingly shape what people see, know, and decide. Yet most public debate still revolves around capability: which model is faster, stronger, or more accurate. That matters. It is also incomplete.
+AI systems now shape what people see, know, buy, trust, and contest, yet most public comparison still stops at capability: speed, fluency, benchmark scores, and price (Mushkani, 2026). Those measures matter, but they leave out another question: who gets to shape the goals, safeguards, data practices, and deployment rules of the systems themselves (Mushkani, 2026).
 
-The harder question is governance. Who gets to shape an AI system's goals, safeguards, data practices, and deployment? Who can inspect it, challenge it, or understand how decisions are made? As leading systems converge on performance for everyday tasks, those questions become harder to ignore.
+That gap is what the **AI Pluralism Index (AIPI)** is designed to confront. I built it as a framework for asking not only what AI can do, but who can influence it, inspect it, challenge it, and hold it to account when it fails (Mushkani, 2026).
 
-## The Question
+## What It Measures
 
-I built the **AI Pluralism Index (AIPI)** around a simple question that most benchmarks ignore:
+AIPI is organized around four pillars: **participatory governance**, **inclusivity and diversity**, **transparency**, and **accountability** (Mushkani, 2026). Together, those pillars shift attention away from performance alone and toward the social conditions under which a system is built and used.
 
-> Not only what can AI do, but who gets to shape it?
+- **Participatory governance** asks whether affected stakeholders can influence decisions rather than merely comment after the fact (Mushkani, 2026).
+- **Inclusivity and diversity** asks who is represented in design, evaluation, access, and support (Mushkani, 2026).
+- **Transparency** asks whether the public can actually inspect the documentation needed to understand a system's purpose, limits, and governance (Mushkani, 2026).
+- **Accountability** asks whether harms, failures, and remedies are visible and contestable (Mushkani, 2026).
 
-AIPI evaluates whether AI systems and providers are governed in ways that are meaningfully participatory, inclusive, transparent, and accountable. It does not reward vague claims. It scores only what leaves public, auditable traces.
+The index does not reward aspirational language on its own. It scores what can be substantiated through public artifacts such as model and system cards, governance records, audits, release notes, policy documents, and external evaluations (Mushkani, 2026).
 
-## What AIPI Measures
+## How The Scoring Works
 
-The framework is organized around four pillars:
+One design choice is to make missing evidence visible instead of smoothing it away. A **lower-bound evidence score** treats undocumented claims conservatively. A **known-only score** reports performance only where evidence exists. Coverage is shown alongside both, so weak documentation remains part of the story instead of disappearing inside a single headline number (Mushkani, 2026).
 
-- **Participatory governance** asks whether affected stakeholders can influence decisions rather than merely comment on them after the fact.
-- **Inclusivity and diversity** examine who is represented in design, evaluation, access, and support, including language access and accessibility.
-- **Transparency** asks whether the public can actually inspect the documentation needed to understand a system's purpose, provenance, limits, and governance.
-- **Accountability** looks for the mechanisms that make harms, failures, and remedies visible, from disclosure processes to audits, redress, and incident handling.
+That distinction matters because governance is often documented unevenly. A provider can appear responsible simply because the hardest questions were never made public. AIPI is designed to make that gap visible (Mushkani, 2026).
 
-Taken together, the four pillars shift attention away from model performance alone and toward the social and institutional conditions under which AI is built and used.
+## Why It Matters In Practice
 
-## How I Score It
+I designed the index for use, not just theory. For policymakers and regulators, it turns broad principles into auditable checks. For procurement teams, it offers a way to compare systems beyond benchmark performance and brand language. For researchers and journalists, it creates a reproducible method for testing whether public claims about responsible AI are backed by public evidence (Mushkani, 2026).
 
-AIPI is evidence-based by design. It codes only verifiable public artifacts such as model and system cards, governance records, release notes, audits, policy documents, and external evaluations.
-
-The framework reports two complementary views of each score. A **lower-bound evidence score** treats undocumented claims conservatively. A **known-only score** shows how a provider performs on the indicators where evidence exists. Coverage is reported alongside both, so missing documentation stays visible instead of disappearing inside a single number.
-
-That distinction matters because governance is often documented unevenly. A system can look responsible on paper simply because the difficult questions were never made public. AIPI makes that gap legible.
-
-## Why This Matters in Practice
-
-I designed the index for real decisions, not just theory.
-
-For **policymakers and regulators**, it offers an auditable way to turn broad principles into concrete evidence checks. For **procurers**, it provides a basis for comparing vendors beyond benchmark scores and marketing language. For **researchers and journalists**, it creates a reproducible method for testing whether public claims about responsible AI are supported by observable practice. For **the public**, it opens a conversation that is too often hidden behind technical performance metrics.
+The larger aim is cultural as much as technical. If providers know they will be compared not only on capability but also on whether their governance is participatory, transparent, and answerable, those qualities become harder to treat as optional extras (Mushkani, 2026).
 
 ## Visual
 
 ![AI Pluralism Index overview.](./images/ai-pluralism-method.png)
-*Overview of the AI Pluralism Index and its evidence-based governance pillars.*
+*Overview of the AIPI framework.*
 
 ## What Comes Next
 
-AIPI is not meant to be a static ranking. I designed it as an open, versioned, community-governed framework with public adjudication, evidence tracking, and room for challenge and revision.
-
-The broader aim is to change incentives. If AI providers know they will be compared not only on what their systems can do, but on how answerable and pluralistic their governance is, then transparency, participation, and accountability become harder to treat as optional.
+The paper describes AIPI as an open, versioned system with public evidence tracking and room for revision as governance practices change (Mushkani, 2026). The point is not to freeze judgment. It is to make judgment inspectable.
 
 **More:** [arXiv](https://arxiv.org/abs/2510.08193) · [AI Pluralism Index](https://aipluralism.wiki/) · [GitHub](https://github.com/rsdmu/aipi-pluralism-index)
 
-*Tags: AI Governance · Pluralism · Accountability · Transparency · Participation · Responsible AI*
+## References
+
+Mushkani, R. (2026). *Measuring what matters: The AI Pluralism Index*. arXiv. https://arxiv.org/abs/2510.08193v3

@@ -8,55 +8,47 @@ author: "Rashid Mushkani"
 description: "LIVS encodes 37k+ community comparisons to align text-to-image models with local, intersectional priorities for inclusive public spaces."
 ---
 
-*A benchmark for public-space images that refuses to pretend one point of view can stand in for everyone.*
+*LIVS begins from a basic point: no single image of a "good" city can stand in for everyone who lives in one (Mushkani et al., 2025; Nayak et al., 2024).*
 
 [Read on arXiv](https://arxiv.org/abs/2503.01894) · [OpenReview (ICML 2025)](https://openreview.net/forum?id=Spoe53kbj9) · [Project & Dataset](https://mid-space.one)
 
-## The Big Idea
+## Why This Dataset Exists
 
-**LIVS (Local Intersectional Visual Spaces)** is a people-in-the-loop benchmark for multi-criteria alignment of text-to-image models in urban planning. It asks:  
-> How do different communities *actually* want public spaces to look and feel—and can models reflect that?
+Most alignment work in generative AI still assumes that preference can be compressed into one clean signal. That assumption is especially brittle in urban design, where accessibility, safety, comfort, culture, diversity, and belonging are often felt differently by different groups (Mushkani et al., 2025). LIVS was designed to keep that plurality visible rather than hiding it inside an average (Mushkani et al., 2025).
 
-Over two years, I worked with 30 community organizations in Montréal to gather local ideas of inclusive design and turn them into structured preferences that can steer generative models toward context-aware outputs.
+The project also builds on lessons from **MID-Space**, which demonstrated the value of aligning image-generation tools with localized, community-defined criteria instead of generic design defaults (Nayak et al., 2024). LIVS pushes that logic further by focusing explicitly on pluralistic, intersectional preference modeling (Mushkani et al., 2025; Nayak et al., 2024).
 
-## Why This Matters
+## What LIVS Contains
 
-Global, single-objective alignment often flattens local norms. **Pluralistic alignment** keeps multiple, sometimes conflicting, values in play, including **Accessibility, Safety, Comfort, Invitingness, Inclusivity,** and **Diversity**. That makes room for a more honest question: not just what a place contains, but who it appears to welcome.
+The dataset was developed through a two-year participatory process with 30 community organizations in Montréal and translates 634 community-defined concepts into six working criteria: **Accessibility**, **Safety**, **Comfort**, **Invitingness**, **Inclusivity**, and **Diversity** (Mushkani et al., 2025). It includes 13,462 images and 37,710 pairwise comparisons, creating a benchmark for asking how different publics want public spaces to look and feel rather than how a model assumes they should look (Mushkani et al., 2025).
 
-## How I Built It
+To test that premise, the study used Direct Preference Optimization to fine-tune Stable Diffusion XL and then evaluated the tuned model on new comparisons (Mushkani et al., 2025). The result was not a perfect pluralistic model. It showed where alignment improves, where it remains unstable, and where disagreement itself carries information (Mushkani et al., 2025).
 
-**Participants & Process:** Two years with **30 orgs**; workshops, interviews, and participatory prompt design.  
-**From concepts to criteria:** **634** community-defined ideas distilled into **six** criteria.  
-**Images & Annotations:** **13,462** images, **37,710** pairwise comparisons (multi-criteria sliders).  
-**Modeling:** Fine-tuned **Stable Diffusion XL** with **Direct Preference Optimization (DPO)** using multi-criteria signals.  
-**Evaluation:** In 2,200 new comparisons, annotators preferred the DPO-aligned model more often where annotation volume was higher; about half of judgments were neutral—evidence that values are heterogeneous and sometimes visually subtle.
+## What I Think The Findings Mean
 
-## What I Found
+One of the most revealing findings is the persistence of neutral ratings in the evaluation data (Mushkani et al., 2025). I do not read that as failure. I read it as evidence that public values are often heterogeneous, visually subtle, and resistant to single-objective optimization. That is precisely why pluralistic alignment matters (Mushkani et al., 2025).
 
-- **No single “best” image:** Improvements varied by criterion; **Comfort/Invitingness** benefited most from data volume; **Inclusivity/Diversity** remained harder to judge and to render consistently.  
-- **Identity matters:** Preference patterns differed across participant identities—supporting intersectional data over an “average user.”  
-- **Prompts matter, too:** Human-authored prompts produced more distinctive outputs—and more decisive annotations—than LLM-generated ones.  
-- **Neutral is a signal:** High neutrality often meant subtle trade-offs or ambiguous visuals, not noise—pointing to richer objective formulations beyond single binary labels.
+The study also shows that identity matters, that human-authored prompts produce more distinctive outputs than generic prompt generation, and that improvements vary by criterion rather than arriving all at once (Mushkani et al., 2025). In short, the work points toward a form of alignment that treats difference as a design condition rather than a problem to be averaged away.
 
 ## Where This Can Be Used
 
-- **Public engagement:** Generate options that mirror local priorities and surface trade-offs in workshops.  
-- **Design iteration:** Rapidly visualize accessibility, comfort, or safety tweaks grounded in multi-criteria feedback.  
-- **Policy & research:** Compare criteria across groups; explore steerable or personalized alignment strategies for different communities.
+For public engagement, LIVS offers a way to generate options that mirror local priorities and expose trade-offs in workshops. For urban design, it offers faster iteration without severing design from community judgment. For AI research, it offers a benchmark that treats plural values as first-class rather than secondary constraints (Mushkani et al., 2025; Nayak et al., 2024).
 
 ## Visuals
 
 ![Participatory workflow behind LIVS.](./images/participatory-approach-livs.png)
-*A two-year co-creation process, from outreach and criteria-building to prompt design, comparison, and model tuning.*
+*From community outreach to model tuning.*
 
 ![From 634 community concepts to six criteria.](./images/0_634-critiera.png)
-*The distillation pipeline that reduced hundreds of community concepts into six working criteria.*
+*How hundreds of concepts became six working criteria.*
 
 ![Where models still miss for marginalized users.](./images/challenges_marginalized_users.png)
-*A reminder that intersectional groups often continue to evaluate generated spaces differently from majority groups.*
-
----
+*Intersectional variation remains central to the problem.*
 
 **More:** [arXiv](https://arxiv.org/abs/2503.01894) · [OpenReview / ICML 2025](https://openreview.net/forum?id=Spoe53kbj9) · [Project & Dataset (mid-space.one)](https://mid-space.one)
 
-*Tags: Pluralistic Alignment · Text-to-Image · Inclusive Urbanism · Multi-Criteria Preferences · Accessibility · Montréal*
+## References
+
+Mushkani, R., Nayak, S., Berard, H., Cohen, A., Koseki, S., & Bertrand, H. (2025). *LIVS: A pluralistic alignment dataset for inclusive public spaces*. Proceedings of the 42nd International Conference on Machine Learning. https://arxiv.org/abs/2503.01894
+
+Nayak, S., Mushkani, R., Berard, H., Cohen, A., Koseki, S., & Bertrand, H. (2024). *MID-Space: Aligning diverse communities' needs to inclusive public spaces*. OpenReview. https://openreview.net/forum?id=kyfkMRT4Ao

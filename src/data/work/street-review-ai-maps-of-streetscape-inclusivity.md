@@ -8,69 +8,53 @@ author: "Rashid Mushkani"
 description: "A mixed-methods Street Review framework that combines community evaluations with 45,000 street-view images to map how different groups experience Montréal streets."
 ---
 
-*A participatory AI framework that turns street-level perception into heatmaps, indicators, and practical guidance for more inclusive streets.*
+*This version of Street Review asks what happens when community judgment is paired with city-scale image analysis instead of being left as a one-off workshop insight (Mushkani & Koseki, 2026).*
 
 [Read in Cities / ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0264275125009059) · [View Dataset on Hugging Face](https://huggingface.co/datasets/rsdmu/streetreview)
 
-## Why This Matters
+## Why I Took The Method Further
 
-Streets are used by people with very different histories, mobilities, identities, and expectations. Yet many street assessments still flatten those differences into a single technical score or a narrow design checklist.
+The original Street Review framework showed that people do not read the same street in the same way, and that group discussion can surface those differences with more precision than isolated scoring alone (Mushkani & Koseki, 2025). The next question was scale: could those situated judgments be connected to recurring streetscape patterns across a whole city without flattening the people who produced them (Mushkani & Koseki, 2026)?
 
-With **Street Review**, I took a different approach. I combined participatory evaluation with AI-based image analysis so planners can ask not only whether a street functions, but also who feels included, who does not, and which physical features seem to shape those differences.
+That is the problem this project addresses. It combines participatory evaluation with AI-based image analysis so planners can ask not only whether a street functions, but who feels included, who does not, and which physical features seem to shape those differences (Mushkani & Koseki, 2026).
 
-## What This Framework Adds
+## What The Study Did
 
-This version of Street Review moves beyond small-group deliberation alone. It pairs community knowledge with large-scale visual analysis, making it possible to connect lived experience to recurring streetscape patterns across a city.
+In Montréal, the published study combined semi-directed interviews and image evaluations with 28 residents and the analysis of roughly 45,000 street-view images from Mapillary (Mushkani & Koseki, 2026). The resulting workflow linked community judgments about **inclusivity** and **accessibility** to visible street features such as sidewalks, maintenance, greenery, seating, and building conditions, then translated those relationships into heatmaps and comparative model outputs (Mushkani & Koseki, 2026).
 
-In Montréal, I combined **28 residents**, semi-directed interviews, image-based evaluations, and approximately **45,000 street-view images from Mapillary**. That combination made it possible to move from individual impressions to structured, comparable urban evidence.
+What makes that useful is not that the model replaces public judgment. It does the opposite. The model is only legible because community participants first defined what mattered and how those values should be read in the image data (Mushkani & Koseki, 2026).
 
-## How It Works
+## What It Found
 
-The method combines three layers.
+The study found meaningful variation across participant groups in how streets were judged, reinforcing the idea that these differences are not noise but part of what inclusive planning has to understand (Mushkani & Koseki, 2026). One finding is that **sidewalk and building quality outweighed greenery alone** in shaping perceived inclusivity, which pushes back against urban rhetoric that treats planting as a substitute for broader spatial care (Mushkani & Koseki, 2026).
 
-First, participants evaluate street images and discuss how they perceive inclusivity, accessibility, and comfort across different settings.
+Just as important, the framework showed that demographic-specific heatmaps can reveal where streets feel different to different publics instead of collapsing those perspectives into one city average (Mushkani & Koseki, 2026).
 
-Second, those judgments are connected to streetscape attributes such as sidewalks, maintenance, greenery, seating, and building conditions.
+## Why It Matters
 
-Third, AI-supported analysis turns those relationships into visual outputs such as heatmaps and model comparisons, helping reveal where perceptions converge, where they split across demographic groups, and which features seem to matter most.
-
-## What I Found
-
-The paper shows that perceptions of inclusivity and accessibility vary meaningfully across participant groups. Those differences are not noise. They are part of what inclusive planning has to understand.
-
-The framework also suggests that **sidewalk and building quality can matter more than greenery alone** when people judge whether a street feels inclusive. Group-based evaluation remains important because it helps calibrate judgments, surface disagreement, and make demographic differences visible instead of averaging them away.
-
-## Why This Is Useful
-
-For planners, the framework offers a more systematic way to compare streets without losing the social complexity of urban life.
-
-For policy teams, it creates evidence that can support maintenance priorities, accessibility interventions, and more context-sensitive public realm decisions.
-
-For researchers, it demonstrates how participatory methods and machine learning can work together without treating community input as an afterthought.
+For planners and policy teams, the value of this work is its combination of scale and specificity. It offers repeatable analysis without pretending that public experience is singular. For me, that is the promise of participatory AI in cities: not automation for its own sake, but better ways of seeing where a city's official story about inclusion diverges from what residents actually live (Mushkani & Koseki, 2025, 2026).
 
 ## Visuals
 
 ![Street Review method overview.](./images/street-revew-method-overview.png)
-*Overview of the Street Review workflow, from participatory evaluation to AI-supported analysis.*
+*From participatory evaluation to model outputs.*
 
 ![Street Review model architecture.](./images/streetreview-model-architecture.png)
-*Model architecture used to connect street imagery with community-defined indicators.*
+*How community-defined indicators connect to image analysis.*
 
 ![Participant identities in the Montréal study.](./images/participants-identities.png)
-*Participant identity breakdown highlighting the importance of intersectional perspectives.*
+*Participant profile overview.*
 
 ![Model performance across Street Review indicators.](./images/model-performance.png)
-*Comparative model performance across the indicators used in the Street Review framework.*
+*Comparative model performance across indicators.*
 
 ![Montréal inclusivity heatmap.](./images/group-inclusivity-citywide-spatial-patterns.png)
-*Heatmap showing how perceived streetscape inclusivity varies across sampled Montréal locations.*
-
-## Where This Can Be Used
-
-This approach is especially useful for inclusive street design, municipal diagnostics, and public-space policy where subjective experience matters as much as formal standards.
-
-It also suits cities that need a practical way to connect community input, visual data, and repeatable analysis when evaluating safety, accessibility, and belonging in everyday streetscapes.
+*Spatial patterning of perceived inclusivity across sampled Montréal locations.*
 
 **More:** [Cities / ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0264275125009059) · [DOI](https://doi.org/10.1016/j.cities.2025.106602) · [Street Review dataset](https://huggingface.co/datasets/rsdmu/streetreview)
 
-*Tags: Participatory AI · Streetscapes · Inclusive Urbanism · Urban Analytics · Montréal · Public Space*
+## References
+
+Mushkani, R., & Koseki, S. (2025). *Intersecting perspectives: A participatory street review framework for urban inclusivity*. Habitat International, 164, 103536. https://doi.org/10.1016/j.habitatint.2025.103536
+
+Mushkani, R., & Koseki, S. (2026). *Street review: A participatory AI-based framework for assessing streetscape inclusivity*. Cities, 170, 106602. https://doi.org/10.1016/j.cities.2025.106602

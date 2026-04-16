@@ -8,15 +8,17 @@ author: "Rashid Mushkani, photo credit AKCS-A"
 description: "Restoration and modernization of Chihilsitoon Garden in Kabul, Afghanistan, integrating modern facilities with historical preservation."
 ---
 
-*Photograph of Chihilsitoon Garden in Kabul.*
-
-**My role:** I contributed as part of the Aga Khan Trust for Culture design team.
+*Chihilsitoon shows how restoration can support public life rather than withdraw from it (Aga Khan Development Network, 2018, 2019; ArchDaily, 2019).*
 
 ## Project Overview
 
-The **Chihilsitoon Garden Project** in Kabul restored and updated a historic garden while adding new rammed-earth buildings, sports areas, and commercial spaces. The project was careful not to treat heritage as a museum object. It preserved the site’s historical character while making it useful to contemporary public life.
+Chihilsitoon Garden and Palace is a 12.5-hectare historic public site in Kabul that was rehabilitated from 2015 to 2018 after decades of damage, neglect, and conflict (Aga Khan Development Network, 2018, 2019; ArchDaily, 2019). The project restored the garden and palace while adding 10,200 square meters of modernized or newly constructed rammed-earth buildings to support contemporary public use (Aga Khan Development Network, 2018, 2019; ArchDaily, 2019).
 
-The architecture draws on materials suited to the local climate and folds modern facilities into the garden’s traditional structure. Water management, public programming, and revenue-generating components were all part of the long-term maintenance strategy.
+The restoration did not treat the site as a frozen monument. The project incorporated paths and trails, family picnic areas, an outdoor amphitheater, sports and recreation facilities, visitor amenities, administrative space, and an auditorium, folding new civic functions into the historic landscape rather than pushing them outside it (Aga Khan Development Network, 2018, 2019; ArchDaily, 2019). The wider rehabilitation also included neighbourhood improvements intended to support long-term maintenance, access, and local livelihoods around the garden (Aga Khan Development Network, 2018, 2019).
+
+## Why I Return To This Project
+
+Chihilsitoon shows what restoration can do when it is guided by stewardship instead of nostalgia. The project preserved a historic site, but it also made room for recreation, gathering, education, and everyday social life (Aga Khan Development Network, 2018, 2019; ArchDaily, 2019).
 
 ## Visual Documentation
 
@@ -24,27 +26,24 @@ The architecture draws on materials suited to the local climate and folds modern
 *Elevation study of the restored palace.*
 
 ![Chihilsitoon Garden site plan.](./images/40siton_site_plan.jpg)
-*The site plan showing the larger public landscape strategy.*
+*Site plan of the larger garden and public-space strategy.*
 
 ![Public spaces within Chihilsitoon Garden.](./images/public_space_40siton.jpg)
-*A view of the garden as lived public space rather than isolated monument.*
+*A view of the garden as active public space.*
 
 ![Floor plan of the auditorium.](./images/auditorium_plan.jpg)
-*The auditorium plan inserted into the larger garden complex.*
+*Plan of the auditorium inserted into the wider complex.*
 
 ![Exterior of the auditorium.](./images/auditorium_water_pond.jpg)
 *The auditorium facing water and landscape.*
 
 ![Interior of the auditorium.](./images/auditorium_interior.jpg)
-*Interior atmosphere of the new public building.*
+*Interior view of the public building.*
 
-## Why I Value This Project
+## References
 
-I value this project because it shows how restoration can remain public-facing. Chihilsitoon protects a historic site, but it also makes room for recreation, gathering, and long-term stewardship. That balance is difficult to achieve, and rare.
+Aga Khan Development Network. (2018, September 18). *Chihilsitoon Garden and Palace rehabilitation*. https://the.akdn/en/resources-media/multimedia/video/chihilsitoon-garden-and-palace-rehabilitation
 
-## Related Links
+Aga Khan Development Network. (2019, February 21). *AKTC rehabilitates Chihilsitoon Garden in Kabul*. https://the.akdn/en/resources-media/whats-new/in-the-media/aktc-rehabilitates-chihilsitoon-garden-kabul
 
-- [Full Project on ArchDaily](https://www.archdaily.com/911456/chihilsitoon-garden-project-aga-khan-trust-for-culture)
-- [Aga Khan Trust for Culture](https://www.akdn.org/our-agencies/aga-khan-trust-culture)
-
-*Tags: Urban Design · Public Space · Sustainability · Restoration · Architecture · Urban Regeneration · Historic Preservation*
+ArchDaily. (2019, February 17). *Chihilsitoon Garden Project / Aga Khan Trust for Culture*. https://www.archdaily.com/911456/chihilsitoon-garden-project-aga-khan-trust-for-culture

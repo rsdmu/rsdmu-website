@@ -8,53 +8,37 @@ author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "A collaborative project utilizing AI to assess and design inclusive public spaces in Montreal, integrating community input and ethical AI practices."
 ---
 
-*A pilot project that asked whether AI could help a city see exclusion before residents are forced to live it.*
+*This pilot asked whether AI could help map how public space feels to different people without pretending the model should settle that question on its own (Gowaikar et al., 2024; Koseki et al., 2024).*
 
 [Explore the Montréal heatmap](https://mid-spaces.github.io/landing-page/montreal_folium_heatmap_group_inclusivity.html)
 
-## Why I Started This
+## Why This Work Started
 
-Public spaces in Canadian cities are rarely evaluated with tools that can compare how exclusion is experienced across gender, age, disability, religiosity, or migration history. As cities grow more diverse, the usual design language often fails to describe who is being left out.
+This work began from a basic problem: cities have many ways to measure traffic, land use, and maintenance, but far fewer ways to examine whether a street or square feels accessible, inclusive, and usable across different lived realities (Gowaikar et al., 2024; Koseki et al., 2024). That made public-space evaluation look less like a classification task and more like a question of whose judgment counts in the first place (Gowaikar et al., 2024; Koseki et al., 2024).
 
-I started this project to build a more grounded way of reading those differences. The aim was not to let AI replace public judgment. It was to let public judgment shape the model from the start.
+## What The Pilot Did
 
-## What I Built
+This early phase combined participatory workshops, street-view imagery, and model development to build an evaluation pipeline grounded in equity, diversity, and inclusion principles rather than generic urban design assumptions (Gowaikar et al., 2024; Koseki et al., 2024). Participants helped define what the system should notice before the system was asked to score anything at all (Gowaikar et al., 2024).
 
-I combined several layers of evidence.
+In practice, that meant treating public judgment as part of the method, not as decoration around it. The Montréal heatmap linked above belongs to that stage: an attempt to visualize spatial patterns while keeping the underlying criteria tied to co-designed values and open to revision (Koseki et al., 2024).
 
-First, I conducted semi-structured interviews with representatives of diverse communities in Montréal to understand how different groups use and read street space.
+## What It Showed
 
-Second, I ran focus-group exercises with 20 participants from varied backgrounds, asking them to evaluate safety, accessibility, and inclusion through curated Mapillary images.
+The pilot did not produce a universal definition of an inclusive public space. It showed that AI evaluation becomes more credible when the categories themselves are co-produced and when disagreement is treated as evidence instead of noise to be averaged away (Gowaikar et al., 2024; Koseki et al., 2024). That logic later carried into the Street Review work, where participatory judgment remained central at both the street and city scale (Mushkani & Koseki, 2025, 2026).
 
-Third, I used those criteria to guide pairwise comparisons and labeling across roughly 15,000 street images.
+## Why It Still Matters
 
-Finally, I fine-tuned a Multi-Layer Perceptron pretrained on ImageNet so it could relate visible street attributes to the inclusivity scores participants had helped define.
-
-## What the Model Showed
-
-The resulting heatmap highlights where Montréal streets appear more or less inclusive according to the model and, by extension, to the criteria that emerged from participatory work.
-
-The system reached roughly **90% predictive accuracy** on the available data, with spatial cues such as sidewalk construction, surrounding buildings, and overall maintenance carrying substantial weight. Just as important, the project showed that the model improved when the criteria came from community engagement rather than from abstract design assumptions.
+For planning, the contribution is practical: participatory AI can help reveal patterns that often remain anecdotal until exclusion has already hardened into routine (Koseki et al., 2024; Mushkani & Koseki, 2026). For AI research, the contribution is procedural: people should help define what counts as a good outcome before optimization begins, not merely react after a system is already built (Gowaikar et al., 2024; Koseki et al., 2024).
 
 ![Sampled Montréal street locations.](./images/points_60.png)
-*The sampled street locations that anchored the project’s first round of analysis.*
+*Sampled street locations from the Montréal pilot.*
 
-## Why This Matters
+## References
 
-For planners, the project offers a practical way to identify where attention is needed without pretending that inclusion can be captured through geometry alone.
+Gowaikar, S., Berard, H., Mushkani, R., Beaudry Marchand, E., Ammar, T., & Koseki, S. (2024). *AI-EDI-SPACE: A co-designed dataset for evaluating the quality of public spaces*. arXiv. https://doi.org/10.48550/arXiv.2411.00956
 
-For participatory AI, it shows that models become more useful when communities help define what the model is actually trying to see.
+Koseki, S., Ammar, T., Mushkani, R., Berard, H., & Tannir, S. (2024). *Evaluation algorithmique inclusive de la qualité des espaces publics / Inclusive algorithmic assessment of the quality of public spaces*. SHS Web of Conferences, 203, 01005. https://doi.org/10.1051/shsconf/202420301005
 
-For public-space design, it offers a way to move from anecdote to evidence without losing the values that make the issue worth studying in the first place.
+Mushkani, R., & Koseki, S. (2025). *Intersecting perspectives: A participatory street review framework for urban inclusivity*. Habitat International, 164, 103536. https://doi.org/10.1016/j.habitatint.2025.103536
 
-## What Comes Next
-
-I want to turn the heatmap into a more public-facing platform so residents can explore, question, and contribute to the analysis themselves. I also want to expand the dataset, reduce bias, and test the approach at a larger scale.
-
-## Related Links
-
-- [University of Montreal](https://www.umontreal.ca/)
-- [Mila - Quebec AI Institute](https://mila.quebec/en)
-- [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
-
-*Tags: Artificial Intelligence · Urban Planning · Inclusivity · Community Engagement · Public Spaces*
+Mushkani, R., & Koseki, S. (2026). *Street review: A participatory AI-based framework for assessing streetscape inclusivity*. Cities, 170, 106602. https://doi.org/10.1016/j.cities.2025.106602

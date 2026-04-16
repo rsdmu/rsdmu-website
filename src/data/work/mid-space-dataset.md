@@ -8,10 +8,7 @@ author: "Rashid Mushkani"
 description: "Introducing the MID-Space dataset, designed to align AI-generated visualizations of public spaces with diverse community needs, focusing on inclusivity, accessibility, and comfort."
 ---
 
-
-*A dataset for public-space images built from local preferences rather than generic aesthetic defaults.*
-
-**Project Team:** Shravan Nayak, Rashid Mushkani, Hugo Berard, Allison Cohen, Shin Koseki, Hadrien Bertrand, Emmanuel Beaudry Marchand, Toumadher Ammar, Jerome Solis.
+*MID-Space began from a gap: image-generation systems can produce urban scenes, but they do not naturally reflect what different communities want from public space (Nayak et al., 2024).*
 
 [Watch the Lecture on NeurIPS](https://neurips.cc/virtual/2024/109216) · [View the Dataset on Hugging Face](https://huggingface.co/datasets/CUPUM/mid-space)
 
@@ -19,52 +16,28 @@ description: "Introducing the MID-Space dataset, designed to align AI-generated 
 
 ## Why MID-Space Exists
 
-The **MID-Space** dataset grew out of a straightforward problem: image-generation tools are good at making cities look polished, but they are not naturally good at making them look inclusive.
+The dataset was built to align AI-generated visualizations of urban public spaces with the preferences of diverse and marginalized communities in Montréal, using six criteria that emerged from participatory work: accessibility, safety, diversity, inclusivity, invitingness, and comfort (Nayak et al., 2024). The point was not to produce one ideal image of the city. It was to make room for the fact that different people want different things from public space, and that those differences should shape the model rather than be erased by it (Mushkani et al., 2025; Nayak et al., 2024).
 
-I helped build MID-Space to narrow that gap. The dataset connects AI-generated visualizations to six criteria that emerged from participatory work around public space:
+## What The Dataset Contains
 
-- **Accessibility**
-- **Safety**
-- **Diversity**
-- **Inclusivity**
-- **Invitingness**
-- **Comfort**
-
-The point was not to produce one ideal image of the city. It was to make room for the fact that different people look for different things in public space, and that those differences should shape the model rather than be erased by it.
-
-## What the Dataset Contains
-
-- **Textual prompts:** 3,350 prompts representing varied public-space typologies
-- **AI-generated images:** 13,465 visualizations created with Stable Diffusion XL
-- **Annotations:** More than 42,000 raw and roughly 35,000 distinct annotations evaluating image pairs on a -1 to +1 scale for up to three criteria at a time
+The dataset combines prompts, generated images, and pairwise preference annotations collected through workshops, image generation, and community-based evaluation tasks (Nayak et al., 2024). It was built to support public discussion about place, not just model benchmarking (Nayak et al., 2024; Mushkani et al., 2025).
 
 ## How I Built It
 
-I began with three workshops involving diverse Montréal communities to identify the criteria that should matter most. From there, the team generated 440 base prompts, expanded them into 2,910 synthetic prompts, and used Stable Diffusion XL to produce multiple candidate images for each one.
-
-Those images were then refined using CLIP similarity scoring and evaluated by sixteen annotators through an accessible interface. The result was not just a pile of outputs, but a dataset that encoded preference, disagreement, and trade-off.
-
-
-## Visual Documentation
-
-![Fine-tuned visualization emphasizing accessibility.](./images/exp3.png)
-*A fine-tuned visualization emphasizing safety and legibility in public space.*
-
-![Visualization promoting diversity and inclusivity.](./images/exp1.png)
-*A comparison showing how inclusivity shifts against other criteria.*
+The process moved in stages: participants first identified the criteria that mattered, prompts were then expanded and turned into image sets with Stable Diffusion XL, and annotators compared those image pairs through an accessible interface using a scale from -1 to +1 (Nayak et al., 2024). The dataset was designed to expose trade-offs rather than collapse them into one default aesthetic (Nayak et al., 2024).
 
 ## What It Makes Possible
 
-MID-Space is useful for **AI alignment research**, where local and plural values matter; for **urban design**, where residents need better ways to influence what future public spaces might look like; and for **generative AI tools**, where equity cannot be treated as an afterthought.
+MID-Space matters because it shifts generative AI away from abstract visual preference and toward public reasoning about place. That makes it useful for participatory urban visualization, for community-informed design discussion, and for later pluralistic alignment work that asks how models can remain answerable to multiple publics at once (Mushkani et al., 2025; Nayak et al., 2024).
 
+![Fine-tuned visualization emphasizing accessibility.](./images/exp3.png)
+*A generated public-space image emphasizing safety and legibility.*
 
-## Explore Further
+![Visualization promoting diversity and inclusivity.](./images/exp1.png)
+*A comparison in which inclusivity shifts alongside other criteria.*
 
-[MID-Space Viewer](https://cupum-mid-space-viewer.hf.space)
+## References
 
-## Related Links
+Mushkani, R., Nayak, S., Berard, H., Cohen, A., Koseki, S., & Bertrand, H. (2025). *LIVS: A pluralistic alignment dataset for inclusive public spaces*. Proceedings of the 42nd International Conference on Machine Learning. https://arxiv.org/abs/2503.01894
 
-- [UNESCO Chair in Urban Landscape](https://unesco-studio.umontreal.ca/)
-- [Mila – Quebec AI Institute](https://mila.quebec/)
-
-*Tags: Generative AI · Urban Planning · Inclusivity · Community Engagement · Public Spaces*
+Nayak, S., Mushkani, R., Berard, H., Cohen, A., Koseki, S., & Bertrand, H. (2024). *MID-Space: Aligning diverse communities' needs to inclusive public spaces*. OpenReview. https://openreview.net/forum?id=kyfkMRT4Ao

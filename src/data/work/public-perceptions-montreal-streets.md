@@ -8,41 +8,38 @@ author: "Rashid Mushkani"
 description: "How Montréal residents rate and rank streets—individually and in small groups—and what that means for managing more inclusive public spaces."
 ---
 
-*A street can look obvious on paper and still divide people in practice.*
+*A street can look straightforward on paper and still divide people in practice, which is why this study focuses on where Montréalers agree, where they split, and what discussion changes (Mushkani et al., 2025).*
 
 [Read the paper on ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2226585625001116)
 
-## Overview
+## What I Wanted To Understand
 
-Cities often judge street quality with standardized audits, yet lived experience varies across gender, age, mobility, culture, and income. In this study, I wanted to know where Montréal residents tend to **agree** and where they **diverge**, and whether small-group discussion can turn contested perceptions into clearer guidance for the people who manage streets.
+Cities often evaluate street quality through audits and standardized indicators, yet lived experience is shaped by age, mobility, class, culture, language, and identity in ways that checklists rarely capture (Mushkani et al., 2025). I wanted to know where Montréal residents tend to converge in their judgments, where they diverge, and whether structured small-group discussion could turn contested impressions into guidance for public-space management (Mushkani et al., 2025).
+
+## How The Study Worked
+
+The published research unfolded in stages. Semi-structured interviews with 28 Montréal residents helped surface 12 recurring criteria for describing streets, including **accessibility**, **comfort**, **inclusivity**, **maintenance**, **representation**, and **security** (Mushkani et al., 2025). From there, 12 participants in three mixed-background groups rated 20 curated street images on **practicality**, **aesthetics**, **accessibility**, and **inclusivity**, first individually and then after discussion. A separate ranking exercise with 17 participants ordered seven images across all 12 criteria (Mushkani et al., 2025).
+
+I used that design because I was less interested in a single average score than in the social life of judgment itself: how people explain what they see, where their definitions collide, and when conversation clarifies rather than blurs disagreement (Mushkani et al., 2025).
+
+## What The Findings Showed
+
+Agreement was strongest for qualities tied to visible shared cues, especially **aesthetics** and **regenerative** features such as greenery, coherence, and spaces that feel restorative (Mushkani et al., 2025). Agreement was weakest for **inclusivity**, **practicality**, and sometimes **maintenance**, where interpretation depended more heavily on biography, context, and prior experience (Mushkani et al., 2025).
+
+One finding is that small-group dialogue tightened agreement, particularly around **accessibility** and **inclusivity** (Mushkani et al., 2025). Discussion helped participants say what they meant by "for whom" and "in what situation," producing judgments that were more stable than individual ratings alone. That is a managerial insight as much as a methodological one (Mushkani et al., 2025).
+
+## Why It Matters For Public Space Management
+
+Some street qualities respond well to technical audits: curb ramps, seating, lighting, shade, and other physical benchmarks. But the study suggests that contested qualities, especially inclusivity, cannot be managed well through checklists alone (Mushkani et al., 2025). They require recurring, localized conversations that let residents define what publicness, comfort, and belonging mean in the places they actually use (Mushkani & Koseki, 2025; Mushkani et al., 2025).
+
+For me, that is the takeaway. Inclusive management is not just better measurement. It is better listening, repeated often enough to affect decisions before disagreement hardens into exclusion (Mushkani et al., 2025).
 
 <img src="./images/jum-paper.png" alt="Summary of methods and findings for Montréal street perception study." style="width: 100%;" />
 
-*Summary of methods and findings for Montréal street perception study.*
+*Summary of methods and findings for the Montréal street perception study.*
 
+## References
 
-## What I Set Out to Learn
+Mushkani, R., & Koseki, S. (2025). *Intersecting perspectives: A participatory street review framework for urban inclusivity*. Habitat International, 164, 103536. https://doi.org/10.1016/j.habitatint.2025.103536
 
-I looked at how people describe and evaluate streets, alone and together. The goal was to map the criteria residents actually use, measure where judgments converge or split, and translate those patterns into decisions about design, maintenance, and programming.
-
-## How I Did It
-
-I conducted 28 semi-structured interviews with community-organization partners to surface twelve recurring criteria people use to talk about streets: accessibility, inviting, comfortable, regenerative, beautiful, practical, maintained, inclusive, dynamic, representative, oppressive, and secure.
-
-Building on that, three mixed-background focus groups, 12 participants in total, rated 20 curated Montréal street-view images on **accessibility**, **inclusivity**, **aesthetics**, and **practicality**. They did so first independently, then again after moderated discussion. A separate ranking exercise with 17 participants ordered seven images against all twelve criteria. I assessed convergence and reliability using Pearson correlation, Kendall’s Tau, and intraclass correlation coefficients (ICC).
-
-## What I Found
-
-Agreement was **strongest** for qualities tied to visible, shared cues—particularly **aesthetics** and **regenerative** features like greenery, coherence, and places that feel restorative. It was **weakest or mixed** for **inclusivity**, **practicality**, and at times **maintenance**—domains shaped by identity, context, and prior experience.
-
-Crucially, small-group dialogue **tightened agreement**, especially for **accessibility** and **inclusivity**. Discussion helped participants articulate what they meant by “for whom” and “in what situations,” producing more stable judgments than individual ratings alone.
-
-## Why This Matters for Management
-
-Audits work well for physical benchmarks, curb ramps, seating, lighting, shade, where agreement is naturally higher. But for dimensions where experiences diverge, technical checklists aren’t enough. Embedding **recurring, small-group consultations** into routine management cycles can surface contested meanings early, reduce noise in evaluations, and guide more inclusive choices about design trade-offs, operations, and programming.
-
-## What Comes Next
-
-I want to scale the process across more neighborhoods, invite under-represented cohorts, including teens and Indigenous communities, and test richer media such as short videos and 360° views to better capture flow, noise, and time-of-day change.
-
-*Tags: Urban Planning · Public Space · Inclusivity · Participation · Street Perception · Montréal*
+Mushkani, R., Berard, H., Ammar, T., & Koseki, S. (2025). *Public perceptions of Montréal's streets: Implications for inclusive public space making and management*. Journal of Urban Management, Advance online publication. https://doi.org/10.1016/j.jum.2025.07.004

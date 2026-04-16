@@ -8,39 +8,31 @@ author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "A framework to validate knowledge in AI, social sciences, and urban planning for credible city science."
 ---
 
-*Interdisciplinary work often breaks down not because the questions are weak, but because nobody agrees on what counts as valid knowledge.*
+*Interdisciplinary work often falters at the moment of judgment: collaborators may share a problem, but disagree about what counts as evidence, rigor, value, or success (Mushkani, 2025).*
 
 ## Why This Matters
 
-Research that combines **artificial intelligence**, **social science**, and **urban planning** is essential for questions such as climate adaptation, public health, and urban inequality. It is also notoriously hard to evaluate. Each field brings different assumptions about reality, evidence, method, purpose, and value.
-
-I wanted a clearer way to judge whether interdisciplinary work in city science was genuinely rigorous, rather than merely fashionable.
+The framework grew out of a recurring problem in AI and urban studies: research teams are increasingly asked to work across computer science, social science, planning, and public engagement, yet those fields do not begin from the same assumptions about knowledge or validity (Mushkani, 2025; Mushkani et al., 2025). That tension is especially visible in city research, where technical performance, lived experience, institutional action, and public consequence all need to be held in view at once (Mushkani, 2025; Mushkani & Koseki, 2025).
 
 ![City and AI connecting social and computer sciences](./images/city_in_cs_sankey.png)
-*Figure 1. City and AI connecting social and computer sciences.*
+*Figure 1. A schematic linking city and AI research across social and computer sciences.*
 
+## What The Framework Examines
 
-## What I Reviewed
+The manuscript reviews highly cited research from 2014 to 2024 across AI and urban studies and organizes the analysis around six dimensions: ontological, epistemological, methodological, teleological, axiological, and valorization (Mushkani, 2025). The point is not to force agreement across disciplines, but to make differences explicit early enough that a collaboration can be designed deliberately instead of drifting into confusion or false consensus (Mushkani, 2025).
 
-I reviewed highly cited papers from **2014 to 2024** across AI, the social sciences, and urban planning. The analysis focused on six dimensions:
+## What It Does In Practice
 
-- **Ontological:** what kind of reality the research assumes
-- **Epistemological:** what counts as knowledge and whose knowledge matters
-- **Methodological:** how the work gathers and validates evidence
-- **Teleological:** what the research is for
-- **Axiological:** what values and ethical commitments shape it
-- **Valorization:** how the work produces public or practical value
+For me, the value of the framework is practical. It gives researchers a way to ask whether their assumptions, methods, aims, and forms of public value actually fit together before a project claims to be "interdisciplinary" on paper alone (Mushkani, 2025). That need is not abstract. Work on co-producing AI and on participatory street evaluation depends on computer science, urban planning, and public reasoning being able to speak to one another without one domain overruling the others (Mushkani et al., 2025; Mushkani & Koseki, 2025).
 
-From that review, I developed a validation framework to help researchers choose methods and epistemologies more deliberately. I then tested the framework through case studies and refined it with expert input from each field.
-
-## What the Framework Does
-
-The framework does not try to erase disciplinary difference. It makes that difference explicit. It gives researchers a structured way to ask whether their assumptions, methods, goals, and claims actually fit together.
-
-In practice, that means more credible interdisciplinary work and a clearer route toward socially accountable knowledge in city science.
-
-## Explore the Framework
+## Explore The Framework
 
 [Interactive concept map](https://mid-spaces.github.io/landing-page/network.html)
 
-*Tags: Artificial Intelligence · Urban Planning · Intersectoral Research · Knowledge Validation · City Science*
+## References
+
+Mushkani, R. (2025). *Intersectoral knowledge in AI and urban studies: A framework for transdisciplinary research*. arXiv. https://arxiv.org/abs/2508.07507
+
+Mushkani, R., & Koseki, S. (2025). *Intersecting perspectives: A participatory street review framework for urban inclusivity*. Habitat International, 164, 103536. https://doi.org/10.1016/j.habitatint.2025.103536
+
+Mushkani, R., Berard, H., Ammar, T., Chatonnier, C., & Koseki, S. (2025). *Co-producing AI: Toward an augmented, participatory lifecycle*. arXiv. https://arxiv.org/abs/2508.00138

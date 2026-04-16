@@ -5,56 +5,34 @@ path: "coproducing-ai-augmented-participatory-lifecycle"
 type: "work"
 thumbnail: "./images/ai-lifecycle-augmented.gif"
 author: "Rashid Mushkani"
-description: "A no-nonsense, five-phase guide to building AI *with* communities—so decisions, risks, and benefits are shared from day one."
+description: "A five-phase framework for building AI with communities so decisions, risks, and benefits are shared across the lifecycle."
 ---
 
-*A practical framework for building AI with communities in the room from the beginning, not after the damage is done.*
+*This work is my argument that participation cannot be bolted onto AI at the end; it has to shape the system from the first problem definition to long after deployment (Mushkani et al., 2025).*
 
 [Read the Paper on arXiv](https://arxiv.org/abs/2508.00138)
 
+## Why The Lifecycle Matters
 
-## Why This Matters
+Too much AI is still built *about* people rather than *with* them. The result is familiar: communities appear in the workflow as data sources, testers, or affected populations, but not as co-authors of the decisions that govern the system's purpose, risks, and limits (Mushkani et al., 2025). The paper responds to that gap by proposing an augmented lifecycle that treats co-production, design justice, and multidisciplinary collaboration as part of the architecture of AI work rather than as optional ethics language layered on top (Mushkani et al., 2025).
 
-Too much AI is still built *about* people, not *with* them.  
-**Co-Producing AI** changes that dynamic by treating communities as equal partners at every stage, from defining the problem to deciding when to retire a system.
+What matters to me here is the refusal to confuse consultation with shared authority. The argument is not that communities should be heard more politely. It is that they should be structurally present wherever the system is framed, built, deployed, and revised (Mushkani et al., 2025).
 
-This isn’t about token feedback sessions or vague promises to “circle back.” It’s about shared power, open choices, and long-term accountability.
+## The Five Phases, In Plain Language
 
+The framework is organized into five connected phases: **co-framing**, **co-design**, **co-implementation**, **co-deployment**, and **co-maintenance** (Mushkani et al., 2025). In plain terms, that means people affected by a system should help define the problem before a model is chosen, weigh design trade-offs while the system is being built, inspect what is documented during implementation, shape how the system enters the world, and retain a role after launch when harms, drift, and scope creep become visible (Mushkani et al., 2025).
 
-## The People-First Lifecycle
+That last phase matters. A system can be launched with generous promises and still become brittle, extractive, or misaligned once budgets tighten or product priorities change. The paper treats maintenance as a governance responsibility, not merely a technical aftercare task (Mushkani et al., 2025).
 
-I structured the playbook around five connected phases.
+## What The Framework Produces
 
-**Co-Framing** is where it starts. Communities and developers work together to define the problem, understand who is most affected, and decide who has a voice—and even veto power—before any model is trained.
+The practical output is a working package: a governance charter, public documentation, recourse pathways, release and audit routines, and a process for revisiting consent and participation when the system changes (Mushkani et al., 2025). In other words, the framework tries to turn ethics into operating procedure.
 
-In **Co-Design**, decisions about data, models, and interfaces happen in the open. Participatory prototyping weighs trade-offs between accuracy, privacy, explainability, and cost in real time, with all stakeholders at the table.
+The framework also fits the wider line of work on participatory AI in cities. It treats public knowledge as part of the system design process rather than as feedback collected after the main decisions have already been made (Mushkani et al., 2025).
 
-**Co-Implementation** brings full transparency to training and fine-tuning. Model cards, dataset summaries, and error logs are published for public review.
+## Why I Think It Is Useful
 
-During **Co-Deployment**, systems go live with clear rules: how to raise issues, how to prevent scope creep, and when to roll things back.
-
-Finally, **Co-Maintenance** ensures the process does not end at launch. Systems are regularly audited not just for technical drift, but for ethical health and participatory strength. When features change, communities are re-consented.
-
-
-## What I Learned Along the Way
-
-Shifting real decision-making power to the people most affected builds deeper trust. Feedback has to be continuous, not ceremonial. Privacy has to be tailored to context, not forced into a single mold. And meaningful participation costs money: travel, childcare, translation, accessibility, and the time required to do the work properly.
-
-
-## What the Framework Produces
-
-By the end of this process, teams walk away with a governance charter that includes real appeal rights; a public model card and dataset description shaped by community input; a recourse and transparency portal with release notes and audit logs; and an audit schedule that addresses both technology and ethics.
-
-
-## How This Came Together
-
-The playbook grew out of four multidisciplinary workshops in Montréal in 2024, involving 20 experts from research, industry, and civil society. I also grounded it in a scoping review of 76 key works across computer science, social science, the humanities, and policy, spanning 2013 to 2024.
-
-
-## Why This Approach Stands Apart
-
-Global AI guidelines, from the Montréal Declaration to IEEE EAD, NIST AI RMF, and EU Trustworthy AI, offer principles. This framework adds the missing *how*: practical checkpoints, governance routines, and a commitment to ongoing co-maintenance.
-
+What distinguishes this framework is not that it offers new principles. It is that it offers a sequence of checkpoints where power, evidence, and accountability can be negotiated in concrete terms. That makes it useful for public-sector, health, civic, and urban AI systems, where communities do not merely experience the consequences of design decisions but live inside them (Mushkani et al., 2025).
 
 ## Visuals
 
@@ -62,11 +40,8 @@ Global AI guidelines, from the Montréal Declaration to IEEE EAD, NIST AI RMF, a
 *Five phases connected by continuous feedback and shared accountability.*
 
 ![Risks in Design versus Co-design.](./images/design.png)  
-*Design vs. Co-design.*
+*Design and co-design compared.*
 
+## References
 
-## Where It Works Best
-
-This approach is especially useful in AI governance, where lofty principles have to survive contact with institutions, budgets, and deadlines. It is most urgent for high-stakes systems in health, finance, and public services, where trust is not optional. It also offers a way to push organizations away from participation-washing and toward genuine, resourced involvement.
-
-*Tags: AI Governance · Participatory AI · Co-design · Design Justice · Expansive Learning · DEI*
+Mushkani, R., Berard, H., Ammar, T., Chatonnier, C., & Koseki, S. (2025). *Co-producing AI: Toward an augmented, participatory lifecycle*. arXiv. https://arxiv.org/abs/2508.00138
