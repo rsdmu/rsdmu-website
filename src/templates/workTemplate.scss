@@ -4,7 +4,7 @@
 .work-template {
   max-width: 1400px;
   margin: auto;
-  padding: 10rem 1rem; /* Adjust padding as needed */
+  padding: 10rem 1.5rem 6rem;
   font-family: 'Montserrat', sans-serif;
 
   /* Use theme text color globally, don't tint the whole page blue */
@@ -60,13 +60,22 @@
   }
 
   .work-content {
+    width: min(100%, 76rem);
+    margin: 0 auto;
     font-size: 1.3rem;
-    line-height: 1.6;
+    line-height: 1.7;
     color: var(--text-color);
+
+    > * {
+      width: 100%;
+      max-width: 70rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     p {
       margin-bottom: 1.5rem;
-      font-size: 1.5rem;
+      font-size: clamp(1.2rem, 1.05rem + 0.45vw, 1.5rem);
     }
 
     h2 {
@@ -144,15 +153,65 @@
       }
     }
 
-    /* Ensure All Images Within .work-content Take Full Width */
-    img {
-      display: block;
-      margin: 2rem 0;
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      max-width: none; /* Overrides any inherited max-width */
+    .work-figure {
+      max-width: 66rem;
+      margin: clamp(1.75rem, 3vw, 2.75rem) auto;
+
+      .work-figure-media {
+        padding: clamp(0.5rem, 0.8vw, 0.85rem);
+        background: var(--blockquote-bg);
+        border-radius: 1.35rem;
+        box-shadow:
+          0 24px 60px -34px rgba(0, 0, 0, 0.7),
+          0 12px 24px var(--form-shadow);
+      }
+
+      .gatsby-resp-image-wrapper,
+      img,
+      picture,
+      a {
+        display: block;
+        width: 100%;
+        max-width: none !important;
+        margin: 0 !important;
+      }
+
+      .gatsby-resp-image-wrapper,
+      img,
+      picture,
+      a,
+      .gatsby-resp-image-link {
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+
+      img {
+        height: auto;
+        border-radius: inherit;
+        box-shadow: none !important;
+      }
+
+      .work-figure-caption {
+        max-width: 62rem;
+        margin: 0.9rem auto 0;
+        color: var(--muted-text-color);
+        font-size: clamp(0.98rem, 0.9rem + 0.2vw, 1.08rem);
+        line-height: 1.5;
+        font-style: italic;
+      }
+    }
+
+    .work-figure + .work-figure {
+      margin-top: 1.5rem;
+    }
+
+    h2 + .work-figure,
+    h3 + .work-figure {
+      margin-top: 1.25rem;
+    }
+
+    blockquote {
+      max-width: 64rem;
     }
 
     /* Responsive Typography */
@@ -164,7 +223,16 @@
       /* fix nested selector: target the same block, not .work-content .work-content */
       font-size: 1rem;
 
-      p { font-size: 1.2rem; }
+      p { font-size: 1.15rem; }
+
+      .work-figure {
+        max-width: 100%;
+
+        .work-figure-media {
+          padding: 0.45rem;
+          border-radius: 1rem;
+        }
+      }
     }
   }
 
@@ -217,10 +285,10 @@
   }
 }
 
-/* Full-width images override */
-.work-template .work-content img {
+/* Constrain media within figure blocks; leave the hero image untouched */
+.work-template .work-content .work-figure img {
   width: 100% !important;
-  max-width: 1400px !important; /* add px */
+  max-width: none !important;
 }
 
 /* Theme-aware blockquote (fixes the “Street Review” quote readability) */

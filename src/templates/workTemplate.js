@@ -1,6 +1,6 @@
 // src/templates/workTemplate.js
 
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -14,6 +14,89 @@ const WorkTemplate = ({ data }) => {
   const thumbnailUrl = frontmatter.thumbnail?.publicURL;
   const keywords = extractTagsFromMarkdown(rawMarkdownBody);
   const description = frontmatter.description || excerpt;
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+    const root = contentRef.current;
+
+    if (!root) {
+      return;
+    }
+
+    const paragraphs = Array.from(root.querySelectorAll("p"));
+
+    const isCaptionParagraph = (element) => {
+      if (!element || element.tagName !== "P" || element.children.length !== 1) {
+        return false;
+      }
+
+      return element.firstElementChild?.tagName === "EM";
+    };
+
+    const getDirectCaption = (paragraph) =>
+      Array.from(paragraph.children).find((child) => child.tagName === "EM");
+
+    const hasVisualMedia = (paragraph) =>
+      Array.from(paragraph.children).some((child) => {
+        if (child.tagName === "IMG" || child.tagName === "PICTURE") {
+          return true;
+        }
+
+        if (child.classList?.contains("gatsby-resp-image-wrapper")) {
+          return true;
+        }
+
+        if (child.tagName === "A") {
+          return Boolean(
+            child.querySelector(
+              ":scope > img, :scope > picture, :scope > .gatsby-resp-image-wrapper"
+            )
+          );
+        }
+
+        return false;
+      });
+
+    paragraphs.forEach((paragraph) => {
+      if (!hasVisualMedia(paragraph) || paragraph.closest("figure.work-figure")) {
+        return;
+      }
+
+      const figure = document.createElement("figure");
+      figure.className = "work-figure";
+
+      const media = document.createElement("div");
+      media.className = "work-figure-media";
+
+      let captionHTML = "";
+      const directCaption = getDirectCaption(paragraph);
+
+      if (directCaption) {
+        captionHTML = directCaption.innerHTML;
+        directCaption.remove();
+      }
+
+      while (paragraph.firstChild) {
+        media.appendChild(paragraph.firstChild);
+      }
+
+      figure.appendChild(media);
+
+      if (!captionHTML && isCaptionParagraph(paragraph.nextElementSibling)) {
+        captionHTML = paragraph.nextElementSibling.firstElementChild.innerHTML;
+        paragraph.nextElementSibling.remove();
+      }
+
+      if (captionHTML) {
+        const caption = document.createElement("figcaption");
+        caption.className = "work-figure-caption";
+        caption.innerHTML = captionHTML;
+        figure.appendChild(caption);
+      }
+
+      paragraph.replaceWith(figure);
+    });
+  }, [html]);
 
   return (
     <Layout>
@@ -45,7 +128,11 @@ const WorkTemplate = ({ data }) => {
             />
           </div>
         )}
-        <div className="work-content" dangerouslySetInnerHTML={{ __html: html }} />
+        <div
+          ref={contentRef}
+          className="work-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
       </div>
     </Layout>
   );

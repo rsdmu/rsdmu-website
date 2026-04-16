@@ -12,18 +12,18 @@ description: "A framework to validate knowledge in AI, social sciences, and urba
 
 ## Why This Matters
 
-The framework grew out of a recurring problem in AI and urban studies: research teams are increasingly asked to work across computer science, social science, planning, and public engagement, yet those fields do not begin from the same assumptions about knowledge or validity (Mushkani, 2025; Mushkani et al., 2025). That tension is especially visible in city research, where technical performance, lived experience, institutional action, and public consequence all need to be held in view at once (Mushkani, 2025; Mushkani & Koseki, 2025).
+The framework grew out of a recurring problem in AI and urban studies: research teams are increasingly asked to work across computer science, social science, planning, and public engagement, yet those fields do not begin from the same assumptions about knowledge or validity (Mushkani et al., 2025). That tension is especially visible in city research, where technical performance, lived experience, institutional action, and public consequence all need to be held in view at once (Mushkani & Koseki, 2025).
 
 ![City and AI connecting social and computer sciences](./images/city_in_cs_sankey.png)
 *Figure 1. A schematic linking city and AI research across social and computer sciences.*
 
 ## What The Framework Examines
 
-The manuscript reviews highly cited research from 2014 to 2024 across AI and urban studies and organizes the analysis around six dimensions: ontological, epistemological, methodological, teleological, axiological, and valorization (Mushkani, 2025). The point is not to force agreement across disciplines, but to make differences explicit early enough that a collaboration can be designed deliberately instead of drifting into confusion or false consensus (Mushkani, 2025).
+The manuscript reviews highly cited research from 2014 to 2024 across AI and urban studies and organizes the analysis around six dimensions: ontological, epistemological, methodological, teleological, axiological, and valorization (Mushkani, 2025). The point is not to force agreement across disciplines, but to make differences explicit early enough that a collaboration can be designed deliberately instead of drifting into confusion or false consensus.
 
 ## What It Does In Practice
 
-For me, the value of the framework is practical. It gives researchers a way to ask whether their assumptions, methods, aims, and forms of public value actually fit together before a project claims to be "interdisciplinary" on paper alone (Mushkani, 2025). That need is not abstract. Work on co-producing AI and on participatory street evaluation depends on computer science, urban planning, and public reasoning being able to speak to one another without one domain overruling the others (Mushkani et al., 2025; Mushkani & Koseki, 2025).
+For me, the value of the framework is practical. It gives researchers a way to ask whether their assumptions, methods, aims, and forms of public value actually fit together before a project claims to be "interdisciplinary" on paper alone. That need is not abstract. Work on co-producing AI and on participatory street evaluation depends on computer science, urban planning, and public reasoning being able to speak to one another without one domain overruling the others (Mushkani et al., 2025; Mushkani & Koseki, 2025).
 
 ## Explore The Framework
 

@@ -12,21 +12,21 @@ description: "Utilizing AI models to assess and design inclusive public spaces i
 
 ## Thesis Focus
 
-This research has grown into a linked body of work on co-designed evaluation, participatory street assessment, and community-aligned image generation for public space (Gowaikar et al., 2024; Mushkani & Koseki, 2025; Nayak et al., 2024). One strand examines existing streets through discussion, rating, and comparison; another asks whether generative tools can be steered toward locally grounded ideas of accessibility, comfort, diversity, and inclusion rather than generic design taste (Mushkani et al., 2025; Nayak et al., 2024).
+This research has grown into a linked body of work on co-designed evaluation, participatory street assessment, and community-aligned image generation for public space (Nayak et al., 2024). One strand examines existing streets through discussion, rating, and comparison; another asks whether generative tools can be steered toward locally grounded ideas of accessibility, comfort, diversity, and inclusion rather than generic design taste (Mushkani et al., 2025).
 
-## How I Approach It
+## How The Thesis Works
 
-The thesis combines interviews, workshops, image-based evaluation, dataset design, and model development so that public judgment shapes both the questions and the outputs of the system (Gowaikar et al., 2024; Mushkani & Koseki, 2025; Nayak et al., 2024). That approach rejects the common pattern in which communities are consulted only after the categories, data, and interface have already been fixed (Gowaikar et al., 2024).
+The thesis combines interviews, workshops, image-based evaluation, dataset design, and model development so that public judgment shapes both the questions and the outputs of the system. That approach rejects the common pattern in which communities are consulted only after the categories, data, and interface have already been fixed.
 
-Later work extended the same logic into pluralistic alignment: instead of searching for a single "correct" image of inclusive public space, the research began to model multiple, sometimes competing preferences and to treat those differences as part of the design problem itself (Mushkani et al., 2025; Nayak et al., 2024).
+Later work extended the same logic into pluralistic alignment: instead of searching for a single "correct" image of inclusive public space, the research began to model multiple, sometimes competing preferences and to treat those differences as part of the design problem itself (Nayak et al., 2024).
 
 ## Why This Matters
 
-Public-space quality is often discussed as if it were universal. These studies show the opposite: people read the same street differently depending on mobility, identity, memory, and familiarity, and those differences should shape both evaluation and redesign (Mushkani & Koseki, 2025; Mushkani et al., 2025). In that sense, the thesis is less about making AI more impressive than about making its judgments more accountable to the people who live with their consequences (Gowaikar et al., 2024).
+Public-space quality is often discussed as if it were universal. These studies show the opposite: people read the same street differently depending on mobility, identity, memory, and familiarity, and those differences should shape both evaluation and redesign (Mushkani & Koseki, 2025; Mushkani et al., 2025). In that sense, the thesis is less about making AI more impressive than about making its judgments more accountable to the people who live with their consequences.
 
 ## What This Work Has Produced
 
-So far, the project has produced a co-designed evaluation dataset for public-space quality, a participatory street-assessment framework, a dataset for aligning generated public-space images with community preferences, and a pluralistic benchmark for visual alignment in cities (Gowaikar et al., 2024; Mushkani & Koseki, 2025; Mushkani et al., 2025; Nayak et al., 2024).
+So far, the project has produced a co-designed evaluation dataset for public-space quality, a participatory street-assessment framework, a dataset for aligning generated public-space images with community preferences, and a pluralistic benchmark for visual alignment in cities (Gowaikar et al., 2024).
 
 ## References
 
