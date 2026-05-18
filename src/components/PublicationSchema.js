@@ -1,25 +1,27 @@
 // src/components/PublicationSchema.js
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 import {
-  normaliseUrl,
-  splitAuthorNames,
-} from '../utils/contentMetadata';
+  RASHID_ID,
+  RASHID_SAME_AS,
+  RASHID_URL,
+  RASHID_WEBSITE_ID,
+} from "../constants/rashidProfile";
+import { normaliseUrl, splitAuthorNames } from "../utils/contentMetadata";
 
-const RASHID_NAME_VARIANTS = new Set([
-  'Rashid Mushkani',
-  'Rashid A. Mushkani',
-  'Rashid Ahmad Mushkani',
-].map(name => name.toLowerCase()));
+const RASHID_NAME_VARIANTS = new Set(
+  ["Rashid Mushkani", "Rashid A. Mushkani", "Rashid Ahmad Mushkani"].map(
+    (name) => name.toLowerCase()
+  )
+);
 
 const mapAuthor = (rawName) => {
   const name = rawName.trim();
   if (RASHID_NAME_VARIANTS.has(name.toLowerCase())) {
     return {
-      '@type': 'Person',
-      '@id': RASHID_ID,
+      "@type": "Person",
+      "@id": RASHID_ID,
       name,
       url: RASHID_URL,
       sameAs: RASHID_SAME_AS,
@@ -27,7 +29,7 @@ const mapAuthor = (rawName) => {
   }
 
   return {
-    '@type': 'Person',
+    "@type": "Person",
     name,
   };
 };
@@ -39,14 +41,13 @@ const PublicationSchema = ({ publication }) => {
       site {
         siteMetadata {
           siteUrl
-          title
           locale
         }
       }
     }
   `);
 
-  const { siteUrl, title: siteTitle, locale } = data.site.siteMetadata;
+  const { siteUrl, locale } = data.site.siteMetadata;
 
   const authors = publication.author
     ? splitAuthorNames(publication.author).map(mapAuthor)
@@ -56,33 +57,39 @@ const PublicationSchema = ({ publication }) => {
     ? normaliseUrl(siteUrl, publication.thumbnail.publicURL)
     : undefined;
   const pageUrl = normaliseUrl(siteUrl, publication.path);
+  const externalUrl = publication.link
+    ? normaliseUrl(siteUrl, publication.link)
+    : undefined;
+  const articleId = `${pageUrl}#scholarlyarticle`;
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": publication.title,
-    "author": authors,
-    "datePublished": publication.date,
-    "url": publication.link,
-    "image": imageUrl,
-    "abstract": publication.abstract,
-    ...(locale ? { "inLanguage": locale } : {}),
-    "publisher": {
-      "@type": "Organization",
-      "name": siteTitle,
-      "url": siteUrl,
+    "@id": articleId,
+    headline: publication.title,
+    name: publication.title,
+    author: authors,
+    creator: authors,
+    datePublished: publication.date,
+    url: pageUrl,
+    ...(externalUrl ? { sameAs: externalUrl } : {}),
+    image: imageUrl,
+    abstract: publication.abstract,
+    ...(locale ? { inLanguage: locale } : {}),
+    isPartOf: {
+      "@id": RASHID_WEBSITE_ID,
     },
-    "mainEntityOfPage": {
+    mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,
+      url: pageUrl,
+      name: publication.title,
     },
   };
 
   return (
     <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 };

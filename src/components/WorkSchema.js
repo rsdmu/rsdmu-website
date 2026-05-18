@@ -1,25 +1,27 @@
 // src/components/WorkSchema.js
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import { useStaticQuery, graphql } from 'gatsby';
-import { RASHID_ID, RASHID_SAME_AS, RASHID_URL } from '../constants/rashidProfile';
+import React from "react";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 import {
-  normaliseUrl,
-  splitAuthorNames,
-} from '../utils/contentMetadata';
+  RASHID_ID,
+  RASHID_SAME_AS,
+  RASHID_URL,
+  RASHID_WEBSITE_ID,
+} from "../constants/rashidProfile";
+import { normaliseUrl, splitAuthorNames } from "../utils/contentMetadata";
 
-const RASHID_NAME_VARIANTS = new Set([
-  'Rashid Mushkani',
-  'Rashid A. Mushkani',
-  'Rashid Ahmad Mushkani',
-].map(name => name.toLowerCase()));
+const RASHID_NAME_VARIANTS = new Set(
+  ["Rashid Mushkani", "Rashid A. Mushkani", "Rashid Ahmad Mushkani"].map(
+    (name) => name.toLowerCase()
+  )
+);
 
 const mapAuthor = (rawName) => {
   const name = rawName.trim();
   if (RASHID_NAME_VARIANTS.has(name.toLowerCase())) {
     return {
-      '@type': 'Person',
-      '@id': RASHID_ID,
+      "@type": "Person",
+      "@id": RASHID_ID,
       name,
       url: RASHID_URL,
       sameAs: RASHID_SAME_AS,
@@ -27,7 +29,7 @@ const mapAuthor = (rawName) => {
   }
 
   return {
-    '@type': 'Person',
+    "@type": "Person",
     name,
   };
 };
@@ -56,6 +58,7 @@ const WorkSchema = ({ work }) => {
     ? normaliseUrl(siteUrl, work.thumbnail.publicURL)
     : undefined;
   const pageUrl = normaliseUrl(siteUrl, work.path);
+  const workId = `${pageUrl}#creativework`;
   const keywords = Array.isArray(work.keywords)
     ? work.keywords.filter(Boolean)
     : [];
@@ -64,39 +67,45 @@ const WorkSchema = ({ work }) => {
   const schema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "headline": work.title,
-    "name": work.title,
-    "author": authors,
-    "datePublished": work.date,
-    "description": description,
-    "url": pageUrl,
-    "image": imageUrl,
-    ...(locale ? { "inLanguage": locale } : {}),
-    ...(keywords.length > 0 ? { "keywords": keywords } : {}),
+    "@id": workId,
+    headline: work.title,
+    name: work.title,
+    author: authors,
+    creator: authors,
+    datePublished: work.date,
+    description: description,
+    url: pageUrl,
+    image: imageUrl,
+    ...(locale ? { inLanguage: locale } : {}),
+    ...(keywords.length > 0 ? { keywords: keywords } : {}),
     ...(keywords.length > 0
       ? {
-          "about": keywords.map(keyword => ({
+          about: keywords.map((keyword) => ({
             "@type": "Thing",
-            "name": keyword,
+            name: keyword,
           })),
         }
       : {}),
-    "publisher": {
-      "@type": "Organization",
-      "name": siteTitle,
-      "url": siteUrl,
+    publisher: {
+      "@type": "Person",
+      "@id": RASHID_ID,
+      name: siteTitle,
+      url: siteUrl,
     },
-    "mainEntityOfPage": {
+    isPartOf: {
+      "@id": RASHID_WEBSITE_ID,
+    },
+    mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,
+      url: pageUrl,
+      name: work.title,
     },
   };
 
   return (
     <Helmet>
-      <script type="application/ld+json">
-        {JSON.stringify(schema)}
-      </script>
+      <script type="application/ld+json">{JSON.stringify(schema)}</script>
     </Helmet>
   );
 };

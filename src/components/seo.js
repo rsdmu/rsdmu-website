@@ -1,17 +1,19 @@
 // src/components/SEO.js
 
-import React from "react"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 import {
+  RASHID_ALTERNATE_NAMES,
   RASHID_LOCALE,
   RASHID_PRIMARY_IMAGE,
   RASHID_PRIMARY_IMAGE_HEIGHT,
   RASHID_PRIMARY_IMAGE_TYPE,
   RASHID_PRIMARY_IMAGE_WIDTH,
   RASHID_PROFILE_IMAGE_ALT,
-} from "../constants/rashidProfile"
-import { normaliseUrl } from "../utils/contentMetadata"
+  RASHID_SAME_AS,
+} from "../constants/rashidProfile";
+import { normaliseUrl } from "../utils/contentMetadata";
 
 const SEO = ({
   title,
@@ -39,42 +41,55 @@ const SEO = ({
         }
       }
     }
-  `)
+  `);
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
-  const siteUrl = site.siteMetadata.siteUrl
-  const resolvedTitle = title || defaultTitle
-  const canonicalUrl = normaliseUrl(siteUrl, pathname)
-  const imageUrl = normaliseUrl(siteUrl, image)
-  const pageLocale = site.siteMetadata.locale || RASHID_LOCALE
-  const locale = pageLocale.replace("-", "_")
-  const twitterCard = type === "profile" ? "summary" : "summary_large_image"
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
+  const siteUrl = site.siteMetadata.siteUrl;
+  const resolvedTitle = title || defaultTitle;
+  const canonicalUrl = normaliseUrl(siteUrl, pathname);
+  const imageUrl = normaliseUrl(siteUrl, image);
+  const pageLocale = site.siteMetadata.locale || RASHID_LOCALE;
+  const locale = pageLocale.replace("-", "_");
+  const twitterCard = type === "profile" ? "summary" : "summary_large_image";
   const resolvedKeywords = Array.from(
-    new Set(
-      keywords
-        .map(keyword => keyword?.trim())
-        .filter(Boolean)
-    )
-  )
-  const titleTemplate = resolvedTitle && resolvedTitle !== defaultTitle
-    ? `%s | ${defaultTitle}`
-    : undefined
+    new Set(keywords.map((keyword) => keyword?.trim()).filter(Boolean))
+  );
+  const titleTemplate =
+    resolvedTitle && resolvedTitle !== defaultTitle
+      ? `%s | ${defaultTitle}`
+      : undefined;
   const robotsContent = noindex
     ? `noindex, nofollow`
-    : `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`
-  const profileMeta = type === "profile"
-    ? [
-        {
-          property: `profile:first_name`,
-          content: `Rashid`,
-        },
-        {
-          property: `profile:last_name`,
-          content: `Mushkani`,
-        },
-      ]
-    : []
+    : `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`;
+  const identityLinks =
+    type === "profile"
+      ? RASHID_SAME_AS.map((href) => ({
+          rel: `me`,
+          href,
+        }))
+      : [];
+  const profileMeta =
+    type === "profile"
+      ? [
+          {
+            property: `profile:first_name`,
+            content: `Rashid`,
+          },
+          {
+            property: `profile:last_name`,
+            content: `Mushkani`,
+          },
+          {
+            property: `profile:username`,
+            content: `rsdmu`,
+          },
+          ...RASHID_ALTERNATE_NAMES.map((name) => ({
+            name: `alternateName`,
+            content: name,
+          })),
+        ]
+      : [];
 
   return (
     <Helmet
@@ -100,6 +115,7 @@ const SEO = ({
           rel: `image_src`,
           href: imageUrl,
         },
+        ...identityLinks,
       ]}
       meta={[
         {
@@ -233,7 +249,7 @@ const SEO = ({
         ...profileMeta,
       ]}
     />
-  )
-}
+  );
+};
 
-export default SEO
+export default SEO;
