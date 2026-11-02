@@ -11,6 +11,14 @@ const PublicationTemplate = ({ data }) => {
   const { markdownRemark: publication } = data;
   const { frontmatter, html } = publication;
   const thumbnailUrl = frontmatter.thumbnail?.publicURL;
+  const thumbnailAlt = frontmatter.thumbnailAlt || `${frontmatter.title} thumbnail`;
+  const thumbnailDimensions = frontmatter.thumbnail?.childImageSharp?.original;
+  const thumbnailType = {
+    jpg: "image/jpeg",
+    jpeg: "image/jpeg",
+    png: "image/png",
+    webp: "image/webp",
+  }[frontmatter.thumbnail?.extension];
   
   const [isAbstractOpen, setIsAbstractOpen] = useState(false); // State to track abstract toggle
 
@@ -25,7 +33,10 @@ const PublicationTemplate = ({ data }) => {
         description={frontmatter.description || frontmatter.abstract || frontmatter.title}
         pathname={`/${frontmatter.path}`}
         image={thumbnailUrl}
-        imageAlt={`${frontmatter.title} thumbnail`}
+        imageAlt={thumbnailAlt}
+        imageWidth={thumbnailDimensions?.width}
+        imageHeight={thumbnailDimensions?.height}
+        imageType={thumbnailType}
       />
       
       {/* Add JSON-LD Schema */}
@@ -34,27 +45,47 @@ const PublicationTemplate = ({ data }) => {
       <div className="publication-template">
         <h1>{frontmatter.title}</h1>
         <p className="publication-date">Year: {frontmatter.date}</p>
+        {frontmatter.venue && <p className="publication-venue">{frontmatter.venue}</p>}
         <p className="publication-author">Author: {frontmatter.author}</p>
         {thumbnailUrl && (
-          <a href={frontmatter.link} target="_blank" rel="noopener noreferrer">
-            <img
-              src={thumbnailUrl}
-              alt={`${frontmatter.title} Thumbnail`}
-              className="publication-thumbnail"
-              decoding="async"
-            />
-          </a>
+          <figure className="publication-image">
+            <a href={frontmatter.link} target="_blank" rel="noopener noreferrer">
+              <picture>
+                {frontmatter.animatedThumbnail && (
+                  <source
+                    media="(prefers-reduced-motion: no-preference)"
+                    srcSet={frontmatter.animatedThumbnail.publicURL}
+                    type="image/gif"
+                  />
+                )}
+                <img
+                  src={thumbnailUrl}
+                  alt={thumbnailAlt}
+                  className="publication-thumbnail"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+            {frontmatter.thumbnailCaption && (
+              <figcaption>
+                {frontmatter.thumbnailCaption}{" "}
+                {frontmatter.thumbnailSource && (
+                  <a href={frontmatter.thumbnailSource} target="_blank" rel="noopener noreferrer">Source</a>
+                )}
+              </figcaption>
+            )}
+          </figure>
         )}
-        <div className="publication-actions">
-          <button
+        {(frontmatter.abstract || frontmatter.pdf) && <div className="publication-actions">
+          {frontmatter.abstract && <button
             className="abstract-toggle-button"
             onClick={toggleAbstract}
             aria-expanded={isAbstractOpen}
             aria-controls="abstract-content"
           >
             {isAbstractOpen ? <FaEyeSlash /> : <FaEye />} Abstract
-          </button>
-          <a
+          </button>}
+          {frontmatter.pdf && <a
             href={frontmatter.pdf}
             className="pdf-download-link"
             download
@@ -63,8 +94,8 @@ const PublicationTemplate = ({ data }) => {
             aria-label="Download PDF"
           >
             <FaFilePdf /> PDF
-          </a>
-        </div>
+          </a>}
+        </div>}
         {isAbstractOpen && (
           <div id="abstract-content" className="abstract-content">
             <p>{frontmatter.abstract}</p>
@@ -83,9 +114,23 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY")
+        venue
         thumbnail {
           publicURL
+          extension
+          childImageSharp {
+            original {
+              width
+              height
+            }
+          }
         }
+        thumbnailAlt
+        animatedThumbnail {
+          publicURL
+        }
+        thumbnailCaption
+        thumbnailSource
         description
         author
         link

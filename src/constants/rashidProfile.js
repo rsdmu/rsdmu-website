@@ -6,14 +6,14 @@ export const RASHID_URL = "https://rsdmu.com/";
 export const RASHID_GIVEN_NAME = "Rashid";
 export const RASHID_FAMILY_NAME = "Mushkani";
 export const RASHID_LOCALE = "en-CA";
-export const RASHID_EMAIL = "rashid.mushkani@gmail.com";
-export const RASHID_JOB_TITLE = "PhD Candidate in Urban Planning and AI";
+export const RASHID_EMAIL = "rashid.mushkani@mila.quebec";
+export const RASHID_JOB_TITLE = "IVADO Postdoctoral Fellow";
 export const RASHID_PROFILE_DESCRIPTION =
-  "Official website of Rashid Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.";
+  "Rashid Mushkani is an IVADO Postdoctoral Fellow at Université de Montréal and co-founder and CEO of Cocoon Lab, researching democratic AI governance, civic participation, and urban planning.";
 export const RASHID_DISAMBIGUATING_DESCRIPTION =
-  "Rashid Mushkani is an urban planning and artificial intelligence researcher at the University of Montreal and Mila - Quebec Artificial Intelligence Institute.";
+  "Rashid Mushkani is an IVADO Postdoctoral Fellow at Université de Montréal's Faculty of Law, working with Catherine Régis on pluralism in civic AI.";
 export const RASHID_PROFILE_CREATED_AT = "2024-11-13T10:49:58-05:00";
-export const RASHID_PROFILE_UPDATED_AT = "2026-05-18T00:00:00-04:00";
+export const RASHID_PROFILE_UPDATED_AT = "2026-11-02T00:00:00-05:00";
 export const RASHID_ALTERNATE_NAMES = [
   "Rashid Mushkani",
   "Rashid A. Mushkani",
@@ -62,6 +62,10 @@ export const RASHID_PRIMARY_IMAGE_HEIGHT = RASHID_IMAGE_OBJECTS[0].height;
 export const RASHID_PRIMARY_IMAGE_TYPE = RASHID_IMAGE_OBJECTS[0].encodingFormat;
 export const RASHID_PRIMARY_IMAGE_OBJECT_ID = RASHID_IMAGE_OBJECTS[0].id;
 export const RASHID_KNOWS_ABOUT = [
+  "Democratic governance of AI",
+  "Civic participation",
+  "Public institutions and administrative accountability",
+  "Pluralistic evaluation",
   "Participatory AI",
   "Pluralistic AI alignment",
   "Inclusive public spaces",

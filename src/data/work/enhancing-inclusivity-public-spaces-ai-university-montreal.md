@@ -1,12 +1,16 @@
 ---
-title: "Thesis Project: Street Review & Wedesign"
-date: "2023-05-30"
+title: "The Urban Right to AI: Street Review & WeDesign"
+date: "2026-08-24"
 path: "enhancing-inclusivity-public-spaces-ai-university-montreal"
 type: "work"
 thumbnail: "./images/thesis_project.jpg"
 author: "Rashid Mushkani, University of Montreal, Mila - Quebec AI Institute"
 description: "Utilizing AI models to assess and design inclusive public spaces in Montreal, fostering community engagement and urban improvement."
 ---
+
+**Completed doctoral research.** I defended my Ph.D. at Université de Montréal on 24 August 2026, supervised by Shin Alexandre Koseki. The thesis is titled *The urban right to AI: Pluralistic co-design and governance of public space*.
+
+[Read the thesis](https://arxiv.org/abs/2608.23999).
 
 *This doctoral work starts from a civic question before a technical one: who gets to define what an inclusive street or public space should look and feel like (Gowaikar et al., 2024; Mushkani & Koseki, 2025).*
 

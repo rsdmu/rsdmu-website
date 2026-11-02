@@ -146,32 +146,51 @@ const PersonProfileSchema = () => {
             "@type": "Occupation",
             name: "Researcher",
             description:
-              "Researcher in participatory AI, inclusive public spaces, and socio-spatial justice.",
+              "Researcher in democratic AI governance, civic participation, pluralistic evaluation, and urban planning.",
           },
           {
             "@type": "Occupation",
             name: RASHID_JOB_TITLE,
             description:
-              "Doctoral researcher working at the intersection of urban planning and artificial intelligence.",
+              "IVADO Postdoctoral Fellow at Université de Montréal's Faculty of Law, working with Catherine Régis on the AI Pluralism Index.",
+          },
+          {
+            "@type": "Occupation",
+            name: "Co-founder and CEO, Cocoon Lab",
+            description: "Develops AI tools for planning and building review.",
           },
         ],
         worksFor: [
           {
             "@type": "CollegeOrUniversity",
-            name: "University of Montreal",
+            name: "Université de Montréal",
             url: "https://www.umontreal.ca/en/",
+            department: {
+              "@type": "Organization",
+              name: "Faculty of Law",
+              url: "https://droit.umontreal.ca/",
+            },
           },
           {
-            "@type": "ResearchOrganization",
-            name: "Mila - Quebec Artificial Intelligence Institute",
-            url: "https://mila.quebec/en/",
+            "@type": "Organization",
+            name: "Cocoon Lab",
           },
         ],
         affiliation: [
           {
             "@type": "Organization",
-            name: "UNESCO Chair in Urban Landscape",
+            name: "IVADO",
+            url: "https://ivado.ca/en/",
+          },
+          {
+            "@type": "Organization",
+            name: "UNESCO Chairs on Social Inclusion in Cities",
             url: "https://unesco-studio.umontreal.ca/",
+          },
+          {
+            "@type": "Organization",
+            name: "Digital Research Alliance of Canada",
+            url: "https://alliancecan.ca/en",
           },
           {
             "@type": "Organization",
@@ -181,6 +200,11 @@ const PersonProfileSchema = () => {
           },
         ],
         alumniOf: [
+          {
+            "@type": "CollegeOrUniversity",
+            name: "Université de Montréal",
+            url: "https://www.umontreal.ca/en/",
+          },
           {
             "@type": "CollegeOrUniversity",
             name: "Toyohashi University of Technology",

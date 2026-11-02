@@ -80,8 +80,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       date: Date @dateformat
       path: String
       thumbnail: File @fileByRelativePath
+      animatedThumbnail: File @fileByRelativePath
+      thumbnailAlt: String
+      thumbnailCaption: String
+      thumbnailSource: String
       author: String
       description: String
+      venue: String
     }
   `);
 };

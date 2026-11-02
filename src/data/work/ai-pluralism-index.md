@@ -8,6 +8,8 @@ author: "Rashid Mushkani"
 description: "A public framework for evaluating not just what AI systems can do, but who gets a say in how they are built and governed."
 ---
 
+**Current postdoctoral research.** As an IVADO Postdoctoral Fellow at Université de Montréal’s Faculty of Law, I work with Catherine Régis on *AI Pluralism Index: An interoperable framework for pluralism in civic AI*.
+
 *The AI Pluralism Index asks a public question: who gets a say in how AI systems are built and governed (Mushkani, 2026).*
 
 [Read on arXiv](https://arxiv.org/abs/2510.08193) · [Explore the Index](https://aipluralism.wiki/) · [View Code](https://github.com/rsdmu/aipi-pluralism-index)
@@ -54,4 +56,4 @@ The paper describes AIPI as an open, versioned system with public evidence track
 
 ## References
 
-Mushkani, R. (2026). *Measuring what matters: The AI Pluralism Index*. arXiv. https://arxiv.org/abs/2510.08193v3
+Mushkani, R. (2026). *Measuring What Matters: The AI Pluralism Index*. Proceedings of IASEAI Conference, 2(1), 447–459. https://doi.org/10.1609/iaseai.v2i1.43044
