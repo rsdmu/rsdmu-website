@@ -6,7 +6,8 @@ type: "publications"
 thumbnail: "./images/streetreview.png"
 author: "Rashid Mushkani, Shin Koseki"
 description: "Presents Street Review, a participatory AI-based framework that combines community input with large-scale street-view analysis to assess streetscape inclusivity in Montréal."
-link: "https://www.sciencedirect.com/science/article/pii/S0264275125009059"
+venue: "Cities · Peer-reviewed paper"
+link: "https://doi.org/10.1016/j.cities.2025.106602"
 abstract: >-
   Urban centers undergo social, demographic, and cultural changes that shape
   public street use and require systematic evaluation of public spaces. This

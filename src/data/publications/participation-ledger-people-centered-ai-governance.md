@@ -5,6 +5,7 @@ path: "participation-ledger-people-centered-ai-governance"
 type: "publications"
 thumbnail: "./images/participation-ledger-componenents.png"
 author: "Rashid Mushkani"
+venue: "Preprint · arXiv"
 description: "Introduces the Participation Ledger, a machine-readable and auditable framework for making participation in AI governance traceable, enforceable, and compensable."
 link: "https://arxiv.org/abs/2602.10916"
 abstract: >-

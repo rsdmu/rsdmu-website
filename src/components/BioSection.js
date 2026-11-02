@@ -1,7 +1,7 @@
 // src/components/BioSection.js
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { RASHID_PROFILE_IMAGE_ALT } from "../constants/rashidProfile";
+import { RASHID_EMAIL, RASHID_PROFILE_IMAGE_ALT } from "../constants/rashidProfile";
 import "./BioSection.scss";
 
 const BioSection = () => {
@@ -13,13 +13,19 @@ const BioSection = () => {
         {/* Bio Overview */}
         <div className="bio-section__overview">
           <p>
-            Rashid Mushkani is a researcher in urban planning and artificial intelligence who works through participatory design.
+            I am an IVADO Postdoctoral Fellow at Université de Montréal’s Faculty of Law, working with Catherine Régis on the AI Pluralism Index: an interoperable framework for pluralism in civic AI.
           </p>
           <p>
-            His work explores inclusive public space, socio-spatial justice, and pluralistic AI alignment, advocating a "Right to AI" grounded in power, inclusion, and community participation.
+            My research asks who can shape an AI system’s criteria and challenge its public use. I work on democratic AI governance, civic participation, public institutions and administrative accountability, pluralistic evaluation, and urban public space.
           </p>
           <p>
-            I hold a Master of Engineering from{" "}
+            I hold a Ph.D. (interdisciplinaire en aménagement) from Université de Montréal, defended on 24 August 2026 under the supervision of Shin Alexandre Koseki. My thesis, <a href="https://arxiv.org/abs/2608.23999" target="_blank" rel="noopener noreferrer" className="bio-section__link">The urban right to AI: Pluralistic co-design and governance of public space</a>, argues that cities must govern the data and models through which they justify priorities, alongside the physical city.
+          </p>
+          <p>
+            I am also co-founder and CEO of Cocoon Lab, which develops AI tools for planning and building review.
+          </p>
+          <p>
+            I hold a Master of Engineering in Architecture and Civil Engineering from{" "}
             <a
               href="https://www.tut.ac.jp/english/"
               target="_blank"
@@ -37,7 +43,7 @@ const BioSection = () => {
             >
               Aga Khan Development Network
             </a>{" "}
-            and taught foundational design and environmental design courses at{" "}
+            and taught architecture and environmental design at{" "}
             <a
               href="https://ku.edu.af/en"
               target="_blank"
@@ -48,16 +54,16 @@ const BioSection = () => {
             </a>.
           </p>
           <p>
-            Currently, I’m a PhD candidate at the{" "}
+            I lecture in the School of Urban Planning and Landscape Architecture at{" "}
             <a
-              href="https://amenagement.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
+              href="https://urbanismepaysage.umontreal.ca/"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              University of Montreal
+              Université de Montréal
             </a>
-            , leading projects like{" "}
+            , where I teach the master’s course Urbanisme international (URB 6850). My research includes{" "}
             <strong>
               <a
                 href="https://rsdmu.com/enhancing-inclusivity-public-spaces-ai-university-montreal/"
@@ -79,9 +85,9 @@ const BioSection = () => {
             </a>.
           </p>
           <p>
-            I collaborate with academics, professionals, policymakers, and communities on AI ethics and spatial justice.
+            From 2023 to 2025, I worked with Mila’s AI4Humanity team on participatory AI projects and led a nine-person project team. I continue to collaborate with academics, professionals, policymakers, and communities on AI governance and spatial justice.
           </p>
-          <p>Email me for questions, collaboration opportunities, or anything else.</p>
+          <p><a href={`mailto:${RASHID_EMAIL}`} className="bio-section__link">Email me</a> for questions or collaboration opportunities.</p>
         </div>
 
         {/* Profile Image */}
@@ -102,8 +108,25 @@ const BioSection = () => {
       <div className="bio-section__full-width-container">
         <h3 className="bio-section__subtitle">Timeline</h3>
         <ul className="bio-section__list">
+          <li>
+            <strong>2026–present:</strong> IVADO Postdoctoral Fellow, Université de Montréal, Faculty of Law. Supervisor: Catherine Régis.
+          </li>
+          <li>
+            <strong>2026–present:</strong> Co-founder and CEO, Cocoon Lab — AI tools for planning and building review.
+          </li>
            <li>
-            <strong>2025-Today:</strong> Lecturer,{" "}
+            <strong>2025–present:</strong> Lecturer,{" "}
+            <a
+              href="https://urbanismepaysage.umontreal.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bio-section__link"
+            >
+              University of Montreal
+            </a>
+          </li>
+          <li>
+            <strong>Winter 2023:</strong> Practical Instructor, DIN 1043, Éléments de structure,{" "}
             <a
               href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
               target="_blank"
@@ -114,25 +137,14 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2022-2023:</strong> Practical Training Lecturer,{" "}
+            <strong>2022–2026:</strong> Doctoral Researcher,{" "}
             <a
               href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              University of Montreal
-            </a>
-          </li>
-          <li>
-            <strong>2022-Today:</strong> PhD Candidate,{" "}
-            <a
-              href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bio-section__link"
-            >
-              University of Montreal I Mila - Quebec Artificial Intelligence Institute
+              Université de Montréal
             </a>
           </li>
           <li>
@@ -147,7 +159,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2022-Today:</strong> Researcher,{" "}
+            <strong>2022–2025:</strong> Researcher,{" "}
             <a
               href="https://unesco-studio.umontreal.ca/"
               target="_blank"
@@ -169,7 +181,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2017-2021:</strong> Assistant Professor,{" "}
+            <strong>2017–2019:</strong> Faculty Member, Department of Architecture,{" "}
             <a
               href="https://www.ku.edu.af/en"
               target="_blank"
@@ -187,7 +199,7 @@ const BioSection = () => {
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Chihilsitoon Garden - Aga Khan Development Network
+              Aga Khan Trust for Culture — Chihilsitoon Garden and Kabul Riverfront
             </a>
           </li>
         </ul>
@@ -198,18 +210,19 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Education</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2022-Today:</strong> Doctor of Philosophy in Interdisciplinary Planning,{" "}
+            <strong>2026:</strong> Ph.D. (interdisciplinaire en aménagement),{" "}
             <a
               href="https://amenagement.umontreal.ca/accueil/"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              University of Montreal
+              Université de Montréal
             </a>
+            . Defended 24 August 2026. Thesis: <a href="https://arxiv.org/abs/2608.23999" target="_blank" rel="noopener noreferrer" className="bio-section__link">The urban right to AI: Pluralistic co-design and governance of public space</a>.
           </li>
           <li>
-            <strong>2019-2021:</strong> Master of Engineering in Architecture and Urban Planning,{" "}
+            <strong>2019–2021:</strong> Master of Engineering in Architecture and Civil Engineering,{" "}
             <a
               href="https://www.tut.ac.jp/english/"
               target="_blank"
@@ -220,7 +233,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2012-2016:</strong> Bachelor of Architecture,{" "}
+            <strong>2012–2016:</strong> Bachelor of Science in Architecture,{" "}
             <a
               href="https://www.ku.edu.af/en"
               target="_blank"
@@ -237,6 +250,9 @@ const BioSection = () => {
       <div className="bio-section__full-width-container">
         <h3 className="bio-section__subtitle">Honors & Awards</h3>
         <ul className="bio-section__list">
+          <li>
+            <strong>2026:</strong> Finalist, Prix Personnalités de l’innovation sociale, Gouvernance et communautés, Maison de l’innovation sociale.
+          </li>
           <li>
             <strong>2026:</strong>{" "}
             <a
@@ -374,7 +390,7 @@ const BioSection = () => {
             , University of Montreal
           </li>
           <li>
-            <strong>2022:</strong>{" "}
+            <strong>2021–2022:</strong>{" "}
             <a
               href="https://www.tut.ac.jp/english/"
               target="_blank"
@@ -386,7 +402,10 @@ const BioSection = () => {
             , Toyohashi University of Technology
           </li>
           <li>
-            <strong>2019:</strong>{" "}
+            <strong>2021:</strong> Young Researcher Award, Toyohashi University of Technology.
+          </li>
+          <li>
+            <strong>2019–2021:</strong>{" "}
             <a
               href="https://www.jica.go.jp/english/"
               target="_blank"
@@ -398,16 +417,19 @@ const BioSection = () => {
             , Japan International Cooperation Agency
           </li>
           <li>
-            <strong>2018:</strong>{" "}
+            <strong>2019:</strong>{" "}
             <a
               href="https://drive.google.com/file/d/1LOd3D782jRApV8Spsg7zzb9g-oS2FlmO/view"
               target="_blank"
               rel="noopener noreferrer"
               className="bio-section__link"
             >
-              Teaching Performance & Academic Excellence Award,
+              Teaching Performance &amp; Academic Excellence Award
             </a>
             , Kabul University
+          </li>
+          <li>
+            <strong>2018:</strong> Best Professor Award, Faculty of Engineering, Kabul University.
           </li>
           <li>
             <strong>2016:</strong>{" "}
@@ -429,8 +451,22 @@ const BioSection = () => {
         <h3 className="bio-section__subtitle">Talks &amp; Events</h3>
         <ul className="bio-section__list">
           <li>
-            <strong>2026:</strong> "Participatory AI in Design: From Research to Practice" – InDesCanada, Carleton University, Ottawa, Canada.{" "}
-            <em>Upcoming: May 3</em>.{" "}
+            <strong>6 November 2026 (upcoming):</strong> “WeDesign+: Deliberative Visual AI for Public Space Planning” — accepted poster, ACM EAAMO 2026. Presenter: Hugo Berard.
+          </li>
+          <li>
+            <strong>2026:</strong> “Decision-Time Administrative Reason-Giving for U.S. Municipal AI: The Urban Reasonableness Layer” — accepted poster, ACM EAAMO 2026.
+          </li>
+          <li>
+            <strong>1 October 2026:</strong> “AI Pluralism: Models and Governance” — FATE group, Mila.
+          </li>
+          <li>
+            <strong>9 July 2026:</strong> ICML poster presentations: “Prompts for Public-Sector LLMs Should Be Governed as Commons” and “Benchmarks for Vision–Language Models in Urban Perception Should Be Reliability-Aware and Negotiated.”
+          </li>
+          <li>
+            <strong>2026:</strong> “AI Pluralism and the Worlds It Misses” — poster, ICML Pluralistic Alignment Workshop.
+          </li>
+          <li>
+            <strong>3 May 2026:</strong> “Participatory AI in Design: From Research to Practice” — featured speaker, InDesCanada, Carleton University, Ottawa, Canada.{" "}
             <a
               href="https://indescanada.ca/"
               target="_blank"
@@ -460,7 +496,7 @@ const BioSection = () => {
             </a>
           </li>
           <li>
-            <strong>2026:</strong> "AI Pluralism: What Models Do, Who Decides, and Why It Matters" – Montréal AI Safety, Ethics, and Governance, UQAM, Montréal, Canada.{" "}
+            <strong>3 February 2026:</strong> "AI Pluralism: What Models Do, Who Decides, and Why It Matters" – Montréal AI Safety, Ethics, and Governance, UQAM, Montréal, Canada.{" "}
             <a
               href="https://luma.com/azd9irwp"
               target="_blank"
@@ -650,6 +686,30 @@ const BioSection = () => {
         </ul>
       </div>
 
+      <div className="bio-section__full-width-container">
+        <h3 className="bio-section__subtitle">Public Writing</h3>
+        <ul className="bio-section__list">
+          <li>
+            <strong>29 June 2026:</strong> <a href="https://nextcity.org/urbanist-news/ai-can-help-residents-imagine-better-cities-it-can-also-leave-them-out" target="_blank" rel="noopener noreferrer" className="bio-section__link">AI Can Help Residents Imagine Better Cities. It Can Also Leave Them Out.</a> — <em>Next City</em>.
+          </li>
+          <li>
+            <strong>10 June 2026:</strong> <a href="https://doi.org/10.64628/aap.wjuaanwuj" target="_blank" rel="noopener noreferrer" className="bio-section__link">Des villes plus inclusives grâce à l’IA ? Oui, si les communautés gardent la main.</a> With Shin Koseki — <em>The Conversation</em>.
+          </li>
+        </ul>
+      </div>
+
+      <div className="bio-section__full-width-container">
+        <h3 className="bio-section__subtitle">Service &amp; Community</h3>
+        <ul className="bio-section__list">
+          <li><strong>2026–present:</strong> Member, Researcher Council, Digital Research Alliance of Canada.</li>
+          <li><strong>2025–2026:</strong> Guest editor with Robert J. Chaskin and Shin Koseki, <em>Cities</em> special issue, “The Politics of Spatial Inclusion in Cities.”</li>
+          <li><strong>2024–present:</strong> Member and moderator, UNESCO Chairs on Social Inclusion in Cities.</li>
+          <li><strong>2023–present:</strong> Member, International Observatory on the Societal Impacts of AI and Digital Technologies (OBVIA).</li>
+          <li><strong>2023–present:</strong> Mentoring master’s and doctoral students on research projects and working with community participants.</li>
+          <li><strong>2022–present:</strong> Daricha — informal mentoring and support for Afghan women pursuing higher education, including scholarship applications, remote academic support, and study pathways.</li>
+        </ul>
+      </div>
+
       {/* Download CV Button */}
       <div className="bio-section__download">
         <a
@@ -658,7 +718,7 @@ const BioSection = () => {
           className="bio-section__download-button"
           aria-label="Download Rashid's CV"
         >
-          Download Rashid's CV
+          Download CV · Updated 31 October 2026
         </a>
       </div>
     </section>

@@ -10,6 +10,8 @@ import PersonProfileSchema from '../components/PersonProfileSchema';
 import PublicationSchema from '../components/PublicationSchema'; 
 import WorkSchema from '../components/WorkSchema';
 import {
+  RASHID_EMAIL,
+  RASHID_JOB_TITLE,
   RASHID_PRIMARY_IMAGE,
   RASHID_PROFILE_DESCRIPTION,
   RASHID_PROFILE_IMAGE_ALT,
@@ -87,9 +89,10 @@ const IndexPage = ({ data }) => {
         <div className="background-image"></div>
         <div className="overlay"></div>
         <div className="centered-content">
-          <h1 id="home-title" className="site-title">RASHID MUSHKANI</h1>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>AI & Urban Studies PhD Candidate</p>
-          <p className="hero-subtitle" style={{ textAlign: 'left' }}>University of Montreal I Mila - Quebec AI Institute</p>
+          <h1 id="home-title" className="site-title" aria-describedby="home-role">RASHID MUSHKANI</h1>
+          <p id="home-role" className="hero-subtitle">{RASHID_JOB_TITLE} · Université de Montréal</p>
+          <p className="hero-subtitle">Democratic AI governance, civic participation &amp; urban planning</p>
+          <p className="hero-subtitle">Co-founder &amp; CEO, Cocoon Lab</p>
         </div>
       </header>
 
@@ -132,32 +135,44 @@ const IndexPage = ({ data }) => {
             <div className="grid-item" key={node.frontmatter.path}>
               {node.frontmatter.thumbnail && (
                 <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer">
-                  <img
-                    src={node.frontmatter.thumbnail.publicURL}
-                    alt={node.frontmatter.title}
-                    className="grid-item-thumbnail"
-                    loading="lazy"
-                    decoding="async"
-                  />
+                  <picture>
+                    {node.frontmatter.animatedThumbnail && (
+                      <source
+                        media="(prefers-reduced-motion: no-preference)"
+                        srcSet={node.frontmatter.animatedThumbnail.publicURL}
+                        type="image/gif"
+                      />
+                    )}
+                    <img
+                      src={node.frontmatter.thumbnail.publicURL}
+                      alt={node.frontmatter.thumbnailAlt || node.frontmatter.title}
+                      className={`grid-item-thumbnail${node.frontmatter.thumbnailCaption ? ' grid-item-thumbnail--research' : ''}`}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
                 </a>
               )}
               <div className="grid-item-content">
+                <p className="grid-item-date">
+                  {node.frontmatter.date}{node.frontmatter.venue && ` · ${node.frontmatter.venue}`}
+                </p>
                 <h3 className="grid-item-title">
                   <a href={node.frontmatter.link} target="_blank" rel="noopener noreferrer">
                     {node.frontmatter.title}
                   </a>
                 </h3>
                 <p className="grid-item-author">{node.frontmatter.author}</p>
-                <div className="publication-actions">
-                  <button
+                {(node.frontmatter.abstract || node.frontmatter.pdf) && <div className="publication-actions">
+                  {node.frontmatter.abstract && <button
                     className="abstract-toggle-button"
                     onClick={() => toggleAbstract(node.frontmatter.path)}
                     aria-expanded={openAbstracts[node.frontmatter.path] || false}
                     aria-controls={`abstract-${node.frontmatter.path}`}
                   >
                     {openAbstracts[node.frontmatter.path] ? <FaEyeSlash /> : <FaEye />} Abstract
-                  </button>
-                  <a
+                  </button>}
+                  {node.frontmatter.pdf && <a
                     href={node.frontmatter.pdf}
                     className="pdf-download-link"
                     download
@@ -166,8 +181,8 @@ const IndexPage = ({ data }) => {
                     aria-label="Download PDF"
                   >
                     <FaFilePdf /> PDF
-                  </a>
-                </div>
+                  </a>}
+                </div>}
                 {openAbstracts[node.frontmatter.path] && (
                   <div
                     id={`abstract-${node.frontmatter.path}`}
@@ -230,21 +245,20 @@ const IndexPage = ({ data }) => {
             <h3>Affiliations</h3>
             <ul className="affiliations-list">
               <li>
-                <a href="https://urbanismepaysage.umontreal.ca/en/recherche/doctorantes-et-doctorants/etudiant/in/in35141/sg/Rashid%20Mushkani/" target="_blank" rel="noopener noreferrer">
+                <a href="https://droit.umontreal.ca/" target="_blank" rel="noopener noreferrer">
                   <img src="/icons/udem.svg" alt="University of Montreal" />
-                  <span>University of Montreal</span>
+                  <span>Université de Montréal · Faculty of Law</span>
                 </a>
               </li>
               <li>
-                <a href="https://unesco-studio.umontreal.ca/team/rashid_mushkani.html" target="_blank" rel="noopener noreferrer">
+                <a href="https://unesco-studio.umontreal.ca/" target="_blank" rel="noopener noreferrer">
                   <img src="/icons/unesco.svg" alt="UNESCO Chair in Urban Landscape" />
-                  <span>UNESCO Chair in Urban Landscape</span>
+                  <span>UNESCO Chairs on Social Inclusion in Cities</span>
                 </a>
               </li>
               <li>
-                <a href="https://mila.quebec/en/directory/rashid-mushkani" target="_blank" rel="noopener noreferrer">
-                  <img src="/icons/mila.svg" alt="Mila - Quebec Artificial Intelligence Institute" />
-                  <span>Mila - Quebec AI Institute</span>
+                <a href="https://ivado.ca/en/ivado-postdoctoral-fellows/" target="_blank" rel="noopener noreferrer">
+                  <span>IVADO · Postdoctoral Fellow</span>
                 </a>
               </li>
               <li>
@@ -278,7 +292,7 @@ const IndexPage = ({ data }) => {
                 </a>
               </li>
               <li>
-                <a href="mailto:rashid.mushkani@gmail.com" aria-label="Email">
+                <a href={`mailto:${RASHID_EMAIL}`} aria-label="Email">
                   <img src="/icons/email.svg" alt="Email" />
                   <span>Email</span>
                 </a>
@@ -324,11 +338,17 @@ export const query = graphql`
             thumbnail {
               publicURL
             }
+            thumbnailAlt
+            thumbnailCaption
+            animatedThumbnail {
+              publicURL
+            }
             author
             link
             abstract
             pdf
             date(formatString: "YYYY")
+            venue
           }
         }
       }

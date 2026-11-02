@@ -5,8 +5,9 @@ path: "measuring-what-matters-ai-pluralism-index"
 type: "publications"
 thumbnail: "./images/ai_governance_indicators.png"
 author: "Rashid Mushkani"
+venue: "IASEAI · Proceedings paper"
 description: "Introduces the AI Pluralism Index (AIPI), a transparent, evidence-based instrument for evaluating AI governance across participatory governance, inclusivity and diversity, transparency, and accountability."
-link: "https://arxiv.org/abs/2510.08193v3"
+link: "https://doi.org/10.1609/iaseai.v2i1.43044"
 abstract: >-
   Artificial intelligence systems increasingly mediate knowledge, communication,
   and decision making. Development and governance remain concentrated within a

@@ -185,7 +185,7 @@ This project is licensed under the MIT License.
 
 Feel free to reach out through any of the following platforms:
 
-- **Email:** rashid.mushkani@gmail.com
+- **Email:** rashid.mushkani@mila.quebec
 - **LinkedIn:** [linkedin.com/in/rashid-mushkani](https://linkedin.com/in/rashid-mushkani)
 - **GitHub:** [github.com/rsdmu](https://github.com/rsdmu)
 - **Instagram:** [instagram.com/rashid_mushkani](https://instagram.com/rashid_mushkani)

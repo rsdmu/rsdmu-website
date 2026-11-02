@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: "Rashid Mushkani",
     description:
-      "Official website of Rashid Mushkani, a PhD candidate at the University of Montreal and researcher at Mila working on participatory AI, inclusive public spaces, and socio-spatial justice.",
+      "Rashid Mushkani is an IVADO Postdoctoral Fellow at Université de Montréal and co-founder and CEO of Cocoon Lab, researching democratic AI governance, civic participation, and urban planning.",
     author: "Rashid Mushkani",
     siteUrl: "https://rsdmu.com", // Ensure this is correct
     locale: "en-CA",

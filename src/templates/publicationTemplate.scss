@@ -9,6 +9,22 @@
   box-shadow: 0 4px 8px var(--form-shadow);
   transition: background-color 0.3s ease, color 0.3s ease;
 
+  .publication-image {
+    margin: 0 0 1.5rem;
+
+    figcaption {
+      margin-top: -0.75rem;
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: var(--muted-text-color);
+
+      a {
+        color: var(--primary-color);
+        text-decoration: underline;
+      }
+    }
+  }
+
   h1 {
     font-size: 2.5rem;
     color: var(--primary-color);
